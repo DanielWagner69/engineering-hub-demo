@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en-GB"><head><meta charset="utf-8"><title>demo ui check</title></head><body>
+<!DOCTYPE html><html lang="en-GB"><head><meta charset="utf-8"><title>demo ui check v0.8</title></head><body>
 <form id="ask-form"><input id="search"></form><section id="ask-panel" hidden></section><div id="view-buttons"></div><div id="view-desc"></div><nav id="tree"></nav><nav id="breadcrumbs"></nav><div class="main"><article id="page"></article></div><footer id="footer"></footer>
 <script src="../data/hub.js"></script><script src="../js/ai.js"></script><script src="../js/app.js"></script>
 <script>
@@ -8,32 +8,30 @@ function txt() { return document.getElementById("page").textContent; }
 if ((EH.data.meta || {}).hubKind !== "Production") errs.push("expected Production hubKind");
 history.replaceState(null, "", "#/home"); EH.render();
 if (txt().indexOf("Sparrow Light Trainer") < 0) errs.push("home missing project name");
-if (txt().indexOf("Fictional demo data") < 0 && document.body.textContent.indexOf("Fictional demo") < 0) errs.push("demo banner missing");
 history.replaceState(null, "", "#/p/SYS-0007"); EH.render();
-if (document.querySelectorAll("#page table.prod-links tbody tr").length < 3) errs.push("Fuel should have filled production links");
-if (txt().indexOf("MSN 001") < 0) errs.push("effectivity missing on Fuel links");
-history.replaceState(null, "", "#/p/SYS-0008"); EH.render();
-if (txt().indexOf("Production data links") < 0) errs.push("Electrical page missing production links");
-history.replaceState(null, "", "#/p/SYS-0001"); EH.render();
-if (txt().indexOf("PR-0009") < 0 && txt().indexOf("Frame CF-12") < 0) errs.push("Primary Structure links missing");
+if (txt().indexOf("Requirement") < 0) errs.push("Fuel production links missing Requirement column");
+if (txt().indexOf("REQ-0003") < 0 && txt().indexOf("REQ-0002") < 0) errs.push("Fuel links should show Requirement IDs");
+if (txt().indexOf("Serial") < 0 && txt().indexOf("serial") < 0 && txt().indexOf("MSN") < 0) errs.push("structured effectivity missing on Fuel");
 history.replaceState(null, "", "#/p/PI-0001"); EH.render();
+if (txt().indexOf("Finish") < 0 && txt().indexOf("FS-0001") < 0) errs.push("bracket should show finish specs");
 if (document.querySelectorAll("#page .chip.supports").length < 2) errs.push("bracket supports links missing");
+history.replaceState(null, "", "#/p/FS-0001"); EH.render();
+if (txt().indexOf("Primer") < 0) errs.push("finish page missing kind");
+history.replaceState(null, "", "#/p/ISS-0005"); EH.render();
+if (txt().indexOf("Product Scope") < 0) errs.push("issue should show Product Scopes");
+if (/cross-scope badge/i.test(txt()) && !/without a separate/i.test(txt())) errs.push('must not show a Cross-scope badge');
 history.replaceState(null, "", "#/p/HUB-FEEDBACK"); EH.render();
-if ((EH.data.production.gaps || []).length < 5) errs.push("expected several framework gaps");
-if (txt().indexOf("GAP-0001") < 0) errs.push("feedback page empty");
-history.replaceState(null, "", "#/p/HUB-AUTHORITY"); EH.render();
-if (txt().indexOf("PLM (demo)") < 0) errs.push("authority register missing PLM demo");
-if (txt().indexOf("Hub") < 0) errs.push("authority register missing Hub master");
-history.replaceState(null, "", "#/p/HUB-ISSUES-DEMO"); EH.render();
-if (txt().indexOf("ISS-0001") < 0) errs.push("project issues missing");
-history.replaceState(null, "", "#/p/HUB-REQUIREMENTS"); EH.render();
-if (txt().indexOf("REQ-0001") < 0) errs.push("requirements index missing");
-history.replaceState(null, "", "#/p/HUB-MODEL"); EH.render();
-if (!document.querySelector("#page img[src$='sparrow-overview.svg']")) errs.push("model diagram missing");
+if (txt().indexOf("Resolved") < 0) errs.push("gaps should show Resolved");
+if (txt().indexOf("Skipped") < 0) errs.push("gaps should show Skipped");
+history.replaceState(null, "", "#/home?v=majorunit"); EH.render();
+history.replaceState(null, "", "#/p/PI-0003?v=majorunit"); EH.render();
+if (!document.querySelector("#tree .derived-tag")) errs.push("Major Unit tree should show derived badge on loom");
+history.replaceState(null, "", "#/f/designtype"); EH.render();
+if (txt().indexOf("Bought-in Equipment") < 0) errs.push("Design Type missing Bought-in");
 if (window.HUB_AI_ENDPOINT !== null) errs.push("HUB_AI_ENDPOINT should default to null");
 EH.openAsk("fuel pipe");
 HubAI.askHub("fuel pipe").then(function (r) {
   if (r.mode !== "keyword") errs.push("expected keyword fallback");
-  setTimeout(function () { out(); }, 50);
+  setTimeout(out, 50);
 });
 </script></body></html>

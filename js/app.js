@@ -1,4 +1,4 @@
-/* Engineering Hub – Production (Demo) on Framework v0.7. Framework pages mirrored read-only;
+/* Engineering Hub – Production (Demo) on Framework v0.8. Framework pages mirrored read-only;
    production overlay is entirely fictional demo data. */
 (function () {
   "use strict";
@@ -12,12 +12,12 @@
   D.views.forEach(function (v) { viewByKey[v.key] = v; });
   var TYPE_LABEL = { stage: "Lifecycle Stage", sysgroup: "System Group", system: "System", designtype: "Design Type", productscope: "Product Scope", majorunit: "Major Unit", itemsource: "Source",
     discipline: "Discipline", skill: "Skill", trait: "Trait", srcsystem: "Tracker source entry", content: "Topic (example)", lesson: "Lesson Learned", special: "Hub page",
-    prodrecord: "Production record", item: "Part Instance", requirement: "Requirement", verification: "Verification", issue: "Issue" };
+    prodrecord: "Production record", item: "Part Instance", requirement: "Requirement", verification: "Verification", issue: "Issue", finish: "Finish Specification" };
   var IS_PROD = (D.meta || {}).hubKind === "Production";
   var PROD = D.production || {};
   var FRAMEWORK_URL = (D.meta || {}).frameworkUrl || "https://danielwagner69.github.io/engineering-hub/";
   var TYPE_COLOUR = {};
-  Object.keys(TYPE_LABEL).forEach(function (k) { TYPE_COLOUR[k] = "var(--" + k + ", var(--primary))"; });
+  Object.keys(TYPE_LABEL).forEach(function (k) { TYPE_COLOUR[k] = "var(--" + k + ")"; });
   var TAG_FACETS = ["stage", "productscope", "majorunit", "system", "designtype", "itemsource", "discipline", "skill", "trait"]; // stored tags
   var SHOW_FACETS = ["stage", "productscope", "majorunit", "sysgroup", "system", "designtype", "itemsource", "discipline", "skill", "trait"]; // incl. derived
   var LL_FACETS = ["stage", "productscope", "system", "designtype", "discipline"];
@@ -31,7 +31,8 @@
   var demoVers = D.pages.filter(function (p) { return p.type === "verification"; });
   var demoIssues = D.pages.filter(function (p) { return p.type === "issue"; });
   var demoProds = D.pages.filter(function (p) { return p.type === "prodrecord"; });
-  var items = contents.concat(lessons, demoItems, demoReqs, demoVers, demoIssues, demoProds);
+  var demoFinishes = D.pages.filter(function (p) { return p.type === "finish"; });
+  var items = contents.concat(lessons, demoItems, demoReqs, demoVers, demoIssues, demoProds, demoFinishes);
 
   function refsInText(t) { var out = [], re = /\[\[([A-Z]{2,4}-[A-Z0-9]+)\]\]/g, m; while ((m = re.exec(t || ""))) out.push(m[1]); return out; }
   // Knowledge records may carry several options per facet, or "All" (p.all lists the facets tagged with every option).
@@ -88,24 +89,60 @@
         '<img src="' + esc(im.src) + '" alt="' + esc(im.alt) + '" loading="lazy"><span class="fig-zoom" aria-hidden="true">\u2922 Enlarge</span></button><figcaption>' + esc(im.caption) + "</figcaption></figure>";
     }).join("");
   }
+  function formatEffectivity(eff) {
+    if (eff == null || eff === "") return "\u2014";
+    if (typeof eff === "string") return esc(eff);
+    var t = eff.type || "", fr = eff.from || "", to = eff.to || "", notes = eff.notes || "";
+    var label = t === "serial range" ? "Serial" : t === "build standard" ? "Build std" : t === "configuration" ? "Config" : esc(t);
+    var range = fr && to ? (fr === to ? esc(fr) : esc(fr) + "\u2013" + esc(to)) : esc(fr || to || "");
+    return '<span class="eff" title="' + esc(notes || t) + '"><span class="eff-type">' + label + "</span> " + range +
+      (notes ? ' <span class="eff-notes">(' + esc(notes) + ")</span>" : "") + "</span>";
+  }
+  function scopesFromAffects(affects, issuePage) {
+    var scopes = [], seen = {};
+    function add(ps) { if (ps && !seen[ps]) { seen[ps] = 1; scopes.push(ps); } }
+    (affects || []).forEach(function (id) {
+      var o = byId[id]; if (!o) return;
+      (o.tags && o.tags.productscope || []).forEach(add);
+    });
+    // Knowledge Issues may also carry Product Scope tags directly (several or All)
+    if (issuePage && issuePage.tags) (issuePage.tags.productscope || []).forEach(add);
+    return scopes;
+  }
+  function reqCell(ids) {
+    ids = ids || [];
+    if (!ids.length) return '<span class="empty">\u2014</span>';
+    return ids.map(function (id) {
+      var r = byId[id];
+      if (!r) return '<span class="warn">' + esc(id) + "</span>";
+      return '<a href="' + href(id) + '" class="req-link"><span class="mono">' + esc(id) + "</span> " + esc(r.title.length > 48 ? r.title.slice(0, 46) + "\u2026" : r.title) + "</a>";
+    }).join("<br>");
+  }
   function prodLinksSection(p) {
     var what = TYPE_LABEL[p.type].toLowerCase();
     var ids = p.productionLinks || [];
-    var head = '<h2>Production data links</h2>';
-    var thead = '<div class="table-wrap"><table class="list prod-links"><thead><tr><th>Production record</th><th>Type</th><th>Current master</th><th>Version / issue</th><th>Baseline</th><th>Effectivity</th><th>Status</th></tr></thead>';
-    if (!IS_PROD || !ids.length) {
-      return head + '<p class="section-note">Production records linked to this ' + esc(what) + ' appear here in a Production Hub.</p>' +
-        thead + '<tbody><tr><td colspan="7" class="empty-row"><span class="ph-tag">EMPTY</span>No production records linked to this ' + esc(what) + ' in the demo overlay.</td></tr></tbody></table></div>';
+    var head = "<h2>Production data links</h2>";
+    var thead = '<div class="table-wrap"><table class="list prod-links"><thead><tr><th>Production record</th><th>Type</th><th>Requirement</th><th>Current master</th><th>Version / issue</th><th>Baseline</th><th>Effectivity</th><th>Status</th></tr></thead>';
+    if (!(typeof IS_PROD !== "undefined" && IS_PROD) || !ids.length) {
+      // Framework (or empty): show schema headers; empty body
+      if (!(typeof IS_PROD !== "undefined" && IS_PROD)) {
+        return head + '<p class="section-note">In a project\'s Production Hub this table lists the production records linked to this ' + esc(what) +
+          ' (models, calculations, test records), each under configuration control, with the Requirement it supports and structured effectivity. The Framework Hub holds no production data. See ' + link("HUB-FRAMEWORK") + ".</p>" +
+          thead + '<tbody><tr><td colspan="8" class="empty-row"><span class="ph-tag">EMPTY IN FRAMEWORK</span>No production data. A Production Hub would show linked records here with Requirement (ID + title), version, baseline and structured effectivity (serial range, build standard or configuration).</td></tr></tbody></table></div>';
+      }
+      return head + '<p class="section-note">Production records linked to this ' + esc(what) + ".</p>" +
+        thead + '<tbody><tr><td colspan="8" class="empty-row"><span class="ph-tag">EMPTY</span>No production records linked.</td></tr></tbody></table></div>';
     }
     var rows = ids.map(function (id) {
       var r = byId[id]; if (!r) return "";
       var st = r.status === "Verified" || r.status === "Released" ? "Resolved" : r.status === "In work" ? "Open" : "Partlyresolved";
-      return "<tr><td>" + link(id) + ' <span class="mono nid">' + esc(id) + "</span></td><td>" + esc(r.recType) + "</td><td>" + esc(r.master) +
-        '</td><td class="mono">' + esc(r.version) + "</td><td>" + esc(r.baseline) + "</td><td>" + esc(r.effectivity) +
-        '</td><td><span class="status s-' + st + '">' + esc(r.status) + "</span></td></tr>";
+      return "<tr><td>" + link(id) + ' <span class="mono nid">' + esc(id) + "</span></td><td>" + esc(r.recType) + "</td><td>" + reqCell(r.requirements) +
+        "</td><td>" + esc(r.master) + '</td><td class="mono">' + esc(r.version) + "</td><td>" + esc(r.baseline) +
+        "</td><td>" + formatEffectivity(r.effectivity) + '</td><td><span class="status s-' + st + '">' + esc(r.status) + "</span></td></tr>";
     }).join("");
     return head + '<p class="section-note">Demo production records linked to this ' + esc(what) +
-      '. Current master comes from the ' + link("HUB-AUTHORITY") + ". All records are fictional.</p>" + thead + "<tbody>" + rows + "</tbody></table></div>";
+      ". Requirement column links to the Requirement each record supports. Effectivity is structured (type, from, to). Current master from the " +
+      (byId["HUB-AUTHORITY"] ? link("HUB-AUTHORITY") : "authority register") + ". All records are fictional.</p>" + thead + "<tbody>" + rows + "</tbody></table></div>";
   }
   function ph(text) { return '<div class="ph"><span class="ph-tag">PLACEHOLDER</span>' + esc(text) + "</div>"; }
 
@@ -188,8 +225,14 @@
       var cur = p && p.id === state.id && sameCtx(n.ctx || [], state.ctx) ? " current" : "";
       var label = p ? '<span class="dot t-' + p.type + '"></span><a href="' + href(p.id, n.ctx) + '" title="' + esc(p.id + " " + p.title) + '">' + esc(p.title) + "</a>"
                     : '<span class="dot t-' + (n.facet || "trait") + '"></span><a href="' + (n.facet ? "#/f/" + n.facet + "?v=" + state.view : "javascript:void 0") + '" data-toggle="' + esc(n.key) + '">' + esc(n.label) + "</a>";
+      // Derived badge: item/page whose System tags are derived, when shown under a System in a build/view tree
+      var der = "";
+      if (p && p.derived && p.derived.system) {
+        var underSys = (n.ctx || []).some(function (id) { return byId[id] && byId[id].type === "system"; });
+        if (underSys || state.view === "majorunit") der = ' <span class="derived-tag" title="' + esc(p.derived.system) + '">derived</span>';
+      }
       var badge = n.count != null ? '<span class="badge' + (n.count ? " has" : "") + '" title="topic pages and lessons tagged here">' + n.count + "</span>" : "";
-      return '<li><div class="node' + cur + '"><button class="twisty' + (has ? "" : " leaf") + '" data-toggle="' + esc(n.key) + '" aria-label="expand">' + (open ? "\u25BC" : "\u25B6") + "</button>" + label + badge + "</div>" +
+      return '<li><div class="node' + cur + '"><button class="twisty' + (has ? "" : " leaf") + '" data-toggle="' + esc(n.key) + '" aria-label="expand">' + (open ? "\u25BC" : "\u25B6") + "</button>" + label + der + badge + "</div>" +
              (has && open ? renderNodes(n.children) : "") + "</li>";
     }).join("") + "</ul>";
   }
@@ -278,10 +321,9 @@
     var html = '<div class="panel"><h4>Metadata</h4><div class="kv">' + rows + "</div>";
     if (p.type === "system" && p.scopes) rows += '<span class="k">Applies to Product Scopes</span><span><div class="chips">' + p.scopes.map(function (id) { return chip(id); }).join("") + "</div>" + (p.scopesConfirmed ? "" : '<span class="derived-note">Initial proposal, to be confirmed</span>') + "</span>";
     if (p.type === "majorunit") rows += '<span class="k">Build level</span><span>Build Level 1 (Aircraft scope only)</span>';
-    if (p.frameworkPage && IS_PROD) rows += '<span class="k">Origin kind</span><span><span class="kind-pill fw">Framework page</span> mirrored from Framework Hub v' + esc(D.meta.frameworkVersion) + ' · <a href="' + esc(FRAMEWORK_URL) + "#/p/" + encodeURIComponent(p.id) + '" target="_blank" rel="noopener">Open in Framework Hub ↗</a></span>';
+    if (p.frameworkPage && IS_PROD) rows += '<span class="k">Origin kind</span><span><span class="kind-pill fw">Framework page</span> mirrored from Framework Hub v' + esc(D.meta.frameworkVersion) + ' · <a href="' + esc(FRAMEWORK_URL) + "#/p/" + encodeURIComponent(p.id) + '" target="_blank" rel="noopener">Open in Framework Hub \u2197</a></span>';
     if (p.demo) rows += '<span class="k">Demo</span><span><span class="kind-pill demo">Fictional demo data</span></span>';
-    if (p.recordKind === "knowledge") rows += '<span class="k">Tagging rule</span><span>Knowledge record: may carry several options per facet, or All.</span>';
-    if (p.recordKind === "item") rows += '<span class="k">Tagging rule</span><span>Item: exactly one option per facet; home System plus typed supports links.</span>';
+    if (p.recordKind === "knowledge") rows += '<span class="k">Tagging rule</span><span>Knowledge record: may carry several options per facet, or All. Mandatory: at least one Lifecycle Stage and at least one System.</span>';
     if (storedTags(p).length) {
       var direct = SHOW_FACETS.filter(function (k) { return k !== "sysgroup" && tagsOf(p, k).length && !(p.derived && p.derived[k]); });
       var derived = SHOW_FACETS.filter(function (k) { return tagsOf(p, k).length && (k === "sysgroup" || (p.derived && p.derived[k])); });
@@ -531,7 +573,7 @@
 
   function renderHome() {
     if (IS_PROD) return renderProdHome();
-    return '<div class="page-head"><span class="type-pill" style="background:var(--primary)">Home</span><div><h1>Engineering Hub</h1></div></div>';
+    return '<div class="page-head"><h1>Engineering Hub</h1></div>';
   }
   function demoBanner() {
     return '<div class="demo-banner" role="note"><b>Fictional demo data only.</b> ' + esc(D.meta.demoNote) +
@@ -540,16 +582,16 @@
   function renderProdHome() {
     var st = PROD.stats || {}, proj = D.meta.project || {};
     var cards = [
-      ["Mass budget", st.massBudgetKg + " kg", "mass"],
+      ["Mass budget", st.massBudgetKg + " kg", ""],
       ["Current mass", st.massCurrentKg + " kg", st.massMarginKg < 0 ? "bad" : "ok"],
       ["Mass margin", (st.massMarginKg > 0 ? "+" : "") + st.massMarginKg + " kg", st.massMarginKg < 0 ? "bad" : "ok"],
       ["Open issues", st.openIssues, "warn"],
       ["Verification coverage", st.verificationCoveragePct + "%", "ok"],
       ["Baseline", st.baseline, ""],
-      ["Effectivity", st.effectivity, ""],
+      ["Effectivity", "Serial " + ((st.effectivityObj && st.effectivityObj.from) || "001") + "\u2013" + ((st.effectivityObj && st.effectivityObj.to) || "010"), ""],
       ["Requirements", st.requirements, ""],
       ["Part Instances", st.items, ""],
-      ["Production records", st.prodRecords, ""]
+      ["Finish specs", st.finishes || 0, ""]
     ].map(function (c) {
       return '<div class="stat ' + c[2] + '"><div class="n">' + esc(String(c[1])) + '</div><div class="l">' + esc(c[0]) + '</div></div>';
     }).join("");
@@ -559,32 +601,29 @@
       ' \u00b7 framework v' + esc(D.meta.frameworkVersion) + '</div><h1>Engineering Hub <span class="kind-pill demo">Production (Demo)</span></h1>' +
       '<p class="project-name">' + esc(proj.name) + ' <span class="mono">(' + esc(proj.code) + ')</span></p></div></div>' +
       demoBanner() +
-      '<p class="lead">' + esc(proj.tagline) + ' This Production Hub is a versioned instance of Framework Hub v' + esc(D.meta.frameworkVersion) +
-      '. Framework pages are read-only mirrors; project data sits alongside them. The end goal is that this Hub becomes master of the project\'s data, type by type \u2014 see ' + link("HUB-AUTHORITY") + '.</p>' +
+      '<p class="lead">' + esc(proj.tagline) + ' Versioned instance of Framework Hub v' + esc(D.meta.frameworkVersion) +
+      '. See ' + link("HUB-AUTHORITY") + '.</p>' +
       '<div class="stats prod-stats">' + cards + '</div>' +
       '<div class="prod-grid" style="margin-top:16px">' +
       '<section class="prod-panel filled"><h3>Quick links</h3><ul class="linklist">' +
-      quick.map(function (x) { return '<li>' + link(x[0]) + ' \u2013 ' + esc(x[1]) + '</li>'; }).join('') +
-      '</ul></section>' +
+      quick.map(function (x) { return '<li>' + link(x[0]) + ' \u2013 ' + esc(x[1]) + '</li>'; }).join('') + '</ul></section>' +
       '<section class="prod-panel filled"><h3>Filled Systems (production links)</h3><ul class="linklist">' +
-      syss.map(function (x) { return '<li>' + link(x[0]) + ' \u2013 ' + esc(x[1]) + ' (' + (byId[x[0]].productionLinks || []).length + ' records)</li>'; }).join('') +
-      '</ul><p class="section-note">Open a System to see part models, calculations, version, baseline and effectivity.</p></section>' +
+      syss.map(function (x) { return '<li>' + link(x[0]) + ' \u2013 ' + esc(x[1]) + ' (' + ((byId[x[0]] && byId[x[0]].productionLinks) || []).length + ' records)</li>'; }).join('') +
+      '</ul></section>' +
       '<section class="prod-panel filled"><h3>Example Part Instance</h3><p>' + link("PI-0001") +
-      ' \u2013 pipe support bracket with home System Secondary Structure and supports links to Fuel and Hydraulics.</p></section>' +
-      '<section class="prod-panel filled"><h3>Framework</h3><p>Generic pages, facets and templates come from the Framework Hub and are not edited here.</p><p><a href="' + esc(FRAMEWORK_URL) + '" target="_blank" rel="noopener">Open Framework Hub v' + esc(D.meta.frameworkVersion) + ' \u2197</a></p></section>' +
-      '</div>';
+      ' \u2013 bracket with home System Secondary Structure, supports links, and finish specifications.</p></section>' +
+      '<section class="prod-panel filled"><h3>Framework</h3><p><a href="' + esc(FRAMEWORK_URL) + '" target="_blank" rel="noopener">Open Framework Hub v' + esc(D.meta.frameworkVersion) + ' \u2197</a></p></section></div>';
   }
   function renderProdProject(p) {
     var st = PROD.stats || {};
     return head(p) + demoBanner() + '<div class="grid"><div><h2>About this demo project</h2><p>' + esc((D.meta.project || {}).tagline) +
-      '</p><p>Baseline <b>' + esc(st.baseline) + '</b>, effectivity <b>' + esc(st.effectivity) +
-      '</b>. Mass budget ' + esc(String(st.massBudgetKg)) + ' kg; current ' + esc(String(st.massCurrentKg)) + ' kg (margin ' + esc(String(st.massMarginKg)) + ' kg).</p>' +
+      '</p><p>Baseline <b>' + esc(st.baseline) + '</b>. Effectivity structured as serial range ' +
+      esc((st.effectivityObj || {}).from || "001") + '\u2013' + esc((st.effectivityObj || {}).to || "010") + '.</p>' +
       '<h2>How this Production Hub is set up</h2><ul>' +
       '<li>Created from Framework Hub version <b>' + esc(D.meta.frameworkVersion) + '</b>.</li>' +
-      '<li>Framework pages are mirrored read-only and keep their Framework origin; production data links to them by permanent ID.</li>' +
-      '<li>Tailoring is stored as project data (this overlay), not by editing framework pages.</li>' +
+      '<li>Framework pages are mirrored read-only; production data links to them by permanent ID.</li>' +
+      '<li>Tailoring is project data (this overlay), not edits to framework pages.</li>' +
       '<li>Data types move to the Hub one at a time \u2014 see ' + link("HUB-AUTHORITY") + '.</li></ul>' +
-      '<h2>Live model</h2><p>See ' + link("HUB-MODEL") + '.</p>' +
       backlinkSection(p) + '</div><div>' + metaPanel(p) + '</div></div>';
   }
   function renderProdContacts(p) {
@@ -599,18 +638,13 @@
     var rows = (PROD.authority || []).map(function (a) {
       return '<tr><td>' + esc(a.dataType) + '</td><td>' + esc(a.master) + '</td><td class="mono">' + esc(a.moved || '\u2014') + '</td><td>' + esc(a.note) + '</td></tr>';
     }).join('');
-    return head(p) + demoBanner() + '<div class="grid"><div><h2>Authority register</h2><p>End goal: once set up, the Production Hub becomes master of all project data, including configuration and effectivity. Data types move one at a time once verified.</p>' +
+    return head(p) + demoBanner() + '<div class="grid"><div><h2>Authority register</h2><p>Current master of each data type. History and move-evidence are not tracked in this version (gap 4 skipped).</p>' +
       '<table class="list"><thead><tr><th>Data type</th><th>Current master</th><th>Moved to Hub</th><th>Note</th></tr></thead><tbody>' + rows + '</tbody></table>' +
-      '<h2>Escalation bands (demo)</h2><table class="list"><thead><tr><th>Level band</th><th>Forum</th><th>Owner</th></tr></thead><tbody>' +
-      (PROD.escalationBands || []).map(function (b) { return '<tr><td>' + esc(b.band) + '</td><td>' + esc(b.forum) + '</td><td>' + esc(b.owner) + '</td></tr>'; }).join('') +
-      '</tbody></table>' + backlinkSection(p) + '</div><div>' + metaPanel(p) + '</div></div>';
+      backlinkSection(p) + '</div><div>' + metaPanel(p) + '</div></div>';
   }
   function renderProdModel(p) {
     return head(p) + demoBanner() + '<div class="grid"><div><h2>Live model view</h2><p class="section-note">Placeholder only \u2014 no PLM or CAD is connected.</p>' +
-      figures(p.images) +
-      '<div class="cfg-row" style="margin-top:12px"><label>Baseline<select disabled><option>' + esc((PROD.stats || {}).baseline || '\u2014') + '</option></select></label>' +
-      '<label>Effectivity<select disabled><option>' + esc((PROD.stats || {}).effectivity || '\u2014') + '</option></select></label></div>' +
-      backlinkSection(p) + '</div><div>' + metaPanel(p) + '</div></div>';
+      figures(p.images) + backlinkSection(p) + '</div><div>' + metaPanel(p) + '</div></div>';
   }
   function renderProdRequirements(p) {
     return head(p) + demoBanner() + '<p>' + esc(p.summary) + '</p>' +
@@ -623,27 +657,30 @@
   }
   function renderProdItemsIndex(p) {
     return head(p) + demoBanner() + '<p>' + esc(p.summary) + '</p>' +
-      '<table class="list"><thead><tr><th>ID</th><th>Part Instance</th><th>Home System</th><th>Supports</th><th>Major Unit</th></tr></thead><tbody>' +
+      '<table class="list"><thead><tr><th>ID</th><th>Part Instance</th><th>Home System</th><th>Supports</th><th>Finishes</th></tr></thead><tbody>' +
       demoItems.map(function (it) {
         return '<tr><td class="mono">' + esc(it.id) + '</td><td>' + link(it.id) + '</td><td>' + (it.tags.system || []).map(function (id) { return chip(id); }).join(' ') +
           '</td><td>' + ((it.supports && it.supports.system) || []).map(function (id) { return chip(id, 'supports'); }).join(' ') +
-          '</td><td>' + (it.tags.majorunit || []).map(function (id) { return chip(id); }).join(' ') + '</td></tr>';
+          '</td><td>' + (it.finishes || []).map(function (id) { return chip(id); }).join(' ') + '</td></tr>';
       }).join('') + '</tbody></table>' + backlinkSection(p);
   }
   function renderProdIssuesIndex(p) {
-    return head(p) + demoBanner() + '<p>' + esc(p.summary) + ' An Issue\'s level is its highest score on any single impact criterion.</p>' +
-      '<table class="list"><thead><tr><th>ID</th><th>Issue</th><th>Level</th><th>Forum</th><th>Status</th><th>Affects</th></tr></thead><tbody>' +
+    return head(p) + demoBanner() + '<p>' + esc(p.summary) + '</p>' +
+      '<table class="list"><thead><tr><th>ID</th><th>Issue</th><th>Level</th><th>Forum</th><th>Status</th><th>Product Scopes (from linked items)</th></tr></thead><tbody>' +
       demoIssues.map(function (i) {
+        var sc = scopesFromAffects(i.affects, i);
         return '<tr><td class="mono">' + esc(i.id) + '</td><td>' + link(i.id) + '</td><td><b>' + i.level + '</b></td><td>' + esc(i.forum) +
           '</td><td><span class="status s-' + (i.status === 'Closed' ? 'Resolved' : 'Open') + '">' + esc(i.status) + '</span></td><td><div class="chips">' +
-          (i.affects || []).map(function (id) { return chip(id); }).join('') + '</div></td></tr>';
+          (sc.length ? sc.map(function (id) { return chip(id); }).join('') : '<span class="empty">\u2014</span>') + '</div></td></tr>';
       }).join('') + '</tbody></table>' + backlinkSection(p);
   }
   function renderProdFeedback(p) {
-    return head(p) + demoBanner() + '<p>' + esc(p.summary) + ' Use these when improving the Framework Hub.</p>' +
+    return head(p) + demoBanner() + '<p>' + esc(p.summary) + '</p>' +
       (PROD.gaps || []).map(function (g) {
-        return '<div class="issue i-Open" id="' + g.id + '"><div class="kind">' + esc(g.id) + ' \u00b7 Framework gap \u00b7 <span class="status s-Open">Open</span></div><h3>' +
-          esc(g.title) + '</h3><p><b>Where:</b> ' + esc(g.where) + '</p><p>' + esc(g.detail) + '</p></div>';
+        var st = (g.status || 'Open').replace(/\s/g, '');
+        return '<div class="issue i-' + st + '" id="' + g.id + '"><div class="kind">' + esc(g.id) + ' \u00b7 Framework gap \u00b7 <span class="status s-' + st + '">' + esc(g.status || 'Open') +
+          '</span></div><h3>' + esc(g.title) + '</h3><p><b>Where:</b> ' + esc(g.where) + '</p><p>' + esc(g.detail) + '</p>' +
+          (g.resolution ? '<p class="resolution"><b>' + esc(g.status) + ':</b> ' + esc(g.resolution) + '</p>' : '') + '</div>';
       }).join('') + backlinkSection(p);
   }
   function renderItemPage(p) {
@@ -651,6 +688,7 @@
       '<h2>Part Definition</h2><p class="mono">' + esc(p.definition) + ' <span class="section-note">(catalogue id; Part Definitions carry no System)</span></p>' +
       '<h2>Satisfies Requirements</h2><div class="chips">' + (p.satisfies || []).map(function (id) { return chip(id); }).join('') + '</div>' +
       '<h2>Verified by</h2><div class="chips">' + (p.verifiedBy || []).map(function (id) { return chip(id); }).join('') + '</div>' +
+      ((p.finishes || []).length ? '<h2>Finish specifications</h2><div class="chips">' + p.finishes.map(function (id) { return chip(id); }).join('') + '</div><p class="section-note">Coatings, primers and treatments linked to this part (a part may have several).</p>' : '') +
       ((p.prodLinks || []).length ? '<h2>Production records</h2><div class="chips">' + p.prodLinks.map(function (id) { return chip(id); }).join('') + '</div>' : '') +
       backlinkSection(p) + '</div><div>' + metaPanel(p) + verificationPanel(p) + '</div></div>';
   }
@@ -659,7 +697,7 @@
       '<h2>Breakdown</h2><div class="kv"><span class="k">Level</span><span>' + esc(p.reqLevel) + '</span>' +
       (p.parent ? '<span class="k">Parent</span><span>' + chip(p.parent) + '</span>' : '') +
       ((p.children || []).length ? '<span class="k">Decomposes into</span><span><div class="chips">' + p.children.map(function (id) { return chip(id); }).join('') + '</div></span>' : '') + '</div>' +
-      '<h2>Satisfied by (items)</h2>' + ((p.satisfiedBy || []).length ? '<div class="chips">' + p.satisfiedBy.map(function (id) { return chip(id); }).join('') + '</div>' : '<p class="empty">No items linked yet (or this is a parent requirement).</p>') +
+      '<h2>Satisfied by (items)</h2>' + ((p.satisfiedBy || []).length ? '<div class="chips">' + p.satisfiedBy.map(function (id) { return chip(id); }).join('') + '</div>' : '<p class="empty">None at this level.</p>') +
       '<h2>Verified by</h2>' + ((p.verifiedBy || []).length ? '<div class="chips">' + p.verifiedBy.map(function (id) { return chip(id); }).join('') + '</div>' : '<p class="empty">None at this level.</p>') +
       backlinkSection(p) + '</div><div>' + metaPanel(p) + verificationPanel(p) + '</div></div>';
   }
@@ -671,10 +709,11 @@
       backlinkSection(p) + '</div><div>' + metaPanel(p) + verificationPanel(p) + '</div></div>';
   }
   function renderIssuePage(p) {
-    var imp = p.impact || {};
+    var imp = p.impact || {}, sc = scopesFromAffects(p.affects, p);
     return head(p) + demoBanner() + '<div class="grid"><div><h2>Summary</h2><p>' + esc(p.summary) + '</p>' +
       '<div class="kv"><span class="k">Escalation level</span><span><b>' + p.level + '</b> (highest single criterion)</span>' +
       '<span class="k">Forum</span><span>' + esc(p.forum) + '</span><span class="k">Status</span><span>' + esc(p.status) + '</span></div>' +
+      '<h2>Product Scopes</h2>' + (sc.length ? '<div class="chips">' + sc.map(function (id) { return chip(id); }).join('') + '</div><p class="section-note">From the Product Scope tags of linked items and of this Issue. Shown without a separate badge for cross-scope.</p>' : '<p class="empty">No Product Scopes on linked items.</p>') +
       '<h2>Impact scores (demo)</h2><table class="list"><thead><tr><th>Criterion</th><th>Score</th></tr></thead><tbody>' +
       [['Effort', imp.effort],['Cost', imp.cost],['Schedule', imp.schedule],['Safety / certification', imp.safety],['Highest build level affected', imp.buildLevel]].map(function (r) {
         return '<tr><td>' + esc(r[0]) + '</td><td><b>' + r[1] + '</b></td></tr>';
@@ -686,7 +725,16 @@
     return head(p) + demoBanner() + '<div class="grid"><div><h2>Summary</h2><p>' + esc(p.summary) + '</p>' +
       '<div class="kv"><span class="k">Record type</span><span>' + esc(p.recType) + '</span><span class="k">Current master</span><span>' + esc(p.master) +
       '</span><span class="k">Version / issue</span><span class="mono">' + esc(p.version) + '</span><span class="k">Baseline</span><span>' + esc(p.baseline) +
-      '</span><span class="k">Effectivity</span><span>' + esc(p.effectivity) + '</span><span class="k">Status</span><span>' + esc(p.status) + '</span></div>' +
+      '</span><span class="k">Effectivity</span><span>' + formatEffectivity(p.effectivity) + '</span><span class="k">Status</span><span>' + esc(p.status) + '</span></div>' +
+      '<h2>Supports Requirements</h2><div class="chips">' + (p.requirements || []).map(function (id) { return chip(id); }).join('') + '</div>' +
+      backlinkSection(p) + '</div><div>' + metaPanel(p) + verificationPanel(p) + '</div></div>';
+  }
+  function renderFinishPage(p) {
+    return head(p) + demoBanner() + '<div class="grid"><div><h2>Summary</h2><p>' + esc(p.summary) + '</p>' +
+      '<div class="kv"><span class="k">Finish kind</span><span>' + esc(p.finishKind) + '</span><span class="k">Specification</span><span>' + esc(p.spec) +
+      '</span><span class="k">Issue / revision</span><span class="mono">' + esc(p.specIssue) + '</span></div>' +
+      '<h2>Applied to parts</h2><div class="chips">' + (p.appliedTo || []).map(function (id) { return chip(id); }).join('') + '</div>' +
+      '<p class="section-note">Typed finish-applied links. A change to this Finish Specification flags the linked parts for review.</p>' +
       backlinkSection(p) + '</div><div>' + metaPanel(p) + verificationPanel(p) + '</div></div>';
   }
 
@@ -718,6 +766,7 @@
       else if (p.type === "verification") html = renderVerificationPage(p);
       else if (p.type === "issue") html = renderIssuePage(p);
       else if (p.type === "prodrecord") html = renderProdRecordPage(p);
+      else if (p.type === "finish") html = renderFinishPage(p);
       else if (p.type === "special") html = renderInfoPage(p);
       else if (p.type === "lesson") html = renderLessonPage(p);
       else html = renderValuePage(p);
