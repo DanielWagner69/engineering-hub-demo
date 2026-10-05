@@ -2,7 +2,7 @@
 
 A **Demo Production Hub**: a versioned instance of [Framework Hub v0.7](https://danielwagner69.github.io/engineering-hub/) filled with **entirely fictional** project data for the made-up **Sparrow Light Trainer (Demo)** aircraft.
 
-**Live site:** *(set after Pages is enabled)*
+**Live site:** https://danielwagner69.github.io/engineering-hub-demo/
 
 ## Purpose
 - Show what a project’s Production Hub looks like on top of the framework
