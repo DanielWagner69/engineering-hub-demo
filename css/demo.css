@@ -1,0 +1,29 @@
+/* Production (Demo) overlays – brand colours unchanged */
+:root{
+  --prodrecord:#0B6E73; --item:#00405E; --requirement:#2E5A88; --verification:#145E52; --issue:#A8461F;
+}
+.hub-production .brand-kind{color:var(--light)}
+.hub-production .topbar{border-bottom:3px solid var(--accent)}
+.demo-strip{background:var(--amber-50);color:var(--amber-dark);border-bottom:1px solid var(--amber);padding:6px 16px;font-size:.82rem;font-weight:600;text-align:center}
+.demo-strip a{color:var(--primary);font-weight:700}
+.demo-banner{background:var(--amber-50);border:1px solid var(--amber);border-left:5px solid var(--amber);border-radius:4px;padding:10px 14px;margin:0 0 14px;font-size:.9rem}
+.kind-pill.demo{background:var(--amber);color:#1A2B36}
+.kind-pill.fw{background:var(--light);color:var(--primary)}
+.project-name{margin:4px 0 0;font-size:1.05rem;color:var(--muted);font-weight:600}
+.prod-stats{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin:14px 0}
+.prod-stats .stat{background:#fff;border:1px solid var(--line);border-radius:8px;padding:12px;text-align:center}
+.prod-stats .stat .n{font-size:1.25rem;font-weight:700;color:var(--primary)}
+.prod-stats .stat .l{font-size:.75rem;color:var(--muted);margin-top:2px;text-transform:uppercase;letter-spacing:.04em}
+.prod-stats .stat.bad .n{color:var(--coral-dark)}
+.prod-stats .stat.ok .n{color:var(--ok)}
+.prod-stats .stat.warn .n{color:var(--amber-dark)}
+.prod-panel.filled{border-style:solid;border-color:var(--light);background:#fff}
+.t-prodrecord,.t-item,.t-requirement,.t-verification,.t-issue{background:var(--primary)}
+.t-prodrecord{background:var(--prodrecord)} .t-item{background:var(--item)} .t-requirement{background:var(--requirement)}
+.t-verification{background:var(--verification)} .t-issue{background:var(--issue)}
+.c-prodrecord{color:var(--prodrecord);border-color:var(--prodrecord)}
+.c-item{color:var(--item);border-color:var(--item)}
+.c-requirement{color:var(--requirement);border-color:var(--requirement)}
+.c-verification{color:var(--verification);border-color:var(--verification)}
+.c-issue{color:var(--issue);border-color:var(--issue)}
+@media (max-width:900px){.prod-stats{grid-template-columns:repeat(2,minmax(0,1fr))}}

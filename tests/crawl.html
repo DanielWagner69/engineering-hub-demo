@@ -1,0 +1,25 @@
+<!DOCTYPE html><html lang="en-GB"><head><meta charset="utf-8"><title>demo crawl</title></head><body>
+<!-- Runtime link crawl: renders every page and every view, checks every in-page link resolves. Open in a browser or headless --dump-dom. -->
+<form id="ask-form"><input id="search"></form><div id="view-buttons"></div><div id="view-desc"></div><nav id="tree"></nav><nav id="breadcrumbs"></nav><div class="main"><article id="page"></article></div><footer id="footer"></footer>
+<script src="../data/hub.js"></script><script src="../js/ai.js"></script><script src="../js/app.js"></script>
+<script>
+var errs=[], n=0, links=0, routes=["#/home"].concat(EH.data.facets.map(function(f){return "#/f/"+f.key;})).concat(EH.data.pages.map(function(p){return "#/p/"+p.id;}));
+var allJs=[];
+var scopes=[""].concat(EH.data.pages.filter(function(p){return p.type==="productscope";}).map(function(p){return p.id;}));
+EH.data.views.forEach(function(v){ (v.scopeSelectable?scopes:[""]).forEach(function(sc){ routes.forEach(function(r){
+  history.replaceState(null,"",r+"?v="+v.key+(sc?"&s="+sc:"")); EH.render(); n++;
+  var html=document.getElementById("page").innerHTML+document.getElementById("tree").innerHTML+document.getElementById("breadcrumbs").innerHTML;
+  if(/Broken link|Page not found|>missing /.test(html)) errs.push(v.key+" "+r+": broken marker");
+  document.querySelectorAll("a[href^='#/']").forEach(function(a){ links++;
+    var h=a.getAttribute("href"), m=h.match(/^#\/p\/([^?]+)/), f=h.match(/^#\/f\/([a-z]+)/);
+    if(m && !EH.byId[decodeURIComponent(m[1])]) errs.push(r+": link to missing "+m[1]);
+    if(f && !EH.data.facets.some(function(x){return x.key===f[1];})) errs.push(r+": bad facet "+f[1]);
+    var c=h.match(/[?&]c=([^&]+)/); if(c) c[1].split(",").forEach(function(id){ if(!EH.byId[decodeURIComponent(id)]) errs.push(r+": bad ctx "+id); });
+    var s=h.match(/[?&]s=([^&]+)/); if(s && (!EH.byId[s[1]] || EH.byId[s[1]].type!=="productscope")) errs.push(r+": bad scope "+s[1]);
+  });
+});});});
+// every content page must appear in every view's generated tree
+EH.data.views.forEach(function(v){ var found={}; (function walk(ns){ns.forEach(function(x){ if(x.id) found[x.id]=1; walk(x.children||[]);});})(EH.buildTree(v.key,""));
+  EH.data.pages.filter(function(p){return (p.type==="content"||p.type==="lesson") && (!v.fixedScope || (p.tags.productscope||[]).indexOf(v.fixedScope)>=0);}).forEach(function(p){ if(!found[p.id]) errs.push("view "+v.key+" missing "+p.id); }); });
+document.body.innerHTML='<pre id="result">CRAWL '+(errs.length?"FAIL":"PASS")+" renders="+n+" links="+links+" errors="+errs.length+"\n"+errs.slice(0,50).join("\n")+"</pre>";
+</script></body></html>

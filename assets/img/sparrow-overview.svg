@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 360" role="img" aria-labelledby="t d" font-family="Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif">
+  <title id="t">Sparrow Light Trainer (Demo) – schematic overview</title>
+  <desc id="d">Fictional two-seat light trainer schematic. Coloured bands mark Front Fuselage, Centre Fuselage, Rear Fuselage, Wings and Fins. Dashed lines mark Final Assembly connections. Not a real aircraft.</desc>
+  <rect width="920" height="360" fill="#F7FBFB"/>
+  <text x="20" y="28" font-size="16" font-weight="700" fill="#00405E">Sparrow Light Trainer (Demo) – schematic</text>
+  <text x="20" y="48" font-size="12" fill="#526775">Fictional product · Major Units coloured · Final Assembly links dashed · Not real CAD</text>
+  <!-- fuselage -->
+  <g>
+    <rect x="80" y="140" width="140" height="70" rx="28" fill="#00405E"/><!-- front -->
+    <rect x="220" y="140" width="200" height="70" rx="8" fill="#46C1BE"/><!-- centre -->
+    <rect x="420" y="140" width="180" height="70" rx="8" fill="#0A5577"/><!-- rear -->
+    <path d="M80 175 C40 175 40 175 55 160 C70 145 80 150 80 155 Z" fill="#00405E"/><!-- nose -->
+    <ellipse cx="600" cy="175" rx="28" ry="20" fill="#0A5577"/><!-- tail cone tip -->
+  </g>
+  <!-- canopy -->
+  <path d="M150 140 Q200 95 270 140" fill="#9EDEDC" stroke="#00405E" stroke-width="2"/>
+  <!-- wing -->
+  <rect x="250" y="120" width="140" height="22" rx="4" fill="#1D8C89"/>
+  <rect x="250" y="208" width="140" height="22" rx="4" fill="#1D8C89"/>
+  <!-- fin -->
+  <path d="M560 140 L600 70 L620 70 L600 140 Z" fill="#2E5A88"/>
+  <path d="M560 210 L600 280 L620 280 L600 210 Z" fill="#2E5A88" opacity="0.35"/>
+  <!-- final assembly dashed links -->
+  <g stroke="#00405E" stroke-width="2" stroke-dasharray="6 4" fill="none">
+    <path d="M300 131 L300 100"/><path d="M300 230 L300 260"/>
+    <path d="M500 155 L700 100"/><path d="M500 195 L700 250"/>
+  </g>
+  <circle cx="700" cy="100" r="8" fill="#FFFFFF" stroke="#00405E" stroke-width="2"/>
+  <circle cx="700" cy="250" r="8" fill="#FFFFFF" stroke="#00405E" stroke-width="2"/>
+  <text x="720" y="104" font-size="12" fill="#00405E">Joining loom (Final Assembly)</text>
+  <text x="720" y="254" font-size="12" fill="#00405E">Joining pipe (Final Assembly)</text>
+  <!-- legend -->
+  <g font-size="12" font-weight="600">
+    <rect x="80" y="300" width="14" height="14" fill="#00405E"/><text x="100" y="312" fill="#00405E">Front Fuselage</text>
+    <rect x="220" y="300" width="14" height="14" fill="#46C1BE"/><text x="240" y="312" fill="#00405E">Centre Fuselage</text>
+    <rect x="370" y="300" width="14" height="14" fill="#0A5577"/><text x="390" y="312" fill="#00405E">Rear Fuselage</text>
+    <rect x="510" y="300" width="14" height="14" fill="#1D8C89"/><text x="530" y="312" fill="#00405E">Wings</text>
+    <rect x="600" y="300" width="14" height="14" fill="#2E5A88"/><text x="620" y="312" fill="#00405E">Fins</text>
+    <line x1="680" y1="307" x2="710" y2="307" stroke="#00405E" stroke-width="2" stroke-dasharray="5 3"/>
+    <text x="718" y="312" fill="#00405E">Final Assembly</text>
+  </g>
+  <text x="20" y="348" font-size="11" fill="#526775">DEMO ONLY – not a real aircraft, programme or CAD model.</text>
+</svg>
