@@ -516,5 +516,95 @@
   "change_records": [
    "CR-D-0000304"
   ]
+ },
+ {
+  "id": "FR-D-0000036",
+  "type": "FDPS Revision",
+  "schema_version": "6.0",
+  "title": "D5012001-801 rev A",
+  "status": "Released",
+  "owner": "user:a.quinn",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-12-01T09:00:00Z",
+  "created_by": "user:a.quinn",
+  "modified_at": "2025-12-01T09:00:00Z",
+  "modified_by": "user:a.quinn",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:a.quinn",
+  "verified_at": "2025-12-01T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "x_phase3": true,
+  "fdps": "FD-D-0000009",
+  "revision": "A",
+  "population": [
+   {
+    "instance": "PI-D-0005001@1",
+    "irl": [
+     "IRL-D-0009201@1"
+    ]
+   },
+   {
+    "instance": "PI-D-0005002@1",
+    "irl": [
+     "IRL-D-0009202@1"
+    ]
+   },
+   {
+    "instance": "PI-D-0005003@1",
+    "irl": [
+     "IRL-D-0009203@1"
+    ]
+   },
+   {
+    "instance": "PI-D-0005004@1",
+    "irl": [
+     "IRL-D-0009204@1"
+    ]
+   },
+   {
+    "instance": "PI-D-0005005@1",
+    "irl": [
+     "IRL-D-0009205@1"
+    ]
+   }
+  ],
+  "effectivity": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 1,
+   "to": 999
+  },
+  "passed_reviews": [
+   "DR-D-0000005",
+   "DR-D-0000006",
+   "DR-D-0000007"
+  ],
+  "baselines": [
+   "BL-D-0000008",
+   "BL-D-0000009",
+   "BL-D-0000010",
+   "BL-D-0000011"
+  ],
+  "release_assessment": {
+   "assessed_by": "user:a.quinn",
+   "at": "2026-03-16T09:00:00Z",
+   "against_snapshot": "RS-D-0000007",
+   "change_records": [],
+   "substantial": false,
+   "rationale": "No change since RS-D-0000007."
+  },
+  "gate_confirmation": {
+   "confirmed_by": "Hub",
+   "at": "2026-03-17T09:00:00Z",
+   "open_actions": [],
+   "non_compliant_statements": []
+  },
+  "gate_attempts": [],
+  "released_at": "2026-03-17T09:00:00Z",
+  "released_by": "user:a.quinn",
+  "links": []
  }
 ]

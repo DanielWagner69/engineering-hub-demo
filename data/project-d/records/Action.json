@@ -223,5 +223,51 @@
    "kind": "Condition of agreement",
    "ref": "DR-D-0000004#Propulsion"
   }
+ },
+ {
+  "id": "ACT-D-0000106",
+  "type": "Action",
+  "schema_version": "6.0",
+  "title": "Confirm frame 15A boss edge distance for the mid-span clamp bolt",
+  "status": "Closed",
+  "owner": "user:a.novak",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-02-03T09:00:00Z",
+  "created_by": "user:a.novak",
+  "modified_at": "2026-02-03T09:00:00Z",
+  "modified_by": "user:a.novak",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:a.novak",
+  "verified_at": "2026-02-03T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "x_phase3": true,
+  "description": "Confirm edge distance and hole fatigue allowance at the frame 15A boss that takes the fuel feed mid-span clamp bolt.",
+  "raised_by": "user:a.novak",
+  "due_date": "2026-02-24",
+  "closure": {
+   "evidence": "VER-D-0000321 covers the boss hole (fatigue scatter life 4.1).",
+   "closed_by": "user:h.grant",
+   "closed_at": "2026-02-24T09:00:00Z",
+   "accepted_by": "user:a.novak",
+   "accepted_at": "2026-02-25T09:00:00Z"
+  },
+  "links": [
+   {
+    "link_type": "Raised at",
+    "target": "DR-D-0000006"
+   },
+   {
+    "link_type": "Tagged to",
+    "target": "FD-D-0000009"
+   }
+  ],
+  "source": {
+   "kind": "Review",
+   "ref": "DR-D-0000006"
+  }
  }
 ]

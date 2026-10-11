@@ -598,5 +598,93 @@
    "rejected": []
   },
   "design_type": "VR-DTY-0002"
+ },
+ {
+  "id": "PD-D-0000121",
+  "type": "Part Definition",
+  "schema_version": "6.0",
+  "title": "Frame 15, centre fuselage",
+  "status": "Active",
+  "owner": "user:h.grant",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-20T09:00:00Z",
+  "created_by": "user:h.grant",
+  "modified_at": "2025-11-20T09:00:00Z",
+  "modified_by": "user:h.grant",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:h.grant",
+  "verified_at": "2025-11-20T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "part_number": "D5012003-001",
+  "numbering_scheme": "VR-NUMSCH-0001",
+  "source": "VR-SRC-0001",
+  "safety_classification": "VR-SAF-0002",
+  "safety_assigned_by": "user:h.patel",
+  "lifecycle_stage": "VR-LCS-0006",
+  "item_properties": [
+   "VR-PROP-0001"
+  ],
+  "links": [],
+  "stem": "D5012003",
+  "dash": "001",
+  "handedness": "Unhanded",
+  "number_proposal": {
+   "proposed_number": "D5012003-001",
+   "proposed_by": "software",
+   "proposed_at": "2025-12-01T09:00:00Z",
+   "accepted_by": "user:h.grant",
+   "accepted_at": "2025-12-01T09:00:00Z",
+   "rejected": []
+  },
+  "design_type": "VR-DTY-0002",
+  "x_phase3": true
+ },
+ {
+  "id": "PD-D-0000122",
+  "type": "Part Definition",
+  "schema_version": "6.0",
+  "title": "Frame 15A, centre fuselage",
+  "status": "Active",
+  "owner": "user:h.grant",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-20T09:00:00Z",
+  "created_by": "user:h.grant",
+  "modified_at": "2025-11-20T09:00:00Z",
+  "modified_by": "user:h.grant",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:h.grant",
+  "verified_at": "2025-11-20T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "part_number": "D5012004-001",
+  "numbering_scheme": "VR-NUMSCH-0001",
+  "source": "VR-SRC-0001",
+  "safety_classification": "VR-SAF-0002",
+  "safety_assigned_by": "user:h.patel",
+  "lifecycle_stage": "VR-LCS-0006",
+  "item_properties": [
+   "VR-PROP-0001"
+  ],
+  "links": [],
+  "stem": "D5012004",
+  "dash": "001",
+  "handedness": "Unhanded",
+  "number_proposal": {
+   "proposed_number": "D5012004-001",
+   "proposed_by": "software",
+   "proposed_at": "2025-12-01T09:00:00Z",
+   "accepted_by": "user:h.grant",
+   "accepted_at": "2025-12-01T09:00:00Z",
+   "rejected": []
+  },
+  "design_type": "VR-DTY-0002",
+  "x_phase3": true
  }
 ]

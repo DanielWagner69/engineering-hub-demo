@@ -1048,5 +1048,220 @@
     }
    }
   ]
+ },
+ {
+  "id": "VER-D-0000320",
+  "type": "Verification",
+  "schema_version": "6.0",
+  "title": "Frames 14 to 15A static strength analysis",
+  "status": "Approved",
+  "owner": "user:a.novak",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-02-24T09:00:00Z",
+  "created_by": "user:a.novak",
+  "modified_at": "2026-02-24T09:00:00Z",
+  "modified_by": "user:a.novak",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:a.novak",
+  "verified_at": "2026-02-24T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "x_phase3": true,
+  "method": "VR-VMETH-0003",
+  "summary": "Finite element analysis of frames 14, 15 and 15A at ultimate load cases.",
+  "results": [
+   {
+    "quantity_name": "reserve_factor_ultimate",
+    "value": {
+     "value": 1.22,
+     "unit": "1"
+    },
+    "margin": {
+     "value": 0.22,
+     "unit": "1"
+    }
+   }
+  ],
+  "outcome": "Pass",
+  "basis_revisions": [
+   "PR-D-0000220",
+   "PR-D-0000221",
+   "PR-D-0000222"
+  ],
+  "effectivity": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 1,
+   "to": 999
+  },
+  "discipline": "VR-DISC-0022",
+  "lifecycle_stage": "VR-LCS-0006",
+  "document": {
+   "source_ref": "CALC-D-0201",
+   "issue": 1
+  },
+  "links": [
+   {
+    "link_type": "Demonstrates",
+    "target": "REQ-D-0000147"
+   }
+  ]
+ },
+ {
+  "id": "VER-D-0000321",
+  "type": "Verification",
+  "schema_version": "6.0",
+  "title": "Frames 14 to 15A fatigue analysis",
+  "status": "Approved",
+  "owner": "user:a.novak",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-02-24T09:00:00Z",
+  "created_by": "user:a.novak",
+  "modified_at": "2026-02-24T09:00:00Z",
+  "modified_by": "user:a.novak",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:a.novak",
+  "verified_at": "2026-02-24T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "x_phase3": true,
+  "method": "VR-VMETH-0003",
+  "summary": "Fatigue analysis at frame cut-outs and fastener holes, including the bracket and clamp boss holes.",
+  "results": [
+   {
+    "quantity_name": "fatigue_scatter_life",
+    "value": {
+     "value": 4.1,
+     "unit": "1"
+    },
+    "margin": {
+     "value": 1.1,
+     "unit": "1"
+    }
+   }
+  ],
+  "outcome": "Pass",
+  "basis_revisions": [
+   "PR-D-0000220",
+   "PR-D-0000221",
+   "PR-D-0000222"
+  ],
+  "effectivity": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 1,
+   "to": 999
+  },
+  "discipline": "VR-DISC-0022",
+  "lifecycle_stage": "VR-LCS-0006",
+  "document": {
+   "source_ref": "CALC-D-0202",
+   "issue": 1
+  },
+  "links": [
+   {
+    "link_type": "Demonstrates",
+    "target": "REQ-D-0000148"
+   }
+  ]
+ },
+ {
+  "id": "VER-D-0000322",
+  "type": "Verification",
+  "schema_version": "6.0",
+  "title": "Frames 14 to 15A design inspection against TSM-MET",
+  "status": "Approved",
+  "owner": "user:a.novak",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-02-24T09:00:00Z",
+  "created_by": "user:a.novak",
+  "modified_at": "2026-02-24T09:00:00Z",
+  "modified_by": "user:a.novak",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:a.novak",
+  "verified_at": "2026-02-24T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "x_phase3": true,
+  "method": "VR-VMETH-0008",
+  "summary": "Inspection of machined frame definitions for internal corner radii.",
+  "results": [],
+  "outcome": "Pass",
+  "basis_revisions": [
+   "PR-D-0000220",
+   "PR-D-0000221",
+   "PR-D-0000222"
+  ],
+  "effectivity": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 1,
+   "to": 999
+  },
+  "discipline": "VR-DISC-0022",
+  "lifecycle_stage": "VR-LCS-0006",
+  "document": {
+   "source_ref": "INSP-D-0203",
+   "issue": 1
+  },
+  "links": [
+   {
+    "link_type": "Demonstrates",
+    "target": "TSM-D-0000063"
+   }
+  ]
+ },
+ {
+  "id": "VER-D-0000323",
+  "type": "Verification",
+  "schema_version": "6.0",
+  "title": "Frame 14 bracket fastener installation inspection against TSM-STD",
+  "status": "Approved",
+  "owner": "user:a.novak",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-02-24T09:00:00Z",
+  "created_by": "user:a.novak",
+  "modified_at": "2026-02-24T09:00:00Z",
+  "modified_by": "user:a.novak",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:a.novak",
+  "verified_at": "2026-02-24T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "x_phase3": true,
+  "method": "VR-VMETH-0008",
+  "summary": "Bolt protrusion on the valve bracket fasteners at frame 14.",
+  "results": [],
+  "outcome": "Pass",
+  "basis_revisions": [
+   "PR-D-0000211",
+   "PR-D-0000212"
+  ],
+  "effectivity": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 1,
+   "to": 999
+  },
+  "discipline": "VR-DISC-0021",
+  "lifecycle_stage": "VR-LCS-0006",
+  "document": {
+   "source_ref": "INSP-D-0204",
+   "issue": 1
+  },
+  "links": [
+   {
+    "link_type": "Demonstrates",
+    "target": "TSM-D-0000066"
+   }
+  ]
  }
 ]

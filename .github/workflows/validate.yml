@@ -1,5 +1,5 @@
 name: Validate (build gate)
-# Runs the checks on every push and pull request. Validation only: it never builds or publishes the site.
+# Runs the checks on every push and pull request. Validation only: the site is generated only to check it (links, contrast, purity, docs/ up to date); it never publishes.
 on:
   push:
   pull_request:
@@ -15,4 +15,4 @@ jobs:
           python-version: "3.12"
       - name: Gate and negative tests
         run: |
-          if [ -f Makefile ] && [ -d vendor ] && [ -d data/project-d ]; then make check; else echo "No v1.0 data layer on this branch (v0.8 layout); nothing to check."; fi
+          if [ -f Makefile ] && [ -d vendor ] && [ -d data/project-d ]; then make check && make site-check; else echo "No v1.0 data layer on this branch (v0.8 layout); nothing to check."; fi

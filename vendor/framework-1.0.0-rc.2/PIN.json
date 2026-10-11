@@ -1,0 +1,3 @@
+{"framework_version": "1.0.0-rc.2", "source_repo": "DanielWagner69/engineering-hub", "source_branch": "rebuild",
+ "source_commit": "9f48d7b704171d09268fe43060ad97eca5c3c914", "bundle": "framework-1.0.0-rc.2.json", "content_hash": "sha256:faa518a71d167af30c61708649e2ca70429865bac0ccb93fe5bec9cef33585e4",
+ "note": "Release candidate pinned for the rebuild (Phase 3). Replaced by the released 1.0.0 bundle at Phase 5; adopting a newer framework version is a recorded change (plan 2.2)."}

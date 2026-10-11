@@ -9,7 +9,12 @@ def _norm(x):
 def run(store, cfg, info):
     exp = json.load(open(os.path.join(HERE, "expected_info_we4.json"))); res = []
     got = json.loads(json.dumps(info, default=str))
-    diff = [k for k in exp if _norm(exp[k]) != _norm(got.get(k))]
+    # Phase 3 adds FD-D-0000009 records: the global IRL table keeps every WE4 row unchanged plus the new
+    # frame rows, and the global frozen-reference count grows; every other key must be identical.
+    wi = {r[0] for r in exp["irl_table"]}
+    if "irl_table" in got: got["irl_table"] = [r for r in got["irl_table"] if r[0] in wi]
+    diff = [k for k in exp if k != "frozen_refs" and _norm(exp[k]) != _norm(got.get(k))]
+    if got.get("frozen_refs", 0) < exp["frozen_refs"]: diff.append("frozen_refs")
     res.append(("X", "Inference outputs equal those recorded for Worked Example v4 (interfaces, configuration, compliance bases, fasteners, release checks)", not diff, diff))
     n = cfg["expect"]["interfacing_systems"]["FD-D-0000017"]
     res.append(("X", "FD-D-0000017 inherits %d interfacing Systems after breaks (WE4 section 5)" % n, got["iface"][0] == n, got["iface"]))

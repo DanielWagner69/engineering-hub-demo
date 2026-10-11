@@ -494,5 +494,180 @@
     "target": "VR-SYS-0013"
    }
   ]
+ },
+ {
+  "id": "PG-D-0000301",
+  "type": "Hub Page",
+  "schema_version": "6.0",
+  "title": "Design Team: Structures",
+  "status": "Published",
+  "owner": "user:a.quinn",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-10T09:00:00Z",
+  "created_by": "user:a.quinn",
+  "modified_at": "2025-11-10T09:00:00Z",
+  "modified_by": "user:a.quinn",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:a.quinn",
+  "verified_at": "2025-11-10T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "x_phase3": true,
+  "page_type": "VR-PAGETYPE-0004",
+  "framework_node": "VR-DT-0001",
+  "template": "TPL-0004",
+  "body": {
+   "blocks": [
+    {
+     "text": "Design Team: Structures (Project D tailoring of the framework template, 6C.6)."
+    }
+   ]
+  },
+  "lifecycle_stage": [
+   "ALL"
+  ],
+  "discipline": [
+   "ALL"
+  ],
+  "last_reviewed_at": "2025-11-10",
+  "applicable_design_types": [
+   "VR-DTY-0002",
+   "VR-DTY-0003",
+   "VR-DTY-0004",
+   "VR-DTY-0005",
+   "VR-DTY-0012"
+  ],
+  "applicable_disciplines": [
+   "VR-DISC-0022"
+  ]
+ },
+ {
+  "id": "PG-D-0000311",
+  "type": "Hub Page",
+  "schema_version": "6.0",
+  "title": "Design Sub-team: Centre Structure",
+  "status": "Published",
+  "owner": "user:a.quinn",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-10T09:00:00Z",
+  "created_by": "user:a.quinn",
+  "modified_at": "2025-11-10T09:00:00Z",
+  "modified_by": "user:a.quinn",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:a.quinn",
+  "verified_at": "2025-11-10T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "x_phase3": true,
+  "page_type": "VR-PAGETYPE-0005",
+  "framework_node": "VR-DST-0002",
+  "template": "TPL-0005",
+  "body": {
+   "blocks": [
+    {
+     "text": "Design Sub-team: Centre Structure (Project D tailoring of the framework template, 6C.6)."
+    }
+   ]
+  },
+  "lifecycle_stage": [
+   "VR-LCS-0004",
+   "VR-LCS-0005",
+   "VR-LCS-0006"
+  ],
+  "discipline": [
+   "ALL"
+  ],
+  "last_reviewed_at": "2025-11-10",
+  "stage_sections": [
+   {
+    "stage": "VR-STAGE-0001",
+    "checklist_items": [
+     {
+      "discipline": "VR-DISC-0022",
+      "item_id": "SA-A-01"
+     },
+     {
+      "discipline": "VR-DISC-0023",
+      "item_id": "SLI-A-01"
+     },
+     {
+      "discipline": "VR-DISC-0025",
+      "item_id": "WGT-A-01"
+     }
+    ],
+    "sign_off_disciplines": [
+     "VR-DISC-0006",
+     "VR-DISC-0019",
+     "VR-DISC-0022",
+     "VR-DISC-0025",
+     "VR-DISC-0003"
+    ],
+    "type_specific_entry_criteria": []
+   },
+   {
+    "stage": "VR-STAGE-0002",
+    "checklist_items": [
+     {
+      "discipline": "VR-DISC-0022",
+      "item_id": "SA-B-01"
+     },
+     {
+      "discipline": "VR-DISC-0015",
+      "item_id": "MP-B-01"
+     },
+     {
+      "discipline": "VR-DISC-0001",
+      "item_id": "AIT-B-01"
+     }
+    ],
+    "sign_off_disciplines": [
+     "VR-DISC-0006",
+     "VR-DISC-0019",
+     "VR-DISC-0022",
+     "VR-DISC-0015",
+     "VR-DISC-0014",
+     "VR-DISC-0025",
+     "VR-DISC-0003"
+    ],
+    "type_specific_entry_criteria": []
+   },
+   {
+    "stage": "VR-STAGE-0003",
+    "checklist_items": [
+     {
+      "discipline": "VR-DISC-0022",
+      "item_id": "SA-C-01"
+     },
+     {
+      "discipline": "VR-DISC-0014",
+      "item_id": "MFG-C-01"
+     },
+     {
+      "discipline": "VR-DISC-0021",
+      "item_id": "SPS-C-01"
+     }
+    ],
+    "sign_off_disciplines": [
+     "VR-DISC-0006",
+     "VR-DISC-0019",
+     "VR-DISC-0022",
+     "VR-DISC-0015",
+     "VR-DISC-0014",
+     "VR-DISC-0018",
+     "VR-DISC-0021",
+     "VR-DISC-0005",
+     "VR-DISC-0003",
+     "VR-DISC-0013",
+     "VR-DISC-0025"
+    ],
+    "type_specific_entry_criteria": []
+   }
+  ]
  }
 ]

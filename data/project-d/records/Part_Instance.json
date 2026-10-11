@@ -1183,5 +1183,89 @@
     "target": "PI-D-0004105"
    }
   ]
+ },
+ {
+  "id": "PI-D-0005004",
+  "type": "Part Instance",
+  "schema_version": "6.0",
+  "title": "Frame 15, centre fuselage",
+  "status": "Active",
+  "owner": "user:h.grant",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-25T09:00:00Z",
+  "created_by": "user:h.grant",
+  "modified_at": "2025-11-25T09:00:00Z",
+  "modified_by": "user:h.grant",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:h.grant",
+  "verified_at": "2025-11-25T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "x_phase3": true,
+  "position_name": "Frame 15, centre fuselage",
+  "existence": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 1,
+   "to": 999
+  },
+  "links": [
+   {
+    "link_type": "Instance of",
+    "target": "PD-D-0000121"
+   },
+   {
+    "link_type": "Located at",
+    "target": "VR-BS-0005"
+   },
+   {
+    "link_type": "Homed in",
+    "target": "VR-SUB-0001"
+   }
+  ]
+ },
+ {
+  "id": "PI-D-0005005",
+  "type": "Part Instance",
+  "schema_version": "6.0",
+  "title": "Frame 15A, centre fuselage",
+  "status": "Active",
+  "owner": "user:h.grant",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-25T09:00:00Z",
+  "created_by": "user:h.grant",
+  "modified_at": "2025-11-25T09:00:00Z",
+  "modified_by": "user:h.grant",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:h.grant",
+  "verified_at": "2025-11-25T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "x_phase3": true,
+  "position_name": "Frame 15A, centre fuselage",
+  "existence": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 1,
+   "to": 999
+  },
+  "links": [
+   {
+    "link_type": "Instance of",
+    "target": "PD-D-0000122"
+   },
+   {
+    "link_type": "Located at",
+    "target": "VR-BS-0005"
+   },
+   {
+    "link_type": "Homed in",
+    "target": "VR-SUB-0001"
+   }
+  ]
  }
 ]
