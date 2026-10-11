@@ -31,6 +31,7 @@ def main():
     o = a.parse_args()
     try: res, info, _ = gate(o.framework, o.project, o.schema, o.repo)
     except load.LoadError as e: print("LOAD FAILED:", e); sys.exit(2)
+    if o.out: os.makedirs(os.path.dirname(os.path.abspath(o.out)), exist_ok=True)
     if o.out: json.dump({"results": res, "info": info}, open(o.out, "w"), indent=1, default=str)
     by = {}
     for s, n, ok, d in res: by.setdefault(s, [0, 0]); by[s][0] += ok; by[s][1] += 1

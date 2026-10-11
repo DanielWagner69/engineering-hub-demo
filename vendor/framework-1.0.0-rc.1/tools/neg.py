@@ -23,6 +23,7 @@ def main():
         out.append((label, fails))
     for l, f in out: print(("CAUGHT" if f else "MISSED"), l, "->", f)
     n = sum(1 for _, f in out if f); print(n, "/", len(out), "caught")
+    if o.out: os.makedirs(os.path.dirname(os.path.abspath(o.out)), exist_ok=True)
     if o.out: json.dump(out, open(o.out, "w"), indent=1)
     sys.exit(0 if n == len(out) else 1)
 if __name__ == "__main__": main()
