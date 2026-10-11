@@ -1,0 +1,50 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "types/Review_Snapshot.schema.json",
+ "title": "Review Snapshot (schema v6 3.x)",
+ "allOf": [
+  {
+   "$ref": "../common.schema.json"
+  }
+ ],
+ "type": "object",
+ "properties": {
+  "design_review": {
+   "type": "string",
+   "description": "ref(Design Review); card. 1; "
+  },
+  "taken_at": {
+   "type": "string",
+   "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(:\\d{2})?Z$",
+   "description": "datetime; card. 1; "
+  },
+  "content": {
+   "description": "json; card. 1; {fdps_revisions, instances, revision links, owned links, interfacing Systems, interface breaks, FDPS interfaces, interface agreements, compliance statements}, all as id@record_version"
+  },
+  "baseline": {
+   "type": "string",
+   "description": "ref(Baseline); card. 1; "
+  },
+  "content_hash": {
+   "type": "string",
+   "description": "string; card. 1; "
+  },
+  "status": {
+   "type": "string",
+   "x-stored-as": "label of a framework-fixed register entry",
+   "description": "reg; card. 1; Frozen"
+  },
+  "type": {
+   "const": "Review Snapshot"
+  }
+ },
+ "required": [
+  "design_review",
+  "taken_at",
+  "content",
+  "baseline",
+  "content_hash",
+  "status"
+ ],
+ "x-owned-links": []
+}

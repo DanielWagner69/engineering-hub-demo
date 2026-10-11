@@ -1,0 +1,109 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "types/Assembly_Definition.schema.json",
+ "title": "Assembly Definition (schema v6 3.x)",
+ "allOf": [
+  {
+   "$ref": "../common.schema.json"
+  }
+ ],
+ "type": "object",
+ "properties": {
+  "part_number": {
+   "type": "string",
+   "description": "string; card. 1; Same rules as Part Definition"
+  },
+  "numbering_scheme": {
+   "anyOf": [
+    {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+     }
+    },
+    {
+     "type": "string",
+     "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+    }
+   ],
+   "description": "reg(NUMSCH); card. 1; Normally Meaningful stem"
+  },
+  "stem": {
+   "type": "string",
+   "description": "string; card. 1*; dash in the assembly range -401 to -799"
+  },
+  "dash": {
+   "type": "string",
+   "description": "string; card. 1*; dash in the assembly range -401 to -799"
+  },
+  "handedness": {
+   "type": "string",
+   "x-stored-as": "label of a framework-fixed register entry",
+   "description": "reg; card. 1*; dash in the assembly range -401 to -799"
+  },
+  "number_proposal": {
+   "description": "json; card. 1; As for Part Definition"
+  },
+  "safety_classification": {
+   "anyOf": [
+    {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+     }
+    },
+    {
+     "type": "string",
+     "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+    }
+   ],
+   "description": "reg(SAF); card. 1; "
+  },
+  "lifecycle_stage": {
+   "anyOf": [
+    {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+     }
+    },
+    {
+     "type": "string",
+     "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+    }
+   ],
+   "description": "reg(LCS); card. 1; "
+  },
+  "off_aircraft_statement": {
+   "type": "string",
+   "description": "text; card. 1; "
+  },
+  "status": {
+   "type": "string",
+   "x-stored-as": "label of a framework-fixed register entry",
+   "description": "reg; card. 1; Active; Obsolete",
+   "enum": [
+    "Active",
+    "Obsolete"
+   ]
+  },
+  "type": {
+   "const": "Assembly Definition"
+  }
+ },
+ "required": [
+  "part_number",
+  "numbering_scheme",
+  "number_proposal",
+  "safety_classification",
+  "lifecycle_stage",
+  "off_aircraft_statement",
+  "status"
+ ],
+ "x-owned-links": [
+  "Comprises"
+ ]
+}

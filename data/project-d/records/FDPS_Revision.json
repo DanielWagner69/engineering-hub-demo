@@ -1,0 +1,610 @@
+[
+ {
+  "id": "FR-D-0000033",
+  "type": "FDPS Revision",
+  "schema_version": "6.0",
+  "title": "D2822001-801 rev A",
+  "status": "Released",
+  "owner": "user:r.okafor",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-12-01T09:00:00Z",
+  "created_by": "user:r.okafor",
+  "modified_at": "2026-08-18T09:00:00Z",
+  "modified_by": "user:r.okafor",
+  "record_version": 2,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:r.okafor",
+  "verified_at": "2025-12-01T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "fdps": "FD-D-0000017",
+  "revision": "A",
+  "population": [
+   {
+    "instance": "PI-D-0004101@1",
+    "irl": [
+     "IRL-D-0009101@1"
+    ]
+   },
+   {
+    "instance": "PI-D-0004102@1",
+    "irl": [
+     "IRL-D-0009103@1"
+    ]
+   },
+   {
+    "instance": "PI-D-0004103@1",
+    "irl": [
+     "IRL-D-0009104@1"
+    ]
+   },
+   {
+    "instance": "PI-D-0004105@1",
+    "irl": [
+     "IRL-D-0009106@1"
+    ]
+   },
+   {
+    "instance": "PI-D-0004106@1",
+    "irl": [
+     "IRL-D-0009107@1"
+    ]
+   },
+   {
+    "instance": "PI-D-0004107@1",
+    "irl": [
+     "IRL-D-0009108@1"
+    ]
+   },
+   {
+    "instance": "PI-D-0004108@2",
+    "irl": [
+     "IRL-D-0009109@1"
+    ]
+   },
+   {
+    "instance": "PI-D-0004109@1",
+    "irl": [
+     "IRL-D-0009110@1"
+    ]
+   },
+   {
+    "instance": "PI-D-0004110@2",
+    "irl": [
+     "IRL-D-0009111@1"
+    ]
+   },
+   {
+    "instance": "PI-D-0004111@1",
+    "irl": [
+     "IRL-D-0009112@1"
+    ]
+   },
+   {
+    "instance": "PI-D-0004113@1",
+    "irl": [
+     "IRL-D-0009114@1"
+    ]
+   },
+   {
+    "instance": "PI-D-0004114@1",
+    "irl": [
+     "IRL-D-0009115@1"
+    ]
+   },
+   {
+    "instance": "AI-D-0000210@1",
+    "irl": [
+     "IRL-D-0009118@1"
+    ]
+   }
+  ],
+  "effectivity": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 1,
+   "to": 2
+  },
+  "passed_reviews": [
+   "DR-D-0000001",
+   "DR-D-0000002",
+   "DR-D-0000003"
+  ],
+  "baselines": [
+   "BL-D-0000001",
+   "BL-D-0000002",
+   "BL-D-0000003",
+   "BL-D-0000004"
+  ],
+  "release_assessment": {
+   "assessed_by": "user:k.osei",
+   "at": "2026-06-01T09:00:00Z",
+   "against_snapshot": "RS-D-0000003",
+   "change_records": [],
+   "substantial": false,
+   "rationale": "No change since RS-D-0000003 other than the closure of ACT-D-0000103 (sealant override) and ACT-D-0000104."
+  },
+  "gate_confirmation": {
+   "confirmed_by": "Hub",
+   "at": "2026-06-02T09:00:00Z",
+   "open_actions": [],
+   "non_compliant_statements": []
+  },
+  "gate_attempts": [
+   {
+    "at": "2026-05-19T09:00:00Z",
+    "result": "Refused by Hub",
+    "open_actions": [
+     "ACT-D-0000102",
+     "ACT-D-0000103",
+     "ACT-D-0000104"
+    ]
+   },
+   {
+    "at": "2026-05-28T15:00:00Z",
+    "result": "Refused by Hub",
+    "open_actions": [
+     "ACT-D-0000102"
+    ]
+   }
+  ],
+  "released_at": "2026-06-02T09:00:00Z",
+  "released_by": "user:k.osei",
+  "links": [
+   {
+    "link_type": "Production link",
+    "target": "PL-D-0000933"
+   }
+  ],
+  "record_history": [
+   {
+    "record_version": 1,
+    "modified_at": "2026-06-02T09:00:00Z",
+    "effectivity": {
+     "effectivity_type": "VR-EFFTYPE-0001",
+     "from": 1,
+     "to": 999
+    }
+   }
+  ]
+ },
+ {
+  "id": "FR-D-0000034",
+  "type": "FDPS Revision",
+  "schema_version": "6.0",
+  "title": "D2822001-801 rev B",
+  "status": "Released",
+  "owner": "user:r.okafor",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-07-21T09:00:00Z",
+  "created_by": "user:r.okafor",
+  "modified_at": "2026-09-29T09:00:00Z",
+  "modified_by": "user:r.okafor",
+  "record_version": 2,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:r.okafor",
+  "verified_at": "2026-07-21T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "fdps": "FD-D-0000017",
+  "revision": "B",
+  "population": [
+   {
+    "instance": "PI-D-0004101@1",
+    "irl": [
+     "IRL-D-0009101@2",
+     "IRL-D-0009102@1"
+    ]
+   },
+   {
+    "instance": "PI-D-0004102@1",
+    "irl": [
+     "IRL-D-0009103@1"
+    ]
+   },
+   {
+    "instance": "PI-D-0004103@1",
+    "irl": [
+     "IRL-D-0009104@1"
+    ]
+   },
+   {
+    "instance": "PI-D-0004105@1",
+    "irl": [
+     "IRL-D-0009106@1"
+    ]
+   },
+   {
+    "instance": "PI-D-0004106@1",
+    "irl": [
+     "IRL-D-0009107@1"
+    ]
+   },
+   {
+    "instance": "PI-D-0004107@1",
+    "irl": [
+     "IRL-D-0009108@1"
+    ]
+   },
+   {
+    "instance": "PI-D-0004108@2",
+    "irl": [
+     "IRL-D-0009109@1"
+    ]
+   },
+   {
+    "instance": "PI-D-0004109@1",
+    "irl": [
+     "IRL-D-0009110@1"
+    ]
+   },
+   {
+    "instance": "PI-D-0004110@2",
+    "irl": [
+     "IRL-D-0009111@1"
+    ]
+   },
+   {
+    "instance": "PI-D-0004111@1",
+    "irl": [
+     "IRL-D-0009112@1"
+    ]
+   },
+   {
+    "instance": "PI-D-0004112@1",
+    "irl": [
+     "IRL-D-0009113@1"
+    ]
+   },
+   {
+    "instance": "PI-D-0004113@1",
+    "irl": [
+     "IRL-D-0009114@1"
+    ]
+   },
+   {
+    "instance": "PI-D-0004114@1",
+    "irl": [
+     "IRL-D-0009115@1"
+    ]
+   },
+   {
+    "instance": "PI-D-0004115@1",
+    "irl": [
+     "IRL-D-0009116@1"
+    ]
+   },
+   {
+    "instance": "PI-D-0004116@1",
+    "irl": [
+     "IRL-D-0009117@1"
+    ]
+   },
+   {
+    "instance": "AI-D-0000210@1",
+    "irl": [
+     "IRL-D-0009118@1"
+    ]
+   }
+  ],
+  "effectivity": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 3,
+   "to": 4
+  },
+  "passed_reviews": [
+   "DR-D-0000003"
+  ],
+  "baselines": [
+   "BL-D-0000005"
+  ],
+  "release_assessment": {
+   "assessed_by": "user:k.osei",
+   "at": "2026-08-17T09:00:00Z",
+   "against_snapshot": "RS-D-0000003",
+   "change_records": [
+    "CR-D-0000302",
+    "CR-D-0000303"
+   ],
+   "substantial": false,
+   "rationale": "Neither CR-D-0000302 nor CR-D-0000303 is substantial for this FDPS (fdps_assessments)."
+  },
+  "gate_confirmation": {
+   "confirmed_by": "Hub",
+   "at": "2026-08-18T09:00:00Z",
+   "open_actions": [],
+   "non_compliant_statements": []
+  },
+  "gate_attempts": [],
+  "released_at": "2026-08-18T09:00:00Z",
+  "released_by": "user:k.osei",
+  "links": [
+   {
+    "link_type": "Production link",
+    "target": "PL-D-0000934"
+   }
+  ],
+  "change_records": [
+   "CR-D-0000302",
+   "CR-D-0000303"
+  ],
+  "carried_forward_review": {
+   "review": "DR-D-0000003",
+   "assessed_by": "user:k.osei",
+   "at": "2026-08-17T09:00:00Z",
+   "rationale": "No substantial change since RS-D-0000003; C pass carried forward (6C.12)."
+  },
+  "record_history": [
+   {
+    "record_version": 1,
+    "modified_at": "2026-08-18T09:00:00Z",
+    "effectivity": {
+     "effectivity_type": "VR-EFFTYPE-0001",
+     "from": 3,
+     "to": 999
+    }
+   }
+  ]
+ },
+ {
+  "id": "FR-D-0000035",
+  "type": "FDPS Revision",
+  "schema_version": "6.0",
+  "title": "D2822001-801 rev C",
+  "status": "Released",
+  "owner": "user:r.okafor",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-08-25T09:00:00Z",
+  "created_by": "user:r.okafor",
+  "modified_at": "2026-08-25T09:00:00Z",
+  "modified_by": "user:r.okafor",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:r.okafor",
+  "verified_at": "2026-08-25T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "fdps": "FD-D-0000017",
+  "revision": "C",
+  "population": [
+   {
+    "instance": "PI-D-0004101@1",
+    "irl": [
+     "IRL-D-0009101@2",
+     "IRL-D-0009102@1"
+    ]
+   },
+   {
+    "instance": "PI-D-0004102@1",
+    "irl": [
+     "IRL-D-0009103@1"
+    ]
+   },
+   {
+    "instance": "PI-D-0004103@2",
+    "irl": [
+     "IRL-D-0009104@2"
+    ]
+   },
+   {
+    "instance": "PI-D-0004104@1",
+    "irl": [
+     "IRL-D-0009105@1"
+    ]
+   },
+   {
+    "instance": "PI-D-0004105@1",
+    "irl": [
+     "IRL-D-0009106@1"
+    ]
+   },
+   {
+    "instance": "PI-D-0004106@1",
+    "irl": [
+     "IRL-D-0009107@1"
+    ]
+   },
+   {
+    "instance": "PI-D-0004107@1",
+    "irl": [
+     "IRL-D-0009108@1"
+    ]
+   },
+   {
+    "instance": "PI-D-0004108@2",
+    "irl": [
+     "IRL-D-0009109@1"
+    ]
+   },
+   {
+    "instance": "PI-D-0004109@1",
+    "irl": [
+     "IRL-D-0009110@1"
+    ]
+   },
+   {
+    "instance": "PI-D-0004110@2",
+    "irl": [
+     "IRL-D-0009111@1"
+    ]
+   },
+   {
+    "instance": "PI-D-0004111@1",
+    "irl": [
+     "IRL-D-0009112@1"
+    ]
+   },
+   {
+    "instance": "PI-D-0004112@1",
+    "irl": [
+     "IRL-D-0009113@1"
+    ]
+   },
+   {
+    "instance": "PI-D-0004113@1",
+    "irl": [
+     "IRL-D-0009114@1"
+    ]
+   },
+   {
+    "instance": "PI-D-0004114@1",
+    "irl": [
+     "IRL-D-0009115@1"
+    ]
+   },
+   {
+    "instance": "PI-D-0004115@1",
+    "irl": [
+     "IRL-D-0009116@1"
+    ]
+   },
+   {
+    "instance": "PI-D-0004116@1",
+    "irl": [
+     "IRL-D-0009117@1"
+    ]
+   },
+   {
+    "instance": "AI-D-0000210@1",
+    "irl": [
+     "IRL-D-0009118@1"
+    ]
+   }
+  ],
+  "effectivity": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 5,
+   "to": 999
+  },
+  "passed_reviews": [
+   "DR-D-0000004"
+  ],
+  "baselines": [
+   "BL-D-0000006",
+   "BL-D-0000007"
+  ],
+  "release_assessment": {
+   "assessed_by": "user:k.osei",
+   "at": "2026-09-28T09:00:00Z",
+   "against_snapshot": "RS-D-0000004",
+   "change_records": [
+    "CR-D-0000304"
+   ],
+   "substantial": false,
+   "rationale": "CR-D-0000304 was substantial against RS-D-0000003 and was re-reviewed at DR-D-0000004 (Pass); no change since RS-D-0000004."
+  },
+  "gate_confirmation": {
+   "confirmed_by": "Hub",
+   "at": "2026-09-29T09:00:00Z",
+   "open_actions": [],
+   "non_compliant_statements": []
+  },
+  "gate_attempts": [],
+  "released_at": "2026-09-29T09:00:00Z",
+  "released_by": "user:k.osei",
+  "links": [
+   {
+    "link_type": "Production link",
+    "target": "PL-D-0000935"
+   }
+  ],
+  "change_records": [
+   "CR-D-0000304"
+  ]
+ },
+ {
+  "id": "FR-D-0000036",
+  "type": "FDPS Revision",
+  "schema_version": "6.0",
+  "title": "D5012001-801 rev A",
+  "status": "Released",
+  "owner": "user:a.quinn",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-12-01T09:00:00Z",
+  "created_by": "user:a.quinn",
+  "modified_at": "2025-12-01T09:00:00Z",
+  "modified_by": "user:a.quinn",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:a.quinn",
+  "verified_at": "2025-12-01T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "x_phase3": true,
+  "fdps": "FD-D-0000009",
+  "revision": "A",
+  "population": [
+   {
+    "instance": "PI-D-0005001@1",
+    "irl": [
+     "IRL-D-0009201@1"
+    ]
+   },
+   {
+    "instance": "PI-D-0005002@1",
+    "irl": [
+     "IRL-D-0009202@1"
+    ]
+   },
+   {
+    "instance": "PI-D-0005003@1",
+    "irl": [
+     "IRL-D-0009203@1"
+    ]
+   },
+   {
+    "instance": "PI-D-0005004@1",
+    "irl": [
+     "IRL-D-0009204@1"
+    ]
+   },
+   {
+    "instance": "PI-D-0005005@1",
+    "irl": [
+     "IRL-D-0009205@1"
+    ]
+   }
+  ],
+  "effectivity": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 1,
+   "to": 999
+  },
+  "passed_reviews": [
+   "DR-D-0000005",
+   "DR-D-0000006",
+   "DR-D-0000007"
+  ],
+  "baselines": [
+   "BL-D-0000008",
+   "BL-D-0000009",
+   "BL-D-0000010",
+   "BL-D-0000011"
+  ],
+  "release_assessment": {
+   "assessed_by": "user:a.quinn",
+   "at": "2026-03-16T09:00:00Z",
+   "against_snapshot": "RS-D-0000007",
+   "change_records": [],
+   "substantial": false,
+   "rationale": "No change since RS-D-0000007."
+  },
+  "gate_confirmation": {
+   "confirmed_by": "Hub",
+   "at": "2026-03-17T09:00:00Z",
+   "open_actions": [],
+   "non_compliant_statements": []
+  },
+  "gate_attempts": [],
+  "released_at": "2026-03-17T09:00:00Z",
+  "released_by": "user:a.quinn",
+  "links": []
+ }
+]

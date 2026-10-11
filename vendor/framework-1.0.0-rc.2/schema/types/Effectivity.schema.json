@@ -1,0 +1,58 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "types/Effectivity.schema.json",
+ "title": "Effectivity (schema v6 3.x)",
+ "allOf": [
+  {
+   "$ref": "../common.schema.json"
+  }
+ ],
+ "type": "object",
+ "properties": {
+  "project": {
+   "type": "string",
+   "description": "ref(Project); card. 1; "
+  },
+  "kind": {
+   "type": "string",
+   "x-stored-as": "label of a framework-fixed register entry",
+   "description": "reg; card. 1; Effectivity Number; Serial Range Mapping; Build Standard Mapping"
+  },
+  "number": {
+   "type": "integer",
+   "description": "int; card. 1*; 1 to effectivity_max"
+  },
+  "serial": {
+   "type": "string",
+   "description": "string; card. 0..1; "
+  },
+  "mapping_name": {
+   "type": "string",
+   "description": "string; card. 1*; e.g. \"Initial release standard\""
+  },
+  "maps_to": {
+   "$ref": "../common.schema.json#/$defs/eff",
+   "description": "eff; card. 1*; "
+  },
+  "status": {
+   "type": "string",
+   "x-stored-as": "label of a framework-fixed register entry",
+   "description": "reg; card. 1; Planned; Allocated; Built; Retired",
+   "enum": [
+    "Planned",
+    "Allocated",
+    "Built",
+    "Retired"
+   ]
+  },
+  "type": {
+   "const": "Effectivity"
+  }
+ },
+ "required": [
+  "project",
+  "kind",
+  "status"
+ ],
+ "x-owned-links": []
+}

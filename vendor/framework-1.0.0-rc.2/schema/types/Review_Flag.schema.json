@@ -1,0 +1,88 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "types/Review_Flag.schema.json",
+ "title": "Review Flag (schema v6 3.x)",
+ "allOf": [
+  {
+   "$ref": "../common.schema.json"
+  }
+ ],
+ "type": "object",
+ "properties": {
+  "flagged_object": {
+   "type": "string",
+   "description": "ref; card. 1; "
+  },
+  "triggering_object": {
+   "type": "string",
+   "description": "ref; card. 1; "
+  },
+  "trigger_change": {
+   "type": "string",
+   "description": "ref(Change Record) or record_version; card. 1; "
+  },
+  "via_link": {
+   "type": "string",
+   "description": "ref(Link); card. 1; "
+  },
+  "link_confirmed": {
+   "type": "boolean",
+   "description": "bool; card. 1; "
+  },
+  "decision": {
+   "type": "string",
+   "x-stored-as": "label of a framework-fixed register entry",
+   "description": "reg; card. 1; Open; No impact; Updated; Passed on",
+   "enum": [
+    "Open",
+    "No impact",
+    "Updated",
+    "Passed on",
+    "Accept",
+    "Query"
+   ]
+  },
+  "passed_on_to": {
+   "anyOf": [
+    {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    {
+     "type": "string"
+    }
+   ],
+   "description": "ref(Review Flag); card. 0..n; "
+  },
+  "decided_by": {
+   "type": "string",
+   "description": "ref(Person); card. 1*; "
+  },
+  "decided_at": {
+   "type": "string",
+   "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(:\\d{2})?Z$",
+   "description": "datetime; card. 1*; "
+  },
+  "type": {
+   "const": "Review Flag"
+  },
+  "fdps_interface": {
+   "type": "boolean",
+   "description": "R-18: true for a flag raised to the owner of the other FDPS by a cross-FDPS Secures link. Its decision is Accept or Query; a Query stays open, is shown on both FDPS pages and does not block the link. No confirmation of the link is required."
+  }
+ },
+ "required": [
+  "flagged_object",
+  "triggering_object",
+  "trigger_change",
+  "via_link",
+  "link_confirmed",
+  "decision"
+ ],
+ "x-owned-links": [],
+ "x-deltas": [
+  "R-18"
+ ]
+}

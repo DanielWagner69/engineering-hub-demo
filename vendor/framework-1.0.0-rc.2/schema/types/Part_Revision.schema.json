@@ -1,0 +1,88 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "types/Part_Revision.schema.json",
+ "title": "Part Revision (schema v6 3.x)",
+ "allOf": [
+  {
+   "$ref": "../common.schema.json"
+  }
+ ],
+ "type": "object",
+ "properties": {
+  "part_definition": {
+   "type": "string",
+   "description": "ref(Part Definition); card. 1; "
+  },
+  "revision": {
+   "type": "string",
+   "description": "string; card. 1; A, B, C ... (1.6)"
+  },
+  "previous_revision": {
+   "type": "string",
+   "description": "ref(Part Revision); card. 0..1; "
+  },
+  "change_record": {
+   "type": "string",
+   "description": "ref(Change Record); card. 1*; "
+  },
+  "mass": {
+   "$ref": "../common.schema.json#/$defs/qty",
+   "description": "qty; card. 0..1; "
+  },
+  "variant_name": {
+   "type": "string",
+   "description": "string; card. 0..1; "
+  },
+  "issuing_master": {
+   "anyOf": [
+    {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+     }
+    },
+    {
+     "type": "string",
+     "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+    }
+   ],
+   "description": "reg(MASTER); card. 1; PLM or Hub"
+  },
+  "external_ref": {
+   "type": "string",
+   "description": "string; card. 0..1; "
+  },
+  "released_at": {
+   "type": "string",
+   "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(:\\d{2})?Z$",
+   "description": "datetime; card. 1*; "
+  },
+  "released_by": {
+   "type": "string",
+   "description": "ref(Person); card. 1*; "
+  },
+  "status": {
+   "type": "string",
+   "x-stored-as": "label of a framework-fixed register entry",
+   "description": "reg; card. 1; In Work; Released; Withdrawn",
+   "enum": [
+    "In Work",
+    "Released",
+    "Withdrawn"
+   ]
+  },
+  "type": {
+   "const": "Part Revision"
+  }
+ },
+ "required": [
+  "part_definition",
+  "revision",
+  "issuing_master",
+  "status"
+ ],
+ "x-owned-links": [
+  "Production link"
+ ]
+}

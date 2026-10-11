@@ -1,0 +1,264 @@
+[
+ {
+  "id": "CR-D-0000301",
+  "type": "Change Record",
+  "schema_version": "6.0",
+  "title": "Shut-off valve moved from BS2 to BS3 (before release)",
+  "status": "Implemented",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-02-20T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2026-02-20T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2026-02-20T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "change_types": [
+   "VR-CHG-0001"
+  ],
+  "reason": "Valve fitted after closure of the BS2 zone to avoid damage during first-fix work.",
+  "affected_objects": [
+   "PI-D-0004108"
+  ],
+  "before": {
+   "Located at": "VR-BS-0006"
+  },
+  "after": {
+   "Located at": "VR-BS-0007"
+  },
+  "approvals": [],
+  "fdps_assessments": [
+   {
+    "fdps": "FD-D-0000017",
+    "assessed_by": "user:k.osei",
+    "at": "2026-02-20T09:00:00Z",
+    "substantial": false,
+    "criteria": [],
+    "rationale": "Build Station change only; no effect on form, fit, function, interfaces or compliance."
+   }
+  ]
+ },
+ {
+  "id": "CR-D-0000302",
+  "type": "Change Record",
+  "schema_version": "6.0",
+  "title": "Feed pipe D2822002-001 wall thickness increase, rev A to B",
+  "status": "Implemented",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-07-21T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2026-07-21T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2026-07-21T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "change_types": [
+   "VR-CHG-0004",
+   "VR-CHG-0007"
+  ],
+  "reason": "Fatigue cracking indication at clamp on effectivity 1 ground running (ISS-D-0000058). Wall thickness 0.9 to 1.2 mm; outside diameter, end fittings and routing unchanged.",
+  "affected_objects": [
+   "PD-D-0000101",
+   "PR-D-0000201",
+   "PR-D-0000202",
+   "IRL-D-0009101",
+   "IRL-D-0009102"
+  ],
+  "before": {
+   "PI-D-0004101 revision links": [
+    {
+     "rev": "A",
+     "eff": "1 to 999"
+    }
+   ]
+  },
+  "after": {
+   "PI-D-0004101 revision links": [
+    {
+     "rev": "A",
+     "eff": "1 to 2"
+    },
+    {
+     "rev": "B",
+     "eff": "3 to 999"
+    }
+   ]
+  },
+  "approvals": [
+   {
+    "role": "Design Authority",
+    "by": "user:k.osei",
+    "at": "2026-07-21T09:00:00Z"
+   }
+  ],
+  "fdps_assessments": [
+   {
+    "fdps": "FD-D-0000017",
+    "assessed_by": "user:k.osei",
+    "at": "2026-07-21T09:00:00Z",
+    "substantial": false,
+    "criteria": [],
+    "margin_note": "Inlet pressure margin reduces from 13 to 10 kPa; remains compliant with D-FUE-FED-004.",
+    "rationale": "Restores compliance with D-FUE-FED-011; no degradation of form, fit, function or any interface."
+   }
+  ],
+  "interchangeability": {
+   "form": true,
+   "fit": true,
+   "function": true,
+   "all_uses_assessed": true,
+   "outcome": "Interchangeable"
+  },
+  "fdps_revision_required": "FR-D-0000034",
+  "follows_review": "DR-D-0000003"
+ },
+ {
+  "id": "CR-D-0000303",
+  "type": "Change Record",
+  "schema_version": "6.0",
+  "title": "Mid-span P-clamp added from effectivity 3",
+  "status": "Implemented",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-07-21T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2026-07-21T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2026-07-21T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "change_types": [
+   "VR-CHG-0008",
+   "VR-CHG-0007"
+  ],
+  "reason": "Reduce unsupported span of the feed pipe (ISS-D-0000058). New clamp, bolt and nut to the existing frame 15A boss.",
+  "affected_objects": [
+   "FD-D-0000017",
+   "PI-D-0004112",
+   "PI-D-0004115",
+   "PI-D-0004116"
+  ],
+  "before": {
+   "population": "13 members"
+  },
+  "after": {
+   "population": "16 members; new instances exist 3 to 999"
+  },
+  "approvals": [
+   {
+    "role": "Design Authority",
+    "by": "user:k.osei",
+    "at": "2026-07-21T09:00:00Z"
+   },
+   {
+    "role": "Design Approver",
+    "by": "user:r.okafor",
+    "at": "2026-07-21T09:00:00Z"
+   }
+  ],
+  "fdps_assessments": [
+   {
+    "fdps": "FD-D-0000017",
+    "assessed_by": "user:k.osei",
+    "at": "2026-07-21T09:00:00Z",
+    "substantial": false,
+    "criteria": [],
+    "rationale": "The added clamp and fasteners interface with Primary Structure, already an interfacing System of the FDPS, so they add no new interface with another System; compliance with D-FUE-FED-011 is restored, not adversely affected (6C.17)."
+   }
+  ],
+  "fdps_revision_required": "FR-D-0000034",
+  "follows_review": "DR-D-0000003"
+ },
+ {
+  "id": "CR-D-0000304",
+  "type": "Change Record",
+  "schema_version": "6.0",
+  "title": "Cross-join spool end changed to bulkhead union (new part number), from effectivity 5",
+  "status": "Implemented",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-08-25T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2026-08-25T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2026-08-25T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "change_types": [
+   "VR-CHG-0005",
+   "VR-CHG-0009"
+  ],
+  "reason": "Engine Installation changed the engine fuel inlet to a bulkhead union. The spool end fitting changes; not interchangeable in fit.",
+  "affected_objects": [
+   "PD-D-0000103",
+   "PD-D-0000113",
+   "PI-D-0004103",
+   "PI-D-0004104",
+   "IRL-D-0009104",
+   "IRL-D-0009105"
+  ],
+  "before": {
+   "PI-D-0004103 existence": "1 to 999"
+  },
+  "after": {
+   "PI-D-0004103 existence": "1 to 4",
+   "PI-D-0004104 existence": "5 to 999, replaces PI-D-0004103"
+  },
+  "approvals": [
+   {
+    "role": "Design Authority",
+    "by": "user:k.osei",
+    "at": "2026-08-25T09:00:00Z"
+   },
+   {
+    "role": "Design Lead, Engine Installation",
+    "by": "user:w.nash",
+    "at": "2026-08-25T09:00:00Z"
+   }
+  ],
+  "fdps_assessments": [
+   {
+    "fdps": "FD-D-0000017",
+    "assessed_by": "user:k.osei",
+    "at": "2026-08-25T09:00:00Z",
+    "substantial": true,
+    "criteria": [
+     "degrades an interface"
+    ],
+    "rationale": "Changes the fuel interface with Propulsion (engine fuel inlet) against RS-D-0000003.",
+    "re_review": "DR-D-0000004"
+   }
+  ],
+  "interchangeability": {
+   "form": true,
+   "fit": false,
+   "function": true,
+   "all_uses_assessed": true,
+   "outcome": "Not interchangeable"
+  },
+  "fdps_revision_required": "FR-D-0000035",
+  "follows_review": "DR-D-0000003"
+ }
+]

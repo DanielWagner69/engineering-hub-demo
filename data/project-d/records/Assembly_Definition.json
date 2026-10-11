@@ -1,0 +1,55 @@
+[
+ {
+  "id": "AD-D-0000044",
+  "type": "Assembly Definition",
+  "schema_version": "6.0",
+  "title": "Valve mounting bracket assembly, left-hand",
+  "status": "Active",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-12-08T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2025-12-08T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2025-12-08T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "part_number": "D2822005-401",
+  "numbering_scheme": "VR-NUMSCH-0001",
+  "stem": "D2822005",
+  "dash": "401",
+  "handedness": "Left-hand",
+  "number_proposal": {
+   "proposed_number": "D2822005-401",
+   "proposed_by": "software",
+   "proposed_at": "2025-12-01T09:00:00Z",
+   "accepted_by": "user:p.hale",
+   "accepted_at": "2025-12-01T09:00:00Z",
+   "rejected": []
+  },
+  "safety_classification": "VR-SAF-0004",
+  "lifecycle_stage": "VR-LCS-0006",
+  "off_aircraft_statement": "Two flanged bushes are pressed into the machined valve bracket at the Centre Fuselage Bench before the bracket is installed on the aircraft.",
+  "links": [
+   {
+    "link_type": "Comprises",
+    "target": "PD-D-0000104",
+    "attributes": {
+     "quantity": 1
+    }
+   },
+   {
+    "link_type": "Comprises",
+    "target": "PD-D-0000112",
+    "attributes": {
+     "quantity": 2
+    }
+   }
+  ]
+ }
+]

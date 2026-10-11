@@ -1,0 +1,13 @@
+[
+ {
+  "id": "VR-ACCESS-0001",
+  "register": "ACCESS_MARKING",
+  "code": "D-GEN",
+  "label": "Project D general (fictional)",
+  "definition": "Fictional project marking for all Project D demo data.",
+  "state": "Active",
+  "source": "TR-D-0000001",
+  "sort_order": 2,
+  "is_catch_all": false
+ }
+]

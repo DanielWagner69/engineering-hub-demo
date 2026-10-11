@@ -1,0 +1,1267 @@
+[
+ {
+  "id": "VER-D-0000301",
+  "type": "Verification",
+  "schema_version": "6.0",
+  "title": "Feed line pressure drop and flow analysis, rev A configuration",
+  "status": "Approved",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-04-20T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2026-08-10T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 2,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2026-04-20T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "method": "VR-VMETH-0003",
+  "summary": "Network analysis, tank outlet to engine interface; rev A pipes and flared spool.",
+  "results": [
+   {
+    "quantity_name": "inlet_pressure_gauge",
+    "value": {
+     "value": 48,
+     "unit": "kPa"
+    },
+    "margin": {
+     "value": 13,
+     "unit": "kPa"
+    }
+   }
+  ],
+  "outcome": "Pass",
+  "basis_revisions": [
+   "PR-D-0000201",
+   "PR-D-0000203",
+   "PR-D-0000204",
+   "PR-D-0000208",
+   "PR-D-0000207"
+  ],
+  "effectivity": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 1,
+   "to": 2
+  },
+  "discipline": "VR-DISC-0026",
+  "lifecycle_stage": "VR-LCS-0006",
+  "document": {
+   "source_ref": "CALC-D-0101",
+   "issue": 1
+  },
+  "links": [
+   {
+    "link_type": "Demonstrates",
+    "target": "REQ-D-0000141"
+   }
+  ],
+  "record_history": [
+   {
+    "record_version": 1,
+    "modified_at": "2026-04-20T09:00:00Z",
+    "effectivity": {
+     "effectivity_type": "VR-EFFTYPE-0001",
+     "from": 1,
+     "to": 999
+    }
+   }
+  ]
+ },
+ {
+  "id": "VER-D-0000302",
+  "type": "Verification",
+  "schema_version": "6.0",
+  "title": "Feed line pressure drop and flow analysis, rev B pipe with bulkhead-union spool",
+  "status": "Approved",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-09-08T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2026-09-08T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2026-09-08T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "method": "VR-VMETH-0003",
+  "summary": "Re-run for effectivity 5 onwards with the bulkhead-union spool.",
+  "results": [
+   {
+    "quantity_name": "inlet_pressure_gauge",
+    "value": {
+     "value": 44,
+     "unit": "kPa"
+    },
+    "margin": {
+     "value": 9,
+     "unit": "kPa"
+    }
+   }
+  ],
+  "outcome": "Pass",
+  "basis_revisions": [
+   "PR-D-0000202",
+   "PR-D-0000203",
+   "PR-D-0000214",
+   "PR-D-0000208",
+   "PR-D-0000207"
+  ],
+  "effectivity": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 5,
+   "to": 999
+  },
+  "discipline": "VR-DISC-0026",
+  "lifecycle_stage": "VR-LCS-0006",
+  "document": {
+   "source_ref": "CALC-D-0101 issue 3",
+   "issue": 1
+  },
+  "links": [
+   {
+    "link_type": "Demonstrates",
+    "target": "REQ-D-0000141"
+   }
+  ],
+  "supersedes": [
+   "VER-D-0000313"
+  ]
+ },
+ {
+  "id": "VER-D-0000303",
+  "type": "Verification",
+  "schema_version": "6.0",
+  "title": "Feed pipe vibration fatigue assessment, rev A, measured spectrum",
+  "status": "Approved",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-07-14T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2026-07-14T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 2,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2026-07-14T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "method": "VR-VMETH-0003",
+  "summary": "Re-assessment with the spectrum measured on effectivity 1 ground running; static-load clamp spacing.",
+  "results": [
+   {
+    "quantity_name": "fatigue_reserve_factor",
+    "value": {
+     "value": 0.8,
+     "unit": "1"
+    }
+   }
+  ],
+  "outcome": "Fail",
+  "basis_revisions": [
+   "PR-D-0000201",
+   "PR-D-0000210"
+  ],
+  "effectivity": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 1,
+   "to": 2
+  },
+  "discipline": "VR-DISC-0022",
+  "lifecycle_stage": "VR-LCS-0006",
+  "document": {
+   "source_ref": "CALC-D-0107 issue 3",
+   "issue": 1
+  },
+  "links": [
+   {
+    "link_type": "Demonstrates",
+    "target": "REQ-D-0000145"
+   }
+  ],
+  "record_history": [
+   {
+    "record_version": 1,
+    "modified_at": "2026-05-05T09:00:00Z",
+    "outcome": "Pass",
+    "results": [
+     {
+      "quantity_name": "fatigue_reserve_factor",
+      "value": {
+       "value": 1.3,
+       "unit": "1"
+      }
+     }
+    ],
+    "basis_note": "static-load clamp spacing with factor 1.5",
+    "effectivity": {
+     "effectivity_type": "VR-EFFTYPE-0001",
+     "from": 1,
+     "to": 999
+    }
+   }
+  ]
+ },
+ {
+  "id": "VER-D-0000304",
+  "type": "Verification",
+  "schema_version": "6.0",
+  "title": "Feed pipe vibration rig test, rev B with mid-span clamp",
+  "status": "Approved",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-08-11T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2026-08-11T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2026-08-11T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "method": "VR-VMETH-0005",
+  "summary": "Rig test to the measured installed spectrum.",
+  "results": [
+   {
+    "quantity_name": "fatigue_reserve_factor",
+    "value": {
+     "value": 2.4,
+     "unit": "1"
+    }
+   }
+  ],
+  "outcome": "Pass",
+  "basis_revisions": [
+   "PR-D-0000202",
+   "PR-D-0000210",
+   "PR-D-0000211",
+   "PR-D-0000212"
+  ],
+  "effectivity": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 3,
+   "to": 999
+  },
+  "discipline": "VR-DISC-0022",
+  "lifecycle_stage": "VR-LCS-0006",
+  "document": {
+   "source_ref": "TR-D-0044",
+   "issue": 1
+  },
+  "links": [
+   {
+    "link_type": "Demonstrates",
+    "target": "REQ-D-0000145"
+   }
+  ]
+ },
+ {
+  "id": "VER-D-0000305",
+  "type": "Verification",
+  "schema_version": "6.0",
+  "title": "Shut-off valve equipment qualification",
+  "status": "Approved",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-08T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2026-05-08T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2026-05-08T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "method": "VR-VMETH-0010",
+  "summary": "Supplier qualification declaration reviewed against the installed environment, including closing time.",
+  "results": [
+   {
+    "quantity_name": "closing_time",
+    "value": {
+     "value": 1.4,
+     "unit": "s"
+    },
+    "margin": {
+     "value": 0.6,
+     "unit": "s"
+    }
+   }
+  ],
+  "outcome": "Pass",
+  "basis_revisions": [
+   "PR-D-0000208"
+  ],
+  "effectivity": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 1,
+   "to": 999
+  },
+  "discipline": "VR-DISC-0003",
+  "lifecycle_stage": "VR-LCS-0006",
+  "document": {
+   "source_ref": "EQD-KV-118-3",
+   "issue": 1
+  },
+  "links": [
+   {
+    "link_type": "Demonstrates",
+    "target": "TSM-D-0000064",
+    "attributes": {
+     "statements": [
+      "1.2"
+     ]
+    }
+   },
+   {
+    "link_type": "Demonstrates",
+    "target": "REQ-D-0000142"
+   }
+  ]
+ },
+ {
+  "id": "VER-D-0000306",
+  "type": "Verification",
+  "schema_version": "6.0",
+  "title": "Bonding resistance inspection, rev A configuration",
+  "status": "Approved",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-22T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2026-09-08T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 2,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2026-05-22T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "method": "VR-VMETH-0008",
+  "summary": "Design inspection of bonding paths, including the catalogue P-clamps and fasteners; measured on effectivity 1.",
+  "results": [
+   {
+    "quantity_name": "max_bond_resistance",
+    "value": {
+     "value": 6,
+     "unit": "mohm"
+    }
+   }
+  ],
+  "outcome": "Pass",
+  "basis_revisions": [
+   "PR-D-0000201",
+   "PR-D-0000203",
+   "PR-D-0000204",
+   "PR-D-0000205",
+   "PR-D-0000208",
+   "PR-D-0000207",
+   "PR-D-0000209",
+   "PR-D-0000210",
+   "PR-D-0000211",
+   "PR-D-0000212"
+  ],
+  "effectivity": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 1,
+   "to": 2
+  },
+  "discipline": "VR-DISC-0007",
+  "lifecycle_stage": "VR-LCS-0006",
+  "document": {
+   "source_ref": "INSP-D-0201",
+   "issue": 1
+  },
+  "links": [
+   {
+    "link_type": "Demonstrates",
+    "target": "TSM-D-0000065",
+    "attributes": {
+     "statements": [
+      "5.1"
+     ]
+    }
+   }
+  ],
+  "record_history": [
+   {
+    "record_version": 1,
+    "modified_at": "2026-05-22T09:00:00Z",
+    "effectivity": {
+     "effectivity_type": "VR-EFFTYPE-0001",
+     "from": 1,
+     "to": 999
+    }
+   }
+  ]
+ },
+ {
+  "id": "VER-D-0000307",
+  "type": "Verification",
+  "schema_version": "6.0",
+  "title": "Bracket strength calculation",
+  "status": "Approved",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-04-28T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2026-04-28T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2026-04-28T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "method": "VR-VMETH-0003",
+  "summary": "Valve bracket assembly and twin-pipe bracket under ultimate load factors.",
+  "results": [
+   {
+    "quantity_name": "reserve_factor",
+    "value": {
+     "value": 1.6,
+     "unit": "1"
+    }
+   }
+  ],
+  "outcome": "Pass",
+  "basis_revisions": [
+   "AV-D-0000051",
+   "PR-D-0000209"
+  ],
+  "effectivity": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 1,
+   "to": 999
+  },
+  "discipline": "VR-DISC-0022",
+  "lifecycle_stage": "VR-LCS-0006",
+  "document": {
+   "source_ref": "CALC-D-0110",
+   "issue": 1
+  },
+  "links": [
+   {
+    "link_type": "Demonstrates",
+    "target": "REQ-D-0000143"
+   }
+  ]
+ },
+ {
+  "id": "VER-D-0000308",
+  "type": "Verification",
+  "schema_version": "6.0",
+  "title": "Usable fuel assessment",
+  "status": "Approved",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-04-30T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2026-04-30T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2026-04-30T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "method": "VR-VMETH-0003",
+  "summary": "Unusable fuel with strainer drain boss.",
+  "results": [
+   {
+    "quantity_name": "usable_fuel_mass",
+    "value": {
+     "value": 431,
+     "unit": "kg"
+    },
+    "margin": {
+     "value": 11,
+     "unit": "kg"
+    }
+   }
+  ],
+  "outcome": "Pass",
+  "basis_revisions": [
+   "PR-D-0000207"
+  ],
+  "effectivity": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 1,
+   "to": 999
+  },
+  "discipline": "VR-DISC-0026",
+  "lifecycle_stage": "VR-LCS-0006",
+  "document": {
+   "source_ref": "CALC-D-0111",
+   "issue": 1
+  },
+  "links": [
+   {
+    "link_type": "Demonstrates",
+    "target": "REQ-D-0000140"
+   }
+  ]
+ },
+ {
+  "id": "VER-D-0000309",
+  "type": "Verification",
+  "schema_version": "6.0",
+  "title": "Bend radius design inspection, rev A pipework",
+  "status": "Approved",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-06T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2026-09-08T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 2,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2026-05-06T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "method": "VR-VMETH-0008",
+  "summary": "All bends at 3.2 x OD minimum.",
+  "results": [],
+  "outcome": "Pass",
+  "basis_revisions": [
+   "PR-D-0000201",
+   "PR-D-0000203",
+   "PR-D-0000204"
+  ],
+  "effectivity": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 1,
+   "to": 2
+  },
+  "discipline": "VR-DISC-0026",
+  "lifecycle_stage": "VR-LCS-0006",
+  "document": {
+   "source_ref": "INSP-D-0203",
+   "issue": 1
+  },
+  "links": [
+   {
+    "link_type": "Demonstrates",
+    "target": "TSM-D-0000062",
+    "attributes": {
+     "statements": [
+      "3.1.4"
+     ]
+    }
+   }
+  ],
+  "record_history": [
+   {
+    "record_version": 1,
+    "modified_at": "2026-05-06T09:00:00Z",
+    "effectivity": {
+     "effectivity_type": "VR-EFFTYPE-0001",
+     "from": 1,
+     "to": 999
+    }
+   }
+  ]
+ },
+ {
+  "id": "VER-D-0000310",
+  "type": "Verification",
+  "schema_version": "6.0",
+  "title": "Bend radius design inspection, effectivity 3 onwards",
+  "status": "Approved",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-09-08T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2026-09-08T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2026-09-08T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "method": "VR-VMETH-0008",
+  "summary": "Rev B pipe and both spools; new spool bends at 3.4 x OD.",
+  "results": [],
+  "outcome": "Pass",
+  "basis_revisions": [
+   "PR-D-0000202",
+   "PR-D-0000203",
+   "PR-D-0000204",
+   "PR-D-0000214"
+  ],
+  "effectivity": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 3,
+   "to": 999
+  },
+  "discipline": "VR-DISC-0026",
+  "lifecycle_stage": "VR-LCS-0006",
+  "document": {
+   "source_ref": "INSP-D-0204",
+   "issue": 1
+  },
+  "links": [
+   {
+    "link_type": "Demonstrates",
+    "target": "TSM-D-0000062",
+    "attributes": {
+     "statements": [
+      "3.1.4"
+     ]
+    }
+   }
+  ],
+  "supersedes": [
+   "VER-D-0000309"
+  ]
+ },
+ {
+  "id": "VER-D-0000311",
+  "type": "Verification",
+  "schema_version": "6.0",
+  "title": "Feed pipe 2 and spool vibration assessment, measured spectrum",
+  "status": "Approved",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-09-08T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2026-09-08T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2026-09-08T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "method": "VR-VMETH-0003",
+  "summary": "Pipe 2 and both spool designs with the measured spectrum.",
+  "results": [
+   {
+    "quantity_name": "fatigue_reserve_factor",
+    "value": {
+     "value": 2.1,
+     "unit": "1"
+    }
+   }
+  ],
+  "outcome": "Pass",
+  "basis_revisions": [
+   "PR-D-0000203",
+   "PR-D-0000204",
+   "PR-D-0000214"
+  ],
+  "effectivity": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 1,
+   "to": 999
+  },
+  "discipline": "VR-DISC-0022",
+  "lifecycle_stage": "VR-LCS-0006",
+  "document": {
+   "source_ref": "CALC-D-0109",
+   "issue": 1
+  },
+  "links": [
+   {
+    "link_type": "Demonstrates",
+    "target": "REQ-D-0000145"
+   }
+  ]
+ },
+ {
+  "id": "VER-D-0000312",
+  "type": "Verification",
+  "schema_version": "6.0",
+  "title": "Bonding resistance inspection, effectivity 3 onwards",
+  "status": "Approved",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-09-08T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2026-09-08T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2026-09-08T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "method": "VR-VMETH-0008",
+  "summary": "Bonding of the full configuration from effectivity 3, including the rev B pipe, both P-clamps, their fasteners and both spools.",
+  "results": [
+   {
+    "quantity_name": "max_bond_resistance",
+    "value": {
+     "value": 7,
+     "unit": "mohm"
+    }
+   }
+  ],
+  "outcome": "Pass",
+  "basis_revisions": [
+   "PR-D-0000202",
+   "PR-D-0000203",
+   "PR-D-0000204",
+   "PR-D-0000214",
+   "PR-D-0000205",
+   "PR-D-0000208",
+   "PR-D-0000207",
+   "PR-D-0000209",
+   "PR-D-0000210",
+   "PR-D-0000211",
+   "PR-D-0000212"
+  ],
+  "effectivity": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 3,
+   "to": 999
+  },
+  "discipline": "VR-DISC-0007",
+  "lifecycle_stage": "VR-LCS-0006",
+  "document": {
+   "source_ref": "INSP-D-0202",
+   "issue": 1
+  },
+  "links": [
+   {
+    "link_type": "Demonstrates",
+    "target": "TSM-D-0000065",
+    "attributes": {
+     "statements": [
+      "5.1"
+     ]
+    }
+   }
+  ],
+  "supersedes": [
+   "VER-D-0000306"
+  ]
+ },
+ {
+  "id": "VER-D-0000313",
+  "type": "Verification",
+  "schema_version": "6.0",
+  "title": "Feed line pressure drop and flow analysis, rev B pipe with flared spool",
+  "status": "Approved",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-08-10T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2026-09-08T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 2,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2026-08-10T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "method": "VR-VMETH-0003",
+  "summary": "Re-run for effectivities 3 to 4: rev B wall thickness (smaller bore) with the flared spool.",
+  "results": [
+   {
+    "quantity_name": "inlet_pressure_gauge",
+    "value": {
+     "value": 45,
+     "unit": "kPa"
+    },
+    "margin": {
+     "value": 10,
+     "unit": "kPa"
+    }
+   }
+  ],
+  "outcome": "Pass",
+  "basis_revisions": [
+   "PR-D-0000202",
+   "PR-D-0000203",
+   "PR-D-0000204",
+   "PR-D-0000208",
+   "PR-D-0000207"
+  ],
+  "effectivity": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 3,
+   "to": 4
+  },
+  "discipline": "VR-DISC-0026",
+  "lifecycle_stage": "VR-LCS-0006",
+  "document": {
+   "source_ref": "CALC-D-0101 issue 2",
+   "issue": 1
+  },
+  "links": [
+   {
+    "link_type": "Demonstrates",
+    "target": "REQ-D-0000141"
+   }
+  ],
+  "supersedes": [
+   "VER-D-0000301"
+  ],
+  "record_history": [
+   {
+    "record_version": 1,
+    "modified_at": "2026-08-10T09:00:00Z",
+    "effectivity": {
+     "effectivity_type": "VR-EFFTYPE-0001",
+     "from": 3,
+     "to": 999
+    }
+   }
+  ]
+ },
+ {
+  "id": "VER-D-0000314",
+  "type": "Verification",
+  "schema_version": "6.0",
+  "title": "Modified strainer equipment qualification",
+  "status": "Approved",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-08T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2026-05-08T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2026-05-08T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "method": "VR-VMETH-0010",
+  "summary": "Supplier declaration for MF-4K plus in-house assessment of the drain boss modification.",
+  "results": [],
+  "outcome": "Pass",
+  "basis_revisions": [
+   "PR-D-0000207"
+  ],
+  "effectivity": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 1,
+   "to": 999
+  },
+  "discipline": "VR-DISC-0003",
+  "lifecycle_stage": "VR-LCS-0006",
+  "document": {
+   "source_ref": "EQD-D-0012",
+   "issue": 1
+  },
+  "links": [
+   {
+    "link_type": "Demonstrates",
+    "target": "TSM-D-0000064",
+    "attributes": {
+     "statements": [
+      "1.2"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "VER-D-0000315",
+  "type": "Verification",
+  "schema_version": "6.0",
+  "title": "Machined internal radius design inspection",
+  "status": "Approved",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-06T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2026-05-06T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2026-05-06T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "method": "VR-VMETH-0008",
+  "summary": "Valve bracket and strainer drain boss: all machined radii 2 mm.",
+  "results": [],
+  "outcome": "Pass",
+  "basis_revisions": [
+   "PR-D-0000205",
+   "PR-D-0000207"
+  ],
+  "effectivity": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 1,
+   "to": 999
+  },
+  "discipline": "VR-DISC-0022",
+  "lifecycle_stage": "VR-LCS-0006",
+  "document": {
+   "source_ref": "INSP-D-0205",
+   "issue": 1
+  },
+  "links": [
+   {
+    "link_type": "Demonstrates",
+    "target": "TSM-D-0000063",
+    "attributes": {
+     "statements": [
+      "2.4.1"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "VER-D-0000316",
+  "type": "Verification",
+  "schema_version": "6.0",
+  "title": "Standard Parts design inspection",
+  "status": "Approved",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-06T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2026-05-06T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2026-05-06T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "method": "VR-VMETH-0008",
+  "summary": "Catalogue issues of the P-clamps, bolts, nuts and bushes checked against their Part revisions; nut thread protrusion checked on the installation model (minimum 2 pitches).",
+  "results": [],
+  "outcome": "Pass",
+  "basis_revisions": [
+   "PR-D-0000210",
+   "PR-D-0000211",
+   "PR-D-0000212",
+   "PR-D-0000213"
+  ],
+  "effectivity": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 1,
+   "to": 999
+  },
+  "discipline": "VR-DISC-0021",
+  "lifecycle_stage": "VR-LCS-0006",
+  "document": {
+   "source_ref": "INSP-D-0206",
+   "issue": 1
+  },
+  "links": [
+   {
+    "link_type": "Demonstrates",
+    "target": "TSM-D-0000066",
+    "attributes": {
+     "statements": [
+      "2.1",
+      "3.4"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "VER-D-0000317",
+  "type": "Verification",
+  "schema_version": "6.0",
+  "title": "Feed line routing design inspection, shut-off valve to engine interface",
+  "status": "Approved",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-06T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2026-05-06T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2026-05-06T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "method": "VR-VMETH-0008",
+  "summary": "Installation model inspected for high points between the shut-off valve and the engine interface, for both spool designs; continuous fall confirmed.",
+  "results": [],
+  "outcome": "Pass",
+  "basis_revisions": [
+   "PR-D-0000203",
+   "PR-D-0000204",
+   "PR-D-0000214"
+  ],
+  "effectivity": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 1,
+   "to": 999
+  },
+  "discipline": "VR-DISC-0026",
+  "lifecycle_stage": "VR-LCS-0006",
+  "document": {
+   "source_ref": "INSP-D-0207",
+   "issue": 1
+  },
+  "links": [
+   {
+    "link_type": "Demonstrates",
+    "target": "TSM-D-0000065",
+    "attributes": {
+     "statements": [
+      "5.4"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "VER-D-0000320",
+  "type": "Verification",
+  "schema_version": "6.0",
+  "title": "Frames 14 to 15A static strength analysis",
+  "status": "Approved",
+  "owner": "user:a.novak",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-02-24T09:00:00Z",
+  "created_by": "user:a.novak",
+  "modified_at": "2026-02-24T09:00:00Z",
+  "modified_by": "user:a.novak",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:a.novak",
+  "verified_at": "2026-02-24T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "x_phase3": true,
+  "method": "VR-VMETH-0003",
+  "summary": "Finite element analysis of frames 14, 15 and 15A at ultimate load cases.",
+  "results": [
+   {
+    "quantity_name": "reserve_factor_ultimate",
+    "value": {
+     "value": 1.22,
+     "unit": "1"
+    },
+    "margin": {
+     "value": 0.22,
+     "unit": "1"
+    }
+   }
+  ],
+  "outcome": "Pass",
+  "basis_revisions": [
+   "PR-D-0000220",
+   "PR-D-0000221",
+   "PR-D-0000222"
+  ],
+  "effectivity": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 1,
+   "to": 999
+  },
+  "discipline": "VR-DISC-0022",
+  "lifecycle_stage": "VR-LCS-0006",
+  "document": {
+   "source_ref": "CALC-D-0201",
+   "issue": 1
+  },
+  "links": [
+   {
+    "link_type": "Demonstrates",
+    "target": "REQ-D-0000147"
+   }
+  ]
+ },
+ {
+  "id": "VER-D-0000321",
+  "type": "Verification",
+  "schema_version": "6.0",
+  "title": "Frames 14 to 15A fatigue analysis",
+  "status": "Approved",
+  "owner": "user:a.novak",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-02-24T09:00:00Z",
+  "created_by": "user:a.novak",
+  "modified_at": "2026-02-24T09:00:00Z",
+  "modified_by": "user:a.novak",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:a.novak",
+  "verified_at": "2026-02-24T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "x_phase3": true,
+  "method": "VR-VMETH-0003",
+  "summary": "Fatigue analysis at frame cut-outs and fastener holes, including the bracket and clamp boss holes.",
+  "results": [
+   {
+    "quantity_name": "fatigue_scatter_life",
+    "value": {
+     "value": 4.1,
+     "unit": "1"
+    },
+    "margin": {
+     "value": 1.1,
+     "unit": "1"
+    }
+   }
+  ],
+  "outcome": "Pass",
+  "basis_revisions": [
+   "PR-D-0000220",
+   "PR-D-0000221",
+   "PR-D-0000222"
+  ],
+  "effectivity": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 1,
+   "to": 999
+  },
+  "discipline": "VR-DISC-0022",
+  "lifecycle_stage": "VR-LCS-0006",
+  "document": {
+   "source_ref": "CALC-D-0202",
+   "issue": 1
+  },
+  "links": [
+   {
+    "link_type": "Demonstrates",
+    "target": "REQ-D-0000148"
+   }
+  ]
+ },
+ {
+  "id": "VER-D-0000322",
+  "type": "Verification",
+  "schema_version": "6.0",
+  "title": "Frames 14 to 15A design inspection against TSM-MET",
+  "status": "Approved",
+  "owner": "user:a.novak",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-02-24T09:00:00Z",
+  "created_by": "user:a.novak",
+  "modified_at": "2026-02-24T09:00:00Z",
+  "modified_by": "user:a.novak",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:a.novak",
+  "verified_at": "2026-02-24T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "x_phase3": true,
+  "method": "VR-VMETH-0008",
+  "summary": "Inspection of machined frame definitions for internal corner radii.",
+  "results": [],
+  "outcome": "Pass",
+  "basis_revisions": [
+   "PR-D-0000220",
+   "PR-D-0000221",
+   "PR-D-0000222"
+  ],
+  "effectivity": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 1,
+   "to": 999
+  },
+  "discipline": "VR-DISC-0022",
+  "lifecycle_stage": "VR-LCS-0006",
+  "document": {
+   "source_ref": "INSP-D-0203",
+   "issue": 1
+  },
+  "links": [
+   {
+    "link_type": "Demonstrates",
+    "target": "TSM-D-0000063"
+   }
+  ]
+ },
+ {
+  "id": "VER-D-0000323",
+  "type": "Verification",
+  "schema_version": "6.0",
+  "title": "Frame 14 bracket fastener installation inspection against TSM-STD",
+  "status": "Approved",
+  "owner": "user:a.novak",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-02-24T09:00:00Z",
+  "created_by": "user:a.novak",
+  "modified_at": "2026-02-24T09:00:00Z",
+  "modified_by": "user:a.novak",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:a.novak",
+  "verified_at": "2026-02-24T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "x_phase3": true,
+  "method": "VR-VMETH-0008",
+  "summary": "Bolt protrusion on the valve bracket fasteners at frame 14.",
+  "results": [],
+  "outcome": "Pass",
+  "basis_revisions": [
+   "PR-D-0000211",
+   "PR-D-0000212"
+  ],
+  "effectivity": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 1,
+   "to": 999
+  },
+  "discipline": "VR-DISC-0021",
+  "lifecycle_stage": "VR-LCS-0006",
+  "document": {
+   "source_ref": "INSP-D-0204",
+   "issue": 1
+  },
+  "links": [
+   {
+    "link_type": "Demonstrates",
+    "target": "TSM-D-0000066"
+   }
+  ]
+ }
+]

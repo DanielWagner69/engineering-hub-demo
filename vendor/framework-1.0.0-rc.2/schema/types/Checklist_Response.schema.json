@@ -1,0 +1,25 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "types/Checklist_Response.schema.json",
+ "title": "Checklist Response (schema v6 3.32, brief)",
+ "allOf": [
+  {
+   "$ref": "../common.schema.json"
+  }
+ ],
+ "type": "object",
+ "properties": {
+  "fdps_revision": {},
+  "stage": {},
+  "consideration": {},
+  "item_id": {},
+  "response": {},
+  "reason": {},
+  "responder": {},
+  "follow_up": {},
+  "type": {
+   "const": "Checklist Response"
+  }
+ },
+ "required": []
+}

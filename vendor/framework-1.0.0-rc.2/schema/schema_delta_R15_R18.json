@@ -1,0 +1,57 @@
+{
+ "R-15": {
+  "type": "FDPS",
+  "add_fields": {
+   "lead_sub_system_approval": {
+    "type": "object",
+    "required": [
+     "set_by",
+     "set_at",
+     "approved_by",
+     "approved_at"
+    ],
+    "properties": {
+     "set_by": {
+      "type": "string",
+      "description": "Person in the owning Design Sub-team who set the lead Sub-system"
+     },
+     "set_at": {
+      "type": "string"
+     },
+     "approved_by": {
+      "type": "string",
+      "description": "A Design Lead whose area is lead_sub_system, at approved_at"
+     },
+     "approved_at": {
+      "type": "string"
+     },
+     "change_record": {
+      "type": "string",
+      "description": "Change Record (change type Lead Sub-system change) when the lead was changed after creation"
+     }
+    },
+    "description": "R-15: the lead Sub-system is set by the owning Design Sub-team and approved by a Design Lead of that Sub-system. A change is a Change Record (VR-CHG-0011) that re-runs interface inheritance and flags existing breaks for re-confirmation."
+   }
+  },
+  "add_required": [
+   "lead_sub_system_approval"
+  ]
+ },
+ "R-18": {
+  "type": "Review Flag",
+  "decision_enum": [
+   "Open",
+   "No impact",
+   "Updated",
+   "Passed on",
+   "Accept",
+   "Query"
+  ],
+  "add_fields": {
+   "fdps_interface": {
+    "type": "boolean",
+    "description": "R-18: true for a flag raised to the owner of the other FDPS by a cross-FDPS Secures link. Its decision is Accept or Query; a Query stays open, is shown on both FDPS pages and does not block the link. No confirmation of the link is required."
+   }
+  }
+ }
+}

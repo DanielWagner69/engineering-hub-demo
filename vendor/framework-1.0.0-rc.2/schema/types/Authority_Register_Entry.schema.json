@@ -1,0 +1,73 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "types/Authority_Register_Entry.schema.json",
+ "title": "Authority Register Entry (schema v6 3.x)",
+ "allOf": [
+  {
+   "$ref": "../common.schema.json"
+  }
+ ],
+ "type": "object",
+ "properties": {
+  "project": {
+   "type": "string",
+   "description": "ref(Project); card. 1; "
+  },
+  "data_type": {
+   "type": "string",
+   "x-stored-as": "label of a framework-fixed register entry",
+   "description": "reg(DATA_TYPE); card. 1; "
+  },
+  "event": {
+   "type": "string",
+   "x-stored-as": "label of a framework-fixed register entry",
+   "description": "reg; card. 1; Master recorded; Parallel run started; Moved to Hub"
+  },
+  "master": {
+   "anyOf": [
+    {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+     }
+    },
+    {
+     "type": "string",
+     "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+    }
+   ],
+   "description": "reg(MASTER); card. 1; "
+  },
+  "effective_date": {
+   "type": "string",
+   "pattern": "^\\d{4}-\\d{2}-\\d{2}",
+   "description": "date; card. 1; "
+  },
+  "reconciliation_report": {
+   "type": "string",
+   "description": "ref(Production Link or attachment); card. 1*; "
+  },
+  "sign_off": {
+   "description": "json; card. 1*; {by: Person (data type owner), at}"
+  },
+  "parallel_run": {
+   "description": "json; card. 1*; {release_cycle, from, to, unresolved_discrepancies: 0}"
+  },
+  "approved_by": {
+   "type": "string",
+   "description": "ref(Person); card. 1*; "
+  },
+  "type": {
+   "const": "Authority Register Entry"
+  }
+ },
+ "required": [
+  "project",
+  "data_type",
+  "event",
+  "master",
+  "effective_date"
+ ],
+ "x-owned-links": []
+}

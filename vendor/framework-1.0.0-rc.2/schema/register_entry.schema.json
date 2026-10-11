@@ -1,0 +1,170 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "register_entry.schema.json",
+ "title": "Register entry (schema v6 2.1)",
+ "type": "object",
+ "properties": {
+  "id": {
+   "type": "string",
+   "description": "string; card. 1; VR-REGISTER-NNNN; permanent.",
+   "pattern": "^VR-[A-Z]+-\\d{4}$"
+  },
+  "register": {
+   "type": "string",
+   "pattern": "^[A-Z_]+$",
+   "description": "Register code (schema 2.2)"
+  },
+  "code": {
+   "type": "string",
+   "description": "string; card. 1; Short code, unique within the register (for example a System code aligned to ATA iSpec 2200 where an equivalent exists, or a Type code such as BR)."
+  },
+  "label": {
+   "type": "string",
+   "description": "string; card. 1; Display name."
+  },
+  "definition": {
+   "type": "string",
+   "description": "text; card. 1; Precise description of what the option includes and excludes."
+  },
+  "parent": {
+   "anyOf": [
+    {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+     }
+    },
+    {
+     "type": "string",
+     "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+    }
+   ],
+   "description": "reg(parent register); card. 0..1; Upper-tier entry, for example System to System Group, Sub-system to System, Build Station to Major Unit, Design Sub-team to Design Team."
+  },
+  "facet_level": {
+   "anyOf": [
+    {
+     "type": "integer"
+    },
+    {
+     "const": "cross-cutting"
+    }
+   ]
+  },
+  "applies_to_scopes": {
+   "anyOf": [
+    {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+     }
+    },
+    {
+     "type": "string",
+     "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+    }
+   ],
+   "description": "reg(PRODUCT_SCOPE); card. 1..n*; For System entries (2F.11) and Major Unit and Build Station entries."
+  },
+  "range": {
+   "description": "json; card. 0..1; {lower, lower_inclusive, upper, upper_inclusive, unit}, for range-based options. Null ends are open-ended."
+  },
+  "is_catch_all": {
+   "type": "boolean",
+   "description": "bool; card. 1; True for precisely defined catch-alls (Final Assembly, General Sub-system)."
+  },
+  "is_structural": {
+   "type": "boolean",
+   "description": "bool; card. 1*; For System entries: true for the structural Systems (Airframe System Group). Their Sub-systems are Sub-structures (derived, not stored on the Sub-system entry)."
+  },
+  "is_bench": {
+   "type": "boolean",
+   "description": "bool; card. 1*; For Build Station entries: true for the Bench Build Station of a Major Unit; false for aircraft Build Stations."
+  },
+  "sequence_no": {
+   "type": "integer",
+   "description": "int; card. 1*; For Lifecycle Stage entries: 1 to 11, the order of the lifecycle."
+  },
+  "in_current_scope": {
+   "type": "boolean",
+   "description": "bool; card. 1*; For Lifecycle Stage entries: true for stages 4 to 6 (Initial System Design to Detailed Design), false for the others until the scope is expanded."
+  },
+  "discipline_type": {
+   "anyOf": [
+    {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+     }
+    },
+    {
+     "type": "string",
+     "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+    }
+   ],
+   "description": "reg(DISC_TYPE); card. 1*; For Discipline entries: Sign-off team or Consideration only."
+  },
+  "lifecycle_stage": {
+   "anyOf": [
+    {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+     }
+    },
+    {
+     "type": "string",
+     "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+    }
+   ],
+   "description": "reg(LCS); card. 1*; For review stage entries: the aligned Lifecycle Stage (A to 4, B to 5, C to 6)."
+  },
+  "state": {
+   "type": "string",
+   "enum": [
+    "Active",
+    "Deprecated",
+    "Retired"
+   ]
+  },
+  "replaced_by": {
+   "anyOf": [
+    {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+     }
+    },
+    {
+     "type": "string",
+     "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+    }
+   ],
+   "description": "reg(same register); card. 0..n; For split or merged options."
+  },
+  "source": {
+   "type": "string",
+   "description": "string; card. 1; Framework vN or Tailoring Record id."
+  },
+  "sort_order": {
+   "type": "integer",
+   "description": "int; card. 1; Display order."
+  }
+ },
+ "required": [
+  "id",
+  "register",
+  "code",
+  "label",
+  "definition",
+  "is_catch_all",
+  "state",
+  "source",
+  "sort_order"
+ ]
+}

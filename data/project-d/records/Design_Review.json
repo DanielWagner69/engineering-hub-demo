@@ -1,0 +1,1932 @@
+[
+ {
+  "id": "DR-D-0000001",
+  "type": "Design Review",
+  "schema_version": "6.0",
+  "title": "Scheme review A, centre fuselage fuel feed (D2822001-801)",
+  "status": "Closed",
+  "owner": "user:r.okafor",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-12-30T09:00:00Z",
+  "created_by": "user:r.okafor",
+  "modified_at": "2025-12-30T09:00:00Z",
+  "modified_by": "user:r.okafor",
+  "record_version": 4,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:r.okafor",
+  "verified_at": "2025-12-30T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "stage": "VR-STAGE-0001",
+  "review_date": "2026-01-13",
+  "material_issued_at": "2025-12-30",
+  "chair": "user:s.price",
+  "attendees": [
+   {
+    "person": "user:p.hale",
+    "represents": "Fuel Sub-team",
+    "role": "Designer"
+   },
+   {
+    "person": "user:r.okafor",
+    "represents": "Fuel Sub-team",
+    "role": "Design Approver"
+   },
+   {
+    "person": "user:s.price",
+    "represents": "Project",
+    "role": "Technical Authority for Design (chair)"
+   },
+   {
+    "person": "user:k.osei",
+    "represents": "Fluid Systems Design Team",
+    "role": "Design Authority"
+   },
+   {
+    "person": "user:h.patel",
+    "represents": "Safety",
+    "role": "Discipline Lead"
+   },
+   {
+    "person": "user:l.green",
+    "represents": "Weight",
+    "role": "Discipline Lead"
+   },
+   {
+    "person": "user:d.roy",
+    "represents": "Maintainability, Reliability and Ground Equipment",
+    "role": "Discipline Lead"
+   },
+   {
+    "person": "user:o.fry",
+    "represents": "Airworthiness and Certification",
+    "role": "Discipline Lead"
+   },
+   {
+    "person": "user:u.lowe",
+    "represents": "Fluid Systems",
+    "role": "Discipline Lead"
+   },
+   {
+    "person": "user:g.burns",
+    "represents": "Primary Structure",
+    "role": "Design Lead"
+   },
+   {
+    "person": "user:w.nash",
+    "represents": "Propulsion",
+    "role": "Design Lead"
+   },
+   {
+    "person": "user:e.park",
+    "represents": "Electrical Power Generation & Distribution",
+    "role": "Design Lead"
+   },
+   {
+    "person": "user:v.moreau",
+    "represents": "Vehicle Management",
+    "role": "Design Lead"
+   },
+   {
+    "person": "user:s.kerr",
+    "represents": "Hydraulics",
+    "role": "Design Lead"
+   }
+  ],
+  "introduction": {
+   "scope": "FDPS D2822001-801 (FR-D-0000033)"
+  },
+  "entry_check": [
+   {
+    "criterion": "Requirements reach the FDPS through its Sub-systems",
+    "met": true
+   },
+   {
+    "criterion": "Initial system layout and space allocation defined",
+    "met": true
+   },
+   {
+    "criterion": "Interfacing Systems identified (inherited, with breaks recorded)",
+    "met": true
+   }
+  ],
+  "known_risks": [
+   "RSK-D-0000001"
+  ],
+  "minutes": "Initial layout and space allocation accepted. Action ACT-D-0000101 raised by S. Kerr (Hydraulics interface).",
+  "discipline_agreements": [
+   {
+    "discipline": "VR-DISC-0006",
+    "position": "Agree",
+    "reasons": "",
+    "conditions": [],
+    "by": "user:r.okafor",
+    "at": "2026-01-13T09:00:00Z"
+   },
+   {
+    "discipline": "VR-DISC-0019",
+    "position": "Agree",
+    "reasons": "",
+    "conditions": [],
+    "by": "user:h.patel",
+    "at": "2026-01-13T09:00:00Z"
+   },
+   {
+    "discipline": "VR-DISC-0025",
+    "position": "Agree",
+    "reasons": "",
+    "conditions": [],
+    "by": "user:l.green",
+    "at": "2026-01-13T09:00:00Z"
+   },
+   {
+    "discipline": "VR-DISC-0013",
+    "position": "Agree",
+    "reasons": "",
+    "conditions": [],
+    "by": "user:d.roy",
+    "at": "2026-01-13T09:00:00Z"
+   },
+   {
+    "discipline": "VR-DISC-0003",
+    "position": "Agree",
+    "reasons": "",
+    "conditions": [],
+    "by": "user:o.fry",
+    "at": "2026-01-13T09:00:00Z"
+   },
+   {
+    "discipline": "VR-DISC-0026",
+    "position": "Agree",
+    "reasons": "",
+    "conditions": [],
+    "by": "user:u.lowe",
+    "at": "2026-01-13T09:00:00Z"
+   }
+  ],
+  "interface_agreements": [
+   {
+    "system": "VR-SYS-0001",
+    "position": "Agree",
+    "reasons": "Brackets, clamps and fasteners attach to frames 14, 15 and 15A",
+    "conditions": [],
+    "by": "user:g.burns",
+    "at": "2026-01-13T09:00:00Z"
+   },
+   {
+    "system": "VR-SYS-0005",
+    "position": "Agree",
+    "reasons": "Cross-join spool connects to the engine fuel inlet",
+    "conditions": [],
+    "by": "user:w.nash",
+    "at": "2026-01-13T09:00:00Z"
+   },
+   {
+    "system": "VR-SYS-0007",
+    "position": "Agree",
+    "reasons": "Shut-off valve motor is powered from secondary distribution",
+    "conditions": [],
+    "by": "user:e.park",
+    "at": "2026-01-13T09:00:00Z"
+   },
+   {
+    "system": "VR-SYS-0011",
+    "position": "Agree",
+    "reasons": "Shut-off valve is commanded by vehicle management computing",
+    "conditions": [],
+    "by": "user:v.moreau",
+    "at": "2026-01-13T09:00:00Z"
+   },
+   {
+    "system": "VR-SYS-0012",
+    "position": "Agree",
+    "reasons": "Twin-pipe bracket also carries a hydraulic pipe (Supports link on PI-D-0004110)",
+    "conditions": [],
+    "by": "user:s.kerr",
+    "at": "2026-01-13T09:00:00Z"
+   }
+  ],
+  "decision": "Pass",
+  "decision_by": "user:s.price",
+  "decision_at": "2026-01-13T09:00:00Z",
+  "content": {
+   "generated_from": [
+    "PG-D-0000310#stage-A",
+    "FD-D-0000017",
+    "inferred Requirements, TSMs and interfacing Systems of the FDPS"
+   ]
+  },
+  "links": [
+   {
+    "link_type": "Covers",
+    "target": "FR-D-0000033"
+   }
+  ]
+ },
+ {
+  "id": "DR-D-0000002",
+  "type": "Design Review",
+  "schema_version": "6.0",
+  "title": "Scheme review B, centre fuselage fuel feed (D2822001-801)",
+  "status": "Closed",
+  "owner": "user:r.okafor",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-03-02T09:00:00Z",
+  "created_by": "user:r.okafor",
+  "modified_at": "2026-03-02T09:00:00Z",
+  "modified_by": "user:r.okafor",
+  "record_version": 4,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:r.okafor",
+  "verified_at": "2026-03-02T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "stage": "VR-STAGE-0002",
+  "review_date": "2026-03-17",
+  "material_issued_at": "2026-03-02",
+  "chair": "user:s.price",
+  "attendees": [
+   {
+    "person": "user:p.hale",
+    "represents": "Fuel Sub-team",
+    "role": "Designer"
+   },
+   {
+    "person": "user:r.okafor",
+    "represents": "Fuel Sub-team",
+    "role": "Design Approver"
+   },
+   {
+    "person": "user:s.price",
+    "represents": "Project",
+    "role": "Technical Authority for Design (chair)"
+   },
+   {
+    "person": "user:k.osei",
+    "represents": "Fluid Systems Design Team",
+    "role": "Design Authority"
+   },
+   {
+    "person": "user:h.patel",
+    "represents": "Safety",
+    "role": "Discipline Lead"
+   },
+   {
+    "person": "user:a.novak",
+    "represents": "Structural Analysis (Stress)",
+    "role": "Discipline Lead"
+   },
+   {
+    "person": "user:t.brooks",
+    "represents": "Materials and Processes",
+    "role": "Discipline Lead"
+   },
+   {
+    "person": "user:f.moss",
+    "represents": "Manufacturing Engineering",
+    "role": "Discipline Lead"
+   },
+   {
+    "person": "user:g.ito",
+    "represents": "Test",
+    "role": "Discipline Lead"
+   },
+   {
+    "person": "user:l.green",
+    "represents": "Weight",
+    "role": "Discipline Lead"
+   },
+   {
+    "person": "user:u.lowe",
+    "represents": "Fluid Systems",
+    "role": "Discipline Lead"
+   },
+   {
+    "person": "user:g.burns",
+    "represents": "Primary Structure",
+    "role": "Design Lead"
+   },
+   {
+    "person": "user:w.nash",
+    "represents": "Propulsion",
+    "role": "Design Lead"
+   },
+   {
+    "person": "user:e.park",
+    "represents": "Electrical Power Generation & Distribution",
+    "role": "Design Lead"
+   },
+   {
+    "person": "user:v.moreau",
+    "represents": "Vehicle Management",
+    "role": "Design Lead"
+   },
+   {
+    "person": "user:s.kerr",
+    "represents": "Hydraulics",
+    "role": "Design Lead"
+   }
+  ],
+  "introduction": {
+   "scope": "FDPS D2822001-801 (FR-D-0000033)"
+  },
+  "entry_check": [
+   {
+    "criterion": "Preliminary geometry",
+    "met": true
+   },
+   {
+    "criterion": "TSM compliance plan",
+    "met": true
+   },
+   {
+    "criterion": "Draft interface agreements",
+    "met": true
+   },
+   {
+    "criterion": "Initial analysis",
+    "met": true
+   },
+   {
+    "criterion": "Pipework: pipe routing with bend radii checked against TSM-PIPE",
+    "met": true
+   }
+  ],
+  "known_risks": [
+   "RSK-D-0000002"
+  ],
+  "minutes": "Preliminary geometry accepted. Structural Analysis (Stress) agreed with conditions: ACT-D-0000102.",
+  "discipline_agreements": [
+   {
+    "discipline": "VR-DISC-0006",
+    "position": "Agree",
+    "reasons": "",
+    "conditions": [],
+    "by": "user:r.okafor",
+    "at": "2026-03-17T09:00:00Z"
+   },
+   {
+    "discipline": "VR-DISC-0019",
+    "position": "Agree",
+    "reasons": "",
+    "conditions": [],
+    "by": "user:h.patel",
+    "at": "2026-03-17T09:00:00Z"
+   },
+   {
+    "discipline": "VR-DISC-0022",
+    "position": "Agree with conditions",
+    "reasons": "Clamp spacing to be confirmed against the installed vibration spectrum.",
+    "conditions": [
+     "ACT-D-0000102"
+    ],
+    "by": "user:a.novak",
+    "at": "2026-03-17T09:00:00Z"
+   },
+   {
+    "discipline": "VR-DISC-0015",
+    "position": "Agree",
+    "reasons": "",
+    "conditions": [],
+    "by": "user:t.brooks",
+    "at": "2026-03-17T09:00:00Z"
+   },
+   {
+    "discipline": "VR-DISC-0014",
+    "position": "Agree",
+    "reasons": "",
+    "conditions": [],
+    "by": "user:f.moss",
+    "at": "2026-03-17T09:00:00Z"
+   },
+   {
+    "discipline": "VR-DISC-0024",
+    "position": "Agree",
+    "reasons": "",
+    "conditions": [],
+    "by": "user:g.ito",
+    "at": "2026-03-17T09:00:00Z"
+   },
+   {
+    "discipline": "VR-DISC-0025",
+    "position": "Agree",
+    "reasons": "",
+    "conditions": [],
+    "by": "user:l.green",
+    "at": "2026-03-17T09:00:00Z"
+   },
+   {
+    "discipline": "VR-DISC-0026",
+    "position": "Agree",
+    "reasons": "",
+    "conditions": [],
+    "by": "user:u.lowe",
+    "at": "2026-03-17T09:00:00Z"
+   }
+  ],
+  "interface_agreements": [
+   {
+    "system": "VR-SYS-0001",
+    "position": "Agree",
+    "reasons": "Brackets, clamps and fasteners attach to frames 14, 15 and 15A",
+    "conditions": [],
+    "by": "user:g.burns",
+    "at": "2026-03-17T09:00:00Z"
+   },
+   {
+    "system": "VR-SYS-0005",
+    "position": "Agree",
+    "reasons": "Cross-join spool connects to the engine fuel inlet",
+    "conditions": [],
+    "by": "user:w.nash",
+    "at": "2026-03-17T09:00:00Z"
+   },
+   {
+    "system": "VR-SYS-0007",
+    "position": "Agree",
+    "reasons": "Shut-off valve motor is powered from secondary distribution",
+    "conditions": [],
+    "by": "user:e.park",
+    "at": "2026-03-17T09:00:00Z"
+   },
+   {
+    "system": "VR-SYS-0011",
+    "position": "Agree",
+    "reasons": "Shut-off valve is commanded by vehicle management computing",
+    "conditions": [],
+    "by": "user:v.moreau",
+    "at": "2026-03-17T09:00:00Z"
+   },
+   {
+    "system": "VR-SYS-0012",
+    "position": "Agree",
+    "reasons": "Twin-pipe bracket also carries a hydraulic pipe (Supports link on PI-D-0004110)",
+    "conditions": [],
+    "by": "user:s.kerr",
+    "at": "2026-03-17T09:00:00Z"
+   }
+  ],
+  "decision": "Pass",
+  "decision_by": "user:s.price",
+  "decision_at": "2026-03-17T09:00:00Z",
+  "content": {
+   "generated_from": [
+    "PG-D-0000310#stage-B",
+    "FD-D-0000017",
+    "inferred Requirements, TSMs and interfacing Systems of the FDPS"
+   ]
+  },
+  "links": [
+   {
+    "link_type": "Covers",
+    "target": "FR-D-0000033"
+   }
+  ]
+ },
+ {
+  "id": "DR-D-0000003",
+  "type": "Design Review",
+  "schema_version": "6.0",
+  "title": "Scheme review C, centre fuselage fuel feed (D2822001-801)",
+  "status": "Closed",
+  "owner": "user:r.okafor",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-04-28T09:00:00Z",
+  "created_by": "user:r.okafor",
+  "modified_at": "2026-04-28T09:00:00Z",
+  "modified_by": "user:r.okafor",
+  "record_version": 4,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:r.okafor",
+  "verified_at": "2026-04-28T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "stage": "VR-STAGE-0003",
+  "review_date": "2026-05-12",
+  "material_issued_at": "2026-04-28",
+  "chair": "user:s.price",
+  "attendees": [
+   {
+    "person": "user:p.hale",
+    "represents": "Fuel Sub-team",
+    "role": "Designer"
+   },
+   {
+    "person": "user:r.okafor",
+    "represents": "Fuel Sub-team",
+    "role": "Design Approver"
+   },
+   {
+    "person": "user:s.price",
+    "represents": "Project",
+    "role": "Technical Authority for Design (chair)"
+   },
+   {
+    "person": "user:k.osei",
+    "represents": "Fluid Systems Design Team",
+    "role": "Design Authority"
+   },
+   {
+    "person": "user:h.patel",
+    "represents": "Safety",
+    "role": "Discipline Lead"
+   },
+   {
+    "person": "user:a.novak",
+    "represents": "Structural Analysis (Stress)",
+    "role": "Discipline Lead"
+   },
+   {
+    "person": "user:t.brooks",
+    "represents": "Materials and Processes",
+    "role": "Discipline Lead"
+   },
+   {
+    "person": "user:f.moss",
+    "represents": "Manufacturing Engineering",
+    "role": "Discipline Lead"
+   },
+   {
+    "person": "user:b.carr",
+    "represents": "Quality",
+    "role": "Discipline Lead"
+   },
+   {
+    "person": "user:n.shaw",
+    "represents": "Standard Parts and Supply Chain",
+    "role": "Discipline Lead"
+   },
+   {
+    "person": "user:e.dunn",
+    "represents": "Configuration Management",
+    "role": "Discipline Lead"
+   },
+   {
+    "person": "user:o.fry",
+    "represents": "Airworthiness and Certification",
+    "role": "Discipline Lead"
+   },
+   {
+    "person": "user:d.roy",
+    "represents": "Maintainability, Reliability and Ground Equipment",
+    "role": "Discipline Lead"
+   },
+   {
+    "person": "user:l.green",
+    "represents": "Weight",
+    "role": "Discipline Lead"
+   },
+   {
+    "person": "user:u.lowe",
+    "represents": "Fluid Systems",
+    "role": "Discipline Lead"
+   },
+   {
+    "person": "user:g.burns",
+    "represents": "Primary Structure",
+    "role": "Design Lead"
+   },
+   {
+    "person": "user:w.nash",
+    "represents": "Propulsion",
+    "role": "Design Lead"
+   },
+   {
+    "person": "user:e.park",
+    "represents": "Electrical Power Generation & Distribution",
+    "role": "Design Lead"
+   },
+   {
+    "person": "user:v.moreau",
+    "represents": "Vehicle Management",
+    "role": "Design Lead"
+   },
+   {
+    "person": "user:s.kerr",
+    "represents": "Hydraulics",
+    "role": "Design Lead"
+   }
+  ],
+  "introduction": {
+   "scope": "FDPS D2822001-801 (FR-D-0000033)"
+  },
+  "entry_check": [
+   {
+    "criterion": "Full detail design",
+    "met": true
+   },
+   {
+    "criterion": "Compliance stated against every inherited and linked Requirement and TSM",
+    "met": true
+   },
+   {
+    "criterion": "Analysis complete",
+    "met": true
+   },
+   {
+    "criterion": "All interfaces agreed",
+    "met": true
+   },
+   {
+    "criterion": "Pipework: pressure drop analysis complete",
+    "met": true
+   }
+  ],
+  "known_risks": [
+   "RSK-D-0000003"
+  ],
+  "minutes": "Detail design accepted. Actions ACT-D-0000103 (from checklist No EF-C-02) and ACT-D-0000104 raised.",
+  "discipline_agreements": [
+   {
+    "discipline": "VR-DISC-0006",
+    "position": "Agree",
+    "reasons": "",
+    "conditions": [],
+    "by": "user:r.okafor",
+    "at": "2026-05-12T09:00:00Z"
+   },
+   {
+    "discipline": "VR-DISC-0019",
+    "position": "Agree",
+    "reasons": "",
+    "conditions": [],
+    "by": "user:h.patel",
+    "at": "2026-05-12T09:00:00Z"
+   },
+   {
+    "discipline": "VR-DISC-0022",
+    "position": "Agree",
+    "reasons": "",
+    "conditions": [],
+    "by": "user:a.novak",
+    "at": "2026-05-12T09:00:00Z"
+   },
+   {
+    "discipline": "VR-DISC-0015",
+    "position": "Agree",
+    "reasons": "",
+    "conditions": [],
+    "by": "user:t.brooks",
+    "at": "2026-05-12T09:00:00Z"
+   },
+   {
+    "discipline": "VR-DISC-0014",
+    "position": "Agree",
+    "reasons": "",
+    "conditions": [],
+    "by": "user:f.moss",
+    "at": "2026-05-12T09:00:00Z"
+   },
+   {
+    "discipline": "VR-DISC-0018",
+    "position": "Agree",
+    "reasons": "",
+    "conditions": [],
+    "by": "user:b.carr",
+    "at": "2026-05-12T09:00:00Z"
+   },
+   {
+    "discipline": "VR-DISC-0021",
+    "position": "Agree",
+    "reasons": "",
+    "conditions": [],
+    "by": "user:n.shaw",
+    "at": "2026-05-12T09:00:00Z"
+   },
+   {
+    "discipline": "VR-DISC-0005",
+    "position": "Agree",
+    "reasons": "",
+    "conditions": [],
+    "by": "user:e.dunn",
+    "at": "2026-05-12T09:00:00Z"
+   },
+   {
+    "discipline": "VR-DISC-0003",
+    "position": "Agree",
+    "reasons": "",
+    "conditions": [],
+    "by": "user:o.fry",
+    "at": "2026-05-12T09:00:00Z"
+   },
+   {
+    "discipline": "VR-DISC-0013",
+    "position": "Agree",
+    "reasons": "",
+    "conditions": [],
+    "by": "user:d.roy",
+    "at": "2026-05-12T09:00:00Z"
+   },
+   {
+    "discipline": "VR-DISC-0025",
+    "position": "Agree",
+    "reasons": "",
+    "conditions": [],
+    "by": "user:l.green",
+    "at": "2026-05-12T09:00:00Z"
+   },
+   {
+    "discipline": "VR-DISC-0026",
+    "position": "Agree",
+    "reasons": "",
+    "conditions": [],
+    "by": "user:u.lowe",
+    "at": "2026-05-12T09:00:00Z"
+   }
+  ],
+  "interface_agreements": [
+   {
+    "system": "VR-SYS-0001",
+    "position": "Agree",
+    "reasons": "Brackets, clamps and fasteners attach to frames 14, 15 and 15A",
+    "conditions": [],
+    "by": "user:g.burns",
+    "at": "2026-05-12T09:00:00Z"
+   },
+   {
+    "system": "VR-SYS-0005",
+    "position": "Agree",
+    "reasons": "Cross-join spool connects to the engine fuel inlet",
+    "conditions": [],
+    "by": "user:w.nash",
+    "at": "2026-05-12T09:00:00Z"
+   },
+   {
+    "system": "VR-SYS-0007",
+    "position": "Agree",
+    "reasons": "Shut-off valve motor is powered from secondary distribution",
+    "conditions": [],
+    "by": "user:e.park",
+    "at": "2026-05-12T09:00:00Z"
+   },
+   {
+    "system": "VR-SYS-0011",
+    "position": "Agree",
+    "reasons": "Shut-off valve is commanded by vehicle management computing",
+    "conditions": [],
+    "by": "user:v.moreau",
+    "at": "2026-05-12T09:00:00Z"
+   },
+   {
+    "system": "VR-SYS-0012",
+    "position": "Agree",
+    "reasons": "Twin-pipe bracket also carries a hydraulic pipe (Supports link on PI-D-0004110)",
+    "conditions": [],
+    "by": "user:s.kerr",
+    "at": "2026-05-12T09:00:00Z"
+   }
+  ],
+  "decision": "Pass",
+  "decision_by": "user:s.price",
+  "decision_at": "2026-05-12T09:00:00Z",
+  "content": {
+   "generated_from": [
+    "PG-D-0000310#stage-C",
+    "FD-D-0000017",
+    "inferred Requirements, TSMs and interfacing Systems of the FDPS"
+   ]
+  },
+  "links": [
+   {
+    "link_type": "Covers",
+    "target": "FR-D-0000033"
+   }
+  ]
+ },
+ {
+  "id": "DR-D-0000004",
+  "type": "Design Review",
+  "schema_version": "6.0",
+  "title": "Re-review, stage review C, centre fuselage fuel feed (D2822001-801)",
+  "status": "Closed",
+  "owner": "user:r.okafor",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-09-08T09:00:00Z",
+  "created_by": "user:r.okafor",
+  "modified_at": "2026-09-08T09:00:00Z",
+  "modified_by": "user:r.okafor",
+  "record_version": 4,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:r.okafor",
+  "verified_at": "2026-09-08T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "stage": "VR-STAGE-0003",
+  "review_date": "2026-09-22",
+  "material_issued_at": "2026-09-08",
+  "chair": "user:s.price",
+  "attendees": [
+   {
+    "person": "user:p.hale",
+    "represents": "Fuel Sub-team",
+    "role": "Designer"
+   },
+   {
+    "person": "user:r.okafor",
+    "represents": "Fuel Sub-team",
+    "role": "Design Approver"
+   },
+   {
+    "person": "user:s.price",
+    "represents": "Project",
+    "role": "Technical Authority for Design (chair)"
+   },
+   {
+    "person": "user:k.osei",
+    "represents": "Fluid Systems Design Team",
+    "role": "Design Authority"
+   },
+   {
+    "person": "user:a.novak",
+    "represents": "Structural Analysis (Stress)",
+    "role": "Discipline Lead"
+   },
+   {
+    "person": "user:f.moss",
+    "represents": "Manufacturing Engineering",
+    "role": "Discipline Lead"
+   },
+   {
+    "person": "user:b.carr",
+    "represents": "Quality",
+    "role": "Discipline Lead"
+   },
+   {
+    "person": "user:u.lowe",
+    "represents": "Fluid Systems",
+    "role": "Discipline Lead"
+   },
+   {
+    "person": "user:w.nash",
+    "represents": "Propulsion",
+    "role": "Design Lead"
+   }
+  ],
+  "introduction": {
+   "scope": "FDPS D2822001-801 (FR-D-0000035)"
+  },
+  "entry_check": [
+   {
+    "criterion": "Full detail design",
+    "met": true
+   },
+   {
+    "criterion": "Compliance stated against every inherited and linked Requirement and TSM",
+    "met": true
+   },
+   {
+    "criterion": "Analysis complete",
+    "met": true
+   },
+   {
+    "criterion": "All interfaces agreed",
+    "met": true
+   },
+   {
+    "criterion": "Pipework: pressure drop analysis complete",
+    "met": true
+   }
+  ],
+  "known_risks": [
+   "RSK-D-0000004"
+  ],
+  "minutes": "Re-review at stage C of the substantial change CR-D-0000304 only. Propulsion agreed with conditions: ACT-D-0000105. Other agreements carried forward from DR-D-0000003.",
+  "discipline_agreements": [
+   {
+    "discipline": "VR-DISC-0006",
+    "position": "Agree",
+    "reasons": "",
+    "conditions": [],
+    "by": "user:r.okafor",
+    "at": "2026-09-22T09:00:00Z"
+   },
+   {
+    "discipline": "VR-DISC-0019",
+    "position": "Agree",
+    "by": "user:h.patel",
+    "at": "2026-05-12T09:00:00Z",
+    "carried_forward_from": "DR-D-0000003"
+   },
+   {
+    "discipline": "VR-DISC-0022",
+    "position": "Agree",
+    "reasons": "",
+    "conditions": [],
+    "by": "user:a.novak",
+    "at": "2026-09-22T09:00:00Z"
+   },
+   {
+    "discipline": "VR-DISC-0015",
+    "position": "Agree",
+    "by": "user:t.brooks",
+    "at": "2026-05-12T09:00:00Z",
+    "carried_forward_from": "DR-D-0000003"
+   },
+   {
+    "discipline": "VR-DISC-0014",
+    "position": "Agree",
+    "reasons": "",
+    "conditions": [],
+    "by": "user:f.moss",
+    "at": "2026-09-22T09:00:00Z"
+   },
+   {
+    "discipline": "VR-DISC-0018",
+    "position": "Agree",
+    "reasons": "",
+    "conditions": [],
+    "by": "user:b.carr",
+    "at": "2026-09-22T09:00:00Z"
+   },
+   {
+    "discipline": "VR-DISC-0021",
+    "position": "Agree",
+    "by": "user:n.shaw",
+    "at": "2026-05-12T09:00:00Z",
+    "carried_forward_from": "DR-D-0000003"
+   },
+   {
+    "discipline": "VR-DISC-0005",
+    "position": "Agree",
+    "by": "user:e.dunn",
+    "at": "2026-05-12T09:00:00Z",
+    "carried_forward_from": "DR-D-0000003"
+   },
+   {
+    "discipline": "VR-DISC-0003",
+    "position": "Agree",
+    "by": "user:o.fry",
+    "at": "2026-05-12T09:00:00Z",
+    "carried_forward_from": "DR-D-0000003"
+   },
+   {
+    "discipline": "VR-DISC-0013",
+    "position": "Agree",
+    "by": "user:d.roy",
+    "at": "2026-05-12T09:00:00Z",
+    "carried_forward_from": "DR-D-0000003"
+   },
+   {
+    "discipline": "VR-DISC-0025",
+    "position": "Agree",
+    "by": "user:l.green",
+    "at": "2026-05-12T09:00:00Z",
+    "carried_forward_from": "DR-D-0000003"
+   },
+   {
+    "discipline": "VR-DISC-0026",
+    "position": "Agree",
+    "reasons": "",
+    "conditions": [],
+    "by": "user:u.lowe",
+    "at": "2026-09-22T09:00:00Z"
+   }
+  ],
+  "interface_agreements": [
+   {
+    "system": "VR-SYS-0001",
+    "position": "Agree",
+    "by": "user:g.burns",
+    "at": "2026-05-12T09:00:00Z",
+    "carried_forward_from": "DR-D-0000003"
+   },
+   {
+    "system": "VR-SYS-0005",
+    "position": "Agree with conditions",
+    "reasons": "Engine inlet union torque and leak check procedure to be recorded in the interface control document.",
+    "conditions": [
+     "ACT-D-0000105"
+    ],
+    "by": "user:w.nash",
+    "at": "2026-09-22T09:00:00Z"
+   },
+   {
+    "system": "VR-SYS-0007",
+    "position": "Agree",
+    "by": "user:e.park",
+    "at": "2026-05-12T09:00:00Z",
+    "carried_forward_from": "DR-D-0000003"
+   },
+   {
+    "system": "VR-SYS-0011",
+    "position": "Agree",
+    "by": "user:v.moreau",
+    "at": "2026-05-12T09:00:00Z",
+    "carried_forward_from": "DR-D-0000003"
+   },
+   {
+    "system": "VR-SYS-0012",
+    "position": "Agree",
+    "by": "user:s.kerr",
+    "at": "2026-05-12T09:00:00Z",
+    "carried_forward_from": "DR-D-0000003"
+   }
+  ],
+  "decision": "Pass",
+  "decision_by": "user:s.price",
+  "decision_at": "2026-09-22T09:00:00Z",
+  "content": {
+   "generated_from": [
+    "PG-D-0000310#stage-C",
+    "FD-D-0000017",
+    "inferred Requirements, TSMs and interfacing Systems of the FDPS"
+   ]
+  },
+  "links": [
+   {
+    "link_type": "Covers",
+    "target": "FR-D-0000035"
+   }
+  ],
+  "re_review": {
+   "follows_review": "DR-D-0000003",
+   "change_records": [
+    "CR-D-0000304"
+   ],
+   "scope": "Cross-join spool end fitting and the engine fuel inlet interface",
+   "affected_disciplines": [
+    6,
+    26,
+    14,
+    18,
+    22
+   ],
+   "affected_systems": [
+    "VR-SYS-0005"
+   ],
+   "identified_by": "user:k.osei"
+  }
+ },
+ {
+  "id": "DR-D-0000005",
+  "type": "Design Review",
+  "schema_version": "6.0",
+  "title": "Scheme review A, centre fuselage frames 14 to 15A (D5012001-801)",
+  "status": "Closed",
+  "owner": "user:a.quinn",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-12-22T09:00:00Z",
+  "created_by": "user:a.quinn",
+  "modified_at": "2025-12-22T09:00:00Z",
+  "modified_by": "user:a.quinn",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:a.quinn",
+  "verified_at": "2025-12-22T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "x_phase3": true,
+  "stage": "VR-STAGE-0001",
+  "review_date": "2026-01-06",
+  "material_issued_at": "2025-12-22",
+  "chair": "user:s.price",
+  "attendees": [
+   {
+    "person": "user:h.grant",
+    "represents": "Centre Structure Sub-team",
+    "role": "Designer"
+   },
+   {
+    "person": "user:a.quinn",
+    "represents": "Structures Design Team",
+    "role": "Design Authority"
+   },
+   {
+    "person": "user:s.price",
+    "represents": "Project",
+    "role": "Technical Authority for Design (chair)"
+   },
+   {
+    "person": "user:g.burns",
+    "represents": "Primary Structure",
+    "role": "Design Lead"
+   },
+   {
+    "person": "user:r.okafor",
+    "represents": "Design",
+    "role": "Discipline Lead"
+   },
+   {
+    "person": "user:h.patel",
+    "represents": "Safety",
+    "role": "Discipline Lead"
+   },
+   {
+    "person": "user:a.novak",
+    "represents": "Structural Analysis (Stress)",
+    "role": "Discipline Lead"
+   },
+   {
+    "person": "user:l.green",
+    "represents": "Weight",
+    "role": "Discipline Lead"
+   },
+   {
+    "person": "user:o.fry",
+    "represents": "Airworthiness and Certification",
+    "role": "Discipline Lead"
+   },
+   {
+    "person": "user:c.ash",
+    "represents": "Skins, Doors & Panels",
+    "role": "Design Lead"
+   },
+   {
+    "person": "user:e.park",
+    "represents": "Electrical Power Generation & Distribution",
+    "role": "Design Lead"
+   },
+   {
+    "person": "user:m.dale",
+    "represents": "Pneumatics",
+    "role": "Design Lead"
+   },
+   {
+    "person": "user:t.ross",
+    "represents": "Flight Control",
+    "role": "Design Lead"
+   },
+   {
+    "person": "user:j.ward",
+    "represents": "Fuel",
+    "role": "Design Lead"
+   },
+   {
+    "person": "user:v.moreau",
+    "represents": "Vehicle Management",
+    "role": "Design Lead"
+   },
+   {
+    "person": "user:s.kerr",
+    "represents": "Hydraulics",
+    "role": "Design Lead"
+   },
+   {
+    "person": "user:i.webb",
+    "represents": "Environmental Control",
+    "role": "Design Lead"
+   }
+  ],
+  "introduction": {
+   "scope": "FDPS D5012001-801 (FR-D-0000036)"
+  },
+  "entry_check": [
+   {
+    "criterion": "Allocated Requirements and interfacing Systems identified",
+    "met": true
+   },
+   {
+    "criterion": "Concept layout in the integrated model",
+    "met": true
+   }
+  ],
+  "known_risks": [],
+  "minutes": "Stage A accepted.",
+  "discipline_agreements": [
+   {
+    "discipline": "VR-DISC-0006",
+    "position": "Agree",
+    "reasons": "",
+    "conditions": [],
+    "by": "user:r.okafor",
+    "at": "2026-01-06T09:00:00Z"
+   },
+   {
+    "discipline": "VR-DISC-0019",
+    "position": "Agree",
+    "reasons": "",
+    "conditions": [],
+    "by": "user:h.patel",
+    "at": "2026-01-06T09:00:00Z"
+   },
+   {
+    "discipline": "VR-DISC-0022",
+    "position": "Agree",
+    "reasons": "",
+    "conditions": [],
+    "by": "user:a.novak",
+    "at": "2026-01-06T09:00:00Z"
+   },
+   {
+    "discipline": "VR-DISC-0025",
+    "position": "Agree",
+    "reasons": "",
+    "conditions": [],
+    "by": "user:l.green",
+    "at": "2026-01-06T09:00:00Z"
+   },
+   {
+    "discipline": "VR-DISC-0003",
+    "position": "Agree",
+    "reasons": "",
+    "conditions": [],
+    "by": "user:o.fry",
+    "at": "2026-01-06T09:00:00Z"
+   }
+  ],
+  "interface_agreements": [
+   {
+    "system": "VR-SYS-0003",
+    "position": "Agree",
+    "reasons": "No item of this System is attached to frames 14 to 15A in the current population; kept on the Sub-structure list (over-inclusion accepted, R-09)",
+    "conditions": [],
+    "by": "user:c.ash",
+    "at": "2026-01-06T09:00:00Z"
+   },
+   {
+    "system": "VR-SYS-0007",
+    "position": "Agree",
+    "reasons": "No item of this System is attached to frames 14 to 15A in the current population; kept on the Sub-structure list (over-inclusion accepted, R-09)",
+    "conditions": [],
+    "by": "user:e.park",
+    "at": "2026-01-06T09:00:00Z"
+   },
+   {
+    "system": "VR-SYS-0008",
+    "position": "Agree",
+    "reasons": "No item of this System is attached to frames 14 to 15A in the current population; kept on the Sub-structure list (over-inclusion accepted, R-09)",
+    "conditions": [],
+    "by": "user:m.dale",
+    "at": "2026-01-06T09:00:00Z"
+   },
+   {
+    "system": "VR-SYS-0009",
+    "position": "Agree",
+    "reasons": "No item of this System is attached to frames 14 to 15A in the current population; kept on the Sub-structure list (over-inclusion accepted, R-09)",
+    "conditions": [],
+    "by": "user:t.ross",
+    "at": "2026-01-06T09:00:00Z"
+   },
+   {
+    "system": "VR-SYS-0010",
+    "position": "Agree",
+    "reasons": "Fuel feed clamps bolt to the frame 15A boss; the frame 14 valve bracket is held by this FDPS's fasteners (FDPS interface with D2822001-801)",
+    "conditions": [],
+    "by": "user:j.ward",
+    "at": "2026-01-06T09:00:00Z"
+   },
+   {
+    "system": "VR-SYS-0011",
+    "position": "Agree",
+    "reasons": "No item of this System is attached to frames 14 to 15A in the current population; kept on the Sub-structure list (over-inclusion accepted, R-09)",
+    "conditions": [],
+    "by": "user:v.moreau",
+    "at": "2026-01-06T09:00:00Z"
+   },
+   {
+    "system": "VR-SYS-0012",
+    "position": "Agree",
+    "reasons": "Twin-pipe bracket at frame 15 carries a hydraulic pipe",
+    "conditions": [],
+    "by": "user:s.kerr",
+    "at": "2026-01-06T09:00:00Z"
+   },
+   {
+    "system": "VR-SYS-0015",
+    "position": "Agree",
+    "reasons": "No item of this System is attached to frames 14 to 15A in the current population; kept on the Sub-structure list (over-inclusion accepted, R-09)",
+    "conditions": [],
+    "by": "user:i.webb",
+    "at": "2026-01-06T09:00:00Z"
+   }
+  ],
+  "decision": "Pass",
+  "decision_by": "user:s.price",
+  "decision_at": "2026-01-06T09:00:00Z",
+  "content": {
+   "generated_from": [
+    "PG-D-0000311#stage-A",
+    "FD-D-0000009",
+    "inferred Requirements, TSMs and interfacing Systems of the FDPS"
+   ]
+  },
+  "links": [
+   {
+    "link_type": "Covers",
+    "target": "FR-D-0000036"
+   }
+  ]
+ },
+ {
+  "id": "DR-D-0000006",
+  "type": "Design Review",
+  "schema_version": "6.0",
+  "title": "Scheme review B, centre fuselage frames 14 to 15A (D5012001-801)",
+  "status": "Closed",
+  "owner": "user:a.quinn",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-01-20T09:00:00Z",
+  "created_by": "user:a.quinn",
+  "modified_at": "2026-01-20T09:00:00Z",
+  "modified_by": "user:a.quinn",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:a.quinn",
+  "verified_at": "2026-01-20T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "x_phase3": true,
+  "stage": "VR-STAGE-0002",
+  "review_date": "2026-02-03",
+  "material_issued_at": "2026-01-20",
+  "chair": "user:s.price",
+  "attendees": [
+   {
+    "person": "user:h.grant",
+    "represents": "Centre Structure Sub-team",
+    "role": "Designer"
+   },
+   {
+    "person": "user:a.quinn",
+    "represents": "Structures Design Team",
+    "role": "Design Authority"
+   },
+   {
+    "person": "user:s.price",
+    "represents": "Project",
+    "role": "Technical Authority for Design (chair)"
+   },
+   {
+    "person": "user:g.burns",
+    "represents": "Primary Structure",
+    "role": "Design Lead"
+   },
+   {
+    "person": "user:r.okafor",
+    "represents": "Design",
+    "role": "Discipline Lead"
+   },
+   {
+    "person": "user:h.patel",
+    "represents": "Safety",
+    "role": "Discipline Lead"
+   },
+   {
+    "person": "user:a.novak",
+    "represents": "Structural Analysis (Stress)",
+    "role": "Discipline Lead"
+   },
+   {
+    "person": "user:t.brooks",
+    "represents": "Materials and Processes",
+    "role": "Discipline Lead"
+   },
+   {
+    "person": "user:f.moss",
+    "represents": "Manufacturing Engineering",
+    "role": "Discipline Lead"
+   },
+   {
+    "person": "user:l.green",
+    "represents": "Weight",
+    "role": "Discipline Lead"
+   },
+   {
+    "person": "user:o.fry",
+    "represents": "Airworthiness and Certification",
+    "role": "Discipline Lead"
+   },
+   {
+    "person": "user:c.ash",
+    "represents": "Skins, Doors & Panels",
+    "role": "Design Lead"
+   },
+   {
+    "person": "user:e.park",
+    "represents": "Electrical Power Generation & Distribution",
+    "role": "Design Lead"
+   },
+   {
+    "person": "user:m.dale",
+    "represents": "Pneumatics",
+    "role": "Design Lead"
+   },
+   {
+    "person": "user:t.ross",
+    "represents": "Flight Control",
+    "role": "Design Lead"
+   },
+   {
+    "person": "user:j.ward",
+    "represents": "Fuel",
+    "role": "Design Lead"
+   },
+   {
+    "person": "user:v.moreau",
+    "represents": "Vehicle Management",
+    "role": "Design Lead"
+   },
+   {
+    "person": "user:s.kerr",
+    "represents": "Hydraulics",
+    "role": "Design Lead"
+   },
+   {
+    "person": "user:i.webb",
+    "represents": "Environmental Control",
+    "role": "Design Lead"
+   }
+  ],
+  "introduction": {
+   "scope": "FDPS D5012001-801 (FR-D-0000036)"
+  },
+  "entry_check": [
+   {
+    "criterion": "Preliminary sizing complete",
+    "met": true
+   },
+   {
+    "criterion": "Applicable TSMs identified",
+    "met": true
+   }
+  ],
+  "known_risks": [],
+  "minutes": "Stage B accepted. Action ACT-D-0000106 raised on the frame 15A boss edge distance.",
+  "discipline_agreements": [
+   {
+    "discipline": "VR-DISC-0006",
+    "position": "Agree",
+    "reasons": "",
+    "conditions": [],
+    "by": "user:r.okafor",
+    "at": "2026-02-03T09:00:00Z"
+   },
+   {
+    "discipline": "VR-DISC-0019",
+    "position": "Agree",
+    "reasons": "",
+    "conditions": [],
+    "by": "user:h.patel",
+    "at": "2026-02-03T09:00:00Z"
+   },
+   {
+    "discipline": "VR-DISC-0022",
+    "position": "Agree",
+    "reasons": "",
+    "conditions": [],
+    "by": "user:a.novak",
+    "at": "2026-02-03T09:00:00Z"
+   },
+   {
+    "discipline": "VR-DISC-0015",
+    "position": "Agree",
+    "reasons": "",
+    "conditions": [],
+    "by": "user:t.brooks",
+    "at": "2026-02-03T09:00:00Z"
+   },
+   {
+    "discipline": "VR-DISC-0014",
+    "position": "Agree",
+    "reasons": "",
+    "conditions": [],
+    "by": "user:f.moss",
+    "at": "2026-02-03T09:00:00Z"
+   },
+   {
+    "discipline": "VR-DISC-0025",
+    "position": "Agree",
+    "reasons": "",
+    "conditions": [],
+    "by": "user:l.green",
+    "at": "2026-02-03T09:00:00Z"
+   },
+   {
+    "discipline": "VR-DISC-0003",
+    "position": "Agree",
+    "reasons": "",
+    "conditions": [],
+    "by": "user:o.fry",
+    "at": "2026-02-03T09:00:00Z"
+   }
+  ],
+  "interface_agreements": [
+   {
+    "system": "VR-SYS-0003",
+    "position": "Agree",
+    "reasons": "No item of this System is attached to frames 14 to 15A in the current population; kept on the Sub-structure list (over-inclusion accepted, R-09)",
+    "conditions": [],
+    "by": "user:c.ash",
+    "at": "2026-02-03T09:00:00Z"
+   },
+   {
+    "system": "VR-SYS-0007",
+    "position": "Agree",
+    "reasons": "No item of this System is attached to frames 14 to 15A in the current population; kept on the Sub-structure list (over-inclusion accepted, R-09)",
+    "conditions": [],
+    "by": "user:e.park",
+    "at": "2026-02-03T09:00:00Z"
+   },
+   {
+    "system": "VR-SYS-0008",
+    "position": "Agree",
+    "reasons": "No item of this System is attached to frames 14 to 15A in the current population; kept on the Sub-structure list (over-inclusion accepted, R-09)",
+    "conditions": [],
+    "by": "user:m.dale",
+    "at": "2026-02-03T09:00:00Z"
+   },
+   {
+    "system": "VR-SYS-0009",
+    "position": "Agree",
+    "reasons": "No item of this System is attached to frames 14 to 15A in the current population; kept on the Sub-structure list (over-inclusion accepted, R-09)",
+    "conditions": [],
+    "by": "user:t.ross",
+    "at": "2026-02-03T09:00:00Z"
+   },
+   {
+    "system": "VR-SYS-0010",
+    "position": "Agree",
+    "reasons": "Fuel feed clamps bolt to the frame 15A boss; the frame 14 valve bracket is held by this FDPS's fasteners (FDPS interface with D2822001-801)",
+    "conditions": [],
+    "by": "user:j.ward",
+    "at": "2026-02-03T09:00:00Z"
+   },
+   {
+    "system": "VR-SYS-0011",
+    "position": "Agree",
+    "reasons": "No item of this System is attached to frames 14 to 15A in the current population; kept on the Sub-structure list (over-inclusion accepted, R-09)",
+    "conditions": [],
+    "by": "user:v.moreau",
+    "at": "2026-02-03T09:00:00Z"
+   },
+   {
+    "system": "VR-SYS-0012",
+    "position": "Agree",
+    "reasons": "Twin-pipe bracket at frame 15 carries a hydraulic pipe",
+    "conditions": [],
+    "by": "user:s.kerr",
+    "at": "2026-02-03T09:00:00Z"
+   },
+   {
+    "system": "VR-SYS-0015",
+    "position": "Agree",
+    "reasons": "No item of this System is attached to frames 14 to 15A in the current population; kept on the Sub-structure list (over-inclusion accepted, R-09)",
+    "conditions": [],
+    "by": "user:i.webb",
+    "at": "2026-02-03T09:00:00Z"
+   }
+  ],
+  "decision": "Pass",
+  "decision_by": "user:s.price",
+  "decision_at": "2026-02-03T09:00:00Z",
+  "content": {
+   "generated_from": [
+    "PG-D-0000311#stage-B",
+    "FD-D-0000009",
+    "inferred Requirements, TSMs and interfacing Systems of the FDPS"
+   ]
+  },
+  "links": [
+   {
+    "link_type": "Covers",
+    "target": "FR-D-0000036"
+   }
+  ]
+ },
+ {
+  "id": "DR-D-0000007",
+  "type": "Design Review",
+  "schema_version": "6.0",
+  "title": "Scheme review C, centre fuselage frames 14 to 15A (D5012001-801)",
+  "status": "Closed",
+  "owner": "user:a.quinn",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-02-17T09:00:00Z",
+  "created_by": "user:a.quinn",
+  "modified_at": "2026-02-17T09:00:00Z",
+  "modified_by": "user:a.quinn",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:a.quinn",
+  "verified_at": "2026-02-17T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "x_phase3": true,
+  "stage": "VR-STAGE-0003",
+  "review_date": "2026-03-03",
+  "material_issued_at": "2026-02-17",
+  "chair": "user:s.price",
+  "attendees": [
+   {
+    "person": "user:h.grant",
+    "represents": "Centre Structure Sub-team",
+    "role": "Designer"
+   },
+   {
+    "person": "user:a.quinn",
+    "represents": "Structures Design Team",
+    "role": "Design Authority"
+   },
+   {
+    "person": "user:s.price",
+    "represents": "Project",
+    "role": "Technical Authority for Design (chair)"
+   },
+   {
+    "person": "user:g.burns",
+    "represents": "Primary Structure",
+    "role": "Design Lead"
+   },
+   {
+    "person": "user:r.okafor",
+    "represents": "Design",
+    "role": "Discipline Lead"
+   },
+   {
+    "person": "user:h.patel",
+    "represents": "Safety",
+    "role": "Discipline Lead"
+   },
+   {
+    "person": "user:a.novak",
+    "represents": "Structural Analysis (Stress)",
+    "role": "Discipline Lead"
+   },
+   {
+    "person": "user:t.brooks",
+    "represents": "Materials and Processes",
+    "role": "Discipline Lead"
+   },
+   {
+    "person": "user:f.moss",
+    "represents": "Manufacturing Engineering",
+    "role": "Discipline Lead"
+   },
+   {
+    "person": "user:b.carr",
+    "represents": "Quality",
+    "role": "Discipline Lead"
+   },
+   {
+    "person": "user:n.shaw",
+    "represents": "Standard Parts and Supply Chain",
+    "role": "Discipline Lead"
+   },
+   {
+    "person": "user:e.dunn",
+    "represents": "Configuration Management",
+    "role": "Discipline Lead"
+   },
+   {
+    "person": "user:o.fry",
+    "represents": "Airworthiness and Certification",
+    "role": "Discipline Lead"
+   },
+   {
+    "person": "user:d.roy",
+    "represents": "Maintainability, Reliability and Ground Equipment",
+    "role": "Discipline Lead"
+   },
+   {
+    "person": "user:l.green",
+    "represents": "Weight",
+    "role": "Discipline Lead"
+   },
+   {
+    "person": "user:c.ash",
+    "represents": "Skins, Doors & Panels",
+    "role": "Design Lead"
+   },
+   {
+    "person": "user:e.park",
+    "represents": "Electrical Power Generation & Distribution",
+    "role": "Design Lead"
+   },
+   {
+    "person": "user:m.dale",
+    "represents": "Pneumatics",
+    "role": "Design Lead"
+   },
+   {
+    "person": "user:t.ross",
+    "represents": "Flight Control",
+    "role": "Design Lead"
+   },
+   {
+    "person": "user:j.ward",
+    "represents": "Fuel",
+    "role": "Design Lead"
+   },
+   {
+    "person": "user:v.moreau",
+    "represents": "Vehicle Management",
+    "role": "Design Lead"
+   },
+   {
+    "person": "user:s.kerr",
+    "represents": "Hydraulics",
+    "role": "Design Lead"
+   },
+   {
+    "person": "user:i.webb",
+    "represents": "Environmental Control",
+    "role": "Design Lead"
+   }
+  ],
+  "introduction": {
+   "scope": "FDPS D5012001-801 (FR-D-0000036)"
+  },
+  "entry_check": [
+   {
+    "criterion": "Full detail design",
+    "met": true
+   },
+   {
+    "criterion": "Compliance stated against every inherited and linked Requirement and TSM",
+    "met": true
+   },
+   {
+    "criterion": "All interfaces agreed",
+    "met": true
+   }
+  ],
+  "known_risks": [],
+  "minutes": "Stage C accepted.",
+  "discipline_agreements": [
+   {
+    "discipline": "VR-DISC-0006",
+    "position": "Agree",
+    "reasons": "",
+    "conditions": [],
+    "by": "user:r.okafor",
+    "at": "2026-03-03T09:00:00Z"
+   },
+   {
+    "discipline": "VR-DISC-0019",
+    "position": "Agree",
+    "reasons": "",
+    "conditions": [],
+    "by": "user:h.patel",
+    "at": "2026-03-03T09:00:00Z"
+   },
+   {
+    "discipline": "VR-DISC-0022",
+    "position": "Agree",
+    "reasons": "",
+    "conditions": [],
+    "by": "user:a.novak",
+    "at": "2026-03-03T09:00:00Z"
+   },
+   {
+    "discipline": "VR-DISC-0015",
+    "position": "Agree",
+    "reasons": "",
+    "conditions": [],
+    "by": "user:t.brooks",
+    "at": "2026-03-03T09:00:00Z"
+   },
+   {
+    "discipline": "VR-DISC-0014",
+    "position": "Agree",
+    "reasons": "",
+    "conditions": [],
+    "by": "user:f.moss",
+    "at": "2026-03-03T09:00:00Z"
+   },
+   {
+    "discipline": "VR-DISC-0018",
+    "position": "Agree",
+    "reasons": "",
+    "conditions": [],
+    "by": "user:b.carr",
+    "at": "2026-03-03T09:00:00Z"
+   },
+   {
+    "discipline": "VR-DISC-0021",
+    "position": "Agree",
+    "reasons": "",
+    "conditions": [],
+    "by": "user:n.shaw",
+    "at": "2026-03-03T09:00:00Z"
+   },
+   {
+    "discipline": "VR-DISC-0005",
+    "position": "Agree",
+    "reasons": "",
+    "conditions": [],
+    "by": "user:e.dunn",
+    "at": "2026-03-03T09:00:00Z"
+   },
+   {
+    "discipline": "VR-DISC-0003",
+    "position": "Agree",
+    "reasons": "",
+    "conditions": [],
+    "by": "user:o.fry",
+    "at": "2026-03-03T09:00:00Z"
+   },
+   {
+    "discipline": "VR-DISC-0013",
+    "position": "Agree",
+    "reasons": "",
+    "conditions": [],
+    "by": "user:d.roy",
+    "at": "2026-03-03T09:00:00Z"
+   },
+   {
+    "discipline": "VR-DISC-0025",
+    "position": "Agree",
+    "reasons": "",
+    "conditions": [],
+    "by": "user:l.green",
+    "at": "2026-03-03T09:00:00Z"
+   }
+  ],
+  "interface_agreements": [
+   {
+    "system": "VR-SYS-0003",
+    "position": "Agree",
+    "reasons": "No item of this System is attached to frames 14 to 15A in the current population; kept on the Sub-structure list (over-inclusion accepted, R-09)",
+    "conditions": [],
+    "by": "user:c.ash",
+    "at": "2026-03-03T09:00:00Z"
+   },
+   {
+    "system": "VR-SYS-0007",
+    "position": "Agree",
+    "reasons": "No item of this System is attached to frames 14 to 15A in the current population; kept on the Sub-structure list (over-inclusion accepted, R-09)",
+    "conditions": [],
+    "by": "user:e.park",
+    "at": "2026-03-03T09:00:00Z"
+   },
+   {
+    "system": "VR-SYS-0008",
+    "position": "Agree",
+    "reasons": "No item of this System is attached to frames 14 to 15A in the current population; kept on the Sub-structure list (over-inclusion accepted, R-09)",
+    "conditions": [],
+    "by": "user:m.dale",
+    "at": "2026-03-03T09:00:00Z"
+   },
+   {
+    "system": "VR-SYS-0009",
+    "position": "Agree",
+    "reasons": "No item of this System is attached to frames 14 to 15A in the current population; kept on the Sub-structure list (over-inclusion accepted, R-09)",
+    "conditions": [],
+    "by": "user:t.ross",
+    "at": "2026-03-03T09:00:00Z"
+   },
+   {
+    "system": "VR-SYS-0010",
+    "position": "Agree",
+    "reasons": "Fuel feed clamps bolt to the frame 15A boss; the frame 14 valve bracket is held by this FDPS's fasteners (FDPS interface with D2822001-801)",
+    "conditions": [],
+    "by": "user:j.ward",
+    "at": "2026-03-03T09:00:00Z"
+   },
+   {
+    "system": "VR-SYS-0011",
+    "position": "Agree",
+    "reasons": "No item of this System is attached to frames 14 to 15A in the current population; kept on the Sub-structure list (over-inclusion accepted, R-09)",
+    "conditions": [],
+    "by": "user:v.moreau",
+    "at": "2026-03-03T09:00:00Z"
+   },
+   {
+    "system": "VR-SYS-0012",
+    "position": "Agree",
+    "reasons": "Twin-pipe bracket at frame 15 carries a hydraulic pipe",
+    "conditions": [],
+    "by": "user:s.kerr",
+    "at": "2026-03-03T09:00:00Z"
+   },
+   {
+    "system": "VR-SYS-0015",
+    "position": "Agree",
+    "reasons": "No item of this System is attached to frames 14 to 15A in the current population; kept on the Sub-structure list (over-inclusion accepted, R-09)",
+    "conditions": [],
+    "by": "user:i.webb",
+    "at": "2026-03-03T09:00:00Z"
+   }
+  ],
+  "decision": "Pass",
+  "decision_by": "user:s.price",
+  "decision_at": "2026-03-03T09:00:00Z",
+  "content": {
+   "generated_from": [
+    "PG-D-0000311#stage-C",
+    "FD-D-0000009",
+    "inferred Requirements, TSMs and interfacing Systems of the FDPS"
+   ]
+  },
+  "links": [
+   {
+    "link_type": "Covers",
+    "target": "FR-D-0000036"
+   }
+  ]
+ }
+]

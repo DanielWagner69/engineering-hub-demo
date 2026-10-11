@@ -1,0 +1,123 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "types/Design_Review.schema.json",
+ "title": "Design Review (schema v6 3.x)",
+ "allOf": [
+  {
+   "$ref": "../common.schema.json"
+  }
+ ],
+ "type": "object",
+ "properties": {
+  "stage": {
+   "anyOf": [
+    {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+     }
+    },
+    {
+     "type": "string",
+     "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+    }
+   ],
+   "description": "reg(STAGE); card. 1; A; B; C"
+  },
+  "review_date": {
+   "type": "string",
+   "pattern": "^\\d{4}-\\d{2}-\\d{2}",
+   "description": "date; card. 1; "
+  },
+  "material_issued_at": {
+   "type": "string",
+   "pattern": "^\\d{4}-\\d{2}-\\d{2}",
+   "description": "date; card. 1*; At least 14 days before review_date"
+  },
+  "chair": {
+   "type": "string",
+   "description": "ref(Person); card. 1; "
+  },
+  "attendees": {
+   "description": "json; card. 1; [{person, represents: reg(DISC), Sub-team or System, role: reg(ROLE) or text}]"
+  },
+  "introduction": {
+   "description": "json; card. 1; {scope}"
+  },
+  "entry_check": {
+   "description": "json; card. 1*; {criterion, met: bool, evidence} for each criterion"
+  },
+  "content": {
+   "description": "json; card. 1*; Generated template sections with responses"
+  },
+  "known_risks": {
+   "anyOf": [
+    {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    {
+     "type": "string"
+    }
+   ],
+   "description": "ref(Risk); card. 0..n; "
+  },
+  "minutes": {
+   "type": "string",
+   "description": "text; card. 1*; "
+  },
+  "discipline_agreements": {
+   "description": "json; card. 1*; {discipline: reg(DISC) of type Sign-off team, position: reg(AGREE), reasons, conditions: [ref(Action)], by: Person, at, carried_forward_from: ref(Design Review) 0..1} for each Sign-off team Discipline listed against the stage, less project-N/A Disciplines"
+  },
+  "interface_agreements": {
+   "description": "json; card. 1*; {system: reg(SYS), position: reg(AGREE), reasons, conditions: [ref(Action)], by: Person (Design Lead for that System or one of its Sub-systems), at, carried_forward_from 0..1} for each interfacing System of the covered FDPSs that is not broken"
+  },
+  "re_review": {
+   "description": "json; card. 0..1; {follows_review: ref(Design Review), change_records: [ref(Change Record)], scope: changed areas, affected_disciplines, affected_systems, identified_by: Person (Design Authority)}"
+  },
+  "decision": {
+   "type": "string",
+   "x-stored-as": "label of a framework-fixed register entry",
+   "description": "reg; card. 1; Pending; Pass; Fail"
+  },
+  "decision_by": {
+   "type": "string",
+   "description": "ref(Person); card. 1*; "
+  },
+  "decision_at": {
+   "type": "string",
+   "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(:\\d{2})?Z$",
+   "description": "datetime; card. 1*; "
+  },
+  "status": {
+   "type": "string",
+   "x-stored-as": "label of a framework-fixed register entry",
+   "description": "reg; card. 1; Planned; Material Issued; Held; Closed",
+   "enum": [
+    "Planned",
+    "Material Issued",
+    "Held",
+    "Closed"
+   ]
+  },
+  "type": {
+   "const": "Design Review"
+  }
+ },
+ "required": [
+  "stage",
+  "review_date",
+  "chair",
+  "attendees",
+  "introduction",
+  "decision",
+  "status"
+ ],
+ "x-owned-links": [
+  "Covers",
+  "Production link"
+ ]
+}

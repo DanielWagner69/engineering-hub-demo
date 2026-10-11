@@ -1,0 +1,46 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "types/Assembly_Instance.schema.json",
+ "title": "Assembly Instance (schema v6 3.x)",
+ "allOf": [
+  {
+   "$ref": "../common.schema.json"
+  }
+ ],
+ "type": "object",
+ "properties": {
+  "position_name": {
+   "type": "string",
+   "description": "string; card. 1; "
+  },
+  "existence": {
+   "$ref": "../common.schema.json#/$defs/eff",
+   "description": "eff; card. 1; Default from Project"
+  },
+  "status": {
+   "type": "string",
+   "x-stored-as": "label of a framework-fixed register entry",
+   "description": "reg; card. 1; Active; Cancelled",
+   "enum": [
+    "Active",
+    "Cancelled"
+   ]
+  },
+  "type": {
+   "const": "Assembly Instance"
+  }
+ },
+ "required": [
+  "position_name",
+  "existence",
+  "status"
+ ],
+ "x-owned-links": [
+  "Assembled from",
+  "Effective revision",
+  "Instance of",
+  "Interface",
+  "Located at",
+  "Verified by"
+ ]
+}

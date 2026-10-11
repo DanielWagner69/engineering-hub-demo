@@ -1,0 +1,93 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "types/Compliance_Statement.schema.json",
+ "title": "Compliance Statement (schema v6 3.x)",
+ "allOf": [
+  {
+   "$ref": "../common.schema.json"
+  }
+ ],
+ "type": "object",
+ "properties": {
+  "fdps": {
+   "type": "string",
+   "description": "ref(FDPS); card. 1; "
+  },
+  "requirement": {
+   "type": "string",
+   "description": "ref(Requirement or TSM); card. 1; "
+  },
+  "effectivity": {
+   "$ref": "../common.schema.json#/$defs/eff",
+   "description": "eff; card. 1; "
+  },
+  "bases": {
+   "description": "json; card. 1..n; [{basis: reg(BASIS), node: reg(SUB, SYS or SG) for System tree inheritance, design_type: reg(DTY), system: reg(SYS) or discipline: reg(DISC) for TSM tags, via: [Part Instance or Part Definition ids, or the Design Team page for a Discipline], item: ref for Direct}]"
+  },
+  "statements_claimed": {
+   "description": "json; card. 1*; [{clause, parts: [ref(Part Definition or Assembly Definition)] 0..n}]"
+  },
+  "position": {
+   "type": "string",
+   "x-stored-as": "label of a framework-fixed register entry",
+   "description": "reg; card. 1; Not yet stated; Compliant; Non-compliant; Not applicable"
+  },
+  "evidence": {
+   "anyOf": [
+    {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    {
+     "type": "string"
+    }
+   ],
+   "description": "ref(Verification); card. 0..n; "
+  },
+  "margin_note": {
+   "type": "string",
+   "description": "text; card. 0..1; "
+  },
+  "issue": {
+   "type": "string",
+   "description": "ref(Issue); card. 1*; "
+  },
+  "reason": {
+   "type": "string",
+   "description": "text; card. 1*; "
+  },
+  "approved_by": {
+   "type": "string",
+   "description": "ref(Person); card. 1*; "
+  },
+  "approved_at": {
+   "type": "string",
+   "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(:\\d{2})?Z$",
+   "description": "datetime; card. 1*; "
+  },
+  "status": {
+   "type": "string",
+   "x-stored-as": "label of a framework-fixed register entry",
+   "description": "reg; card. 1; Open; Approved; Flagged",
+   "enum": [
+    "Open",
+    "Approved",
+    "Flagged"
+   ]
+  },
+  "type": {
+   "const": "Compliance Statement"
+  }
+ },
+ "required": [
+  "fdps",
+  "requirement",
+  "effectivity",
+  "bases",
+  "position",
+  "status"
+ ],
+ "x-owned-links": []
+}

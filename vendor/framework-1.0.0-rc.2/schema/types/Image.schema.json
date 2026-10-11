@@ -1,0 +1,53 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "types/Image.schema.json",
+ "title": "Image (schema v6 3.x)",
+ "allOf": [
+  {
+   "$ref": "../common.schema.json"
+  }
+ ],
+ "type": "object",
+ "properties": {
+  "caption": {
+   "type": "string",
+   "description": "string; card. 1; "
+  },
+  "alt_text": {
+   "type": "string",
+   "description": "text; card. 1; "
+  },
+  "file": {
+   "type": "string",
+   "description": "string; card. 1; Stored file reference or Production Link"
+  },
+  "is_product_view": {
+   "type": "boolean",
+   "description": "bool; card. 1; "
+  },
+  "configuration": {
+   "description": "json; card. 1*; {project, effectivity_number, baseline: ref(Baseline) 0..1}"
+  },
+  "status": {
+   "type": "string",
+   "x-stored-as": "label of a framework-fixed register entry",
+   "description": "reg; card. 1; Draft; Published; Retired",
+   "enum": [
+    "Draft",
+    "Published",
+    "Retired"
+   ]
+  },
+  "type": {
+   "const": "Image"
+  }
+ },
+ "required": [
+  "caption",
+  "alt_text",
+  "file",
+  "is_product_view",
+  "status"
+ ],
+ "x-owned-links": []
+}

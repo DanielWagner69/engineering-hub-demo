@@ -1,0 +1,135 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "types/FDPS.schema.json",
+ "title": "FDPS (schema v6 3.x)",
+ "allOf": [
+  {
+   "$ref": "../common.schema.json"
+  }
+ ],
+ "type": "object",
+ "properties": {
+  "fdps_number": {
+   "type": "string",
+   "description": "string; card. 1; Meaningful stem, e.g. D2822001-801; dash in the FDPS range"
+  },
+  "number_proposal": {
+   "description": "json; card. 1; As for Part Definition"
+  },
+  "stem_breakdown": {
+   "description": "json; card. 1; {project, system_code, subsystem_code, major_unit_code, sequence, dash}"
+  },
+  "owning_sub_team": {
+   "anyOf": [
+    {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+     }
+    },
+    {
+     "type": "string",
+     "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+    }
+   ],
+   "description": "reg(DST); card. 1; "
+  },
+  "lead_sub_system": {
+   "anyOf": [
+    {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+     }
+    },
+    {
+     "type": "string",
+     "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+    }
+   ],
+   "description": "reg(SUB); card. 1; A Sub-system or Sub-structure"
+  },
+  "interface_breaks": {
+   "description": "json; card. 0..n; {system: reg(SYS), reason, by: Person (author), at, approved_by: Person (a Design Lead whose area is lead_sub_system), approved_at, reconfirm_required: bool}"
+  },
+  "lifecycle_stage": {
+   "anyOf": [
+    {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+     }
+    },
+    {
+     "type": "string",
+     "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+    }
+   ],
+   "description": "reg(LCS); card. 1; "
+  },
+  "status": {
+   "type": "string",
+   "x-stored-as": "label of a framework-fixed register entry",
+   "description": "reg; card. 1; Open; In Review; Released; Withdrawn",
+   "enum": [
+    "Open",
+    "In Review",
+    "Released",
+    "Withdrawn"
+   ]
+  },
+  "type": {
+   "const": "FDPS"
+  },
+  "lead_sub_system_approval": {
+   "type": "object",
+   "required": [
+    "set_by",
+    "set_at",
+    "approved_by",
+    "approved_at"
+   ],
+   "properties": {
+    "set_by": {
+     "type": "string",
+     "description": "Person in the owning Design Sub-team who set the lead Sub-system"
+    },
+    "set_at": {
+     "type": "string"
+    },
+    "approved_by": {
+     "type": "string",
+     "description": "A Design Lead whose area is lead_sub_system, at approved_at"
+    },
+    "approved_at": {
+     "type": "string"
+    },
+    "change_record": {
+     "type": "string",
+     "description": "Change Record (change type Lead Sub-system change) when the lead was changed after creation"
+    }
+   },
+   "description": "R-15: the lead Sub-system is set by the owning Design Sub-team and approved by a Design Lead of that Sub-system. A change is a Change Record (VR-CHG-0011) that re-runs interface inheritance and flags existing breaks for re-confirmation."
+  }
+ },
+ "required": [
+  "fdps_number",
+  "number_proposal",
+  "stem_breakdown",
+  "owning_sub_team",
+  "lead_sub_system",
+  "lifecycle_stage",
+  "status",
+  "lead_sub_system_approval"
+ ],
+ "x-owned-links": [
+  "Contains",
+  "Describes"
+ ],
+ "x-deltas": [
+  "R-15"
+ ]
+}

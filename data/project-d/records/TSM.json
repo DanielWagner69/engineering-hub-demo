@@ -1,0 +1,310 @@
+[
+ {
+  "id": "TSM-D-0000062",
+  "type": "TSM",
+  "schema_version": "6.0",
+  "title": "Rigid Pipework Technical Standards Manual",
+  "status": "Accepted",
+  "owner": "user:o.fry",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-10-01T09:00:00Z",
+  "created_by": "user:o.fry",
+  "modified_at": "2025-10-01T09:00:00Z",
+  "modified_by": "user:o.fry",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:o.fry",
+  "verified_at": "2025-10-01T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "manual_code": "TSM-PIPE",
+  "issue": 4,
+  "statements": [
+   {
+    "clause": "3.1.4",
+    "statement": "Rigid pipe bends shall have a centreline radius of not less than 3 times the outside diameter."
+   },
+   {
+    "clause": "3.6.1",
+    "statement": "Flexible hose assemblies shall be supported so that the minimum bend radius is not infringed at full articulation."
+   }
+  ],
+  "acceptance": {
+   "state": "Accepted",
+   "accepted_by": "user:o.fry",
+   "accepted_at": "2025-10-01T09:00:00Z"
+  },
+  "links": [
+   {
+    "link_type": "Governs",
+    "target": "VR-DTY-0009"
+   }
+  ]
+ },
+ {
+  "id": "TSM-D-0000063",
+  "type": "TSM",
+  "schema_version": "6.0",
+  "title": "Metallic Parts Technical Standards Manual",
+  "status": "Accepted",
+  "owner": "user:o.fry",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-10-01T09:00:00Z",
+  "created_by": "user:o.fry",
+  "modified_at": "2025-10-01T09:00:00Z",
+  "modified_by": "user:o.fry",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:o.fry",
+  "verified_at": "2025-10-01T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "manual_code": "TSM-MET",
+  "issue": 6,
+  "statements": [
+   {
+    "clause": "2.4.1",
+    "statement": "Machined internal corner radii shall be not less than 1.5 mm."
+   },
+   {
+    "clause": "4.2.3",
+    "statement": "Joggles in sheet-metal parts shall have a run-out of not less than 3 times the joggle depth."
+   }
+  ],
+  "acceptance": {
+   "state": "Accepted",
+   "accepted_by": "user:o.fry",
+   "accepted_at": "2025-10-01T09:00:00Z"
+  },
+  "links": [
+   {
+    "link_type": "Governs",
+    "target": "VR-DTY-0002"
+   },
+   {
+    "link_type": "Governs",
+    "target": "VR-DTY-0003"
+   }
+  ]
+ },
+ {
+  "id": "TSM-D-0000064",
+  "type": "TSM",
+  "schema_version": "6.0",
+  "title": "Bought-in Equipment Technical Standards Manual",
+  "status": "Accepted",
+  "owner": "user:o.fry",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-10-01T09:00:00Z",
+  "created_by": "user:o.fry",
+  "modified_at": "2025-10-01T09:00:00Z",
+  "modified_by": "user:o.fry",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:o.fry",
+  "verified_at": "2025-10-01T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "manual_code": "TSM-BIE",
+  "issue": 2,
+  "statements": [
+   {
+    "clause": "1.2",
+    "statement": "Bought-in equipment shall hold an equipment qualification declaration covering the installed environment."
+   },
+   {
+    "clause": "3.1",
+    "statement": "Line-replaceable units shall be removable without disturbing adjacent equipment."
+   }
+  ],
+  "acceptance": {
+   "state": "Accepted",
+   "accepted_by": "user:o.fry",
+   "accepted_at": "2025-10-01T09:00:00Z"
+  },
+  "links": [
+   {
+    "link_type": "Governs",
+    "target": "VR-DTY-0011"
+   }
+  ]
+ },
+ {
+  "id": "TSM-D-0000065",
+  "type": "TSM",
+  "schema_version": "6.0",
+  "title": "Fluid Systems Technical Standards Manual",
+  "status": "Accepted",
+  "owner": "user:o.fry",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-10-01T09:00:00Z",
+  "created_by": "user:o.fry",
+  "modified_at": "2025-10-01T09:00:00Z",
+  "modified_by": "user:o.fry",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:o.fry",
+  "verified_at": "2025-10-01T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "manual_code": "TSM-FLU",
+  "issue": 3,
+  "statements": [
+   {
+    "clause": "5.1",
+    "statement": "Every component installed in a fuel-wetted or fuel-vapour zone shall be electrically bonded to structure with a resistance of not more than 10 milliohm."
+   },
+   {
+    "clause": "5.4",
+    "statement": "Fuel feed line installations shall be routed with no high point between a shut-off valve and the engine interface at which vapour can collect."
+   },
+   {
+    "clause": "6.2",
+    "statement": "Hydraulic components shall be compatible with the hydraulic fluid specification of the project."
+   },
+   {
+    "clause": "7.4",
+    "statement": "Pneumatic ducts above 200 degrees Celsius shall be lagged where they pass within 50 mm of a fluid line."
+   }
+  ],
+  "acceptance": {
+   "state": "Accepted",
+   "accepted_by": "user:o.fry",
+   "accepted_at": "2025-10-01T09:00:00Z"
+  },
+  "links": [
+   {
+    "link_type": "Governs",
+    "target": "VR-DISC-0026"
+   },
+   {
+    "link_type": "Governs",
+    "target": "VR-SYS-0010"
+   },
+   {
+    "link_type": "Governs",
+    "target": "VR-SYS-0012"
+   },
+   {
+    "link_type": "Governs",
+    "target": "VR-SYS-0008"
+   },
+   {
+    "link_type": "Governs",
+    "target": "VR-DTY-0009"
+   }
+  ]
+ },
+ {
+  "id": "TSM-D-0000066",
+  "type": "TSM",
+  "schema_version": "6.0",
+  "title": "Standard Parts Technical Standards Manual",
+  "status": "Accepted",
+  "owner": "user:o.fry",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-10-01T09:00:00Z",
+  "created_by": "user:o.fry",
+  "modified_at": "2025-10-01T09:00:00Z",
+  "modified_by": "user:o.fry",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:o.fry",
+  "verified_at": "2025-10-01T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "manual_code": "TSM-STD",
+  "issue": 5,
+  "statements": [
+   {
+    "clause": "2.1",
+    "statement": "Standard Parts shall be procured to the catalogue issue recorded on the Part revision."
+   },
+   {
+    "clause": "3.4",
+    "statement": "Self-locking nuts shall show not less than 1.5 thread pitches of bolt protrusion when installed."
+   },
+   {
+    "clause": "6.2",
+    "statement": "Blind rivets shall not be used in fuel-wetted zones."
+   }
+  ],
+  "acceptance": {
+   "state": "Accepted",
+   "accepted_by": "user:o.fry",
+   "accepted_at": "2025-10-01T09:00:00Z"
+  },
+  "links": [
+   {
+    "link_type": "Governs",
+    "target": "VR-DTY-0012"
+   }
+  ]
+ },
+ {
+  "id": "TSM-D-0000067",
+  "type": "TSM",
+  "schema_version": "6.0",
+  "title": "Fire Zone Installations Technical Standards Manual",
+  "status": "Accepted",
+  "owner": "user:o.fry",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-10-01T09:00:00Z",
+  "created_by": "user:o.fry",
+  "modified_at": "2025-10-01T09:00:00Z",
+  "modified_by": "user:o.fry",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:o.fry",
+  "verified_at": "2025-10-01T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "manual_code": "TSM-FZ",
+  "issue": 1,
+  "statements": [
+   {
+    "clause": "1.1",
+    "statement": "Components installed in a designated fire zone shall be fire resistant or fireproof as stated in the fire zone schedule."
+   },
+   {
+    "clause": "2.3",
+    "statement": "Designated fire zones shall drain flammable fluid overboard without pooling."
+   }
+  ],
+  "acceptance": {
+   "state": "Accepted",
+   "accepted_by": "user:o.fry",
+   "accepted_at": "2025-10-01T09:00:00Z"
+  },
+  "links": [
+   {
+    "link_type": "Governs",
+    "target": "VR-SYS-0005"
+   },
+   {
+    "link_type": "Governs",
+    "target": "VR-SYS-0010"
+   },
+   {
+    "link_type": "Governs",
+    "target": "VR-SYS-0012"
+   },
+   {
+    "link_type": "Governs",
+    "target": "VR-DISC-0019"
+   }
+  ]
+ }
+]

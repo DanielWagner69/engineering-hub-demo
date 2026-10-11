@@ -1,0 +1,690 @@
+[
+ {
+  "id": "PD-D-0000101",
+  "type": "Part Definition",
+  "schema_version": "6.0",
+  "title": "Feed pipe, tank outlet to shut-off valve",
+  "status": "Active",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-12-08T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2025-12-08T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2025-12-08T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "part_number": "D2822002-001",
+  "numbering_scheme": "VR-NUMSCH-0001",
+  "source": "VR-SRC-0001",
+  "safety_classification": "VR-SAF-0003",
+  "safety_assigned_by": "user:h.patel",
+  "lifecycle_stage": "VR-LCS-0006",
+  "item_properties": [
+   "VR-PROP-0001"
+  ],
+  "links": [],
+  "stem": "D2822002",
+  "dash": "001",
+  "handedness": "Unhanded",
+  "number_proposal": {
+   "proposed_number": "D2822002-001",
+   "proposed_by": "software",
+   "proposed_at": "2025-12-01T09:00:00Z",
+   "accepted_by": "user:p.hale",
+   "accepted_at": "2025-12-01T09:00:00Z",
+   "rejected": []
+  },
+  "design_type": "VR-DTY-0009"
+ },
+ {
+  "id": "PD-D-0000102",
+  "type": "Part Definition",
+  "schema_version": "6.0",
+  "title": "Feed pipe, shut-off valve to cross-join",
+  "status": "Active",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-12-08T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2025-12-08T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2025-12-08T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "part_number": "D2822003-001",
+  "numbering_scheme": "VR-NUMSCH-0001",
+  "source": "VR-SRC-0001",
+  "safety_classification": "VR-SAF-0003",
+  "safety_assigned_by": "user:h.patel",
+  "lifecycle_stage": "VR-LCS-0006",
+  "item_properties": [
+   "VR-PROP-0001"
+  ],
+  "links": [],
+  "stem": "D2822003",
+  "dash": "001",
+  "handedness": "Unhanded",
+  "number_proposal": {
+   "proposed_number": "D2822003-001",
+   "proposed_by": "software",
+   "proposed_at": "2025-12-01T09:00:00Z",
+   "accepted_by": "user:p.hale",
+   "accepted_at": "2025-12-01T09:00:00Z",
+   "rejected": [
+    {
+     "number": "D2822002-003",
+     "proposed_by": "user:p.hale",
+     "reason": "-003 of stem D2822002 is reserved for a non-interchangeable successor of D2822002-001; a distinct item takes a different stem (1.11.9, 1.11.10)"
+    }
+   ]
+  },
+  "design_type": "VR-DTY-0009"
+ },
+ {
+  "id": "PD-D-0000103",
+  "type": "Part Definition",
+  "schema_version": "6.0",
+  "title": "Cross-join feed spool, centre fuselage to engine bay (flared end)",
+  "status": "Active",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-12-08T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2025-12-08T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2025-12-08T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "part_number": "D2822004-001",
+  "numbering_scheme": "VR-NUMSCH-0001",
+  "source": "VR-SRC-0001",
+  "safety_classification": "VR-SAF-0003",
+  "safety_assigned_by": "user:h.patel",
+  "lifecycle_stage": "VR-LCS-0006",
+  "item_properties": [
+   "VR-PROP-0001"
+  ],
+  "links": [],
+  "stem": "D2822004",
+  "dash": "001",
+  "handedness": "Unhanded",
+  "number_proposal": {
+   "proposed_number": "D2822004-001",
+   "proposed_by": "software",
+   "proposed_at": "2025-12-01T09:00:00Z",
+   "accepted_by": "user:p.hale",
+   "accepted_at": "2025-12-01T09:00:00Z",
+   "rejected": []
+  },
+  "design_type": "VR-DTY-0009"
+ },
+ {
+  "id": "PD-D-0000104",
+  "type": "Part Definition",
+  "schema_version": "6.0",
+  "title": "Valve mounting bracket, left-hand",
+  "status": "Active",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-12-08T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2025-12-08T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2025-12-08T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "part_number": "D2822005-001",
+  "numbering_scheme": "VR-NUMSCH-0001",
+  "source": "VR-SRC-0001",
+  "safety_classification": "VR-SAF-0004",
+  "safety_assigned_by": "user:h.patel",
+  "lifecycle_stage": "VR-LCS-0006",
+  "item_properties": [
+   "VR-PROP-0001"
+  ],
+  "links": [],
+  "stem": "D2822005",
+  "dash": "001",
+  "handedness": "Left-hand",
+  "number_proposal": {
+   "proposed_number": "D2822005-001",
+   "proposed_by": "software",
+   "proposed_at": "2025-12-01T09:00:00Z",
+   "accepted_by": "user:p.hale",
+   "accepted_at": "2025-12-01T09:00:00Z",
+   "rejected": []
+  },
+  "design_type": "VR-DTY-0002"
+ },
+ {
+  "id": "PD-D-0000105",
+  "type": "Part Definition",
+  "schema_version": "6.0",
+  "title": "Tank outlet strainer (supplier item)",
+  "status": "Active",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-12-08T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2025-12-08T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2025-12-08T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "part_number": "D-BI-0001",
+  "numbering_scheme": "VR-NUMSCH-0004",
+  "source": "VR-SRC-0003",
+  "safety_classification": "VR-SAF-0003",
+  "safety_assigned_by": "user:h.patel",
+  "lifecycle_stage": "VR-LCS-0006",
+  "item_properties": [],
+  "links": [],
+  "number_proposal": {
+   "proposed_number": "D-BI-0001",
+   "proposed_by": "software",
+   "proposed_at": "2025-12-01T09:00:00Z",
+   "accepted_by": "user:p.hale",
+   "accepted_at": "2025-12-01T09:00:00Z",
+   "rejected": []
+  },
+  "design_type": "VR-DTY-0011",
+  "supplier_part_number": "MF-4K (Merlin Filtration, fictional)",
+  "supplier_mod_standard": "Issue 3"
+ },
+ {
+  "id": "PD-D-0000106",
+  "type": "Part Definition",
+  "schema_version": "6.0",
+  "title": "Tank outlet strainer, modified with drain boss",
+  "status": "Active",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-12-08T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2025-12-08T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2025-12-08T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "part_number": "D2822006-001",
+  "numbering_scheme": "VR-NUMSCH-0001",
+  "source": "VR-SRC-0001",
+  "safety_classification": "VR-SAF-0003",
+  "safety_assigned_by": "user:h.patel",
+  "lifecycle_stage": "VR-LCS-0006",
+  "item_properties": [
+   "VR-PROP-0001"
+  ],
+  "links": [
+   {
+    "link_type": "Derived from",
+    "target": "PD-D-0000105"
+   }
+  ],
+  "stem": "D2822006",
+  "dash": "001",
+  "handedness": "Unhanded",
+  "number_proposal": {
+   "proposed_number": "D2822006-001",
+   "proposed_by": "software",
+   "proposed_at": "2025-12-01T09:00:00Z",
+   "accepted_by": "user:p.hale",
+   "accepted_at": "2025-12-01T09:00:00Z",
+   "rejected": []
+  },
+  "design_type": "VR-DTY-0011",
+  "modification_design_type": "VR-DTY-0002"
+ },
+ {
+  "id": "PD-D-0000107",
+  "type": "Part Definition",
+  "schema_version": "6.0",
+  "title": "Fuel shut-off valve, motorised",
+  "status": "Active",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-12-08T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2025-12-08T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2025-12-08T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "part_number": "D-BI-0002",
+  "numbering_scheme": "VR-NUMSCH-0004",
+  "source": "VR-SRC-0003",
+  "safety_classification": "VR-SAF-0002",
+  "safety_assigned_by": "user:h.patel",
+  "lifecycle_stage": "VR-LCS-0006",
+  "item_properties": [
+   "VR-PROP-0003"
+  ],
+  "links": [],
+  "number_proposal": {
+   "proposed_number": "D-BI-0002",
+   "proposed_by": "software",
+   "proposed_at": "2025-12-01T09:00:00Z",
+   "accepted_by": "user:p.hale",
+   "accepted_at": "2025-12-01T09:00:00Z",
+   "rejected": []
+  },
+  "design_type": "VR-DTY-0011",
+  "supplier_part_number": "KV-118-3 (Kestrel Valves, fictional)",
+  "supplier_mod_standard": "Mod 2"
+ },
+ {
+  "id": "PD-D-0000108",
+  "type": "Part Definition",
+  "schema_version": "6.0",
+  "title": "Twin-pipe support bracket",
+  "status": "Active",
+  "owner": "user:y.hart",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-06-02T09:00:00Z",
+  "created_by": "user:y.hart",
+  "modified_at": "2025-06-02T09:00:00Z",
+  "modified_by": "user:y.hart",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:y.hart",
+  "verified_at": "2025-06-02T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "part_number": "D-BR-00112",
+  "numbering_scheme": "VR-NUMSCH-0002",
+  "source": "VR-SRC-0001",
+  "safety_classification": "VR-SAF-0004",
+  "safety_assigned_by": "user:h.patel",
+  "lifecycle_stage": "VR-LCS-0006",
+  "item_properties": [
+   "VR-PROP-0001"
+  ],
+  "links": [],
+  "number_proposal": {
+   "proposed_number": "D-BR-00112",
+   "proposed_by": "software",
+   "proposed_at": "2025-12-01T09:00:00Z",
+   "accepted_by": "user:p.hale",
+   "accepted_at": "2025-12-01T09:00:00Z",
+   "rejected": []
+  },
+  "design_type": "VR-DTY-0003",
+  "type_code": "VR-TYC-0003"
+ },
+ {
+  "id": "PD-D-0000109",
+  "type": "Part Definition",
+  "schema_version": "6.0",
+  "title": "Cushioned P-clamp, 12.7 mm",
+  "status": "Active",
+  "owner": "user:n.shaw",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-05-12T09:00:00Z",
+  "created_by": "user:n.shaw",
+  "modified_at": "2025-05-12T09:00:00Z",
+  "modified_by": "user:n.shaw",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:n.shaw",
+  "verified_at": "2025-05-12T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "part_number": "GSP 3105-12",
+  "numbering_scheme": "VR-NUMSCH-0003",
+  "source": "VR-SRC-0002",
+  "safety_classification": "VR-SAF-0004",
+  "safety_assigned_by": "user:h.patel",
+  "lifecycle_stage": "VR-LCS-0006",
+  "item_properties": [],
+  "links": [],
+  "number_proposal": {
+   "proposed_number": "GSP 3105-12",
+   "proposed_by": "user:n.shaw",
+   "accepted_by": "user:n.shaw",
+   "accepted_at": "2025-05-12T09:00:00Z",
+   "rejected": []
+  },
+  "design_type": "VR-DTY-0012",
+  "standard_designation": "GSP 3105-12 (Generic Standard Part catalogue, fictional)"
+ },
+ {
+  "id": "PD-D-0000110",
+  "type": "Part Definition",
+  "schema_version": "6.0",
+  "title": "Bolt, hexagon head, M5 x 16",
+  "status": "Active",
+  "owner": "user:n.shaw",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-01-10T09:00:00Z",
+  "created_by": "user:n.shaw",
+  "modified_at": "2025-01-10T09:00:00Z",
+  "modified_by": "user:n.shaw",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:n.shaw",
+  "verified_at": "2025-01-10T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "part_number": "GFS 1001-05-016",
+  "numbering_scheme": "VR-NUMSCH-0003",
+  "source": "VR-SRC-0002",
+  "safety_classification": "VR-SAF-0002",
+  "safety_assigned_by": "user:h.patel",
+  "lifecycle_stage": "VR-LCS-0006",
+  "item_properties": [
+   "VR-PROP-0004"
+  ],
+  "links": [],
+  "number_proposal": {
+   "proposed_number": "GFS 1001-05-016",
+   "proposed_by": "user:n.shaw",
+   "accepted_by": "user:n.shaw",
+   "accepted_at": "2025-01-10T09:00:00Z",
+   "rejected": []
+  },
+  "design_type": "VR-DTY-0012",
+  "standard_designation": "GFS 1001-05-016 (Generic Fastener Standard, fictional)",
+  "safety_basis": "Classification B set by its use in the flight control actuator attachment on another FDPS (1.10.2); D in this FDPS."
+ },
+ {
+  "id": "PD-D-0000111",
+  "type": "Part Definition",
+  "schema_version": "6.0",
+  "title": "Nut, self-locking, M5",
+  "status": "Active",
+  "owner": "user:n.shaw",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-01-10T09:00:00Z",
+  "created_by": "user:n.shaw",
+  "modified_at": "2025-01-10T09:00:00Z",
+  "modified_by": "user:n.shaw",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:n.shaw",
+  "verified_at": "2025-01-10T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "part_number": "GFS 1102-05",
+  "numbering_scheme": "VR-NUMSCH-0003",
+  "source": "VR-SRC-0002",
+  "safety_classification": "VR-SAF-0004",
+  "safety_assigned_by": "user:h.patel",
+  "lifecycle_stage": "VR-LCS-0006",
+  "item_properties": [
+   "VR-PROP-0004"
+  ],
+  "links": [],
+  "number_proposal": {
+   "proposed_number": "GFS 1102-05",
+   "proposed_by": "user:n.shaw",
+   "accepted_by": "user:n.shaw",
+   "accepted_at": "2025-01-10T09:00:00Z",
+   "rejected": []
+  },
+  "design_type": "VR-DTY-0012",
+  "standard_designation": "GFS 1102-05 (Generic Fastener Standard, fictional)"
+ },
+ {
+  "id": "PD-D-0000112",
+  "type": "Part Definition",
+  "schema_version": "6.0",
+  "title": "Flanged bush, 6 mm bore",
+  "status": "Active",
+  "owner": "user:n.shaw",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-01-10T09:00:00Z",
+  "created_by": "user:n.shaw",
+  "modified_at": "2025-01-10T09:00:00Z",
+  "modified_by": "user:n.shaw",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:n.shaw",
+  "verified_at": "2025-01-10T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "part_number": "GSP 2210-06",
+  "numbering_scheme": "VR-NUMSCH-0003",
+  "source": "VR-SRC-0002",
+  "safety_classification": "VR-SAF-0005",
+  "safety_assigned_by": "user:h.patel",
+  "lifecycle_stage": "VR-LCS-0006",
+  "item_properties": [],
+  "links": [],
+  "number_proposal": {
+   "proposed_number": "GSP 2210-06",
+   "proposed_by": "user:n.shaw",
+   "accepted_by": "user:n.shaw",
+   "accepted_at": "2025-01-10T09:00:00Z",
+   "rejected": []
+  },
+  "design_type": "VR-DTY-0012",
+  "standard_designation": "GSP 2210-06 (Generic Standard Part, fictional)"
+ },
+ {
+  "id": "PD-D-0000113",
+  "type": "Part Definition",
+  "schema_version": "6.0",
+  "title": "Cross-join feed spool, centre fuselage to engine bay (bulkhead union end)",
+  "status": "Active",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-08-25T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2026-08-25T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2026-08-25T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "part_number": "D2822004-003",
+  "numbering_scheme": "VR-NUMSCH-0001",
+  "source": "VR-SRC-0001",
+  "safety_classification": "VR-SAF-0003",
+  "safety_assigned_by": "user:h.patel",
+  "lifecycle_stage": "VR-LCS-0006",
+  "item_properties": [
+   "VR-PROP-0001"
+  ],
+  "links": [],
+  "stem": "D2822004",
+  "dash": "003",
+  "handedness": "Unhanded",
+  "number_proposal": {
+   "proposed_number": "D2822004-003",
+   "proposed_by": "software",
+   "proposed_at": "2025-12-01T09:00:00Z",
+   "accepted_by": "user:p.hale",
+   "accepted_at": "2025-12-01T09:00:00Z",
+   "rejected": [
+    {
+     "number": "D2822004-002",
+     "proposed_by": "user:p.hale",
+     "reason": "-002 is reserved for the right-hand version of D2822004-001 (1.11.8); a non-interchangeable successor rolls the dash by 2 (1.11.9)"
+    }
+   ]
+  },
+  "design_type": "VR-DTY-0009",
+  "replaces_definition": "PD-D-0000103"
+ },
+ {
+  "id": "PD-D-0000120",
+  "type": "Part Definition",
+  "schema_version": "6.0",
+  "title": "Frame 14, centre fuselage",
+  "status": "Active",
+  "owner": "user:h.grant",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-20T09:00:00Z",
+  "created_by": "user:h.grant",
+  "modified_at": "2025-11-20T09:00:00Z",
+  "modified_by": "user:h.grant",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:h.grant",
+  "verified_at": "2025-11-20T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "part_number": "D5012002-001",
+  "numbering_scheme": "VR-NUMSCH-0001",
+  "source": "VR-SRC-0001",
+  "safety_classification": "VR-SAF-0002",
+  "safety_assigned_by": "user:h.patel",
+  "lifecycle_stage": "VR-LCS-0006",
+  "item_properties": [
+   "VR-PROP-0001"
+  ],
+  "links": [],
+  "stem": "D5012002",
+  "dash": "001",
+  "handedness": "Unhanded",
+  "number_proposal": {
+   "proposed_number": "D5012002-001",
+   "proposed_by": "software",
+   "proposed_at": "2025-12-01T09:00:00Z",
+   "accepted_by": "user:h.grant",
+   "accepted_at": "2025-12-01T09:00:00Z",
+   "rejected": []
+  },
+  "design_type": "VR-DTY-0002"
+ },
+ {
+  "id": "PD-D-0000121",
+  "type": "Part Definition",
+  "schema_version": "6.0",
+  "title": "Frame 15, centre fuselage",
+  "status": "Active",
+  "owner": "user:h.grant",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-20T09:00:00Z",
+  "created_by": "user:h.grant",
+  "modified_at": "2025-11-20T09:00:00Z",
+  "modified_by": "user:h.grant",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:h.grant",
+  "verified_at": "2025-11-20T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "part_number": "D5012003-001",
+  "numbering_scheme": "VR-NUMSCH-0001",
+  "source": "VR-SRC-0001",
+  "safety_classification": "VR-SAF-0002",
+  "safety_assigned_by": "user:h.patel",
+  "lifecycle_stage": "VR-LCS-0006",
+  "item_properties": [
+   "VR-PROP-0001"
+  ],
+  "links": [],
+  "stem": "D5012003",
+  "dash": "001",
+  "handedness": "Unhanded",
+  "number_proposal": {
+   "proposed_number": "D5012003-001",
+   "proposed_by": "software",
+   "proposed_at": "2025-12-01T09:00:00Z",
+   "accepted_by": "user:h.grant",
+   "accepted_at": "2025-12-01T09:00:00Z",
+   "rejected": []
+  },
+  "design_type": "VR-DTY-0002",
+  "x_phase3": true
+ },
+ {
+  "id": "PD-D-0000122",
+  "type": "Part Definition",
+  "schema_version": "6.0",
+  "title": "Frame 15A, centre fuselage",
+  "status": "Active",
+  "owner": "user:h.grant",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-20T09:00:00Z",
+  "created_by": "user:h.grant",
+  "modified_at": "2025-11-20T09:00:00Z",
+  "modified_by": "user:h.grant",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:h.grant",
+  "verified_at": "2025-11-20T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "part_number": "D5012004-001",
+  "numbering_scheme": "VR-NUMSCH-0001",
+  "source": "VR-SRC-0001",
+  "safety_classification": "VR-SAF-0002",
+  "safety_assigned_by": "user:h.patel",
+  "lifecycle_stage": "VR-LCS-0006",
+  "item_properties": [
+   "VR-PROP-0001"
+  ],
+  "links": [],
+  "stem": "D5012004",
+  "dash": "001",
+  "handedness": "Unhanded",
+  "number_proposal": {
+   "proposed_number": "D5012004-001",
+   "proposed_by": "software",
+   "proposed_at": "2025-12-01T09:00:00Z",
+   "accepted_by": "user:h.grant",
+   "accepted_at": "2025-12-01T09:00:00Z",
+   "rejected": []
+  },
+  "design_type": "VR-DTY-0002",
+  "x_phase3": true
+ }
+]

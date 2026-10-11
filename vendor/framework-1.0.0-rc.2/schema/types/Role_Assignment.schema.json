@@ -1,0 +1,58 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "types/Role_Assignment.schema.json",
+ "title": "Role Assignment (schema v6 3.x)",
+ "allOf": [
+  {
+   "$ref": "../common.schema.json"
+  }
+ ],
+ "type": "object",
+ "properties": {
+  "person": {
+   "type": "string",
+   "description": "ref(Person); card. 1; "
+  },
+  "role": {
+   "type": "string",
+   "x-stored-as": "label of a framework-fixed register entry",
+   "description": "reg(ROLE); card. 1; "
+  },
+  "area": {
+   "description": "json; card. 1; {kind: Project, Design Team, Design Sub-team, Design Type, System Group, System, Sub-system (including Sub-structure) or Discipline; ref}"
+  },
+  "delegations": {
+   "description": "json; card. 0..n; {authority, e.g. FDPS release; to: Person; from_date; to_date}"
+  },
+  "from_date": {
+   "type": "string",
+   "pattern": "^\\d{4}-\\d{2}-\\d{2}",
+   "description": "date; card. 1; "
+  },
+  "to_date": {
+   "type": "string",
+   "pattern": "^\\d{4}-\\d{2}-\\d{2}",
+   "description": "date; card. 0..1; "
+  },
+  "status": {
+   "type": "string",
+   "x-stored-as": "label of a framework-fixed register entry",
+   "description": "reg; card. 1; Active; Ended",
+   "enum": [
+    "Active",
+    "Ended"
+   ]
+  },
+  "type": {
+   "const": "Role Assignment"
+  }
+ },
+ "required": [
+  "person",
+  "role",
+  "area",
+  "from_date",
+  "status"
+ ],
+ "x-owned-links": []
+}

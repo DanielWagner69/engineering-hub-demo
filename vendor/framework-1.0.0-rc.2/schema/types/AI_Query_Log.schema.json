@@ -1,0 +1,78 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "types/AI_Query_Log.schema.json",
+ "title": "AI Query Log (schema v6 3.x)",
+ "allOf": [
+  {
+   "$ref": "../common.schema.json"
+  }
+ ],
+ "type": "object",
+ "properties": {
+  "user": {
+   "type": "string",
+   "description": "ref(Person); card. 1; "
+  },
+  "asked_at": {
+   "type": "string",
+   "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(:\\d{2})?Z$",
+   "description": "datetime; card. 1; "
+  },
+  "hub": {
+   "description": "FW or ref(Project); card. 1; "
+  },
+  "query": {
+   "type": "string",
+   "description": "text; card. 1; "
+  },
+  "answer": {
+   "type": "string",
+   "description": "text; card. 1; "
+  },
+  "cited_sources": {
+   "anyOf": [
+    {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    {
+     "type": "string"
+    }
+   ],
+   "description": "ref; card. 0..n; Permanent identifiers"
+  },
+  "no_answer_in_sources": {
+   "type": "boolean",
+   "description": "bool; card. 1; "
+  },
+  "permissions_context": {
+   "type": "string",
+   "description": "string; card. 1; "
+  },
+  "saved_as": {
+   "type": "string",
+   "description": "ref(Saved AI Answer); card. 0..1; "
+  },
+  "retention_until": {
+   "type": "string",
+   "pattern": "^\\d{4}-\\d{2}-\\d{2}",
+   "description": "date; card. 1; "
+  },
+  "type": {
+   "const": "AI Query Log"
+  }
+ },
+ "required": [
+  "user",
+  "asked_at",
+  "hub",
+  "query",
+  "answer",
+  "no_answer_in_sources",
+  "permissions_context",
+  "retention_until"
+ ],
+ "x-owned-links": []
+}

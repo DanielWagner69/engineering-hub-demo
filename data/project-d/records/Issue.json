@@ -1,0 +1,95 @@
+[
+ {
+  "id": "ISS-D-0000058",
+  "type": "Issue",
+  "schema_version": "6.0",
+  "title": "Feed pipe fatigue cracking indication at clamp, effectivity 1 ground running",
+  "status": "Open",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-07-07T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2026-07-07T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2026-07-07T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "description": "Dye-penetrant indication on feed pipe D2822002-001 rev A adjacent to the P-clamp after effectivity 1 ground running. Measured vibration exceeds the static-load basis used for clamp spacing.",
+  "effort_estimate": {
+   "value": 12,
+   "unit": "person-day"
+  },
+  "cost_estimate": {
+   "value": 18000,
+   "unit": "GBP"
+  },
+  "schedule_delay": {
+   "value": 2,
+   "unit": "week"
+  },
+  "safety_score": 4,
+  "scope_score": 2,
+  "scores": {
+   "effort": 3,
+   "cost": 2,
+   "schedule": 3,
+   "safety": 4,
+   "scope": 2
+  },
+  "product_scope": [
+   "VR-SCOPE-0001"
+  ],
+  "lifecycle_stage": [
+   "VR-LCS-0008"
+  ],
+  "resolution": {
+   "summary": "Design resolved from effectivity 3 by the rev B pipe (CR-D-0000302) and mid-span clamp (CR-D-0000303). Effectivities 1 to 2 remain Non-compliant in the as-designed record (CS-D-0001205), so release for them is blocked; the built aircraft are a manufacturing-standard matter (Concession), outside the software until Requirements Prompt v23 section 7 is in scope.",
+   "resolved_by": "user:c.lin",
+   "resolved_at": "2026-08-18T09:00:00Z",
+   "open_for": {
+    "effectivity_type": "VR-EFFTYPE-0001",
+    "from": 1,
+    "to": 2
+   }
+  },
+  "links": [
+   {
+    "link_type": "Affects",
+    "target": "PI-D-0004101"
+   },
+   {
+    "link_type": "Affects",
+    "target": "PI-D-0004111"
+   },
+   {
+    "link_type": "Affects",
+    "target": "PR-D-0000201"
+   },
+   {
+    "link_type": "Affects",
+    "target": "VER-D-0000303"
+   },
+   {
+    "link_type": "Affects",
+    "target": "REQ-D-0000145"
+   },
+   {
+    "link_type": "Affects",
+    "target": "CS-D-0001205"
+   },
+   {
+    "link_type": "Resolved by",
+    "target": "CR-D-0000302"
+   },
+   {
+    "link_type": "Resolved by",
+    "target": "CR-D-0000303"
+   }
+  ]
+ }
+]

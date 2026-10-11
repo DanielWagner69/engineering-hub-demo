@@ -1,0 +1,18 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "types/Assembly_Revision.schema.json",
+ "title": "Assembly Revision (schema v6 3.x)",
+ "allOf": [
+  {
+   "$ref": "../common.schema.json"
+  }
+ ],
+ "type": "object",
+ "properties": {
+  "type": {
+   "const": "Assembly Revision"
+  }
+ },
+ "required": [],
+ "x-owned-links": []
+}
