@@ -1,0 +1,775 @@
+[
+ {
+  "id": "RS-D-0000001",
+  "type": "Review Snapshot",
+  "schema_version": "6.0",
+  "title": "Snapshot for DR-D-0000001",
+  "status": "Frozen",
+  "owner": "user:e.dunn",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-01-13T09:00:00Z",
+  "created_by": "user:e.dunn",
+  "modified_at": "2026-01-13T09:00:00Z",
+  "modified_by": "user:e.dunn",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:e.dunn",
+  "verified_at": "2026-01-13T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "design_review": "DR-D-0000001",
+  "taken_at": "2026-01-13T09:00:00Z",
+  "content": {
+   "population": [
+    {
+     "instance": "PI-D-0004101@1",
+     "irl": [
+      "IRL-D-0009101@1"
+     ]
+    },
+    {
+     "instance": "PI-D-0004102@1",
+     "irl": [
+      "IRL-D-0009103@1"
+     ]
+    },
+    {
+     "instance": "PI-D-0004103@1",
+     "irl": [
+      "IRL-D-0009104@1"
+     ]
+    },
+    {
+     "instance": "PI-D-0004105@1",
+     "irl": [
+      "IRL-D-0009106@1"
+     ]
+    },
+    {
+     "instance": "PI-D-0004106@1",
+     "irl": [
+      "IRL-D-0009107@1"
+     ]
+    },
+    {
+     "instance": "PI-D-0004107@1",
+     "irl": [
+      "IRL-D-0009108@1"
+     ]
+    },
+    {
+     "instance": "PI-D-0004108@1",
+     "irl": [
+      "IRL-D-0009109@1"
+     ]
+    },
+    {
+     "instance": "PI-D-0004109@1",
+     "irl": [
+      "IRL-D-0009110@1"
+     ]
+    },
+    {
+     "instance": "PI-D-0004110@1",
+     "irl": [
+      "IRL-D-0009111@1"
+     ]
+    },
+    {
+     "instance": "PI-D-0004111@1",
+     "irl": [
+      "IRL-D-0009112@1"
+     ]
+    },
+    {
+     "instance": "PI-D-0004113@1",
+     "irl": [
+      "IRL-D-0009114@1"
+     ]
+    },
+    {
+     "instance": "PI-D-0004114@1",
+     "irl": [
+      "IRL-D-0009115@1"
+     ]
+    },
+    {
+     "instance": "AI-D-0000210@1",
+     "irl": [
+      "IRL-D-0009118@1"
+     ]
+    }
+   ],
+   "interfacing_systems": [
+    "VR-SYS-0001",
+    "VR-SYS-0005",
+    "VR-SYS-0007",
+    "VR-SYS-0011",
+    "VR-SYS-0012"
+   ],
+   "interface_breaks": [
+    "VR-SYS-0016"
+   ],
+   "fdps_interfaces": [
+    {
+     "fdps": "FD-D-0000009",
+     "fastener": "PI-D-0005002",
+     "held": "PI-D-0004105"
+    },
+    {
+     "fdps": "FD-D-0000009",
+     "fastener": "PI-D-0005003",
+     "held": "PI-D-0004105"
+    }
+   ],
+   "compliance_statements": [],
+   "interface_agreements": [
+    {
+     "system": "VR-SYS-0001",
+     "position": "Agree",
+     "reasons": "Brackets, clamps and fasteners attach to frames 14, 15 and 15A",
+     "conditions": [],
+     "by": "user:g.burns",
+     "at": "2026-01-13T09:00:00Z"
+    },
+    {
+     "system": "VR-SYS-0005",
+     "position": "Agree",
+     "reasons": "Cross-join spool connects to the engine fuel inlet",
+     "conditions": [],
+     "by": "user:w.nash",
+     "at": "2026-01-13T09:00:00Z"
+    },
+    {
+     "system": "VR-SYS-0007",
+     "position": "Agree",
+     "reasons": "Shut-off valve motor is powered from secondary distribution",
+     "conditions": [],
+     "by": "user:e.park",
+     "at": "2026-01-13T09:00:00Z"
+    },
+    {
+     "system": "VR-SYS-0011",
+     "position": "Agree",
+     "reasons": "Shut-off valve is commanded by vehicle management computing",
+     "conditions": [],
+     "by": "user:v.moreau",
+     "at": "2026-01-13T09:00:00Z"
+    },
+    {
+     "system": "VR-SYS-0012",
+     "position": "Agree",
+     "reasons": "Twin-pipe bracket also carries a hydraulic pipe (Supports link on PI-D-0004110)",
+     "conditions": [],
+     "by": "user:s.kerr",
+     "at": "2026-01-13T09:00:00Z"
+    }
+   ],
+   "fdps_revisions": [
+    "FR-D-0000033"
+   ]
+  },
+  "content_hash": "sha256:4417a917b4a36597",
+  "baseline": "BL-D-0000001",
+  "links": [
+   {
+    "link_type": "Records",
+    "target": "DR-D-0000001"
+   }
+  ]
+ },
+ {
+  "id": "RS-D-0000002",
+  "type": "Review Snapshot",
+  "schema_version": "6.0",
+  "title": "Snapshot for DR-D-0000002",
+  "status": "Frozen",
+  "owner": "user:e.dunn",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-03-17T09:00:00Z",
+  "created_by": "user:e.dunn",
+  "modified_at": "2026-03-17T09:00:00Z",
+  "modified_by": "user:e.dunn",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:e.dunn",
+  "verified_at": "2026-03-17T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "design_review": "DR-D-0000002",
+  "taken_at": "2026-03-17T09:00:00Z",
+  "content": {
+   "population": [
+    {
+     "instance": "PI-D-0004101@1",
+     "irl": [
+      "IRL-D-0009101@1"
+     ]
+    },
+    {
+     "instance": "PI-D-0004102@1",
+     "irl": [
+      "IRL-D-0009103@1"
+     ]
+    },
+    {
+     "instance": "PI-D-0004103@1",
+     "irl": [
+      "IRL-D-0009104@1"
+     ]
+    },
+    {
+     "instance": "PI-D-0004105@1",
+     "irl": [
+      "IRL-D-0009106@1"
+     ]
+    },
+    {
+     "instance": "PI-D-0004106@1",
+     "irl": [
+      "IRL-D-0009107@1"
+     ]
+    },
+    {
+     "instance": "PI-D-0004107@1",
+     "irl": [
+      "IRL-D-0009108@1"
+     ]
+    },
+    {
+     "instance": "PI-D-0004108@2",
+     "irl": [
+      "IRL-D-0009109@1"
+     ]
+    },
+    {
+     "instance": "PI-D-0004109@1",
+     "irl": [
+      "IRL-D-0009110@1"
+     ]
+    },
+    {
+     "instance": "PI-D-0004110@1",
+     "irl": [
+      "IRL-D-0009111@1"
+     ]
+    },
+    {
+     "instance": "PI-D-0004111@1",
+     "irl": [
+      "IRL-D-0009112@1"
+     ]
+    },
+    {
+     "instance": "PI-D-0004113@1",
+     "irl": [
+      "IRL-D-0009114@1"
+     ]
+    },
+    {
+     "instance": "PI-D-0004114@1",
+     "irl": [
+      "IRL-D-0009115@1"
+     ]
+    },
+    {
+     "instance": "AI-D-0000210@1",
+     "irl": [
+      "IRL-D-0009118@1"
+     ]
+    }
+   ],
+   "interfacing_systems": [
+    "VR-SYS-0001",
+    "VR-SYS-0005",
+    "VR-SYS-0007",
+    "VR-SYS-0011",
+    "VR-SYS-0012"
+   ],
+   "interface_breaks": [
+    "VR-SYS-0016"
+   ],
+   "fdps_interfaces": [
+    {
+     "fdps": "FD-D-0000009",
+     "fastener": "PI-D-0005002",
+     "held": "PI-D-0004105"
+    },
+    {
+     "fdps": "FD-D-0000009",
+     "fastener": "PI-D-0005003",
+     "held": "PI-D-0004105"
+    }
+   ],
+   "compliance_statements": [],
+   "interface_agreements": [
+    {
+     "system": "VR-SYS-0001",
+     "position": "Agree",
+     "reasons": "Brackets, clamps and fasteners attach to frames 14, 15 and 15A",
+     "conditions": [],
+     "by": "user:g.burns",
+     "at": "2026-03-17T09:00:00Z"
+    },
+    {
+     "system": "VR-SYS-0005",
+     "position": "Agree",
+     "reasons": "Cross-join spool connects to the engine fuel inlet",
+     "conditions": [],
+     "by": "user:w.nash",
+     "at": "2026-03-17T09:00:00Z"
+    },
+    {
+     "system": "VR-SYS-0007",
+     "position": "Agree",
+     "reasons": "Shut-off valve motor is powered from secondary distribution",
+     "conditions": [],
+     "by": "user:e.park",
+     "at": "2026-03-17T09:00:00Z"
+    },
+    {
+     "system": "VR-SYS-0011",
+     "position": "Agree",
+     "reasons": "Shut-off valve is commanded by vehicle management computing",
+     "conditions": [],
+     "by": "user:v.moreau",
+     "at": "2026-03-17T09:00:00Z"
+    },
+    {
+     "system": "VR-SYS-0012",
+     "position": "Agree",
+     "reasons": "Twin-pipe bracket also carries a hydraulic pipe (Supports link on PI-D-0004110)",
+     "conditions": [],
+     "by": "user:s.kerr",
+     "at": "2026-03-17T09:00:00Z"
+    }
+   ],
+   "fdps_revisions": [
+    "FR-D-0000033"
+   ]
+  },
+  "content_hash": "sha256:8b80777b272dbaef",
+  "baseline": "BL-D-0000002",
+  "links": [
+   {
+    "link_type": "Records",
+    "target": "DR-D-0000002"
+   }
+  ]
+ },
+ {
+  "id": "RS-D-0000003",
+  "type": "Review Snapshot",
+  "schema_version": "6.0",
+  "title": "Snapshot for DR-D-0000003",
+  "status": "Frozen",
+  "owner": "user:e.dunn",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-12T09:00:00Z",
+  "created_by": "user:e.dunn",
+  "modified_at": "2026-05-12T09:00:00Z",
+  "modified_by": "user:e.dunn",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:e.dunn",
+  "verified_at": "2026-05-12T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "design_review": "DR-D-0000003",
+  "taken_at": "2026-05-12T09:00:00Z",
+  "content": {
+   "population": [
+    {
+     "instance": "PI-D-0004101@1",
+     "irl": [
+      "IRL-D-0009101@1"
+     ]
+    },
+    {
+     "instance": "PI-D-0004102@1",
+     "irl": [
+      "IRL-D-0009103@1"
+     ]
+    },
+    {
+     "instance": "PI-D-0004103@1",
+     "irl": [
+      "IRL-D-0009104@1"
+     ]
+    },
+    {
+     "instance": "PI-D-0004105@1",
+     "irl": [
+      "IRL-D-0009106@1"
+     ]
+    },
+    {
+     "instance": "PI-D-0004106@1",
+     "irl": [
+      "IRL-D-0009107@1"
+     ]
+    },
+    {
+     "instance": "PI-D-0004107@1",
+     "irl": [
+      "IRL-D-0009108@1"
+     ]
+    },
+    {
+     "instance": "PI-D-0004108@2",
+     "irl": [
+      "IRL-D-0009109@1"
+     ]
+    },
+    {
+     "instance": "PI-D-0004109@1",
+     "irl": [
+      "IRL-D-0009110@1"
+     ]
+    },
+    {
+     "instance": "PI-D-0004110@1",
+     "irl": [
+      "IRL-D-0009111@1"
+     ]
+    },
+    {
+     "instance": "PI-D-0004111@1",
+     "irl": [
+      "IRL-D-0009112@1"
+     ]
+    },
+    {
+     "instance": "PI-D-0004113@1",
+     "irl": [
+      "IRL-D-0009114@1"
+     ]
+    },
+    {
+     "instance": "PI-D-0004114@1",
+     "irl": [
+      "IRL-D-0009115@1"
+     ]
+    },
+    {
+     "instance": "AI-D-0000210@1",
+     "irl": [
+      "IRL-D-0009118@1"
+     ]
+    }
+   ],
+   "interfacing_systems": [
+    "VR-SYS-0001",
+    "VR-SYS-0005",
+    "VR-SYS-0007",
+    "VR-SYS-0011",
+    "VR-SYS-0012"
+   ],
+   "interface_breaks": [
+    "VR-SYS-0016"
+   ],
+   "fdps_interfaces": [
+    {
+     "fdps": "FD-D-0000009",
+     "fastener": "PI-D-0005002",
+     "held": "PI-D-0004105"
+    },
+    {
+     "fdps": "FD-D-0000009",
+     "fastener": "PI-D-0005003",
+     "held": "PI-D-0004105"
+    }
+   ],
+   "compliance_statements": [
+    "CS-D-0001201@1",
+    "CS-D-0001202@1",
+    "CS-D-0001203@1",
+    "CS-D-0001204@1",
+    "CS-D-0001205@1",
+    "CS-D-0001207@1",
+    "CS-D-0001208@1",
+    "CS-D-0001209@1",
+    "CS-D-0001210@1",
+    "CS-D-0001212@1",
+    "CS-D-0001213@1"
+   ],
+   "interface_agreements": [
+    {
+     "system": "VR-SYS-0001",
+     "position": "Agree",
+     "reasons": "Brackets, clamps and fasteners attach to frames 14, 15 and 15A",
+     "conditions": [],
+     "by": "user:g.burns",
+     "at": "2026-05-12T09:00:00Z"
+    },
+    {
+     "system": "VR-SYS-0005",
+     "position": "Agree",
+     "reasons": "Cross-join spool connects to the engine fuel inlet",
+     "conditions": [],
+     "by": "user:w.nash",
+     "at": "2026-05-12T09:00:00Z"
+    },
+    {
+     "system": "VR-SYS-0007",
+     "position": "Agree",
+     "reasons": "Shut-off valve motor is powered from secondary distribution",
+     "conditions": [],
+     "by": "user:e.park",
+     "at": "2026-05-12T09:00:00Z"
+    },
+    {
+     "system": "VR-SYS-0011",
+     "position": "Agree",
+     "reasons": "Shut-off valve is commanded by vehicle management computing",
+     "conditions": [],
+     "by": "user:v.moreau",
+     "at": "2026-05-12T09:00:00Z"
+    },
+    {
+     "system": "VR-SYS-0012",
+     "position": "Agree",
+     "reasons": "Twin-pipe bracket also carries a hydraulic pipe (Supports link on PI-D-0004110)",
+     "conditions": [],
+     "by": "user:s.kerr",
+     "at": "2026-05-12T09:00:00Z"
+    }
+   ],
+   "fdps_revisions": [
+    "FR-D-0000033"
+   ]
+  },
+  "content_hash": "sha256:80ebc656aea79e8b",
+  "baseline": "BL-D-0000003",
+  "links": [
+   {
+    "link_type": "Records",
+    "target": "DR-D-0000003"
+   }
+  ]
+ },
+ {
+  "id": "RS-D-0000004",
+  "type": "Review Snapshot",
+  "schema_version": "6.0",
+  "title": "Snapshot for DR-D-0000004",
+  "status": "Frozen",
+  "owner": "user:e.dunn",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-09-22T09:00:00Z",
+  "created_by": "user:e.dunn",
+  "modified_at": "2026-09-22T09:00:00Z",
+  "modified_by": "user:e.dunn",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:e.dunn",
+  "verified_at": "2026-09-22T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "design_review": "DR-D-0000004",
+  "taken_at": "2026-09-22T09:00:00Z",
+  "content": {
+   "population": [
+    {
+     "instance": "PI-D-0004101@1",
+     "irl": [
+      "IRL-D-0009101@2",
+      "IRL-D-0009102@1"
+     ]
+    },
+    {
+     "instance": "PI-D-0004102@1",
+     "irl": [
+      "IRL-D-0009103@1"
+     ]
+    },
+    {
+     "instance": "PI-D-0004103@2",
+     "irl": [
+      "IRL-D-0009104@2"
+     ]
+    },
+    {
+     "instance": "PI-D-0004104@1",
+     "irl": [
+      "IRL-D-0009105@1"
+     ]
+    },
+    {
+     "instance": "PI-D-0004105@1",
+     "irl": [
+      "IRL-D-0009106@1"
+     ]
+    },
+    {
+     "instance": "PI-D-0004106@1",
+     "irl": [
+      "IRL-D-0009107@1"
+     ]
+    },
+    {
+     "instance": "PI-D-0004107@1",
+     "irl": [
+      "IRL-D-0009108@1"
+     ]
+    },
+    {
+     "instance": "PI-D-0004108@2",
+     "irl": [
+      "IRL-D-0009109@1"
+     ]
+    },
+    {
+     "instance": "PI-D-0004109@1",
+     "irl": [
+      "IRL-D-0009110@1"
+     ]
+    },
+    {
+     "instance": "PI-D-0004110@2",
+     "irl": [
+      "IRL-D-0009111@1"
+     ]
+    },
+    {
+     "instance": "PI-D-0004111@1",
+     "irl": [
+      "IRL-D-0009112@1"
+     ]
+    },
+    {
+     "instance": "PI-D-0004112@1",
+     "irl": [
+      "IRL-D-0009113@1"
+     ]
+    },
+    {
+     "instance": "PI-D-0004113@1",
+     "irl": [
+      "IRL-D-0009114@1"
+     ]
+    },
+    {
+     "instance": "PI-D-0004114@1",
+     "irl": [
+      "IRL-D-0009115@1"
+     ]
+    },
+    {
+     "instance": "PI-D-0004115@1",
+     "irl": [
+      "IRL-D-0009116@1"
+     ]
+    },
+    {
+     "instance": "PI-D-0004116@1",
+     "irl": [
+      "IRL-D-0009117@1"
+     ]
+    },
+    {
+     "instance": "AI-D-0000210@1",
+     "irl": [
+      "IRL-D-0009118@1"
+     ]
+    }
+   ],
+   "interfacing_systems": [
+    "VR-SYS-0001",
+    "VR-SYS-0005",
+    "VR-SYS-0007",
+    "VR-SYS-0011",
+    "VR-SYS-0012"
+   ],
+   "interface_breaks": [
+    "VR-SYS-0016"
+   ],
+   "fdps_interfaces": [
+    {
+     "fdps": "FD-D-0000009",
+     "fastener": "PI-D-0005002",
+     "held": "PI-D-0004105"
+    },
+    {
+     "fdps": "FD-D-0000009",
+     "fastener": "PI-D-0005003",
+     "held": "PI-D-0004105"
+    }
+   ],
+   "compliance_statements": [
+    "CS-D-0001201@1",
+    "CS-D-0001202@3",
+    "CS-D-0001203@1",
+    "CS-D-0001204@1",
+    "CS-D-0001205@3",
+    "CS-D-0001206@2",
+    "CS-D-0001207@1",
+    "CS-D-0001208@2",
+    "CS-D-0001209@1",
+    "CS-D-0001210@1",
+    "CS-D-0001211@2",
+    "CS-D-0001212@1",
+    "CS-D-0001213@1"
+   ],
+   "interface_agreements": [
+    {
+     "system": "VR-SYS-0001",
+     "position": "Agree",
+     "by": "user:g.burns",
+     "at": "2026-05-12T09:00:00Z",
+     "carried_forward_from": "DR-D-0000003"
+    },
+    {
+     "system": "VR-SYS-0005",
+     "position": "Agree with conditions",
+     "reasons": "Engine inlet union torque and leak check procedure to be recorded in the interface control document.",
+     "conditions": [
+      "ACT-D-0000105"
+     ],
+     "by": "user:w.nash",
+     "at": "2026-09-22T09:00:00Z"
+    },
+    {
+     "system": "VR-SYS-0007",
+     "position": "Agree",
+     "by": "user:e.park",
+     "at": "2026-05-12T09:00:00Z",
+     "carried_forward_from": "DR-D-0000003"
+    },
+    {
+     "system": "VR-SYS-0011",
+     "position": "Agree",
+     "by": "user:v.moreau",
+     "at": "2026-05-12T09:00:00Z",
+     "carried_forward_from": "DR-D-0000003"
+    },
+    {
+     "system": "VR-SYS-0012",
+     "position": "Agree",
+     "by": "user:s.kerr",
+     "at": "2026-05-12T09:00:00Z",
+     "carried_forward_from": "DR-D-0000003"
+    }
+   ],
+   "fdps_revisions": [
+    "FR-D-0000035"
+   ]
+  },
+  "content_hash": "sha256:bb420f61577eb63a",
+  "baseline": "BL-D-0000006",
+  "links": [
+   {
+    "link_type": "Records",
+    "target": "DR-D-0000004"
+   }
+  ]
+ }
+]

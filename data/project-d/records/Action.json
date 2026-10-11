@@ -1,0 +1,227 @@
+[
+ {
+  "id": "ACT-D-0000101",
+  "type": "Action",
+  "schema_version": "6.0",
+  "title": "Agree twin-bracket space allocation",
+  "status": "Closed",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-02-10T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2026-02-10T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2026-02-10T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "description": "Agree twin-bracket position and pipe spacing with Hydraulics.",
+  "raised_by": "user:s.kerr",
+  "due_date": "2026-02-10",
+  "closure": {
+   "evidence": "Agreed layout PLM-778800 iss 2.",
+   "closed_by": "user:p.hale",
+   "closed_at": "2026-02-05T09:00:00Z",
+   "accepted_by": "user:s.kerr",
+   "accepted_at": "2026-02-06T09:00:00Z"
+  },
+  "links": [
+   {
+    "link_type": "Raised at",
+    "target": "DR-D-0000001"
+   },
+   {
+    "link_type": "Tagged to",
+    "target": "FD-D-0000017"
+   }
+  ],
+  "source": {
+   "kind": "Review",
+   "ref": "DR-D-0000001"
+  }
+ },
+ {
+  "id": "ACT-D-0000102",
+  "type": "Action",
+  "schema_version": "6.0",
+  "title": "Confirm clamp spacing against installed vibration spectrum",
+  "status": "Closed",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-04-14T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2026-04-14T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2026-04-14T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "description": "Obtain the installed vibration spectrum and confirm clamp spacing.",
+  "raised_by": "user:a.novak",
+  "due_date": "2026-04-14",
+  "closure": {
+   "evidence": "Spectrum not available before release; spacing confirmed from static loads with factor 1.5 (CALC-D-0107 issue 2).",
+   "closed_by": "user:p.hale",
+   "closed_at": "2026-05-30T09:00:00Z",
+   "accepted_by": "user:a.novak",
+   "accepted_at": "2026-05-31T09:00:00Z"
+  },
+  "links": [
+   {
+    "link_type": "Raised at",
+    "target": "DR-D-0000002"
+   },
+   {
+    "link_type": "Tagged to",
+    "target": "FD-D-0000017"
+   }
+  ],
+  "source": {
+   "kind": "Condition of agreement",
+   "ref": "DR-D-0000002#Structural Analysis (Stress)"
+  }
+ },
+ {
+  "id": "ACT-D-0000103",
+  "type": "Action",
+  "schema_version": "6.0",
+  "title": "Add fay-surface sealant at low-point twin bracket",
+  "status": "Closed",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-26T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2026-05-26T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2026-05-26T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "description": "Add an instance-level finish override (sealant) to PI-D-0004110.",
+  "raised_by": "user:s.price",
+  "due_date": "2026-05-26",
+  "closure": {
+   "evidence": "Override added to PI-D-0004110 (FS-D-0000011, mode Add).",
+   "closed_by": "user:p.hale",
+   "closed_at": "2026-05-27T09:00:00Z",
+   "accepted_by": "user:s.price",
+   "accepted_at": "2026-05-28T09:00:00Z"
+  },
+  "links": [
+   {
+    "link_type": "Raised at",
+    "target": "DR-D-0000003"
+   },
+   {
+    "link_type": "Tagged to",
+    "target": "FD-D-0000017"
+   }
+  ],
+  "source": {
+   "kind": "Checklist No",
+   "ref": "CK-D-0000012"
+  }
+ },
+ {
+  "id": "ACT-D-0000104",
+  "type": "Action",
+  "schema_version": "6.0",
+  "title": "Close valve bonding verification",
+  "status": "Closed",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-26T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2026-05-26T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2026-05-26T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "description": "Complete bonding resistance inspection for the valve installation.",
+  "raised_by": "user:u.lowe",
+  "due_date": "2026-05-26",
+  "closure": {
+   "evidence": "VER-D-0000306 approved.",
+   "closed_by": "user:p.hale",
+   "closed_at": "2026-05-22T09:00:00Z",
+   "accepted_by": "user:u.lowe",
+   "accepted_at": "2026-05-23T09:00:00Z"
+  },
+  "links": [
+   {
+    "link_type": "Raised at",
+    "target": "DR-D-0000003"
+   },
+   {
+    "link_type": "Tagged to",
+    "target": "FD-D-0000017"
+   }
+  ],
+  "source": {
+   "kind": "Review",
+   "ref": "DR-D-0000003"
+  }
+ },
+ {
+  "id": "ACT-D-0000105",
+  "type": "Action",
+  "schema_version": "6.0",
+  "title": "Record engine inlet union torque and leak check in the interface control document",
+  "status": "Closed",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-09-26T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2026-09-26T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2026-09-26T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "description": "Propulsion condition of agreement.",
+  "raised_by": "user:w.nash",
+  "due_date": "2026-09-26",
+  "closure": {
+   "evidence": "Interface control document ICD-D-0007 issue 2 (PL-D-0000920).",
+   "closed_by": "user:p.hale",
+   "closed_at": "2026-09-25T09:00:00Z",
+   "accepted_by": "user:w.nash",
+   "accepted_at": "2026-09-26T09:00:00Z"
+  },
+  "links": [
+   {
+    "link_type": "Raised at",
+    "target": "DR-D-0000004"
+   },
+   {
+    "link_type": "Tagged to",
+    "target": "FD-D-0000017"
+   }
+  ],
+  "source": {
+   "kind": "Condition of agreement",
+   "ref": "DR-D-0000004#Propulsion"
+  }
+ }
+]

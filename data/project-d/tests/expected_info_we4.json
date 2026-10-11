@@ -1,0 +1,709 @@
+{
+ "frozen_refs": 62,
+ "fasteners": [
+  [
+   "PI-D-0004113",
+   "PI-D-0004110",
+   "Brackets and Supports",
+   []
+  ],
+  [
+   "PI-D-0004114",
+   "PI-D-0004110",
+   "Brackets and Supports",
+   []
+  ],
+  [
+   "PI-D-0004115",
+   "PI-D-0004112",
+   "Fuel Feed",
+   [
+    "Primary Structure"
+   ]
+  ],
+  [
+   "PI-D-0004116",
+   "PI-D-0004112",
+   "Fuel Feed",
+   [
+    "Primary Structure"
+   ]
+  ],
+  [
+   "PI-D-0005002",
+   "PI-D-0004105",
+   "Brackets and Supports",
+   []
+  ],
+  [
+   "PI-D-0005003",
+   "PI-D-0004105",
+   "Brackets and Supports",
+   []
+  ]
+ ],
+ "cross_secures": [
+  [
+   "PI-D-0005002",
+   "PI-D-0004105",
+   "FD-D-0000009",
+   "FD-D-0000017"
+  ],
+  [
+   "PI-D-0005003",
+   "PI-D-0004105",
+   "FD-D-0000009",
+   "FD-D-0000017"
+  ]
+ ],
+ "shared_stems": {
+  "D2822004": [
+   "D2822004-001",
+   "D2822004-003"
+  ],
+  "D2822005": [
+   "D2822005-001",
+   "D2822005-401"
+  ]
+ },
+ "stems": [
+  [
+   "D2822004-003",
+   [
+    "Fuel"
+   ]
+  ],
+  [
+   "D2822004-001",
+   [
+    "Fuel"
+   ]
+  ],
+  [
+   "D2822006-001",
+   [
+    "Fuel"
+   ]
+  ],
+  [
+   "D2822005-001",
+   [
+    "Secondary Structure"
+   ]
+  ],
+  [
+   "D2822003-001",
+   [
+    "Fuel"
+   ]
+  ],
+  [
+   "D2822005-401",
+   []
+  ],
+  [
+   "D2822002-001",
+   [
+    "Fuel"
+   ]
+  ]
+ ],
+ "irl_table": [
+  [
+   "PI-D-0004101",
+   {
+    "effectivity_type": "VR-EFFTYPE-0001",
+    "from": 1,
+    "to": 999
+   },
+   [
+    [
+     "A",
+     {
+      "effectivity_type": "VR-EFFTYPE-0001",
+      "from": 1,
+      "to": 2
+     },
+     "IRL-D-0009101",
+     2
+    ],
+    [
+     "B",
+     {
+      "effectivity_type": "VR-EFFTYPE-0001",
+      "from": 3,
+      "to": 999
+     },
+     "IRL-D-0009102",
+     1
+    ]
+   ]
+  ],
+  [
+   "PI-D-0004102",
+   {
+    "effectivity_type": "VR-EFFTYPE-0001",
+    "from": 1,
+    "to": 999
+   },
+   [
+    [
+     "A",
+     {
+      "effectivity_type": "VR-EFFTYPE-0001",
+      "from": 1,
+      "to": 999
+     },
+     "IRL-D-0009103",
+     1
+    ]
+   ]
+  ],
+  [
+   "PI-D-0004103",
+   {
+    "effectivity_type": "VR-EFFTYPE-0001",
+    "from": 1,
+    "to": 4
+   },
+   [
+    [
+     "A",
+     {
+      "effectivity_type": "VR-EFFTYPE-0001",
+      "from": 1,
+      "to": 4
+     },
+     "IRL-D-0009104",
+     2
+    ]
+   ]
+  ],
+  [
+   "PI-D-0004104",
+   {
+    "effectivity_type": "VR-EFFTYPE-0001",
+    "from": 5,
+    "to": 999
+   },
+   [
+    [
+     "A",
+     {
+      "effectivity_type": "VR-EFFTYPE-0001",
+      "from": 5,
+      "to": 999
+     },
+     "IRL-D-0009105",
+     1
+    ]
+   ]
+  ],
+  [
+   "PI-D-0004105",
+   {
+    "effectivity_type": "VR-EFFTYPE-0001",
+    "from": 1,
+    "to": 999
+   },
+   [
+    [
+     "A",
+     {
+      "effectivity_type": "VR-EFFTYPE-0001",
+      "from": 1,
+      "to": 999
+     },
+     "IRL-D-0009106",
+     1
+    ]
+   ]
+  ],
+  [
+   "PI-D-0004106",
+   {
+    "effectivity_type": "VR-EFFTYPE-0001",
+    "from": 1,
+    "to": 999
+   },
+   [
+    [
+     "A",
+     {
+      "effectivity_type": "VR-EFFTYPE-0001",
+      "from": 1,
+      "to": 999
+     },
+     "IRL-D-0009107",
+     1
+    ]
+   ]
+  ],
+  [
+   "PI-D-0004107",
+   {
+    "effectivity_type": "VR-EFFTYPE-0001",
+    "from": 1,
+    "to": 999
+   },
+   [
+    [
+     "A",
+     {
+      "effectivity_type": "VR-EFFTYPE-0001",
+      "from": 1,
+      "to": 999
+     },
+     "IRL-D-0009108",
+     1
+    ]
+   ]
+  ],
+  [
+   "PI-D-0004108",
+   {
+    "effectivity_type": "VR-EFFTYPE-0001",
+    "from": 1,
+    "to": 999
+   },
+   [
+    [
+     "A",
+     {
+      "effectivity_type": "VR-EFFTYPE-0001",
+      "from": 1,
+      "to": 999
+     },
+     "IRL-D-0009109",
+     1
+    ]
+   ]
+  ],
+  [
+   "PI-D-0004109",
+   {
+    "effectivity_type": "VR-EFFTYPE-0001",
+    "from": 1,
+    "to": 999
+   },
+   [
+    [
+     "A",
+     {
+      "effectivity_type": "VR-EFFTYPE-0001",
+      "from": 1,
+      "to": 999
+     },
+     "IRL-D-0009110",
+     1
+    ]
+   ]
+  ],
+  [
+   "PI-D-0004110",
+   {
+    "effectivity_type": "VR-EFFTYPE-0001",
+    "from": 1,
+    "to": 999
+   },
+   [
+    [
+     "A",
+     {
+      "effectivity_type": "VR-EFFTYPE-0001",
+      "from": 1,
+      "to": 999
+     },
+     "IRL-D-0009111",
+     1
+    ]
+   ]
+  ],
+  [
+   "PI-D-0004111",
+   {
+    "effectivity_type": "VR-EFFTYPE-0001",
+    "from": 1,
+    "to": 999
+   },
+   [
+    [
+     "A",
+     {
+      "effectivity_type": "VR-EFFTYPE-0001",
+      "from": 1,
+      "to": 999
+     },
+     "IRL-D-0009112",
+     1
+    ]
+   ]
+  ],
+  [
+   "PI-D-0004112",
+   {
+    "effectivity_type": "VR-EFFTYPE-0001",
+    "from": 3,
+    "to": 999
+   },
+   [
+    [
+     "A",
+     {
+      "effectivity_type": "VR-EFFTYPE-0001",
+      "from": 3,
+      "to": 999
+     },
+     "IRL-D-0009113",
+     1
+    ]
+   ]
+  ],
+  [
+   "PI-D-0004113",
+   {
+    "effectivity_type": "VR-EFFTYPE-0001",
+    "from": 1,
+    "to": 999
+   },
+   [
+    [
+     "A",
+     {
+      "effectivity_type": "VR-EFFTYPE-0001",
+      "from": 1,
+      "to": 999
+     },
+     "IRL-D-0009114",
+     1
+    ]
+   ]
+  ],
+  [
+   "PI-D-0004114",
+   {
+    "effectivity_type": "VR-EFFTYPE-0001",
+    "from": 1,
+    "to": 999
+   },
+   [
+    [
+     "A",
+     {
+      "effectivity_type": "VR-EFFTYPE-0001",
+      "from": 1,
+      "to": 999
+     },
+     "IRL-D-0009115",
+     1
+    ]
+   ]
+  ],
+  [
+   "PI-D-0004115",
+   {
+    "effectivity_type": "VR-EFFTYPE-0001",
+    "from": 3,
+    "to": 999
+   },
+   [
+    [
+     "A",
+     {
+      "effectivity_type": "VR-EFFTYPE-0001",
+      "from": 3,
+      "to": 999
+     },
+     "IRL-D-0009116",
+     1
+    ]
+   ]
+  ],
+  [
+   "PI-D-0004116",
+   {
+    "effectivity_type": "VR-EFFTYPE-0001",
+    "from": 3,
+    "to": 999
+   },
+   [
+    [
+     "A",
+     {
+      "effectivity_type": "VR-EFFTYPE-0001",
+      "from": 3,
+      "to": 999
+     },
+     "IRL-D-0009117",
+     1
+    ]
+   ]
+  ],
+  [
+   "PI-D-0005001",
+   {
+    "effectivity_type": "VR-EFFTYPE-0001",
+    "from": 1,
+    "to": 999
+   },
+   [
+    [
+     "A",
+     {
+      "effectivity_type": "VR-EFFTYPE-0001",
+      "from": 1,
+      "to": 999
+     },
+     "IRL-D-0009201",
+     1
+    ]
+   ]
+  ],
+  [
+   "PI-D-0005002",
+   {
+    "effectivity_type": "VR-EFFTYPE-0001",
+    "from": 1,
+    "to": 999
+   },
+   [
+    [
+     "A",
+     {
+      "effectivity_type": "VR-EFFTYPE-0001",
+      "from": 1,
+      "to": 999
+     },
+     "IRL-D-0009202",
+     1
+    ]
+   ]
+  ],
+  [
+   "PI-D-0005003",
+   {
+    "effectivity_type": "VR-EFFTYPE-0001",
+    "from": 1,
+    "to": 999
+   },
+   [
+    [
+     "A",
+     {
+      "effectivity_type": "VR-EFFTYPE-0001",
+      "from": 1,
+      "to": 999
+     },
+     "IRL-D-0009203",
+     1
+    ]
+   ]
+  ],
+  [
+   "AI-D-0000210",
+   {
+    "effectivity_type": "VR-EFFTYPE-0001",
+    "from": 1,
+    "to": 999
+   },
+   [
+    [
+     "A",
+     {
+      "effectivity_type": "VR-EFFTYPE-0001",
+      "from": 1,
+      "to": 999
+     },
+     "IRL-D-0009118",
+     1
+    ]
+   ]
+  ]
+ ],
+ "fr_cfg": [
+  [
+   "A",
+   {
+    "effectivity_type": "VR-EFFTYPE-0001",
+    "from": 1,
+    "to": 2
+   },
+   13
+  ],
+  [
+   "B",
+   {
+    "effectivity_type": "VR-EFFTYPE-0001",
+    "from": 3,
+    "to": 4
+   },
+   16
+  ],
+  [
+   "C",
+   {
+    "effectivity_type": "VR-EFFTYPE-0001",
+    "from": 5,
+    "to": 999
+   },
+   16
+  ]
+ ],
+ "status_at": {
+  "2": {
+   "PI-D-0004103": "Present",
+   "PI-D-0004104": "Not present (exists 5 to 999)",
+   "PI-D-0004112": "Not present (exists 3 to 999)"
+  },
+  "3": {
+   "PI-D-0004103": "Present",
+   "PI-D-0004104": "Not present (exists 5 to 999)",
+   "PI-D-0004112": "Present"
+  },
+  "5": {
+   "PI-D-0004103": "Not present (exists 1 to 4)",
+   "PI-D-0004104": "Present",
+   "PI-D-0004112": "Present"
+  }
+ },
+ "tsm_routes": {
+  "TSM-D-0000062": [
+   "dty:VR-DTY-0009"
+  ],
+  "TSM-D-0000063": [
+   "dty:VR-DTY-0002",
+   "dty:VR-DTY-0003"
+  ],
+  "TSM-D-0000064": [
+   "dty:VR-DTY-0011"
+  ],
+  "TSM-D-0000065": [
+   "disc:VR-DISC-0026",
+   "sys:VR-SYS-0010",
+   "dty:VR-DTY-0009"
+  ],
+  "TSM-D-0000066": [
+   "dty:VR-DTY-0012"
+  ],
+  "TSM-D-0000067": [
+   "sys:VR-SYS-0010"
+  ]
+ },
+ "multi_basis": [
+  "CS-D-0001203",
+  "CS-D-0001204",
+  "CS-D-0001209",
+  "CS-D-0001211"
+ ],
+ "tsm_partial": [
+  "CS-D-0001208",
+  "CS-D-0001209",
+  "CS-D-0001210",
+  "CS-D-0001211",
+  "CS-D-0001212"
+ ],
+ "whole_fdps_claims": [
+  [
+   "CS-D-0001211",
+   "5.4"
+  ]
+ ],
+ "release_cs": [
+  [
+   "A",
+   "BL-D-0000004",
+   12,
+   []
+  ],
+  [
+   "B",
+   "BL-D-0000005",
+   13,
+   []
+  ],
+  [
+   "C",
+   "BL-D-0000007",
+   13,
+   []
+  ]
+ ],
+ "cs_count": 13,
+ "iface9": [
+  [
+   "VR-SYS-0003",
+   "VR-SYS-0007",
+   "VR-SYS-0008",
+   "VR-SYS-0009",
+   "VR-SYS-0010",
+   "VR-SYS-0011",
+   "VR-SYS-0012",
+   "VR-SYS-0013",
+   "VR-SYS-0015"
+  ],
+  [
+   "VR-SYS-0013"
+  ],
+  [
+   "VR-SYS-0001",
+   "VR-SYS-0002"
+  ]
+ ],
+ "iface": [
+  6,
+  1,
+  [
+   "VR-SYS-0001",
+   "VR-SYS-0005",
+   "VR-SYS-0007",
+   "VR-SYS-0011",
+   "VR-SYS-0012"
+  ],
+  8
+ ],
+ "bs_not_flowed": [
+  "VR-SYS-0008",
+  "VR-SYS-0015"
+ ],
+ "gate_attempts": [
+  [
+   "A",
+   [
+    {
+     "at": "2026-05-19T09:00:00Z",
+     "result": "Refused by Hub",
+     "open_actions": [
+      "ACT-D-0000102",
+      "ACT-D-0000103",
+      "ACT-D-0000104"
+     ]
+    },
+    {
+     "at": "2026-05-28T15:00:00Z",
+     "result": "Refused by Hub",
+     "open_actions": [
+      "ACT-D-0000102"
+     ]
+    }
+   ]
+  ],
+  [
+   "B",
+   []
+  ],
+  [
+   "C",
+   []
+  ]
+ ],
+ "issue": [
+  {
+   "effort": 3,
+   "cost": 2,
+   "schedule": 3,
+   "safety": 4,
+   "scope": 2
+  },
+  4
+ ]
+}

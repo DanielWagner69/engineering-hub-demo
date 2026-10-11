@@ -1,0 +1,316 @@
+[
+ {
+  "id": "REQ-D-0000140",
+  "type": "Requirement",
+  "schema_version": "6.0",
+  "title": "Usable fuel, main tank",
+  "status": "Accepted",
+  "owner": "user:j.ward",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-20T09:00:00Z",
+  "created_by": "user:j.ward",
+  "modified_at": "2025-11-20T09:00:00Z",
+  "modified_by": "user:j.ward",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:j.ward",
+  "verified_at": "2025-11-20T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "req_number": "D-FUE-STO-012",
+  "statement": "The main tank shall provide usable fuel of not less than 420 kg.",
+  "level": "VR-REQLVL-0003",
+  "criteria": [
+   {
+    "quantity_name": "usable_fuel_mass",
+    "comparator": ">=",
+    "limit": {
+     "value": 420,
+     "unit": "kg"
+    }
+   }
+  ],
+  "product_scope": [
+   "VR-SCOPE-0001"
+  ],
+  "lifecycle_stage": [
+   "ALL"
+  ],
+  "discipline": [
+   "VR-DISC-0026"
+  ],
+  "acceptance": {
+   "state": "Accepted",
+   "accepted_by": "user:o.fry",
+   "accepted_at": "2025-11-20T09:00:00Z"
+  },
+  "links": [
+   {
+    "link_type": "Allocated to",
+    "target": "VR-SUB-0031"
+   }
+  ]
+ },
+ {
+  "id": "REQ-D-0000141",
+  "type": "Requirement",
+  "schema_version": "6.0",
+  "title": "Feed flow at engine interface",
+  "status": "Accepted",
+  "owner": "user:j.ward",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-20T09:00:00Z",
+  "created_by": "user:j.ward",
+  "modified_at": "2025-11-20T09:00:00Z",
+  "modified_by": "user:j.ward",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:j.ward",
+  "verified_at": "2025-11-20T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "req_number": "D-FUE-FED-004",
+  "statement": "The fuel feed shall deliver not less than 380 kg/h at the engine interface at an inlet pressure of not less than 35 kPa gauge in all flight conditions.",
+  "level": "VR-REQLVL-0003",
+  "criteria": [
+   {
+    "quantity_name": "feed_flow",
+    "comparator": ">=",
+    "limit": {
+     "value": 380,
+     "unit": "kg/h"
+    }
+   },
+   {
+    "quantity_name": "inlet_pressure_gauge",
+    "comparator": ">=",
+    "limit": {
+     "value": 35,
+     "unit": "kPa"
+    }
+   }
+  ],
+  "product_scope": [
+   "VR-SCOPE-0001"
+  ],
+  "lifecycle_stage": [
+   "ALL"
+  ],
+  "discipline": [
+   "VR-DISC-0026"
+  ],
+  "acceptance": {
+   "state": "Accepted",
+   "accepted_by": "user:o.fry",
+   "accepted_at": "2025-11-20T09:00:00Z"
+  },
+  "links": [
+   {
+    "link_type": "Allocated to",
+    "target": "VR-SUB-0032"
+   }
+  ]
+ },
+ {
+  "id": "REQ-D-0000142",
+  "type": "Requirement",
+  "schema_version": "6.0",
+  "title": "Shut-off valve closing time",
+  "status": "Accepted",
+  "owner": "user:j.ward",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-20T09:00:00Z",
+  "created_by": "user:j.ward",
+  "modified_at": "2025-11-20T09:00:00Z",
+  "modified_by": "user:j.ward",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:j.ward",
+  "verified_at": "2025-11-20T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "req_number": "D-FUE-FED-009",
+  "statement": "The fuel shut-off valve shall close within 2 s of command.",
+  "level": "VR-REQLVL-0004",
+  "criteria": [
+   {
+    "quantity_name": "closing_time",
+    "comparator": "<=",
+    "limit": {
+     "value": 2,
+     "unit": "s"
+    }
+   }
+  ],
+  "product_scope": [
+   "VR-SCOPE-0001"
+  ],
+  "lifecycle_stage": [
+   "ALL"
+  ],
+  "discipline": [
+   "VR-DISC-0026"
+  ],
+  "acceptance": {
+   "state": "Accepted",
+   "accepted_by": "user:o.fry",
+   "accepted_at": "2025-11-20T09:00:00Z"
+  },
+  "links": [
+   {
+    "link_type": "Allocated to",
+    "target": "VR-SUB-0032"
+   },
+   {
+    "link_type": "Satisfied by",
+    "target": "PI-D-0004108"
+   }
+  ]
+ },
+ {
+  "id": "REQ-D-0000143",
+  "type": "Requirement",
+  "schema_version": "6.0",
+  "title": "Secondary structure bracket strength",
+  "status": "Accepted",
+  "owner": "user:j.ward",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-20T09:00:00Z",
+  "created_by": "user:j.ward",
+  "modified_at": "2025-11-20T09:00:00Z",
+  "modified_by": "user:j.ward",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:j.ward",
+  "verified_at": "2025-11-20T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "req_number": "D-SST-GEN-002",
+  "statement": "Secondary structure brackets shall sustain ultimate loads at the design load factors without failure.",
+  "level": "VR-REQLVL-0002",
+  "criteria": [],
+  "product_scope": [
+   "VR-SCOPE-0001"
+  ],
+  "lifecycle_stage": [
+   "ALL"
+  ],
+  "discipline": [
+   "VR-DISC-0022"
+  ],
+  "acceptance": {
+   "state": "Accepted",
+   "accepted_by": "user:o.fry",
+   "accepted_at": "2025-11-20T09:00:00Z"
+  },
+  "links": [
+   {
+    "link_type": "Allocated to",
+    "target": "VR-SYS-0002"
+   },
+   {
+    "link_type": "Satisfied by",
+    "target": "AI-D-0000210"
+   }
+  ]
+ },
+ {
+  "id": "REQ-D-0000145",
+  "type": "Requirement",
+  "schema_version": "6.0",
+  "title": "Feed line vibration fatigue",
+  "status": "Accepted",
+  "owner": "user:j.ward",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-20T09:00:00Z",
+  "created_by": "user:j.ward",
+  "modified_at": "2025-11-20T09:00:00Z",
+  "modified_by": "user:j.ward",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:j.ward",
+  "verified_at": "2025-11-20T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "req_number": "D-FUE-FED-011",
+  "statement": "Fuel feed line installations shall show no fatigue damage under the installed vibration spectrum for the design life.",
+  "level": "VR-REQLVL-0003",
+  "criteria": [],
+  "product_scope": [
+   "VR-SCOPE-0001"
+  ],
+  "lifecycle_stage": [
+   "ALL"
+  ],
+  "discipline": [
+   "VR-DISC-0022",
+   "VR-DISC-0026"
+  ],
+  "acceptance": {
+   "state": "Accepted",
+   "accepted_by": "user:o.fry",
+   "accepted_at": "2025-11-20T09:00:00Z"
+  },
+  "links": [
+   {
+    "link_type": "Allocated to",
+    "target": "VR-SUB-0032"
+   }
+  ]
+ },
+ {
+  "id": "REQ-D-0000146",
+  "type": "Requirement",
+  "schema_version": "6.0",
+  "title": "Fire resistance in designated fire zones",
+  "status": "Accepted",
+  "owner": "user:j.ward",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-20T09:00:00Z",
+  "created_by": "user:j.ward",
+  "modified_at": "2025-11-20T09:00:00Z",
+  "modified_by": "user:j.ward",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:j.ward",
+  "verified_at": "2025-11-20T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "req_number": "D-PP-GEN-003",
+  "statement": "Propulsion and power system components installed in a designated fire zone shall be fire resistant.",
+  "level": "VR-REQLVL-0002",
+  "criteria": [],
+  "product_scope": [
+   "VR-SCOPE-0001"
+  ],
+  "lifecycle_stage": [
+   "ALL"
+  ],
+  "discipline": [
+   "VR-DISC-0019"
+  ],
+  "acceptance": {
+   "state": "Accepted",
+   "accepted_by": "user:o.fry",
+   "accepted_at": "2025-11-20T09:00:00Z"
+  },
+  "links": [
+   {
+    "link_type": "Allocated to",
+    "target": "VR-SG-0002"
+   }
+  ]
+ }
+]

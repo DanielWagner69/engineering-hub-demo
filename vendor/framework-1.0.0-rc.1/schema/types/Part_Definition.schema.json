@@ -1,0 +1,210 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "types/Part_Definition.schema.json",
+ "title": "Part Definition (schema v6 3.x)",
+ "allOf": [
+  {
+   "$ref": "../common.schema.json"
+  }
+ ],
+ "type": "object",
+ "properties": {
+  "part_number": {
+   "type": "string",
+   "description": "string; card. 1; Unique across parts, assemblies and FDPSs within the project; never reused"
+  },
+  "numbering_scheme": {
+   "anyOf": [
+    {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+     }
+    },
+    {
+     "type": "string",
+     "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+    }
+   ],
+   "description": "reg(NUMSCH); card. 1; Meaningful stem; Common part; Catalogue standard; Bought-in control number"
+  },
+  "stem": {
+   "type": "string",
+   "description": "string; card. 1*; e.g. D2822002 / 001"
+  },
+  "dash": {
+   "type": "string",
+   "description": "string; card. 1*; e.g. D2822002 / 001"
+  },
+  "handedness": {
+   "type": "string",
+   "x-stored-as": "label of a framework-fixed register entry",
+   "description": "reg; card. 1*; Unhanded; Left-hand; Right-hand"
+  },
+  "number_proposal": {
+   "description": "json; card. 1; {proposed_number, proposed_by: software or Person, proposed_at, accepted_by: Person, accepted_at, rejected: [{number, proposed_by, reason}]}"
+  },
+  "type_code": {
+   "anyOf": [
+    {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+     }
+    },
+    {
+     "type": "string",
+     "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+    }
+   ],
+   "description": "reg(TYC); card. 1*; "
+  },
+  "standard_designation": {
+   "type": "string",
+   "description": "string; card. 1*; "
+  },
+  "supplier_part_number": {
+   "type": "string",
+   "description": "string; card. 1*; "
+  },
+  "supplier_mod_standard": {
+   "type": "string",
+   "description": "string; card. 0..1; "
+  },
+  "source": {
+   "anyOf": [
+    {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+     }
+    },
+    {
+     "type": "string",
+     "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+    }
+   ],
+   "description": "reg(SRC); card. 1; Make; Standard Part; Bought-in Equipment"
+  },
+  "design_type": {
+   "anyOf": [
+    {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+     }
+    },
+    {
+     "type": "string",
+     "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+    }
+   ],
+   "description": "reg(DTY); card. 1; "
+  },
+  "modification_design_type": {
+   "anyOf": [
+    {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+     }
+    },
+    {
+     "type": "string",
+     "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+    }
+   ],
+   "description": "reg(DTY); card. 1*; "
+  },
+  "safety_classification": {
+   "anyOf": [
+    {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+     }
+    },
+    {
+     "type": "string",
+     "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+    }
+   ],
+   "description": "reg(SAF); card. 1; A to E"
+  },
+  "safety_assigned_by": {
+   "type": "string",
+   "description": "ref(Person); card. 1; "
+  },
+  "safety_basis": {
+   "type": "string",
+   "description": "text; card. 0..1; "
+  },
+  "lifecycle_stage": {
+   "anyOf": [
+    {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+     }
+    },
+    {
+     "type": "string",
+     "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+    }
+   ],
+   "description": "reg(LCS); card. 1; One option"
+  },
+  "item_properties": {
+   "anyOf": [
+    {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+     }
+    },
+    {
+     "type": "string",
+     "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+    }
+   ],
+   "description": "reg(PROP); card. 0..n; "
+  },
+  "design_tables": {
+   "description": "json; card. 0..n; {variant_name, parameter values}"
+  },
+  "status": {
+   "type": "string",
+   "x-stored-as": "label of a framework-fixed register entry",
+   "description": "reg; card. 1; Active; Obsolete",
+   "enum": [
+    "Active",
+    "Obsolete"
+   ]
+  },
+  "type": {
+   "const": "Part Definition"
+  }
+ },
+ "required": [
+  "part_number",
+  "numbering_scheme",
+  "number_proposal",
+  "source",
+  "design_type",
+  "safety_classification",
+  "safety_assigned_by",
+  "lifecycle_stage",
+  "status"
+ ],
+ "x-owned-links": [
+  "Derived from"
+ ]
+}

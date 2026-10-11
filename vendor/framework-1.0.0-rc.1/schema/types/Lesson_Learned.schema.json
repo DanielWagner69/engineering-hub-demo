@@ -1,0 +1,129 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "types/Lesson_Learned.schema.json",
+ "title": "Lesson Learned (schema v6 3.x)",
+ "allOf": [
+  {
+   "$ref": "../common.schema.json"
+  }
+ ],
+ "type": "object",
+ "properties": {
+  "summary": {
+   "type": "string",
+   "description": "text; card. 1; "
+  },
+  "what_happened": {
+   "type": "string",
+   "description": "text; card. 1; "
+  },
+  "root_cause": {
+   "type": "string",
+   "description": "text; card. 1; "
+  },
+  "recommendation": {
+   "type": "string",
+   "description": "text; card. 1; "
+  },
+  "applicability": {
+   "type": "string",
+   "description": "text; card. 1; "
+  },
+  "lifecycle_stage": {
+   "anyOf": [
+    {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+     }
+    },
+    {
+     "type": "string",
+     "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+    }
+   ],
+   "description": "reg(LCS) or ALL; card. 1..n; "
+  },
+  "system": {
+   "anyOf": [
+    {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+     }
+    },
+    {
+     "type": "string",
+     "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+    }
+   ],
+   "description": "reg(SYS) or ALL; card. 1..n; "
+  },
+  "discipline": {
+   "anyOf": [
+    {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+     }
+    },
+    {
+     "type": "string",
+     "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+    }
+   ],
+   "description": "reg(DISC) or ALL; card. 1..n; "
+  },
+  "product_scope": {
+   "anyOf": [
+    {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+     }
+    },
+    {
+     "type": "string",
+     "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+    }
+   ],
+   "description": "reg(SCOPE); card. 0..n; "
+  },
+  "origin_record": {
+   "type": "string",
+   "description": "ref(any data object, for example Issue, Design Review or Verification); card. 0..1; "
+  },
+  "promotion": {
+   "description": "json; card. 0..1; {proposed_by, proposed_at, generic_lesson: ref(Lesson Learned in the Framework Hub), approved_by, approved_at, project_data_removed: bool}"
+  },
+  "status": {
+   "type": "string",
+   "x-stored-as": "label of a framework-fixed register entry",
+   "description": "reg; card. 1; Draft; Published; Archived",
+   "enum": [
+    "Draft",
+    "Published",
+    "Archived"
+   ]
+  },
+  "type": {
+   "const": "Lesson Learned"
+  }
+ },
+ "required": [
+  "summary",
+  "what_happened",
+  "root_cause",
+  "recommendation",
+  "applicability",
+  "lifecycle_stage",
+  "system",
+  "discipline",
+  "status"
+ ],
+ "x-owned-links": []
+}

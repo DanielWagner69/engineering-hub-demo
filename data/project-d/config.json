@@ -1,0 +1,16 @@
+{
+ "project": "PRJ-D-0000001",
+ "fdps_under_test": "FD-D-0000017",
+ "structural_fdps": "FD-D-0000009",
+ "expect": {
+  "baselines": 7,
+  "issue_levels": {"ISS-D-0000058": 4},
+  "project_na_disciplines": ["VR-DISC-0012"],
+  "structural_must_inherit": ["VR-SYS-0010"],
+  "non_flowing_substructure": "VR-SUB-0005",
+  "na_must_not_cover": [["user:m.ellis", "VR-SUB-0031"]],
+  "status_at_instances": ["PI-D-0004103", "PI-D-0004104", "PI-D-0004112"],
+  "status_at_effectivities": [2, 3, 5],
+  "interfacing_systems": {"FD-D-0000017": 6}
+ }
+}

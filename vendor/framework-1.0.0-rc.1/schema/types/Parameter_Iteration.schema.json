@@ -1,0 +1,23 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "types/Parameter_Iteration.schema.json",
+ "title": "Parameter Iteration (schema v6 3.32, brief)",
+ "allOf": [
+  {
+   "$ref": "../common.schema.json"
+  }
+ ],
+ "type": "object",
+ "properties": {
+  "changes": {},
+  "author": {},
+  "date": {},
+  "reason": {},
+  "branch": {},
+  "merged_by": {},
+  "type": {
+   "const": "Parameter Iteration"
+  }
+ },
+ "required": []
+}

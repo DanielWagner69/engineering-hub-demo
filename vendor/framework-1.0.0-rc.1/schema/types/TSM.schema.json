@@ -1,0 +1,52 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "types/TSM.schema.json",
+ "title": "TSM (schema v6 3.x)",
+ "allOf": [
+  {
+   "$ref": "../common.schema.json"
+  }
+ ],
+ "type": "object",
+ "properties": {
+  "manual_code": {
+   "type": "string",
+   "description": "string; card. 1; e.g. TSM-FLU"
+  },
+  "issue": {
+   "type": "integer",
+   "description": "int; card. 1; 1, 2, 3 ..."
+  },
+  "statements": {
+   "description": "json; card. 1..n; [{clause, statement, criteria: as for Requirement, governing_source: {body, standard, clause, issue}}]"
+  },
+  "acceptance": {
+   "description": "json; card. 1*; As for Requirement"
+  },
+  "status": {
+   "type": "string",
+   "x-stored-as": "label of a framework-fixed register entry",
+   "description": "reg; card. 1; Draft; Accepted; Superseded; Withdrawn",
+   "enum": [
+    "Draft",
+    "Accepted",
+    "Superseded",
+    "Withdrawn"
+   ]
+  },
+  "type": {
+   "const": "TSM"
+  }
+ },
+ "required": [
+  "manual_code",
+  "issue",
+  "statements",
+  "status"
+ ],
+ "x-owned-links": [
+  "Constrains",
+  "Governs",
+  "Informed by"
+ ]
+}

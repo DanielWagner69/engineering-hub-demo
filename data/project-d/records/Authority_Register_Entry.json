@@ -1,0 +1,81 @@
+[
+ {
+  "id": "AR-D-0000001",
+  "type": "Authority Register Entry",
+  "schema_version": "6.0",
+  "title": "Requirements moved to Hub",
+  "status": "Recorded",
+  "owner": "user:j.ward",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-12-01T09:00:00Z",
+  "created_by": "user:j.ward",
+  "modified_at": "2025-12-01T09:00:00Z",
+  "modified_by": "user:j.ward",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:j.ward",
+  "verified_at": "2025-12-01T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "project": "PRJ-D-0000001",
+  "data_type": "Requirement",
+  "event": "Moved to Hub",
+  "master": "VR-MASTER-0005",
+  "effective_date": "2025-12-01",
+  "approved_by": "user:c.lin"
+ },
+ {
+  "id": "AR-D-0000002",
+  "type": "Authority Register Entry",
+  "schema_version": "6.0",
+  "title": "Part data master is PLM",
+  "status": "Recorded",
+  "owner": "user:e.dunn",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-03T09:00:00Z",
+  "created_by": "user:e.dunn",
+  "modified_at": "2025-11-03T09:00:00Z",
+  "modified_by": "user:e.dunn",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:e.dunn",
+  "verified_at": "2025-11-03T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "project": "PRJ-D-0000001",
+  "data_type": "Part Definition",
+  "event": "Master recorded",
+  "master": "VR-MASTER-0001",
+  "effective_date": "2025-11-03"
+ },
+ {
+  "id": "AR-D-0000003",
+  "type": "Authority Register Entry",
+  "schema_version": "6.0",
+  "title": "Configuration master is PLM",
+  "status": "Recorded",
+  "owner": "user:e.dunn",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-03T09:00:00Z",
+  "created_by": "user:e.dunn",
+  "modified_at": "2025-11-03T09:00:00Z",
+  "modified_by": "user:e.dunn",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:e.dunn",
+  "verified_at": "2025-11-03T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "project": "PRJ-D-0000001",
+  "data_type": "Instance-Revision Link",
+  "event": "Master recorded",
+  "master": "VR-MASTER-0001",
+  "effective_date": "2025-11-03"
+ }
+]

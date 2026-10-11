@@ -1,0 +1,788 @@
+[
+ {
+  "id": "CS-D-0001201",
+  "type": "Compliance Statement",
+  "schema_version": "6.0",
+  "title": "D2822001-801, D-FUE-STO-012, effectivity 1 to 999 (open)",
+  "status": "Approved",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-08T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2026-05-08T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2026-05-08T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "fdps": "FD-D-0000017",
+  "requirement": "REQ-D-0000140",
+  "effectivity": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 1,
+   "to": 999
+  },
+  "bases": [
+   {
+    "basis": "Inherited via System tree node",
+    "node": "VR-SUB-0031",
+    "via": [
+     "PI-D-0004109"
+    ]
+   }
+  ],
+  "position": "Compliant",
+  "evidence": [
+   "VER-D-0000308"
+  ]
+ },
+ {
+  "id": "CS-D-0001202",
+  "type": "Compliance Statement",
+  "schema_version": "6.0",
+  "title": "D2822001-801, D-FUE-FED-004, effectivity 1 to 999 (open)",
+  "status": "Approved",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-08T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2026-09-08T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 3,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2026-05-08T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "fdps": "FD-D-0000017",
+  "requirement": "REQ-D-0000141",
+  "effectivity": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 1,
+   "to": 999
+  },
+  "bases": [
+   {
+    "basis": "Inherited via System tree node",
+    "node": "VR-SUB-0032",
+    "via": [
+     "PI-D-0004101",
+     "PI-D-0004102",
+     "PI-D-0004103",
+     "PI-D-0004104",
+     "PI-D-0004108",
+     "PI-D-0004111",
+     "PI-D-0004112",
+     "PI-D-0004115",
+     "PI-D-0004116"
+    ]
+   }
+  ],
+  "position": "Compliant",
+  "evidence": [
+   "VER-D-0000301",
+   "VER-D-0000313",
+   "VER-D-0000302"
+  ],
+  "margin_note": "Inlet pressure margin 13 kPa (effectivities 1 to 2), 10 kPa (3 to 4) and 9 kPa (5 onwards); remains compliant (6C.17).",
+  "record_history": [
+   {
+    "record_version": 1,
+    "modified_at": "2026-05-08T09:00:00Z",
+    "evidence": [
+     "VER-D-0000301"
+    ]
+   },
+   {
+    "record_version": 2,
+    "modified_at": "2026-08-10T09:00:00Z",
+    "evidence": [
+     "VER-D-0000301",
+     "VER-D-0000313"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "CS-D-0001203",
+  "type": "Compliance Statement",
+  "schema_version": "6.0",
+  "title": "D2822001-801, D-FUE-FED-009, effectivity 1 to 999 (open)",
+  "status": "Approved",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-08T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2026-05-08T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2026-05-08T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "fdps": "FD-D-0000017",
+  "requirement": "REQ-D-0000142",
+  "effectivity": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 1,
+   "to": 999
+  },
+  "bases": [
+   {
+    "basis": "Inherited via System tree node",
+    "node": "VR-SUB-0032",
+    "via": [
+     "PI-D-0004101",
+     "PI-D-0004102",
+     "PI-D-0004103",
+     "PI-D-0004104",
+     "PI-D-0004108",
+     "PI-D-0004111",
+     "PI-D-0004112",
+     "PI-D-0004115",
+     "PI-D-0004116"
+    ]
+   },
+   {
+    "basis": "Direct",
+    "item": "PI-D-0004108"
+   }
+  ],
+  "position": "Compliant",
+  "evidence": [
+   "VER-D-0000305"
+  ]
+ },
+ {
+  "id": "CS-D-0001204",
+  "type": "Compliance Statement",
+  "schema_version": "6.0",
+  "title": "D2822001-801, D-SST-GEN-002, effectivity 1 to 999 (open)",
+  "status": "Approved",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-08T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2026-05-08T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2026-05-08T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "fdps": "FD-D-0000017",
+  "requirement": "REQ-D-0000143",
+  "effectivity": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 1,
+   "to": 999
+  },
+  "bases": [
+   {
+    "basis": "Inherited via System tree node",
+    "node": "VR-SYS-0002",
+    "via": [
+     "PI-D-0004105",
+     "PI-D-0004106",
+     "PI-D-0004107",
+     "PI-D-0004110",
+     "PI-D-0004113",
+     "PI-D-0004114"
+    ]
+   },
+   {
+    "basis": "Direct",
+    "item": "AI-D-0000210"
+   }
+  ],
+  "position": "Compliant",
+  "evidence": [
+   "VER-D-0000307"
+  ]
+ },
+ {
+  "id": "CS-D-0001205",
+  "type": "Compliance Statement",
+  "schema_version": "6.0",
+  "title": "D2822001-801, D-FUE-FED-011, effectivity 1 to 2",
+  "status": "Approved",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-08T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2026-09-08T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 3,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2026-05-08T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "fdps": "FD-D-0000017",
+  "requirement": "REQ-D-0000145",
+  "effectivity": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 1,
+   "to": 2
+  },
+  "bases": [
+   {
+    "basis": "Inherited via System tree node",
+    "node": "VR-SUB-0032",
+    "via": [
+     "PI-D-0004101",
+     "PI-D-0004102",
+     "PI-D-0004103",
+     "PI-D-0004104",
+     "PI-D-0004108",
+     "PI-D-0004111",
+     "PI-D-0004112",
+     "PI-D-0004115",
+     "PI-D-0004116"
+    ]
+   }
+  ],
+  "position": "Non-compliant",
+  "evidence": [
+   "VER-D-0000303",
+   "VER-D-0000311"
+  ],
+  "reason": "Rev A feed pipe with static-load clamp spacing fails under the measured installed spectrum (VER-D-0000303, ISS-D-0000058). Release of any FDPS revision for effectivities 1 to 2 is blocked while this statement is Non-compliant (6A.17).",
+  "issue": "ISS-D-0000058",
+  "record_history": [
+   {
+    "record_version": 1,
+    "modified_at": "2026-05-08T09:00:00Z",
+    "effectivity": {
+     "effectivity_type": "VR-EFFTYPE-0001",
+     "from": 1,
+     "to": 999
+    },
+    "position": "Compliant",
+    "evidence": [
+     "VER-D-0000303"
+    ]
+   },
+   {
+    "record_version": 2,
+    "modified_at": "2026-07-28T09:00:00Z",
+    "position": "Non-compliant",
+    "evidence": [
+     "VER-D-0000303"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "CS-D-0001206",
+  "type": "Compliance Statement",
+  "schema_version": "6.0",
+  "title": "D2822001-801, D-FUE-FED-011, effectivity 3 to 999 (open)",
+  "status": "Approved",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-08-11T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2026-09-08T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 2,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2026-08-11T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "fdps": "FD-D-0000017",
+  "requirement": "REQ-D-0000145",
+  "effectivity": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 3,
+   "to": 999
+  },
+  "bases": [
+   {
+    "basis": "Inherited via System tree node",
+    "node": "VR-SUB-0032",
+    "via": [
+     "PI-D-0004101",
+     "PI-D-0004102",
+     "PI-D-0004103",
+     "PI-D-0004104",
+     "PI-D-0004108",
+     "PI-D-0004111",
+     "PI-D-0004112",
+     "PI-D-0004115",
+     "PI-D-0004116"
+    ]
+   }
+  ],
+  "position": "Compliant",
+  "evidence": [
+   "VER-D-0000304",
+   "VER-D-0000311"
+  ],
+  "record_history": [
+   {
+    "record_version": 1,
+    "modified_at": "2026-08-11T09:00:00Z",
+    "evidence": [
+     "VER-D-0000304"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "CS-D-0001207",
+  "type": "Compliance Statement",
+  "schema_version": "6.0",
+  "title": "D2822001-801, D-PP-GEN-003, effectivity 1 to 999 (open)",
+  "status": "Approved",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-08T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2026-05-08T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2026-05-08T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "fdps": "FD-D-0000017",
+  "requirement": "REQ-D-0000146",
+  "effectivity": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 1,
+   "to": 999
+  },
+  "bases": [
+   {
+    "basis": "Inherited via System tree node",
+    "node": "VR-SG-0002",
+    "via": [
+     "PI-D-0004101",
+     "PI-D-0004102",
+     "PI-D-0004103",
+     "PI-D-0004104",
+     "PI-D-0004108",
+     "PI-D-0004109",
+     "PI-D-0004111",
+     "PI-D-0004112",
+     "PI-D-0004115",
+     "PI-D-0004116"
+    ]
+   }
+  ],
+  "position": "Not applicable",
+  "evidence": [],
+  "reason": "No item of this FDPS is installed in a designated fire zone: the cross-join spool terminates at the firewall bulkhead union, outside the engine bay fire zone.",
+  "approved_by": "user:j.ward",
+  "approved_at": "2026-05-08T09:00:00Z"
+ },
+ {
+  "id": "CS-D-0001208",
+  "type": "Compliance Statement",
+  "schema_version": "6.0",
+  "title": "D2822001-801, TSM-PIPE, effectivity 1 to 999 (open)",
+  "status": "Approved",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-08T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2026-09-08T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 2,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2026-05-08T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "fdps": "FD-D-0000017",
+  "requirement": "TSM-D-0000062",
+  "effectivity": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 1,
+   "to": 999
+  },
+  "bases": [
+   {
+    "basis": "Inherited via Design Type",
+    "design_type": "VR-DTY-0009",
+    "via": [
+     "PD-D-0000101",
+     "PD-D-0000102",
+     "PD-D-0000103",
+     "PD-D-0000113"
+    ]
+   }
+  ],
+  "position": "Compliant",
+  "evidence": [
+   "VER-D-0000309",
+   "VER-D-0000310"
+  ],
+  "statements_claimed": [
+   {
+    "clause": "3.1.4",
+    "parts": [
+     "PD-D-0000101",
+     "PD-D-0000102",
+     "PD-D-0000103",
+     "PD-D-0000113"
+    ]
+   }
+  ],
+  "record_history": [
+   {
+    "record_version": 1,
+    "modified_at": "2026-05-08T09:00:00Z",
+    "evidence": [
+     "VER-D-0000309"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "CS-D-0001209",
+  "type": "Compliance Statement",
+  "schema_version": "6.0",
+  "title": "D2822001-801, TSM-MET, effectivity 1 to 999 (open)",
+  "status": "Approved",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-08T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2026-05-08T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2026-05-08T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "fdps": "FD-D-0000017",
+  "requirement": "TSM-D-0000063",
+  "effectivity": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 1,
+   "to": 999
+  },
+  "bases": [
+   {
+    "basis": "Inherited via Design Type",
+    "design_type": "VR-DTY-0002",
+    "via": [
+     "PD-D-0000104",
+     "PD-D-0000106"
+    ]
+   },
+   {
+    "basis": "Inherited via Design Type",
+    "design_type": "VR-DTY-0003",
+    "via": [
+     "PD-D-0000108"
+    ]
+   }
+  ],
+  "position": "Compliant",
+  "evidence": [
+   "VER-D-0000315"
+  ],
+  "statements_claimed": [
+   {
+    "clause": "2.4.1",
+    "parts": [
+     "PD-D-0000104",
+     "PD-D-0000106"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "CS-D-0001210",
+  "type": "Compliance Statement",
+  "schema_version": "6.0",
+  "title": "D2822001-801, TSM-BIE, effectivity 1 to 999 (open)",
+  "status": "Approved",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-08T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2026-05-08T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2026-05-08T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "fdps": "FD-D-0000017",
+  "requirement": "TSM-D-0000064",
+  "effectivity": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 1,
+   "to": 999
+  },
+  "bases": [
+   {
+    "basis": "Inherited via Design Type",
+    "design_type": "VR-DTY-0011",
+    "via": [
+     "PD-D-0000106",
+     "PD-D-0000107"
+    ]
+   }
+  ],
+  "position": "Compliant",
+  "evidence": [
+   "VER-D-0000305",
+   "VER-D-0000314"
+  ],
+  "statements_claimed": [
+   {
+    "clause": "1.2",
+    "parts": [
+     "PD-D-0000107",
+     "PD-D-0000106"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "CS-D-0001211",
+  "type": "Compliance Statement",
+  "schema_version": "6.0",
+  "title": "D2822001-801, TSM-FLU, effectivity 1 to 999 (open)",
+  "status": "Approved",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-22T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2026-09-08T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 2,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2026-05-22T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "fdps": "FD-D-0000017",
+  "requirement": "TSM-D-0000065",
+  "effectivity": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 1,
+   "to": 999
+  },
+  "bases": [
+   {
+    "basis": "Inherited via Discipline",
+    "discipline": "VR-DISC-0026",
+    "via": [
+     "PG-D-0000300"
+    ]
+   },
+   {
+    "basis": "Inherited via System",
+    "system": "VR-SYS-0010",
+    "via": [
+     "PI-D-0004101",
+     "PI-D-0004102",
+     "PI-D-0004103",
+     "PI-D-0004104",
+     "PI-D-0004108",
+     "PI-D-0004109",
+     "PI-D-0004111",
+     "PI-D-0004112",
+     "PI-D-0004115",
+     "PI-D-0004116"
+    ]
+   },
+   {
+    "basis": "Inherited via Design Type",
+    "design_type": "VR-DTY-0009",
+    "via": [
+     "PD-D-0000101",
+     "PD-D-0000102",
+     "PD-D-0000103",
+     "PD-D-0000113"
+    ]
+   }
+  ],
+  "position": "Compliant",
+  "evidence": [
+   "VER-D-0000306",
+   "VER-D-0000312",
+   "VER-D-0000317"
+  ],
+  "statements_claimed": [
+   {
+    "clause": "5.1",
+    "parts": [
+     "PD-D-0000101",
+     "PD-D-0000102",
+     "PD-D-0000103",
+     "PD-D-0000113",
+     "PD-D-0000104",
+     "PD-D-0000107",
+     "PD-D-0000106",
+     "PD-D-0000108",
+     "PD-D-0000109",
+     "PD-D-0000110",
+     "PD-D-0000111"
+    ]
+   },
+   {
+    "clause": "5.4"
+   }
+  ],
+  "record_history": [
+   {
+    "record_version": 1,
+    "modified_at": "2026-05-22T09:00:00Z",
+    "evidence": [
+     "VER-D-0000306",
+     "VER-D-0000317"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "CS-D-0001212",
+  "type": "Compliance Statement",
+  "schema_version": "6.0",
+  "title": "D2822001-801, TSM-STD, effectivity 1 to 999 (open)",
+  "status": "Approved",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-08T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2026-05-08T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2026-05-08T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "fdps": "FD-D-0000017",
+  "requirement": "TSM-D-0000066",
+  "effectivity": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 1,
+   "to": 999
+  },
+  "bases": [
+   {
+    "basis": "Inherited via Design Type",
+    "design_type": "VR-DTY-0012",
+    "via": [
+     "PD-D-0000109",
+     "PD-D-0000110",
+     "PD-D-0000111",
+     "PD-D-0000112"
+    ]
+   }
+  ],
+  "position": "Compliant",
+  "evidence": [
+   "VER-D-0000316"
+  ],
+  "statements_claimed": [
+   {
+    "clause": "2.1",
+    "parts": [
+     "PD-D-0000109",
+     "PD-D-0000110",
+     "PD-D-0000111",
+     "PD-D-0000112"
+    ]
+   },
+   {
+    "clause": "3.4",
+    "parts": [
+     "PD-D-0000111",
+     "PD-D-0000110"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "CS-D-0001213",
+  "type": "Compliance Statement",
+  "schema_version": "6.0",
+  "title": "D2822001-801, TSM-FZ, effectivity 1 to 999 (open)",
+  "status": "Approved",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-08T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2026-05-08T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2026-05-08T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "fdps": "FD-D-0000017",
+  "requirement": "TSM-D-0000067",
+  "effectivity": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 1,
+   "to": 999
+  },
+  "bases": [
+   {
+    "basis": "Inherited via System",
+    "system": "VR-SYS-0010",
+    "via": [
+     "PI-D-0004101",
+     "PI-D-0004102",
+     "PI-D-0004103",
+     "PI-D-0004104",
+     "PI-D-0004108",
+     "PI-D-0004109",
+     "PI-D-0004111",
+     "PI-D-0004112",
+     "PI-D-0004115",
+     "PI-D-0004116"
+    ]
+   }
+  ],
+  "position": "Not applicable",
+  "evidence": [],
+  "reason": "No statement of TSM-FZ applies: no item of this FDPS is installed in a designated fire zone; the cross-join spool terminates at the firewall, outside the engine bay fire zone.",
+  "approved_by": "user:k.osei",
+  "approved_at": "2026-05-08T09:00:00Z"
+ }
+]

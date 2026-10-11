@@ -1,0 +1,93 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "types/Change_Record.schema.json",
+ "title": "Change Record (schema v6 3.x)",
+ "allOf": [
+  {
+   "$ref": "../common.schema.json"
+  }
+ ],
+ "type": "object",
+ "properties": {
+  "change_types": {
+   "anyOf": [
+    {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+     }
+    },
+    {
+     "type": "string",
+     "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+    }
+   ],
+   "description": "reg(CHG); card. 1..n; "
+  },
+  "reason": {
+   "type": "string",
+   "description": "text; card. 1; "
+  },
+  "affected_objects": {
+   "anyOf": [
+    {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    {
+     "type": "string"
+    }
+   ],
+   "description": "ref; card. 1..n; "
+  },
+  "before": {
+   "description": "json; card. 1; Field and link values"
+  },
+  "after": {
+   "description": "json; card. 1; Field and link values"
+  },
+  "interchangeability": {
+   "description": "json; card. 1*; {form, fit, function: bool each; all_uses_assessed: bool; outcome: Interchangeable or Not interchangeable}"
+  },
+  "follows_review": {
+   "type": "string",
+   "description": "ref(Design Review); card. 0..1; "
+  },
+  "approvals": {
+   "description": "json; card. 0..n; {role, by: Person, at}"
+  },
+  "fdps_revision_required": {
+   "type": "string",
+   "description": "ref(FDPS Revision); card. 0..1; "
+  },
+  "fdps_assessments": {
+   "description": "json; card. 0..n; {fdps, substantial: bool, criteria: [adversely affects compliance; degrades form, fit or function; degrades an interface; adds a new interface with another System], margin_note, assessed_by: Person (Design Authority), at}"
+  },
+  "status": {
+   "type": "string",
+   "x-stored-as": "label of a framework-fixed register entry",
+   "description": "reg; card. 1; Proposed; Approved; Implemented; Rejected",
+   "enum": [
+    "Proposed",
+    "Approved",
+    "Implemented",
+    "Rejected"
+   ]
+  },
+  "type": {
+   "const": "Change Record"
+  }
+ },
+ "required": [
+  "change_types",
+  "reason",
+  "affected_objects",
+  "before",
+  "after",
+  "status"
+ ],
+ "x-owned-links": []
+}

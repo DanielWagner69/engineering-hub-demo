@@ -1,0 +1,498 @@
+[
+ {
+  "id": "PG-D-0000300",
+  "type": "Hub Page",
+  "schema_version": "6.0",
+  "title": "Design Team: Fluid Systems",
+  "status": "Published",
+  "owner": "user:k.osei",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-10T09:00:00Z",
+  "created_by": "user:k.osei",
+  "modified_at": "2025-11-10T09:00:00Z",
+  "modified_by": "user:k.osei",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:k.osei",
+  "verified_at": "2025-11-10T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "page_type": "VR-PAGETYPE-0004",
+  "framework_node": "VR-DT-0002",
+  "template": "TPL-0004",
+  "body": {
+   "blocks": [
+    {
+     "text": "Design Team: Fluid Systems (Project D tailoring of the framework template, 6C.6)."
+    }
+   ]
+  },
+  "lifecycle_stage": [
+   "ALL"
+  ],
+  "discipline": [
+   "ALL"
+  ],
+  "last_reviewed_at": "2025-11-10",
+  "applicable_design_types": [
+   "VR-DTY-0009",
+   "VR-DTY-0011",
+   "VR-DTY-0002",
+   "VR-DTY-0003",
+   "VR-DTY-0007",
+   "VR-DTY-0012"
+  ],
+  "applicable_disciplines": [
+   "VR-DISC-0026"
+  ]
+ },
+ {
+  "id": "PG-D-0000310",
+  "type": "Hub Page",
+  "schema_version": "6.0",
+  "title": "Design Sub-team: Fuel",
+  "status": "Published",
+  "owner": "user:r.okafor",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-10T09:00:00Z",
+  "created_by": "user:r.okafor",
+  "modified_at": "2025-11-10T09:00:00Z",
+  "modified_by": "user:r.okafor",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:r.okafor",
+  "verified_at": "2025-11-10T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "page_type": "VR-PAGETYPE-0005",
+  "framework_node": "VR-DST-0007",
+  "template": "TPL-0005",
+  "body": {
+   "blocks": [
+    {
+     "text": "Design Sub-team: Fuel (Project D tailoring of the framework template, 6C.6)."
+    }
+   ]
+  },
+  "lifecycle_stage": [
+   "VR-LCS-0004",
+   "VR-LCS-0005",
+   "VR-LCS-0006"
+  ],
+  "discipline": [
+   "ALL"
+  ],
+  "last_reviewed_at": "2025-11-10",
+  "stage_sections": [
+   {
+    "stage": "VR-STAGE-0001",
+    "checklist_items": [
+     {
+      "discipline": "VR-DISC-0023",
+      "item_id": "SLI-A-01"
+     },
+     {
+      "discipline": "VR-DISC-0017",
+      "item_id": "MBSE-A-01"
+     },
+     {
+      "discipline": "VR-DISC-0001",
+      "item_id": "AER-A-01"
+     },
+     {
+      "discipline": "VR-DISC-0026",
+      "item_id": "FLU-A-01"
+     }
+    ],
+    "sign_off_disciplines": [
+     "VR-DISC-0006",
+     "VR-DISC-0019",
+     "VR-DISC-0025",
+     "VR-DISC-0013",
+     "VR-DISC-0003",
+     "VR-DISC-0026"
+    ],
+    "type_specific_entry_criteria": []
+   },
+   {
+    "stage": "VR-STAGE-0002",
+    "checklist_items": [
+     {
+      "discipline": "VR-DISC-0022",
+      "item_id": "SA-B-V01"
+     },
+     {
+      "discipline": "VR-DISC-0020",
+      "item_id": "SEG-B-01"
+     },
+     {
+      "discipline": "VR-DISC-0002",
+      "item_id": "AFF-B-01"
+     },
+     {
+      "discipline": "VR-DISC-0023",
+      "item_id": "SLI-B-T01"
+     },
+     {
+      "discipline": "VR-DISC-0012",
+      "item_id": "LO-B-T01"
+     },
+     {
+      "discipline": "VR-DISC-0026",
+      "item_id": "FLU-B-01"
+     }
+    ],
+    "sign_off_disciplines": [
+     "VR-DISC-0006",
+     "VR-DISC-0019",
+     "VR-DISC-0022",
+     "VR-DISC-0015",
+     "VR-DISC-0014",
+     "VR-DISC-0024",
+     "VR-DISC-0025",
+     "VR-DISC-0026"
+    ],
+    "type_specific_entry_criteria": [
+     "Pipework: pipe routing with bend radii checked against TSM-PIPE"
+    ]
+   },
+   {
+    "stage": "VR-STAGE-0003",
+    "checklist_items": [
+     {
+      "discipline": "VR-DISC-0023",
+      "item_id": "SLI-C-T02"
+     },
+     {
+      "discipline": "VR-DISC-0015",
+      "item_id": "MP-C-E01"
+     },
+     {
+      "discipline": "VR-DISC-0009",
+      "item_id": "EF-C-02"
+     },
+     {
+      "discipline": "VR-DISC-0004",
+      "item_id": "AIT-C-01"
+     },
+     {
+      "discipline": "VR-DISC-0010",
+      "item_id": "FUO-C-01"
+     },
+     {
+      "discipline": "VR-DISC-0023",
+      "item_id": "SLI-C-01"
+     },
+     {
+      "discipline": "VR-DISC-0022",
+      "item_id": "SA-C-V02"
+     },
+     {
+      "discipline": "VR-DISC-0026",
+      "item_id": "FLU-C-01"
+     }
+    ],
+    "sign_off_disciplines": [
+     "VR-DISC-0006",
+     "VR-DISC-0019",
+     "VR-DISC-0022",
+     "VR-DISC-0015",
+     "VR-DISC-0014",
+     "VR-DISC-0018",
+     "VR-DISC-0021",
+     "VR-DISC-0005",
+     "VR-DISC-0012",
+     "VR-DISC-0003",
+     "VR-DISC-0013",
+     "VR-DISC-0025",
+     "VR-DISC-0026"
+    ],
+    "type_specific_entry_criteria": [
+     "Pipework: pressure drop analysis complete"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "PG-D-0000320",
+  "type": "Hub Page",
+  "schema_version": "6.0",
+  "title": "Sub-system: Fuel Feed",
+  "status": "Published",
+  "owner": "user:m.ellis",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-10T09:00:00Z",
+  "created_by": "user:m.ellis",
+  "modified_at": "2025-11-10T09:00:00Z",
+  "modified_by": "user:m.ellis",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:m.ellis",
+  "verified_at": "2025-11-10T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "page_type": "VR-PAGETYPE-0009",
+  "framework_node": "VR-SUB-0032",
+  "template": "TPL-0009",
+  "body": {
+   "blocks": [
+    {
+     "text": "Sub-system: Fuel Feed (Project D tailoring of the framework template, 6C.6)."
+    }
+   ]
+  },
+  "lifecycle_stage": [
+   "ALL"
+  ],
+  "discipline": [
+   "ALL"
+  ],
+  "last_reviewed_at": "2025-11-10",
+  "interfaces": [
+   "VR-SYS-0001",
+   "VR-SYS-0002",
+   "VR-SYS-0005",
+   "VR-SYS-0007",
+   "VR-SYS-0011",
+   "VR-SYS-0016"
+  ],
+  "links": [
+   {
+    "link_type": "Interfaces with",
+    "target": "VR-SYS-0001"
+   },
+   {
+    "link_type": "Interfaces with",
+    "target": "VR-SYS-0002"
+   },
+   {
+    "link_type": "Interfaces with",
+    "target": "VR-SYS-0005"
+   },
+   {
+    "link_type": "Interfaces with",
+    "target": "VR-SYS-0007"
+   },
+   {
+    "link_type": "Interfaces with",
+    "target": "VR-SYS-0011"
+   },
+   {
+    "link_type": "Interfaces with",
+    "target": "VR-SYS-0016"
+   }
+  ]
+ },
+ {
+  "id": "PG-D-0000321",
+  "type": "Hub Page",
+  "schema_version": "6.0",
+  "title": "Sub-system: Fuel Storage",
+  "status": "Published",
+  "owner": "user:j.ward",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-10T09:00:00Z",
+  "created_by": "user:j.ward",
+  "modified_at": "2025-11-10T09:00:00Z",
+  "modified_by": "user:j.ward",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:j.ward",
+  "verified_at": "2025-11-10T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "page_type": "VR-PAGETYPE-0009",
+  "framework_node": "VR-SUB-0031",
+  "template": "TPL-0009",
+  "body": {
+   "blocks": [
+    {
+     "text": "Sub-system: Fuel Storage (Project D tailoring of the framework template, 6C.6)."
+    }
+   ]
+  },
+  "lifecycle_stage": [
+   "ALL"
+  ],
+  "discipline": [
+   "ALL"
+  ],
+  "last_reviewed_at": "2025-11-10",
+  "interfaces": [
+   "VR-SYS-0001",
+   "VR-SYS-0002"
+  ],
+  "links": [
+   {
+    "link_type": "Interfaces with",
+    "target": "VR-SYS-0001"
+   },
+   {
+    "link_type": "Interfaces with",
+    "target": "VR-SYS-0002"
+   }
+  ]
+ },
+ {
+  "id": "PG-D-0000322",
+  "type": "Hub Page",
+  "schema_version": "6.0",
+  "title": "Sub-structure: Brackets and Supports",
+  "status": "Published",
+  "owner": "user:y.hart",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-10T09:00:00Z",
+  "created_by": "user:y.hart",
+  "modified_at": "2025-11-10T09:00:00Z",
+  "modified_by": "user:y.hart",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:y.hart",
+  "verified_at": "2025-11-10T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "page_type": "VR-PAGETYPE-0009",
+  "framework_node": "VR-SUB-0005",
+  "template": "TPL-0009",
+  "body": {
+   "blocks": [
+    {
+     "text": "Sub-structure: Brackets and Supports (Project D tailoring of the framework template, 6C.6)."
+    }
+   ]
+  },
+  "lifecycle_stage": [
+   "ALL"
+  ],
+  "discipline": [
+   "ALL"
+  ],
+  "last_reviewed_at": "2025-11-10",
+  "interfaces": [
+   "VR-SYS-0001",
+   "VR-SYS-0010",
+   "VR-SYS-0012",
+   "VR-SYS-0008",
+   "VR-SYS-0007",
+   "VR-SYS-0015",
+   "VR-SYS-0011"
+  ],
+  "links": [
+   {
+    "link_type": "Interfaces with",
+    "target": "VR-SYS-0001"
+   },
+   {
+    "link_type": "Interfaces with",
+    "target": "VR-SYS-0010"
+   },
+   {
+    "link_type": "Interfaces with",
+    "target": "VR-SYS-0012"
+   },
+   {
+    "link_type": "Interfaces with",
+    "target": "VR-SYS-0008"
+   },
+   {
+    "link_type": "Interfaces with",
+    "target": "VR-SYS-0007"
+   },
+   {
+    "link_type": "Interfaces with",
+    "target": "VR-SYS-0015"
+   },
+   {
+    "link_type": "Interfaces with",
+    "target": "VR-SYS-0011"
+   }
+  ]
+ },
+ {
+  "id": "PG-D-0000323",
+  "type": "Hub Page",
+  "schema_version": "6.0",
+  "title": "Sub-structure: Frames and Bulkheads",
+  "status": "Published",
+  "owner": "user:g.burns",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-10T09:00:00Z",
+  "created_by": "user:g.burns",
+  "modified_at": "2025-11-10T09:00:00Z",
+  "modified_by": "user:g.burns",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:g.burns",
+  "verified_at": "2025-11-10T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "page_type": "VR-PAGETYPE-0009",
+  "framework_node": "VR-SUB-0001",
+  "template": "TPL-0009",
+  "body": {
+   "blocks": [
+    {
+     "text": "Sub-structure: Frames and Bulkheads (Project D tailoring of the framework template, 6C.6)."
+    }
+   ]
+  },
+  "lifecycle_stage": [
+   "ALL"
+  ],
+  "discipline": [
+   "ALL"
+  ],
+  "last_reviewed_at": "2025-11-10",
+  "interfaces": [
+   "VR-SYS-0002",
+   "VR-SYS-0003",
+   "VR-SYS-0010",
+   "VR-SYS-0012",
+   "VR-SYS-0007",
+   "VR-SYS-0009",
+   "VR-SYS-0013"
+  ],
+  "links": [
+   {
+    "link_type": "Interfaces with",
+    "target": "VR-SYS-0002"
+   },
+   {
+    "link_type": "Interfaces with",
+    "target": "VR-SYS-0003"
+   },
+   {
+    "link_type": "Interfaces with",
+    "target": "VR-SYS-0010"
+   },
+   {
+    "link_type": "Interfaces with",
+    "target": "VR-SYS-0012"
+   },
+   {
+    "link_type": "Interfaces with",
+    "target": "VR-SYS-0007"
+   },
+   {
+    "link_type": "Interfaces with",
+    "target": "VR-SYS-0009"
+   },
+   {
+    "link_type": "Interfaces with",
+    "target": "VR-SYS-0013"
+   }
+  ]
+ }
+]

@@ -1,0 +1,1187 @@
+[
+ {
+  "id": "PI-D-0004101",
+  "type": "Part Instance",
+  "schema_version": "6.0",
+  "title": "Feed pipe, tank outlet to shut-off valve",
+  "status": "Active",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-12-15T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2025-12-15T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2025-12-15T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "position_name": "Feed pipe, tank outlet to shut-off valve",
+  "existence": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 1,
+   "to": 999
+  },
+  "links": [
+   {
+    "link_type": "Instance of",
+    "target": "PD-D-0000101"
+   },
+   {
+    "link_type": "Located at",
+    "target": "VR-BS-0006"
+   },
+   {
+    "link_type": "Homed in",
+    "target": "VR-SUB-0032"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000301"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000313"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000302"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000303"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000304"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000306"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000312"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000309"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000310"
+   }
+  ]
+ },
+ {
+  "id": "PI-D-0004102",
+  "type": "Part Instance",
+  "schema_version": "6.0",
+  "title": "Feed pipe, shut-off valve to cross-join",
+  "status": "Active",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-12-15T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2025-12-15T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2025-12-15T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "position_name": "Feed pipe, shut-off valve to cross-join",
+  "existence": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 1,
+   "to": 999
+  },
+  "links": [
+   {
+    "link_type": "Instance of",
+    "target": "PD-D-0000102"
+   },
+   {
+    "link_type": "Located at",
+    "target": "VR-BS-0006"
+   },
+   {
+    "link_type": "Homed in",
+    "target": "VR-SUB-0032"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000301"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000313"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000302"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000311"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000306"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000312"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000309"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000310"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000317"
+   }
+  ]
+ },
+ {
+  "id": "PI-D-0004103",
+  "type": "Part Instance",
+  "schema_version": "6.0",
+  "title": "Cross-join feed spool (flared end)",
+  "status": "Active",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-12-15T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2026-08-25T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 2,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2025-12-15T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "position_name": "Cross-join feed spool (flared end)",
+  "existence": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 1,
+   "to": 4
+  },
+  "links": [
+   {
+    "link_type": "Instance of",
+    "target": "PD-D-0000103"
+   },
+   {
+    "link_type": "Located at",
+    "target": "VR-BS-0022"
+   },
+   {
+    "link_type": "Homed in",
+    "target": "VR-SUB-0032"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000301"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000313"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000311"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000306"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000312"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000309"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000310"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000317"
+   }
+  ],
+  "record_history": [
+   {
+    "record_version": 1,
+    "modified_at": "2025-12-15T09:00:00Z",
+    "existence": {
+     "effectivity_type": "VR-EFFTYPE-0001",
+     "from": 1,
+     "to": 999
+    }
+   }
+  ]
+ },
+ {
+  "id": "PI-D-0004104",
+  "type": "Part Instance",
+  "schema_version": "6.0",
+  "title": "Cross-join feed spool (bulkhead union end)",
+  "status": "Active",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-08-25T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2026-08-25T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2026-08-25T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "position_name": "Cross-join feed spool (bulkhead union end)",
+  "existence": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 5,
+   "to": 999
+  },
+  "links": [
+   {
+    "link_type": "Instance of",
+    "target": "PD-D-0000113"
+   },
+   {
+    "link_type": "Located at",
+    "target": "VR-BS-0022"
+   },
+   {
+    "link_type": "Homed in",
+    "target": "VR-SUB-0032"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000302"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000311"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000312"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000310"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000317"
+   }
+  ],
+  "replaces": "PI-D-0004103"
+ },
+ {
+  "id": "PI-D-0004105",
+  "type": "Part Instance",
+  "schema_version": "6.0",
+  "title": "Valve mounting bracket, frame 14 left-hand",
+  "status": "Active",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-12-15T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2025-12-15T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2025-12-15T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "position_name": "Valve mounting bracket, frame 14 left-hand",
+  "existence": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 1,
+   "to": 999
+  },
+  "links": [
+   {
+    "link_type": "Instance of",
+    "target": "PD-D-0000104"
+   },
+   {
+    "link_type": "Located at",
+    "target": "VR-BS-0031"
+   },
+   {
+    "link_type": "Homed in",
+    "target": "VR-SUB-0005"
+   },
+   {
+    "link_type": "Supports",
+    "target": "VR-SYS-0010"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000306"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000312"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000315"
+   }
+  ]
+ },
+ {
+  "id": "PI-D-0004106",
+  "type": "Part Instance",
+  "schema_version": "6.0",
+  "title": "Flanged bush, valve bracket upper",
+  "status": "Active",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-12-15T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2025-12-15T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2025-12-15T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "position_name": "Flanged bush, valve bracket upper",
+  "existence": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 1,
+   "to": 999
+  },
+  "links": [
+   {
+    "link_type": "Instance of",
+    "target": "PD-D-0000112"
+   },
+   {
+    "link_type": "Located at",
+    "target": "VR-BS-0031"
+   },
+   {
+    "link_type": "Homed in",
+    "target": "VR-SUB-0005"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000316"
+   }
+  ]
+ },
+ {
+  "id": "PI-D-0004107",
+  "type": "Part Instance",
+  "schema_version": "6.0",
+  "title": "Flanged bush, valve bracket lower",
+  "status": "Active",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-12-15T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2025-12-15T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2025-12-15T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "position_name": "Flanged bush, valve bracket lower",
+  "existence": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 1,
+   "to": 999
+  },
+  "links": [
+   {
+    "link_type": "Instance of",
+    "target": "PD-D-0000112"
+   },
+   {
+    "link_type": "Located at",
+    "target": "VR-BS-0031"
+   },
+   {
+    "link_type": "Homed in",
+    "target": "VR-SUB-0005"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000316"
+   }
+  ]
+ },
+ {
+  "id": "PI-D-0004108",
+  "type": "Part Instance",
+  "schema_version": "6.0",
+  "title": "Fuel shut-off valve, feed line",
+  "status": "Active",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-12-15T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2026-02-20T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 2,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2025-12-15T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "position_name": "Fuel shut-off valve, feed line",
+  "existence": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 1,
+   "to": 999
+  },
+  "links": [
+   {
+    "link_type": "Instance of",
+    "target": "PD-D-0000107"
+   },
+   {
+    "link_type": "Located at",
+    "target": "VR-BS-0007"
+   },
+   {
+    "link_type": "Homed in",
+    "target": "VR-SUB-0032"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000301"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000313"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000302"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000305"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000306"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000312"
+   }
+  ],
+  "record_history": [
+   {
+    "record_version": 1,
+    "modified_at": "2025-12-15T09:00:00Z",
+    "links_changed": {
+     "Located at": "VR-BS-0006"
+    }
+   }
+  ]
+ },
+ {
+  "id": "PI-D-0004109",
+  "type": "Part Instance",
+  "schema_version": "6.0",
+  "title": "Main tank outlet strainer",
+  "status": "Active",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-12-15T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2025-12-15T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2025-12-15T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "position_name": "Main tank outlet strainer",
+  "existence": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 1,
+   "to": 999
+  },
+  "links": [
+   {
+    "link_type": "Instance of",
+    "target": "PD-D-0000106"
+   },
+   {
+    "link_type": "Located at",
+    "target": "VR-BS-0006"
+   },
+   {
+    "link_type": "Homed in",
+    "target": "VR-SUB-0031"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000301"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000313"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000302"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000314"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000306"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000312"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000308"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000315"
+   }
+  ]
+ },
+ {
+  "id": "PI-D-0004110",
+  "type": "Part Instance",
+  "schema_version": "6.0",
+  "title": "Twin-pipe support bracket, frame 15 left-hand (low point)",
+  "status": "Active",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-12-15T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2026-05-28T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 2,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2025-12-15T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "position_name": "Twin-pipe support bracket, frame 15 left-hand (low point)",
+  "existence": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 1,
+   "to": 999
+  },
+  "links": [
+   {
+    "link_type": "Instance of",
+    "target": "PD-D-0000108"
+   },
+   {
+    "link_type": "Located at",
+    "target": "VR-BS-0006"
+   },
+   {
+    "link_type": "Homed in",
+    "target": "VR-SUB-0005"
+   },
+   {
+    "link_type": "Supports",
+    "target": "VR-SYS-0010"
+   },
+   {
+    "link_type": "Supports",
+    "target": "VR-SYS-0012",
+    "origin": {
+     "kind": "AI",
+     "source_ref": "CAD proximity model PLM-778901",
+     "source_issue_or_revision": "A"
+    },
+    "confidence": 0.86,
+    "verification_status": "Verified",
+    "verified_by": "user:y.hart"
+   },
+   {
+    "link_type": "Finish applied",
+    "target": "FS-D-0000011",
+    "attributes": {
+     "mode": "Add",
+     "reason": "Low-point drain zone: fay-surface sealing added (Environmental Factors checklist EF-C-02, ACT-D-0000103). Other uses of D-BR-00112 do not need it."
+    }
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000306"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000312"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000307"
+   }
+  ],
+  "record_history": [
+   {
+    "record_version": 1,
+    "modified_at": "2025-12-15T09:00:00Z",
+    "links_changed": {
+     "Finish applied (override)": null
+    }
+   }
+  ]
+ },
+ {
+  "id": "PI-D-0004111",
+  "type": "Part Instance",
+  "schema_version": "6.0",
+  "title": "P-clamp, feed pipe at twin bracket",
+  "status": "Active",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-12-15T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2025-12-15T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2025-12-15T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "position_name": "P-clamp, feed pipe at twin bracket",
+  "existence": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 1,
+   "to": 999
+  },
+  "links": [
+   {
+    "link_type": "Instance of",
+    "target": "PD-D-0000109"
+   },
+   {
+    "link_type": "Located at",
+    "target": "VR-BS-0006"
+   },
+   {
+    "link_type": "Homed in",
+    "target": "VR-SUB-0032"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000303"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000304"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000306"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000312"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000316"
+   }
+  ]
+ },
+ {
+  "id": "PI-D-0004112",
+  "type": "Part Instance",
+  "schema_version": "6.0",
+  "title": "P-clamp, feed pipe mid-span (added)",
+  "status": "Active",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-07-21T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2026-07-21T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2026-07-21T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "position_name": "P-clamp, feed pipe mid-span (added)",
+  "existence": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 3,
+   "to": 999
+  },
+  "links": [
+   {
+    "link_type": "Instance of",
+    "target": "PD-D-0000109"
+   },
+   {
+    "link_type": "Located at",
+    "target": "VR-BS-0006"
+   },
+   {
+    "link_type": "Homed in",
+    "target": "VR-SUB-0032"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000303"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000304"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000306"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000312"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000316"
+   }
+  ]
+ },
+ {
+  "id": "PI-D-0004113",
+  "type": "Part Instance",
+  "schema_version": "6.0",
+  "title": "Bolt, twin bracket to frame 15",
+  "status": "Active",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-12-15T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2025-12-15T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2025-12-15T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "position_name": "Bolt, twin bracket to frame 15",
+  "existence": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 1,
+   "to": 999
+  },
+  "links": [
+   {
+    "link_type": "Instance of",
+    "target": "PD-D-0000110"
+   },
+   {
+    "link_type": "Located at",
+    "target": "VR-BS-0006"
+   },
+   {
+    "link_type": "Homed in",
+    "target": "VR-SUB-0005"
+   },
+   {
+    "link_type": "Secures",
+    "target": "PI-D-0004110"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000304"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000306"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000312"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000316"
+   }
+  ]
+ },
+ {
+  "id": "PI-D-0004114",
+  "type": "Part Instance",
+  "schema_version": "6.0",
+  "title": "Nut, twin bracket to frame 15",
+  "status": "Active",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-12-15T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2025-12-15T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2025-12-15T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "position_name": "Nut, twin bracket to frame 15",
+  "existence": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 1,
+   "to": 999
+  },
+  "links": [
+   {
+    "link_type": "Instance of",
+    "target": "PD-D-0000111"
+   },
+   {
+    "link_type": "Located at",
+    "target": "VR-BS-0006"
+   },
+   {
+    "link_type": "Homed in",
+    "target": "VR-SUB-0005"
+   },
+   {
+    "link_type": "Secures",
+    "target": "PI-D-0004110"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000304"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000306"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000312"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000316"
+   }
+  ]
+ },
+ {
+  "id": "PI-D-0004115",
+  "type": "Part Instance",
+  "schema_version": "6.0",
+  "title": "Bolt, mid-span P-clamp to frame 15A boss",
+  "status": "Active",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-07-21T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2026-07-21T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2026-07-21T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "position_name": "Bolt, mid-span P-clamp to frame 15A boss",
+  "existence": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 3,
+   "to": 999
+  },
+  "links": [
+   {
+    "link_type": "Instance of",
+    "target": "PD-D-0000110"
+   },
+   {
+    "link_type": "Located at",
+    "target": "VR-BS-0006"
+   },
+   {
+    "link_type": "Homed in",
+    "target": "VR-SUB-0032"
+   },
+   {
+    "link_type": "Secures",
+    "target": "PI-D-0004112"
+   },
+   {
+    "link_type": "Supports",
+    "target": "VR-SYS-0001"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000304"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000306"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000312"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000316"
+   }
+  ]
+ },
+ {
+  "id": "PI-D-0004116",
+  "type": "Part Instance",
+  "schema_version": "6.0",
+  "title": "Nut, mid-span P-clamp",
+  "status": "Active",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-07-21T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2026-07-21T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2026-07-21T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "position_name": "Nut, mid-span P-clamp",
+  "existence": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 3,
+   "to": 999
+  },
+  "links": [
+   {
+    "link_type": "Instance of",
+    "target": "PD-D-0000111"
+   },
+   {
+    "link_type": "Located at",
+    "target": "VR-BS-0006"
+   },
+   {
+    "link_type": "Homed in",
+    "target": "VR-SUB-0032"
+   },
+   {
+    "link_type": "Secures",
+    "target": "PI-D-0004112"
+   },
+   {
+    "link_type": "Supports",
+    "target": "VR-SYS-0001"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000304"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000306"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000312"
+   },
+   {
+    "link_type": "Verified by",
+    "target": "VER-D-0000316"
+   }
+  ]
+ },
+ {
+  "id": "PI-D-0005001",
+  "type": "Part Instance",
+  "schema_version": "6.0",
+  "title": "Frame 14, centre fuselage",
+  "status": "Active",
+  "owner": "user:h.grant",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-25T09:00:00Z",
+  "created_by": "user:h.grant",
+  "modified_at": "2025-11-25T09:00:00Z",
+  "modified_by": "user:h.grant",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:h.grant",
+  "verified_at": "2025-11-25T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "position_name": "Frame 14, centre fuselage",
+  "existence": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 1,
+   "to": 999
+  },
+  "links": [
+   {
+    "link_type": "Instance of",
+    "target": "PD-D-0000120"
+   },
+   {
+    "link_type": "Located at",
+    "target": "VR-BS-0005"
+   },
+   {
+    "link_type": "Homed in",
+    "target": "VR-SUB-0001"
+   }
+  ]
+ },
+ {
+  "id": "PI-D-0005002",
+  "type": "Part Instance",
+  "schema_version": "6.0",
+  "title": "Bolt, valve bracket to frame 14 (frame fastener holes owned by Centre Structure)",
+  "status": "Active",
+  "owner": "user:h.grant",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-12-15T09:00:00Z",
+  "created_by": "user:h.grant",
+  "modified_at": "2025-12-15T09:00:00Z",
+  "modified_by": "user:h.grant",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:h.grant",
+  "verified_at": "2025-12-15T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "position_name": "Bolt, valve bracket to frame 14 (frame fastener holes owned by Centre Structure)",
+  "existence": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 1,
+   "to": 999
+  },
+  "links": [
+   {
+    "link_type": "Instance of",
+    "target": "PD-D-0000110"
+   },
+   {
+    "link_type": "Located at",
+    "target": "VR-BS-0006"
+   },
+   {
+    "link_type": "Homed in",
+    "target": "VR-SUB-0005"
+   },
+   {
+    "link_type": "Secures",
+    "target": "PI-D-0004105"
+   }
+  ]
+ },
+ {
+  "id": "PI-D-0005003",
+  "type": "Part Instance",
+  "schema_version": "6.0",
+  "title": "Nut, valve bracket to frame 14",
+  "status": "Active",
+  "owner": "user:h.grant",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-12-15T09:00:00Z",
+  "created_by": "user:h.grant",
+  "modified_at": "2025-12-15T09:00:00Z",
+  "modified_by": "user:h.grant",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:h.grant",
+  "verified_at": "2025-12-15T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "position_name": "Nut, valve bracket to frame 14",
+  "existence": {
+   "effectivity_type": "VR-EFFTYPE-0001",
+   "from": 1,
+   "to": 999
+  },
+  "links": [
+   {
+    "link_type": "Instance of",
+    "target": "PD-D-0000111"
+   },
+   {
+    "link_type": "Located at",
+    "target": "VR-BS-0006"
+   },
+   {
+    "link_type": "Homed in",
+    "target": "VR-SUB-0005"
+   },
+   {
+    "link_type": "Secures",
+    "target": "PI-D-0004105"
+   }
+  ]
+ }
+]

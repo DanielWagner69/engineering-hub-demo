@@ -1,0 +1,968 @@
+[
+ {
+  "id": "RA-D-0000001",
+  "type": "Role Assignment",
+  "schema_version": "6.0",
+  "title": "user:s.price: Technical Authority for Design, PRJ-D-0000001",
+  "status": "Active",
+  "owner": "user:s.price",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-03T09:00:00Z",
+  "created_by": "user:s.price",
+  "modified_at": "2025-11-03T09:00:00Z",
+  "modified_by": "user:s.price",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:s.price",
+  "verified_at": "2025-11-03T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "person": "user:s.price",
+  "role": "Technical Authority for Design",
+  "area": {
+   "kind": "Project",
+   "ref": "PRJ-D-0000001"
+  },
+  "delegated_by": "user:c.lin",
+  "from_date": "2025-11-03",
+  "delegations": []
+ },
+ {
+  "id": "RA-D-0000002",
+  "type": "Role Assignment",
+  "schema_version": "6.0",
+  "title": "user:k.osei: Design Authority, Fluid Systems",
+  "status": "Active",
+  "owner": "user:s.price",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-03T09:00:00Z",
+  "created_by": "user:s.price",
+  "modified_at": "2025-11-03T09:00:00Z",
+  "modified_by": "user:s.price",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:s.price",
+  "verified_at": "2025-11-03T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "person": "user:k.osei",
+  "role": "Design Authority",
+  "area": {
+   "kind": "Design Team",
+   "ref": "VR-DT-0002"
+  },
+  "delegated_by": "user:s.price",
+  "from_date": "2025-11-03",
+  "delegations": [
+   {
+    "authority": "FDPS release",
+    "to": "user:k.osei",
+    "from_date": "2025-11-03"
+   }
+  ]
+ },
+ {
+  "id": "RA-D-0000003",
+  "type": "Role Assignment",
+  "schema_version": "6.0",
+  "title": "user:k.osei: Design Authority, Pipework",
+  "status": "Active",
+  "owner": "user:s.price",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-03T09:00:00Z",
+  "created_by": "user:s.price",
+  "modified_at": "2025-11-03T09:00:00Z",
+  "modified_by": "user:s.price",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:s.price",
+  "verified_at": "2025-11-03T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "person": "user:k.osei",
+  "role": "Design Authority",
+  "area": {
+   "kind": "Design Type",
+   "ref": "VR-DTY-0009"
+  },
+  "delegated_by": "user:s.price",
+  "from_date": "2025-11-03",
+  "delegations": []
+ },
+ {
+  "id": "RA-D-0000004",
+  "type": "Role Assignment",
+  "schema_version": "6.0",
+  "title": "user:k.osei: Design Authority, Bought-in Equipment",
+  "status": "Active",
+  "owner": "user:s.price",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-03T09:00:00Z",
+  "created_by": "user:s.price",
+  "modified_at": "2025-11-03T09:00:00Z",
+  "modified_by": "user:s.price",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:s.price",
+  "verified_at": "2025-11-03T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "person": "user:k.osei",
+  "role": "Design Authority",
+  "area": {
+   "kind": "Design Type",
+   "ref": "VR-DTY-0011"
+  },
+  "delegated_by": "user:s.price",
+  "from_date": "2025-11-03",
+  "delegations": []
+ },
+ {
+  "id": "RA-D-0000005",
+  "type": "Role Assignment",
+  "schema_version": "6.0",
+  "title": "user:a.quinn: Design Authority, Metallic - Machined",
+  "status": "Active",
+  "owner": "user:s.price",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-03T09:00:00Z",
+  "created_by": "user:s.price",
+  "modified_at": "2025-11-03T09:00:00Z",
+  "modified_by": "user:s.price",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:s.price",
+  "verified_at": "2025-11-03T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "person": "user:a.quinn",
+  "role": "Design Authority",
+  "area": {
+   "kind": "Design Type",
+   "ref": "VR-DTY-0002"
+  },
+  "delegated_by": "user:s.price",
+  "from_date": "2025-11-03",
+  "delegations": []
+ },
+ {
+  "id": "RA-D-0000006",
+  "type": "Role Assignment",
+  "schema_version": "6.0",
+  "title": "user:a.quinn: Design Authority, Metallic - Sheet",
+  "status": "Active",
+  "owner": "user:s.price",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-03T09:00:00Z",
+  "created_by": "user:s.price",
+  "modified_at": "2025-11-03T09:00:00Z",
+  "modified_by": "user:s.price",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:s.price",
+  "verified_at": "2025-11-03T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "person": "user:a.quinn",
+  "role": "Design Authority",
+  "area": {
+   "kind": "Design Type",
+   "ref": "VR-DTY-0003"
+  },
+  "delegated_by": "user:s.price",
+  "from_date": "2025-11-03",
+  "delegations": []
+ },
+ {
+  "id": "RA-D-0000007",
+  "type": "Role Assignment",
+  "schema_version": "6.0",
+  "title": "user:r.okafor: Design Approver, Fuel",
+  "status": "Active",
+  "owner": "user:s.price",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-03T09:00:00Z",
+  "created_by": "user:s.price",
+  "modified_at": "2025-11-03T09:00:00Z",
+  "modified_by": "user:s.price",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:s.price",
+  "verified_at": "2025-11-03T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "person": "user:r.okafor",
+  "role": "Design Approver",
+  "area": {
+   "kind": "Design Sub-team",
+   "ref": "VR-DST-0007"
+  },
+  "delegated_by": "user:s.price",
+  "from_date": "2025-11-03",
+  "delegations": []
+ },
+ {
+  "id": "RA-D-0000008",
+  "type": "Role Assignment",
+  "schema_version": "6.0",
+  "title": "user:j.ward: Design Lead, Fuel",
+  "status": "Active",
+  "owner": "user:s.price",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-03T09:00:00Z",
+  "created_by": "user:s.price",
+  "modified_at": "2025-11-03T09:00:00Z",
+  "modified_by": "user:s.price",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:s.price",
+  "verified_at": "2025-11-03T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "person": "user:j.ward",
+  "role": "Design Lead",
+  "area": {
+   "kind": "System",
+   "ref": "VR-SYS-0010"
+  },
+  "delegated_by": "user:s.price",
+  "from_date": "2025-11-03",
+  "delegations": []
+ },
+ {
+  "id": "RA-D-0000009",
+  "type": "Role Assignment",
+  "schema_version": "6.0",
+  "title": "user:m.ellis: Design Lead, Fuel Feed",
+  "status": "Active",
+  "owner": "user:s.price",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-03T09:00:00Z",
+  "created_by": "user:s.price",
+  "modified_at": "2025-11-03T09:00:00Z",
+  "modified_by": "user:s.price",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:s.price",
+  "verified_at": "2025-11-03T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "person": "user:m.ellis",
+  "role": "Design Lead",
+  "area": {
+   "kind": "Sub-system",
+   "ref": "VR-SUB-0032"
+  },
+  "delegated_by": "user:s.price",
+  "from_date": "2025-11-03",
+  "delegations": []
+ },
+ {
+  "id": "RA-D-0000010",
+  "type": "Role Assignment",
+  "schema_version": "6.0",
+  "title": "user:y.hart: Design Lead, Brackets and Supports",
+  "status": "Active",
+  "owner": "user:s.price",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-03T09:00:00Z",
+  "created_by": "user:s.price",
+  "modified_at": "2025-11-03T09:00:00Z",
+  "modified_by": "user:s.price",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:s.price",
+  "verified_at": "2025-11-03T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "person": "user:y.hart",
+  "role": "Design Lead",
+  "area": {
+   "kind": "Sub-system",
+   "ref": "VR-SUB-0005"
+  },
+  "delegated_by": "user:s.price",
+  "from_date": "2025-11-03",
+  "delegations": []
+ },
+ {
+  "id": "RA-D-0000011",
+  "type": "Role Assignment",
+  "schema_version": "6.0",
+  "title": "user:g.burns: Design Lead, Frames and Bulkheads",
+  "status": "Active",
+  "owner": "user:s.price",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-03T09:00:00Z",
+  "created_by": "user:s.price",
+  "modified_at": "2025-11-03T09:00:00Z",
+  "modified_by": "user:s.price",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:s.price",
+  "verified_at": "2025-11-03T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "person": "user:g.burns",
+  "role": "Design Lead",
+  "area": {
+   "kind": "Sub-system",
+   "ref": "VR-SUB-0001"
+  },
+  "delegated_by": "user:s.price",
+  "from_date": "2025-11-03",
+  "delegations": []
+ },
+ {
+  "id": "RA-D-0000012",
+  "type": "Role Assignment",
+  "schema_version": "6.0",
+  "title": "user:s.kerr: Design Lead, Hydraulic Distribution",
+  "status": "Active",
+  "owner": "user:s.price",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-03T09:00:00Z",
+  "created_by": "user:s.price",
+  "modified_at": "2025-11-03T09:00:00Z",
+  "modified_by": "user:s.price",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:s.price",
+  "verified_at": "2025-11-03T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "person": "user:s.kerr",
+  "role": "Design Lead",
+  "area": {
+   "kind": "Sub-system",
+   "ref": "VR-SUB-0041"
+  },
+  "delegated_by": "user:s.price",
+  "from_date": "2025-11-03",
+  "delegations": []
+ },
+ {
+  "id": "RA-D-0000013",
+  "type": "Role Assignment",
+  "schema_version": "6.0",
+  "title": "user:w.nash: Design Lead, Engine Installation",
+  "status": "Active",
+  "owner": "user:s.price",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-03T09:00:00Z",
+  "created_by": "user:s.price",
+  "modified_at": "2025-11-03T09:00:00Z",
+  "modified_by": "user:s.price",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:s.price",
+  "verified_at": "2025-11-03T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "person": "user:w.nash",
+  "role": "Design Lead",
+  "area": {
+   "kind": "Sub-system",
+   "ref": "VR-SUB-0012"
+  },
+  "delegated_by": "user:s.price",
+  "from_date": "2025-11-03",
+  "delegations": []
+ },
+ {
+  "id": "RA-D-0000014",
+  "type": "Role Assignment",
+  "schema_version": "6.0",
+  "title": "user:e.park: Design Lead, Secondary Distribution",
+  "status": "Active",
+  "owner": "user:s.price",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-03T09:00:00Z",
+  "created_by": "user:s.price",
+  "modified_at": "2025-11-03T09:00:00Z",
+  "modified_by": "user:s.price",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:s.price",
+  "verified_at": "2025-11-03T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "person": "user:e.park",
+  "role": "Design Lead",
+  "area": {
+   "kind": "Sub-system",
+   "ref": "VR-SUB-0035"
+  },
+  "delegated_by": "user:s.price",
+  "from_date": "2025-11-03",
+  "delegations": []
+ },
+ {
+  "id": "RA-D-0000015",
+  "type": "Role Assignment",
+  "schema_version": "6.0",
+  "title": "user:v.moreau: Design Lead, Vehicle Management Computing",
+  "status": "Active",
+  "owner": "user:s.price",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-03T09:00:00Z",
+  "created_by": "user:s.price",
+  "modified_at": "2025-11-03T09:00:00Z",
+  "modified_by": "user:s.price",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:s.price",
+  "verified_at": "2025-11-03T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "person": "user:v.moreau",
+  "role": "Design Lead",
+  "area": {
+   "kind": "Sub-system",
+   "ref": "VR-SUB-0050"
+  },
+  "delegated_by": "user:s.price",
+  "from_date": "2025-11-03",
+  "delegations": []
+ },
+ {
+  "id": "RA-D-0000016",
+  "type": "Role Assignment",
+  "schema_version": "6.0",
+  "title": "user:o.fry: Discipline Lead, Airworthiness and Certification",
+  "status": "Active",
+  "owner": "user:s.price",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-03T09:00:00Z",
+  "created_by": "user:s.price",
+  "modified_at": "2025-11-03T09:00:00Z",
+  "modified_by": "user:s.price",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:s.price",
+  "verified_at": "2025-11-03T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "person": "user:o.fry",
+  "role": "Discipline Lead",
+  "area": {
+   "kind": "Discipline",
+   "ref": "VR-DISC-0003"
+  },
+  "delegated_by": "user:s.price",
+  "from_date": "2025-11-03",
+  "delegations": []
+ },
+ {
+  "id": "RA-D-0000017",
+  "type": "Role Assignment",
+  "schema_version": "6.0",
+  "title": "user:e.dunn: Discipline Lead, Configuration Management",
+  "status": "Active",
+  "owner": "user:s.price",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-03T09:00:00Z",
+  "created_by": "user:s.price",
+  "modified_at": "2025-11-03T09:00:00Z",
+  "modified_by": "user:s.price",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:s.price",
+  "verified_at": "2025-11-03T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "person": "user:e.dunn",
+  "role": "Discipline Lead",
+  "area": {
+   "kind": "Discipline",
+   "ref": "VR-DISC-0005"
+  },
+  "delegated_by": "user:s.price",
+  "from_date": "2025-11-03",
+  "delegations": []
+ },
+ {
+  "id": "RA-D-0000018",
+  "type": "Role Assignment",
+  "schema_version": "6.0",
+  "title": "user:r.okafor: Discipline Lead, Design",
+  "status": "Active",
+  "owner": "user:s.price",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-03T09:00:00Z",
+  "created_by": "user:s.price",
+  "modified_at": "2025-11-03T09:00:00Z",
+  "modified_by": "user:s.price",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:s.price",
+  "verified_at": "2025-11-03T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "person": "user:r.okafor",
+  "role": "Discipline Lead",
+  "area": {
+   "kind": "Discipline",
+   "ref": "VR-DISC-0006"
+  },
+  "delegated_by": "user:s.price",
+  "from_date": "2025-11-03",
+  "delegations": []
+ },
+ {
+  "id": "RA-D-0000019",
+  "type": "Role Assignment",
+  "schema_version": "6.0",
+  "title": "user:i.cole: Discipline Lead, Environmental Factors",
+  "status": "Active",
+  "owner": "user:s.price",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-03T09:00:00Z",
+  "created_by": "user:s.price",
+  "modified_at": "2025-11-03T09:00:00Z",
+  "modified_by": "user:s.price",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:s.price",
+  "verified_at": "2025-11-03T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "person": "user:i.cole",
+  "role": "Discipline Lead",
+  "area": {
+   "kind": "Discipline",
+   "ref": "VR-DISC-0009"
+  },
+  "delegated_by": "user:s.price",
+  "from_date": "2025-11-03",
+  "delegations": []
+ },
+ {
+  "id": "RA-D-0000020",
+  "type": "Role Assignment",
+  "schema_version": "6.0",
+  "title": "user:v.reid: Discipline Lead, Low Observability",
+  "status": "Active",
+  "owner": "user:s.price",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-03T09:00:00Z",
+  "created_by": "user:s.price",
+  "modified_at": "2025-11-03T09:00:00Z",
+  "modified_by": "user:s.price",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:s.price",
+  "verified_at": "2025-11-03T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "person": "user:v.reid",
+  "role": "Discipline Lead",
+  "area": {
+   "kind": "Discipline",
+   "ref": "VR-DISC-0012"
+  },
+  "delegated_by": "user:s.price",
+  "from_date": "2025-11-03",
+  "delegations": []
+ },
+ {
+  "id": "RA-D-0000021",
+  "type": "Role Assignment",
+  "schema_version": "6.0",
+  "title": "user:d.roy: Discipline Lead, Maintainability, Reliability and Ground Equipment",
+  "status": "Active",
+  "owner": "user:s.price",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-03T09:00:00Z",
+  "created_by": "user:s.price",
+  "modified_at": "2025-11-03T09:00:00Z",
+  "modified_by": "user:s.price",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:s.price",
+  "verified_at": "2025-11-03T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "person": "user:d.roy",
+  "role": "Discipline Lead",
+  "area": {
+   "kind": "Discipline",
+   "ref": "VR-DISC-0013"
+  },
+  "delegated_by": "user:s.price",
+  "from_date": "2025-11-03",
+  "delegations": []
+ },
+ {
+  "id": "RA-D-0000022",
+  "type": "Role Assignment",
+  "schema_version": "6.0",
+  "title": "user:f.moss: Discipline Lead, Manufacturing Engineering",
+  "status": "Active",
+  "owner": "user:s.price",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-03T09:00:00Z",
+  "created_by": "user:s.price",
+  "modified_at": "2025-11-03T09:00:00Z",
+  "modified_by": "user:s.price",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:s.price",
+  "verified_at": "2025-11-03T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "person": "user:f.moss",
+  "role": "Discipline Lead",
+  "area": {
+   "kind": "Discipline",
+   "ref": "VR-DISC-0014"
+  },
+  "delegated_by": "user:s.price",
+  "from_date": "2025-11-03",
+  "delegations": []
+ },
+ {
+  "id": "RA-D-0000023",
+  "type": "Role Assignment",
+  "schema_version": "6.0",
+  "title": "user:t.brooks: Discipline Lead, Materials and Processes",
+  "status": "Active",
+  "owner": "user:s.price",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-03T09:00:00Z",
+  "created_by": "user:s.price",
+  "modified_at": "2025-11-03T09:00:00Z",
+  "modified_by": "user:s.price",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:s.price",
+  "verified_at": "2025-11-03T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "person": "user:t.brooks",
+  "role": "Discipline Lead",
+  "area": {
+   "kind": "Discipline",
+   "ref": "VR-DISC-0015"
+  },
+  "delegated_by": "user:s.price",
+  "from_date": "2025-11-03",
+  "delegations": []
+ },
+ {
+  "id": "RA-D-0000024",
+  "type": "Role Assignment",
+  "schema_version": "6.0",
+  "title": "user:b.carr: Discipline Lead, Quality",
+  "status": "Active",
+  "owner": "user:s.price",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-03T09:00:00Z",
+  "created_by": "user:s.price",
+  "modified_at": "2025-11-03T09:00:00Z",
+  "modified_by": "user:s.price",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:s.price",
+  "verified_at": "2025-11-03T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "person": "user:b.carr",
+  "role": "Discipline Lead",
+  "area": {
+   "kind": "Discipline",
+   "ref": "VR-DISC-0018"
+  },
+  "delegated_by": "user:s.price",
+  "from_date": "2025-11-03",
+  "delegations": []
+ },
+ {
+  "id": "RA-D-0000025",
+  "type": "Role Assignment",
+  "schema_version": "6.0",
+  "title": "user:h.patel: Discipline Lead, Safety",
+  "status": "Active",
+  "owner": "user:s.price",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-03T09:00:00Z",
+  "created_by": "user:s.price",
+  "modified_at": "2025-11-03T09:00:00Z",
+  "modified_by": "user:s.price",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:s.price",
+  "verified_at": "2025-11-03T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "person": "user:h.patel",
+  "role": "Discipline Lead",
+  "area": {
+   "kind": "Discipline",
+   "ref": "VR-DISC-0019"
+  },
+  "delegated_by": "user:s.price",
+  "from_date": "2025-11-03",
+  "delegations": []
+ },
+ {
+  "id": "RA-D-0000026",
+  "type": "Role Assignment",
+  "schema_version": "6.0",
+  "title": "user:q.adams: Discipline Lead, Segregation, Separation and Survivability",
+  "status": "Active",
+  "owner": "user:s.price",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-03T09:00:00Z",
+  "created_by": "user:s.price",
+  "modified_at": "2025-11-03T09:00:00Z",
+  "modified_by": "user:s.price",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:s.price",
+  "verified_at": "2025-11-03T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "person": "user:q.adams",
+  "role": "Discipline Lead",
+  "area": {
+   "kind": "Discipline",
+   "ref": "VR-DISC-0020"
+  },
+  "delegated_by": "user:s.price",
+  "from_date": "2025-11-03",
+  "delegations": []
+ },
+ {
+  "id": "RA-D-0000027",
+  "type": "Role Assignment",
+  "schema_version": "6.0",
+  "title": "user:n.shaw: Discipline Lead, Standard Parts and Supply Chain",
+  "status": "Active",
+  "owner": "user:s.price",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-03T09:00:00Z",
+  "created_by": "user:s.price",
+  "modified_at": "2025-11-03T09:00:00Z",
+  "modified_by": "user:s.price",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:s.price",
+  "verified_at": "2025-11-03T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "person": "user:n.shaw",
+  "role": "Discipline Lead",
+  "area": {
+   "kind": "Discipline",
+   "ref": "VR-DISC-0021"
+  },
+  "delegated_by": "user:s.price",
+  "from_date": "2025-11-03",
+  "delegations": []
+ },
+ {
+  "id": "RA-D-0000028",
+  "type": "Role Assignment",
+  "schema_version": "6.0",
+  "title": "user:a.novak: Discipline Lead, Structural Analysis (Stress)",
+  "status": "Active",
+  "owner": "user:s.price",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-03T09:00:00Z",
+  "created_by": "user:s.price",
+  "modified_at": "2025-11-03T09:00:00Z",
+  "modified_by": "user:s.price",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:s.price",
+  "verified_at": "2025-11-03T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "person": "user:a.novak",
+  "role": "Discipline Lead",
+  "area": {
+   "kind": "Discipline",
+   "ref": "VR-DISC-0022"
+  },
+  "delegated_by": "user:s.price",
+  "from_date": "2025-11-03",
+  "delegations": []
+ },
+ {
+  "id": "RA-D-0000029",
+  "type": "Role Assignment",
+  "schema_version": "6.0",
+  "title": "user:z.khan: Discipline Lead, System Layout and Integration",
+  "status": "Active",
+  "owner": "user:s.price",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-03T09:00:00Z",
+  "created_by": "user:s.price",
+  "modified_at": "2025-11-03T09:00:00Z",
+  "modified_by": "user:s.price",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:s.price",
+  "verified_at": "2025-11-03T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "person": "user:z.khan",
+  "role": "Discipline Lead",
+  "area": {
+   "kind": "Discipline",
+   "ref": "VR-DISC-0023"
+  },
+  "delegated_by": "user:s.price",
+  "from_date": "2025-11-03",
+  "delegations": []
+ },
+ {
+  "id": "RA-D-0000030",
+  "type": "Role Assignment",
+  "schema_version": "6.0",
+  "title": "user:g.ito: Discipline Lead, Test",
+  "status": "Active",
+  "owner": "user:s.price",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-03T09:00:00Z",
+  "created_by": "user:s.price",
+  "modified_at": "2025-11-03T09:00:00Z",
+  "modified_by": "user:s.price",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:s.price",
+  "verified_at": "2025-11-03T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "person": "user:g.ito",
+  "role": "Discipline Lead",
+  "area": {
+   "kind": "Discipline",
+   "ref": "VR-DISC-0024"
+  },
+  "delegated_by": "user:s.price",
+  "from_date": "2025-11-03",
+  "delegations": []
+ },
+ {
+  "id": "RA-D-0000031",
+  "type": "Role Assignment",
+  "schema_version": "6.0",
+  "title": "user:l.green: Discipline Lead, Weight",
+  "status": "Active",
+  "owner": "user:s.price",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-03T09:00:00Z",
+  "created_by": "user:s.price",
+  "modified_at": "2025-11-03T09:00:00Z",
+  "modified_by": "user:s.price",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:s.price",
+  "verified_at": "2025-11-03T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "person": "user:l.green",
+  "role": "Discipline Lead",
+  "area": {
+   "kind": "Discipline",
+   "ref": "VR-DISC-0025"
+  },
+  "delegated_by": "user:s.price",
+  "from_date": "2025-11-03",
+  "delegations": []
+ },
+ {
+  "id": "RA-D-0000032",
+  "type": "Role Assignment",
+  "schema_version": "6.0",
+  "title": "user:u.lowe: Discipline Lead, Fluid Systems",
+  "status": "Active",
+  "owner": "user:s.price",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-03T09:00:00Z",
+  "created_by": "user:s.price",
+  "modified_at": "2025-11-03T09:00:00Z",
+  "modified_by": "user:s.price",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:s.price",
+  "verified_at": "2025-11-03T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "person": "user:u.lowe",
+  "role": "Discipline Lead",
+  "area": {
+   "kind": "Discipline",
+   "ref": "VR-DISC-0026"
+  },
+  "delegated_by": "user:s.price",
+  "from_date": "2025-11-03",
+  "delegations": []
+ }
+]

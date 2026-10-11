@@ -1,0 +1,24 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "types/Tailoring_Record.schema.json",
+ "title": "Tailoring Record (schema v6 3.32, brief)",
+ "allOf": [
+  {
+   "$ref": "../common.schema.json"
+  }
+ ],
+ "type": "object",
+ "properties": {
+  "project": {},
+  "framework_version": {},
+  "target": {},
+  "action": {},
+  "payload": {},
+  "reason": {},
+  "approved_by": {},
+  "type": {
+   "const": "Tailoring Record"
+  }
+ },
+ "required": []
+}

@@ -1,0 +1,130 @@
+[
+ {
+  "id": "RSK-D-0000001",
+  "type": "Risk",
+  "schema_version": "6.0",
+  "title": "Route through the frame 15 lightening hole is tight and may need a joggle.",
+  "status": "Closed",
+  "owner": "user:p.hale",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-01-13T09:00:00Z",
+  "created_by": "user:p.hale",
+  "modified_at": "2026-01-13T09:00:00Z",
+  "modified_by": "user:p.hale",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:p.hale",
+  "verified_at": "2026-01-13T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "description": "Route through the frame 15 lightening hole is tight and may need a joggle.",
+  "likelihood": 3,
+  "consequence": 2,
+  "mitigation": "Layout iteration with Centre Structure",
+  "source": {
+   "kind": "Review",
+   "ref": "DR-D-0000001"
+  },
+  "tagged_fdps": [
+   "FD-D-0000017"
+  ]
+ },
+ {
+  "id": "RSK-D-0000002",
+  "type": "Risk",
+  "schema_version": "6.0",
+  "title": "Clamp spacing is based on static loads until the installed spectrum is available.",
+  "status": "Closed",
+  "owner": "user:a.novak",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-03-17T09:00:00Z",
+  "created_by": "user:a.novak",
+  "modified_at": "2026-03-17T09:00:00Z",
+  "modified_by": "user:a.novak",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:a.novak",
+  "verified_at": "2026-03-17T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "description": "Clamp spacing is based on static loads until the installed spectrum is available.",
+  "likelihood": 3,
+  "consequence": 3,
+  "mitigation": "Spectrum from effectivity 1 ground running",
+  "source": {
+   "kind": "Review",
+   "ref": "DR-D-0000002"
+  },
+  "tagged_fdps": [
+   "FD-D-0000017"
+  ]
+ },
+ {
+  "id": "RSK-D-0000003",
+  "type": "Risk",
+  "schema_version": "6.0",
+  "title": "Vibration fatigue margin relies on static-load clamp spacing.",
+  "status": "Closed",
+  "owner": "user:a.novak",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-12T09:00:00Z",
+  "created_by": "user:a.novak",
+  "modified_at": "2026-05-12T09:00:00Z",
+  "modified_by": "user:a.novak",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:a.novak",
+  "verified_at": "2026-05-12T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "description": "Vibration fatigue margin relies on static-load clamp spacing.",
+  "likelihood": 3,
+  "consequence": 4,
+  "mitigation": "Measured spectrum re-assessment (became ISS-D-0000058)",
+  "source": {
+   "kind": "Review",
+   "ref": "DR-D-0000003"
+  },
+  "tagged_fdps": [
+   "FD-D-0000017"
+  ]
+ },
+ {
+  "id": "RSK-D-0000004",
+  "type": "Risk",
+  "schema_version": "6.0",
+  "title": "Bulkhead union torque and leak check procedure not yet proven at FA2.",
+  "status": "Mitigated",
+  "owner": "user:f.moss",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-09-22T09:00:00Z",
+  "created_by": "user:f.moss",
+  "modified_at": "2026-09-22T09:00:00Z",
+  "modified_by": "user:f.moss",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:f.moss",
+  "verified_at": "2026-09-22T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "description": "Bulkhead union torque and leak check procedure not yet proven at FA2.",
+  "likelihood": 2,
+  "consequence": 3,
+  "mitigation": "Trial at FA2 on effectivity 5",
+  "source": {
+   "kind": "Review",
+   "ref": "DR-D-0000004"
+  },
+  "tagged_fdps": [
+   "FD-D-0000017"
+  ]
+ }
+]
