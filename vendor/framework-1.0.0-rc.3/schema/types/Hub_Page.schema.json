@@ -1,0 +1,168 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "types/Hub_Page.schema.json",
+ "title": "Hub Page (schema v6 3.x)",
+ "allOf": [
+  {
+   "$ref": "../common.schema.json"
+  }
+ ],
+ "type": "object",
+ "properties": {
+  "page_type": {
+   "anyOf": [
+    {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+     }
+    },
+    {
+     "type": "string",
+     "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+    }
+   ],
+   "description": "reg(PAGETYPE); card. 1; "
+  },
+  "framework_node": {
+   "anyOf": [
+    {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+     }
+    },
+    {
+     "type": "string",
+     "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+    }
+   ],
+   "description": "reg(any tree register); card. 1; "
+  },
+  "template": {
+   "type": "string",
+   "description": "string; card. 1; Template id of the page type"
+  },
+  "body": {
+   "description": "json; card. 1; Structured blocks: text, image refs, link lists"
+  },
+  "stage_sections": {
+   "description": "json; card. 0..n; {stage, checklist_items: [{discipline, item_id}], sign_off_disciplines: reg(DISC) of type Sign-off team, type_specific_entry_criteria}"
+  },
+  "interfaces": {
+   "anyOf": [
+    {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+     }
+    },
+    {
+     "type": "string",
+     "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+    }
+   ],
+   "description": "reg(SYS); card. 0..n; Finite list; never 'all Systems'"
+  },
+  "applicable_design_types": {
+   "anyOf": [
+    {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+     }
+    },
+    {
+     "type": "string",
+     "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+    }
+   ],
+   "description": "reg(DTY); card. 0..n; "
+  },
+  "applicable_disciplines": {
+   "anyOf": [
+    {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+     }
+    },
+    {
+     "type": "string",
+     "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+    }
+   ],
+   "description": "reg(DISC); card. 0..n; "
+  },
+  "lifecycle_stage": {
+   "anyOf": [
+    {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+     }
+    },
+    {
+     "type": "string",
+     "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+    }
+   ],
+   "description": "reg(LCS) or ALL; card. 1..n; "
+  },
+  "discipline": {
+   "anyOf": [
+    {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+     }
+    },
+    {
+     "type": "string",
+     "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+    }
+   ],
+   "description": "reg(DISC) or ALL; card. 1..n; "
+  },
+  "last_reviewed_at": {
+   "type": "string",
+   "pattern": "^\\d{4}-\\d{2}-\\d{2}",
+   "description": "date; card. 1; "
+  },
+  "status": {
+   "type": "string",
+   "x-stored-as": "label of a framework-fixed register entry",
+   "description": "reg; card. 1; Draft; Published; Retired",
+   "enum": [
+    "Draft",
+    "Published",
+    "Retired"
+   ]
+  },
+  "type": {
+   "const": "Hub Page"
+  }
+ },
+ "required": [
+  "page_type",
+  "framework_node",
+  "template",
+  "body",
+  "lifecycle_stage",
+  "discipline",
+  "last_reviewed_at",
+  "status"
+ ],
+ "x-owned-links": [
+  "Cross-link",
+  "Describes",
+  "Production link"
+ ]
+}

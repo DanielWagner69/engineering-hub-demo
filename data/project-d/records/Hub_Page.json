@@ -287,6 +287,12 @@
     "link_type": "Interfaces with",
     "target": "VR-SYS-0016"
    }
+  ],
+  "applicable_design_types": [
+   "VR-DTY-0009",
+   "VR-DTY-0011",
+   "VR-DTY-0012",
+   "VR-DTY-0002"
   ]
  },
  {
@@ -339,6 +345,11 @@
     "link_type": "Interfaces with",
     "target": "VR-SYS-0002"
    }
+  ],
+  "applicable_design_types": [
+   "VR-DTY-0009",
+   "VR-DTY-0002",
+   "VR-DTY-0003"
   ]
  },
  {
@@ -416,6 +427,11 @@
     "link_type": "Interfaces with",
     "target": "VR-SYS-0011"
    }
+  ],
+  "applicable_design_types": [
+   "VR-DTY-0002",
+   "VR-DTY-0003",
+   "VR-DTY-0012"
   ]
  },
  {
@@ -493,6 +509,11 @@
     "link_type": "Interfaces with",
     "target": "VR-SYS-0013"
    }
+  ],
+  "applicable_design_types": [
+   "VR-DTY-0002",
+   "VR-DTY-0003",
+   "VR-DTY-0012"
   ]
  },
  {

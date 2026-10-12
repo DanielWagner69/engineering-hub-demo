@@ -1,0 +1,200 @@
+[
+ {
+  "id": "TSC-D-0000001",
+  "type": "TSM Supersession Confirmation",
+  "schema_version": "7.6",
+  "title": "D5012001-801: TSM-MET superseded statements confirmed",
+  "status": "Confirmed",
+  "owner": "user:a.quinn",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-09T09:00:00Z",
+  "created_by": "user:a.quinn",
+  "modified_at": "2026-05-09T09:00:00Z",
+  "modified_by": "user:a.quinn",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:a.quinn",
+  "verified_at": "2026-05-09T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "tsm": "TSM-D-0000063",
+  "fdps": "FD-D-0000009",
+  "reviews": [
+   "LIR-D-0000005"
+  ],
+  "confirmed_by": "user:a.quinn",
+  "confirmed_at": "2026-05-09T09:00:00Z"
+ },
+ {
+  "id": "TSC-D-0000002",
+  "type": "TSM Supersession Confirmation",
+  "schema_version": "7.6",
+  "title": "D5012001-801: TSM-STD superseded statements confirmed",
+  "status": "Confirmed",
+  "owner": "user:k.osei",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-09T09:00:00Z",
+  "created_by": "user:k.osei",
+  "modified_at": "2026-05-09T09:00:00Z",
+  "modified_by": "user:k.osei",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:k.osei",
+  "verified_at": "2026-05-09T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "tsm": "TSM-D-0000066",
+  "fdps": "FD-D-0000009",
+  "reviews": [
+   "LIR-D-0000006",
+   "LIR-D-0000008"
+  ],
+  "confirmed_by": "user:k.osei",
+  "confirmed_at": "2026-05-09T09:00:00Z"
+ },
+ {
+  "id": "TSC-D-0000003",
+  "type": "TSM Supersession Confirmation",
+  "schema_version": "7.6",
+  "title": "D2822001-801: TSM-PIPE superseded statements confirmed",
+  "status": "Confirmed",
+  "owner": "user:k.osei",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-09T09:00:00Z",
+  "created_by": "user:k.osei",
+  "modified_at": "2026-05-09T09:00:00Z",
+  "modified_by": "user:k.osei",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:k.osei",
+  "verified_at": "2026-05-09T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "tsm": "TSM-D-0000062",
+  "fdps": "FD-D-0000017",
+  "reviews": [
+   "LIR-D-0000016"
+  ],
+  "confirmed_by": "user:k.osei",
+  "confirmed_at": "2026-05-09T09:00:00Z"
+ },
+ {
+  "id": "TSC-D-0000004",
+  "type": "TSM Supersession Confirmation",
+  "schema_version": "7.6",
+  "title": "D2822001-801: TSM-MET superseded statements confirmed",
+  "status": "Confirmed",
+  "owner": "user:a.quinn",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-09T09:00:00Z",
+  "created_by": "user:a.quinn",
+  "modified_at": "2026-05-09T09:00:00Z",
+  "modified_by": "user:a.quinn",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:a.quinn",
+  "verified_at": "2026-05-09T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "tsm": "TSM-D-0000063",
+  "fdps": "FD-D-0000017",
+  "reviews": [
+   "LIR-D-0000018"
+  ],
+  "confirmed_by": "user:a.quinn",
+  "confirmed_at": "2026-05-09T09:00:00Z"
+ },
+ {
+  "id": "TSC-D-0000005",
+  "type": "TSM Supersession Confirmation",
+  "schema_version": "7.6",
+  "title": "D2822001-801: TSM-BIE superseded statements confirmed",
+  "status": "Confirmed",
+  "owner": "user:k.osei",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-09T09:00:00Z",
+  "created_by": "user:k.osei",
+  "modified_at": "2026-05-09T09:00:00Z",
+  "modified_by": "user:k.osei",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:k.osei",
+  "verified_at": "2026-05-09T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "tsm": "TSM-D-0000064",
+  "fdps": "FD-D-0000017",
+  "reviews": [
+   "LIR-D-0000020"
+  ],
+  "confirmed_by": "user:k.osei",
+  "confirmed_at": "2026-05-09T09:00:00Z"
+ },
+ {
+  "id": "TSC-D-0000006",
+  "type": "TSM Supersession Confirmation",
+  "schema_version": "7.6",
+  "title": "D2822001-801: TSM-FLU superseded statements confirmed",
+  "status": "Confirmed",
+  "owner": "user:k.osei",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-09T09:00:00Z",
+  "created_by": "user:k.osei",
+  "modified_at": "2026-05-09T09:00:00Z",
+  "modified_by": "user:k.osei",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:k.osei",
+  "verified_at": "2026-05-09T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "tsm": "TSM-D-0000065",
+  "fdps": "FD-D-0000017",
+  "reviews": [
+   "LIR-D-0000023",
+   "LIR-D-0000024"
+  ],
+  "confirmed_by": "user:k.osei",
+  "confirmed_at": "2026-05-09T09:00:00Z"
+ },
+ {
+  "id": "TSC-D-0000007",
+  "type": "TSM Supersession Confirmation",
+  "schema_version": "7.6",
+  "title": "D2822001-801: TSM-STD superseded statements confirmed",
+  "status": "Confirmed",
+  "owner": "user:k.osei",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-09T09:00:00Z",
+  "created_by": "user:k.osei",
+  "modified_at": "2026-05-09T09:00:00Z",
+  "modified_by": "user:k.osei",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:k.osei",
+  "verified_at": "2026-05-09T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "tsm": "TSM-D-0000066",
+  "fdps": "FD-D-0000017",
+  "reviews": [
+   "LIR-D-0000027"
+  ],
+  "confirmed_by": "user:k.osei",
+  "confirmed_at": "2026-05-09T09:00:00Z"
+ }
+]

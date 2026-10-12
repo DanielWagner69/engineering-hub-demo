@@ -1,0 +1,71 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "types/Line-item_Review.schema.json",
+ "title": "Line-item Review (schema v7.6 3.15A)",
+ "allOf": [
+  {
+   "$ref": "../common.schema.json"
+  }
+ ],
+ "type": "object",
+ "properties": {
+  "fdps": {
+   "type": "string",
+   "description": "ref(FDPS)"
+  },
+  "line_item": {
+   "type": "object",
+   "description": "{requirement} or {tsm, clause}"
+  },
+  "line_item_revision": {
+   "type": "integer",
+   "minimum": 1
+  },
+  "state": {
+   "enum": [
+    "Kept",
+    "Broken",
+    "Superseded (auto)"
+   ],
+   "description": "reg(LISTATE); Superseded (auto) is set by the system only (6B.7A)"
+  },
+  "bases": {
+   "type": "array"
+  },
+  "reason": {
+   "type": "string",
+   "description": "Required when Broken"
+  },
+  "author": {
+   "type": "string",
+   "description": "ref(User)"
+  },
+  "approved_by": {
+   "type": "string",
+   "description": "Broken EDR line item: Design Lead of the FDPS lead Sub-system; Broken TSM statement: Design Authority (6C.13)"
+  },
+  "approved_at": {
+   "type": "string",
+   "description": "datetime"
+  },
+  "superseded_by": {
+   "type": "array",
+   "description": "Defined links causing the supersession (6B.7A)"
+  },
+  "bulk_confirmation": {
+   "type": "string",
+   "description": "ref(TSM Supersession Confirmation)"
+  },
+  "type": {
+   "const": "Line-item Review"
+  }
+ },
+ "required": [
+  "fdps",
+  "line_item",
+  "line_item_revision",
+  "state",
+  "bases"
+ ],
+ "x-owned-links": []
+}

@@ -1,0 +1,68 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "types/Project.schema.json",
+ "title": "Project (schema v6 3.x)",
+ "allOf": [
+  {
+   "$ref": "../common.schema.json"
+  }
+ ],
+ "type": "object",
+ "properties": {
+  "project_letter": {
+   "type": "string",
+   "description": "string; card. 1; One capital letter, e.g. D"
+  },
+  "name": {
+   "type": "string",
+   "description": "string; card. 1; "
+  },
+  "framework_version": {
+   "type": "string",
+   "description": "ref(Framework Version); card. 1; "
+  },
+  "effectivity_max": {
+   "type": "integer",
+   "description": "int; card. 1; Less than 999"
+  },
+  "default_existence": {
+   "$ref": "../common.schema.json#/$defs/eff",
+   "description": "eff; card. 1; Default 1 to 999"
+  },
+  "impact_thresholds": {
+   "description": "json; card. 1; {effort: 4 boundaries in person-days, cost: 4 boundaries in GBP}"
+  },
+  "retention_policy": {
+   "type": "string",
+   "description": "string; card. 1; "
+  },
+  "ai_index_id": {
+   "type": "string",
+   "description": "string; card. 0..1; "
+  },
+  "status": {
+   "type": "string",
+   "x-stored-as": "label of a framework-fixed register entry",
+   "description": "reg; card. 1; Set up; Active; Closed",
+   "enum": [
+    "Set up",
+    "Active",
+    "Closed"
+   ]
+  },
+  "type": {
+   "const": "Project"
+  }
+ },
+ "required": [
+  "project_letter",
+  "name",
+  "framework_version",
+  "effectivity_max",
+  "default_existence",
+  "impact_thresholds",
+  "retention_policy",
+  "status"
+ ],
+ "x-owned-links": []
+}

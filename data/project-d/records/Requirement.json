@@ -50,8 +50,13 @@
    {
     "link_type": "Allocated to",
     "target": "VR-SUB-0031"
+   },
+   {
+    "link_type": "Part of",
+    "target": "EDR-D-0000001"
    }
-  ]
+  ],
+  "line_item_revision": 1
  },
  {
   "id": "REQ-D-0000141",
@@ -112,8 +117,13 @@
    {
     "link_type": "Allocated to",
     "target": "VR-SUB-0032"
+   },
+   {
+    "link_type": "Part of",
+    "target": "EDR-D-0000001"
    }
-  ]
+  ],
+  "line_item_revision": 1
  },
  {
   "id": "REQ-D-0000142",
@@ -170,8 +180,13 @@
    {
     "link_type": "Satisfied by",
     "target": "PI-D-0004108"
+   },
+   {
+    "link_type": "Part of",
+    "target": "EDR-D-0000001"
    }
-  ]
+  ],
+  "line_item_revision": 1
  },
  {
   "id": "REQ-D-0000143",
@@ -219,8 +234,13 @@
    {
     "link_type": "Satisfied by",
     "target": "AI-D-0000210"
+   },
+   {
+    "link_type": "Part of",
+    "target": "EDR-D-0000004"
    }
-  ]
+  ],
+  "line_item_revision": 1
  },
  {
   "id": "REQ-D-0000145",
@@ -265,8 +285,13 @@
    {
     "link_type": "Allocated to",
     "target": "VR-SUB-0032"
+   },
+   {
+    "link_type": "Part of",
+    "target": "EDR-D-0000001"
    }
-  ]
+  ],
+  "line_item_revision": 1
  },
  {
   "id": "REQ-D-0000146",
@@ -310,8 +335,13 @@
    {
     "link_type": "Allocated to",
     "target": "VR-SG-0002"
+   },
+   {
+    "link_type": "Part of",
+    "target": "EDR-D-0000002"
    }
-  ]
+  ],
+  "line_item_revision": 1
  },
  {
   "id": "REQ-D-0000147",
@@ -365,8 +395,13 @@
    {
     "link_type": "Allocated to",
     "target": "VR-SUB-0001"
+   },
+   {
+    "link_type": "Part of",
+    "target": "EDR-D-0000003"
    }
-  ]
+  ],
+  "line_item_revision": 1
  },
  {
   "id": "REQ-D-0000148",
@@ -420,7 +455,12 @@
    {
     "link_type": "Allocated to",
     "target": "VR-SYS-0001"
+   },
+   {
+    "link_type": "Part of",
+    "target": "EDR-D-0000003"
    }
-  ]
+  ],
+  "line_item_revision": 1
  }
 ]

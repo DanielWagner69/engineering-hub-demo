@@ -43,3 +43,6 @@ node tests/check_data.js
 Framework Hub remains the master of framework content. This site references Framework Hub v0.8 and does not edit framework pages. Production data is a separate overlay.
 
 Brand colours: primary `#00405E`, accent `#46C1BE`, light `#9EDEDC`.
+
+## v1.1-demo (12 Oct 2026)
+Pins Framework 1.0.0-rc.3 (Requirements v24.6 / Schema v7.6). Data built by tools/build_v11.py: EDRs, line-item reviews, TSM supersession confirmations, fictional Users and access records. rc.2 vendor kept for rollback.

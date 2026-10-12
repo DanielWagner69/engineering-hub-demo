@@ -1,0 +1,1182 @@
+[
+ {
+  "id": "LIR-D-0000001",
+  "type": "Line-item Review",
+  "schema_version": "7.6",
+  "title": "D5012001-801: D-SST-GEN-002 Broken",
+  "status": "Current",
+  "owner": "user:g.burns",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-08T09:00:00Z",
+  "created_by": "user:g.burns",
+  "modified_at": "2026-05-08T09:00:00Z",
+  "modified_by": "user:g.burns",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:g.burns",
+  "verified_at": "2026-05-08T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "fdps": "FD-D-0000009",
+  "line_item": {
+   "requirement": "REQ-D-0000143"
+  },
+  "line_item_revision": 1,
+  "bases": [
+   "EDR tag VR-SUB-0005",
+   "Inherited via System tree node"
+  ],
+  "author": "user:g.burns",
+  "links": [
+   {
+    "link_type": "Reviews line item",
+    "target": "REQ-D-0000143"
+   }
+  ],
+  "state": "Broken",
+  "reason": "Only the frame 14 valve bracket fasteners of this FDPS are homed in Brackets and Supports; the bracket strength Requirement is claimed by the FDPS that owns the bracket (D2822001-801).",
+  "approved_by": "user:g.burns",
+  "approved_at": "2026-05-08T09:00:00Z"
+ },
+ {
+  "id": "LIR-D-0000002",
+  "type": "Line-item Review",
+  "schema_version": "7.6",
+  "title": "D5012001-801: D-STR-FRM-002 Kept",
+  "status": "Current",
+  "owner": "user:g.burns",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-08T09:00:00Z",
+  "created_by": "user:g.burns",
+  "modified_at": "2026-05-08T09:00:00Z",
+  "modified_by": "user:g.burns",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:g.burns",
+  "verified_at": "2026-05-08T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "fdps": "FD-D-0000009",
+  "line_item": {
+   "requirement": "REQ-D-0000147"
+  },
+  "line_item_revision": 1,
+  "bases": [
+   "EDR tag VR-SUB-0001",
+   "Inherited via System tree node"
+  ],
+  "author": "user:g.burns",
+  "links": [
+   {
+    "link_type": "Reviews line item",
+    "target": "REQ-D-0000147"
+   }
+  ],
+  "state": "Kept"
+ },
+ {
+  "id": "LIR-D-0000003",
+  "type": "Line-item Review",
+  "schema_version": "7.6",
+  "title": "D5012001-801: D-STR-GEN-007 Kept",
+  "status": "Current",
+  "owner": "user:g.burns",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-08T09:00:00Z",
+  "created_by": "user:g.burns",
+  "modified_at": "2026-05-08T09:00:00Z",
+  "modified_by": "user:g.burns",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:g.burns",
+  "verified_at": "2026-05-08T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "fdps": "FD-D-0000009",
+  "line_item": {
+   "requirement": "REQ-D-0000148"
+  },
+  "line_item_revision": 1,
+  "bases": [
+   "EDR tag VR-SUB-0001",
+   "Inherited via System tree node"
+  ],
+  "author": "user:g.burns",
+  "links": [
+   {
+    "link_type": "Reviews line item",
+    "target": "REQ-D-0000148"
+   }
+  ],
+  "state": "Kept"
+ },
+ {
+  "id": "LIR-D-0000004",
+  "type": "Line-item Review",
+  "schema_version": "7.6",
+  "title": "D5012001-801: TSM-MET 2.4.1 Kept",
+  "status": "Current",
+  "owner": "user:g.burns",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-08T09:00:00Z",
+  "created_by": "user:g.burns",
+  "modified_at": "2026-05-08T09:00:00Z",
+  "modified_by": "user:g.burns",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:g.burns",
+  "verified_at": "2026-05-08T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "fdps": "FD-D-0000009",
+  "line_item": {
+   "tsm": "TSM-D-0000063",
+   "clause": "2.4.1"
+  },
+  "line_item_revision": 1,
+  "bases": [
+   "Inherited via Design Type",
+   "Sub-system > Design Type (VR-DTY-0002, VR-DTY-0003)"
+  ],
+  "author": "user:g.burns",
+  "links": [
+   {
+    "link_type": "Reviews line item",
+    "target": "TSM-D-0000063"
+   }
+  ],
+  "state": "Kept"
+ },
+ {
+  "id": "LIR-D-0000005",
+  "type": "Line-item Review",
+  "schema_version": "7.6",
+  "title": "D5012001-801: TSM-MET 4.2.3 Superseded (auto)",
+  "status": "Current",
+  "owner": "user:g.burns",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-08T09:00:00Z",
+  "created_by": "user:g.burns",
+  "modified_at": "2026-05-08T09:00:00Z",
+  "modified_by": "user:g.burns",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:g.burns",
+  "verified_at": "2026-05-08T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "fdps": "FD-D-0000009",
+  "line_item": {
+   "tsm": "TSM-D-0000063",
+   "clause": "4.2.3"
+  },
+  "line_item_revision": 1,
+  "bases": [
+   "Inherited via Design Type",
+   "Sub-system > Design Type (VR-DTY-0002, VR-DTY-0003)"
+  ],
+  "author": "user:g.burns",
+  "links": [
+   {
+    "link_type": "Reviews line item",
+    "target": "TSM-D-0000063"
+   }
+  ],
+  "state": "Superseded (auto)",
+  "superseded_by": [
+   "CS-D-0001223"
+  ],
+  "bulk_confirmation": "TSC-D-0000001"
+ },
+ {
+  "id": "LIR-D-0000006",
+  "type": "Line-item Review",
+  "schema_version": "7.6",
+  "title": "D5012001-801: TSM-STD 2.1 Superseded (auto)",
+  "status": "Current",
+  "owner": "user:g.burns",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-08T09:00:00Z",
+  "created_by": "user:g.burns",
+  "modified_at": "2026-05-08T09:00:00Z",
+  "modified_by": "user:g.burns",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:g.burns",
+  "verified_at": "2026-05-08T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "fdps": "FD-D-0000009",
+  "line_item": {
+   "tsm": "TSM-D-0000066",
+   "clause": "2.1"
+  },
+  "line_item_revision": 1,
+  "bases": [
+   "Inherited via Design Type",
+   "Sub-system > Design Type (VR-DTY-0012)"
+  ],
+  "author": "user:g.burns",
+  "links": [
+   {
+    "link_type": "Reviews line item",
+    "target": "TSM-D-0000066"
+   }
+  ],
+  "state": "Superseded (auto)",
+  "superseded_by": [
+   "CS-D-0001224"
+  ],
+  "bulk_confirmation": "TSC-D-0000002"
+ },
+ {
+  "id": "LIR-D-0000007",
+  "type": "Line-item Review",
+  "schema_version": "7.6",
+  "title": "D5012001-801: TSM-STD 3.4 Kept",
+  "status": "Current",
+  "owner": "user:g.burns",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-08T09:00:00Z",
+  "created_by": "user:g.burns",
+  "modified_at": "2026-05-08T09:00:00Z",
+  "modified_by": "user:g.burns",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:g.burns",
+  "verified_at": "2026-05-08T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "fdps": "FD-D-0000009",
+  "line_item": {
+   "tsm": "TSM-D-0000066",
+   "clause": "3.4"
+  },
+  "line_item_revision": 1,
+  "bases": [
+   "Inherited via Design Type",
+   "Sub-system > Design Type (VR-DTY-0012)"
+  ],
+  "author": "user:g.burns",
+  "links": [
+   {
+    "link_type": "Reviews line item",
+    "target": "TSM-D-0000066"
+   }
+  ],
+  "state": "Kept"
+ },
+ {
+  "id": "LIR-D-0000008",
+  "type": "Line-item Review",
+  "schema_version": "7.6",
+  "title": "D5012001-801: TSM-STD 6.2 Superseded (auto)",
+  "status": "Current",
+  "owner": "user:g.burns",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-08T09:00:00Z",
+  "created_by": "user:g.burns",
+  "modified_at": "2026-05-08T09:00:00Z",
+  "modified_by": "user:g.burns",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:g.burns",
+  "verified_at": "2026-05-08T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "fdps": "FD-D-0000009",
+  "line_item": {
+   "tsm": "TSM-D-0000066",
+   "clause": "6.2"
+  },
+  "line_item_revision": 1,
+  "bases": [
+   "Inherited via Design Type",
+   "Sub-system > Design Type (VR-DTY-0012)"
+  ],
+  "author": "user:g.burns",
+  "links": [
+   {
+    "link_type": "Reviews line item",
+    "target": "TSM-D-0000066"
+   }
+  ],
+  "state": "Superseded (auto)",
+  "superseded_by": [
+   "CS-D-0001224"
+  ],
+  "bulk_confirmation": "TSC-D-0000002"
+ },
+ {
+  "id": "LIR-D-0000009",
+  "type": "Line-item Review",
+  "schema_version": "7.6",
+  "title": "D2822001-801: D-FUE-FED-004 Kept",
+  "status": "Current",
+  "owner": "user:r.okafor",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-08T09:00:00Z",
+  "created_by": "user:r.okafor",
+  "modified_at": "2026-05-08T09:00:00Z",
+  "modified_by": "user:r.okafor",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:r.okafor",
+  "verified_at": "2026-05-08T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "fdps": "FD-D-0000017",
+  "line_item": {
+   "requirement": "REQ-D-0000141"
+  },
+  "line_item_revision": 1,
+  "bases": [
+   "EDR tag VR-SUB-0031, VR-SUB-0032",
+   "Inherited via System tree node"
+  ],
+  "author": "user:r.okafor",
+  "links": [
+   {
+    "link_type": "Reviews line item",
+    "target": "REQ-D-0000141"
+   }
+  ],
+  "state": "Kept"
+ },
+ {
+  "id": "LIR-D-0000010",
+  "type": "Line-item Review",
+  "schema_version": "7.6",
+  "title": "D2822001-801: D-FUE-FED-009 Kept",
+  "status": "Current",
+  "owner": "user:r.okafor",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-08T09:00:00Z",
+  "created_by": "user:r.okafor",
+  "modified_at": "2026-05-08T09:00:00Z",
+  "modified_by": "user:r.okafor",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:r.okafor",
+  "verified_at": "2026-05-08T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "fdps": "FD-D-0000017",
+  "line_item": {
+   "requirement": "REQ-D-0000142"
+  },
+  "line_item_revision": 1,
+  "bases": [
+   "EDR tag VR-SUB-0031, VR-SUB-0032",
+   "Inherited via System tree node",
+   "Direct"
+  ],
+  "author": "user:r.okafor",
+  "links": [
+   {
+    "link_type": "Reviews line item",
+    "target": "REQ-D-0000142"
+   }
+  ],
+  "state": "Kept"
+ },
+ {
+  "id": "LIR-D-0000011",
+  "type": "Line-item Review",
+  "schema_version": "7.6",
+  "title": "D2822001-801: D-FUE-FED-011 Kept",
+  "status": "Current",
+  "owner": "user:r.okafor",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-08T09:00:00Z",
+  "created_by": "user:r.okafor",
+  "modified_at": "2026-05-08T09:00:00Z",
+  "modified_by": "user:r.okafor",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:r.okafor",
+  "verified_at": "2026-05-08T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "fdps": "FD-D-0000017",
+  "line_item": {
+   "requirement": "REQ-D-0000145"
+  },
+  "line_item_revision": 1,
+  "bases": [
+   "EDR tag VR-SUB-0031, VR-SUB-0032",
+   "Inherited via System tree node"
+  ],
+  "author": "user:r.okafor",
+  "links": [
+   {
+    "link_type": "Reviews line item",
+    "target": "REQ-D-0000145"
+   }
+  ],
+  "state": "Kept"
+ },
+ {
+  "id": "LIR-D-0000012",
+  "type": "Line-item Review",
+  "schema_version": "7.6",
+  "title": "D2822001-801: D-FUE-STO-012 Kept",
+  "status": "Current",
+  "owner": "user:r.okafor",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-08T09:00:00Z",
+  "created_by": "user:r.okafor",
+  "modified_at": "2026-05-08T09:00:00Z",
+  "modified_by": "user:r.okafor",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:r.okafor",
+  "verified_at": "2026-05-08T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "fdps": "FD-D-0000017",
+  "line_item": {
+   "requirement": "REQ-D-0000140"
+  },
+  "line_item_revision": 1,
+  "bases": [
+   "EDR tag VR-SUB-0031, VR-SUB-0032",
+   "Inherited via System tree node"
+  ],
+  "author": "user:r.okafor",
+  "links": [
+   {
+    "link_type": "Reviews line item",
+    "target": "REQ-D-0000140"
+   }
+  ],
+  "state": "Kept"
+ },
+ {
+  "id": "LIR-D-0000013",
+  "type": "Line-item Review",
+  "schema_version": "7.6",
+  "title": "D2822001-801: D-PP-GEN-003 Broken",
+  "status": "Current",
+  "owner": "user:r.okafor",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-08T09:00:00Z",
+  "created_by": "user:r.okafor",
+  "modified_at": "2026-05-08T09:00:00Z",
+  "modified_by": "user:r.okafor",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:r.okafor",
+  "verified_at": "2026-05-08T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "fdps": "FD-D-0000017",
+  "line_item": {
+   "requirement": "REQ-D-0000146"
+  },
+  "line_item_revision": 1,
+  "bases": [
+   "EDR tag VR-SUB-0032",
+   "Inherited via System tree node"
+  ],
+  "author": "user:r.okafor",
+  "links": [
+   {
+    "link_type": "Reviews line item",
+    "target": "REQ-D-0000146"
+   }
+  ],
+  "state": "Broken",
+  "reason": "No item of this FDPS is installed in a designated fire zone: the cross-join spool terminates at the firewall bulkhead union, outside the engine bay fire zone.",
+  "approved_by": "user:m.ellis",
+  "approved_at": "2026-05-08T09:00:00Z"
+ },
+ {
+  "id": "LIR-D-0000014",
+  "type": "Line-item Review",
+  "schema_version": "7.6",
+  "title": "D2822001-801: D-SST-GEN-002 Kept",
+  "status": "Current",
+  "owner": "user:r.okafor",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-08T09:00:00Z",
+  "created_by": "user:r.okafor",
+  "modified_at": "2026-05-08T09:00:00Z",
+  "modified_by": "user:r.okafor",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:r.okafor",
+  "verified_at": "2026-05-08T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "fdps": "FD-D-0000017",
+  "line_item": {
+   "requirement": "REQ-D-0000143"
+  },
+  "line_item_revision": 1,
+  "bases": [
+   "EDR tag VR-SUB-0005",
+   "Inherited via System tree node",
+   "Direct"
+  ],
+  "author": "user:r.okafor",
+  "links": [
+   {
+    "link_type": "Reviews line item",
+    "target": "REQ-D-0000143"
+   }
+  ],
+  "state": "Kept"
+ },
+ {
+  "id": "LIR-D-0000015",
+  "type": "Line-item Review",
+  "schema_version": "7.6",
+  "title": "D2822001-801: TSM-PIPE 3.1.4 Kept",
+  "status": "Current",
+  "owner": "user:r.okafor",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-08T09:00:00Z",
+  "created_by": "user:r.okafor",
+  "modified_at": "2026-05-08T09:00:00Z",
+  "modified_by": "user:r.okafor",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:r.okafor",
+  "verified_at": "2026-05-08T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "fdps": "FD-D-0000017",
+  "line_item": {
+   "tsm": "TSM-D-0000062",
+   "clause": "3.1.4"
+  },
+  "line_item_revision": 1,
+  "bases": [
+   "Inherited via Design Type",
+   "Sub-system > Design Type (VR-DTY-0009)"
+  ],
+  "author": "user:r.okafor",
+  "links": [
+   {
+    "link_type": "Reviews line item",
+    "target": "TSM-D-0000062"
+   }
+  ],
+  "state": "Kept"
+ },
+ {
+  "id": "LIR-D-0000016",
+  "type": "Line-item Review",
+  "schema_version": "7.6",
+  "title": "D2822001-801: TSM-PIPE 3.6.1 Superseded (auto)",
+  "status": "Current",
+  "owner": "user:r.okafor",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-08T09:00:00Z",
+  "created_by": "user:r.okafor",
+  "modified_at": "2026-05-08T09:00:00Z",
+  "modified_by": "user:r.okafor",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:r.okafor",
+  "verified_at": "2026-05-08T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "fdps": "FD-D-0000017",
+  "line_item": {
+   "tsm": "TSM-D-0000062",
+   "clause": "3.6.1"
+  },
+  "line_item_revision": 1,
+  "bases": [
+   "Inherited via Design Type",
+   "Sub-system > Design Type (VR-DTY-0009)"
+  ],
+  "author": "user:r.okafor",
+  "links": [
+   {
+    "link_type": "Reviews line item",
+    "target": "TSM-D-0000062"
+   }
+  ],
+  "state": "Superseded (auto)",
+  "superseded_by": [
+   "CS-D-0001208"
+  ],
+  "bulk_confirmation": "TSC-D-0000003"
+ },
+ {
+  "id": "LIR-D-0000017",
+  "type": "Line-item Review",
+  "schema_version": "7.6",
+  "title": "D2822001-801: TSM-MET 2.4.1 Kept",
+  "status": "Current",
+  "owner": "user:r.okafor",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-08T09:00:00Z",
+  "created_by": "user:r.okafor",
+  "modified_at": "2026-05-08T09:00:00Z",
+  "modified_by": "user:r.okafor",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:r.okafor",
+  "verified_at": "2026-05-08T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "fdps": "FD-D-0000017",
+  "line_item": {
+   "tsm": "TSM-D-0000063",
+   "clause": "2.4.1"
+  },
+  "line_item_revision": 1,
+  "bases": [
+   "Inherited via Design Type",
+   "Sub-system > Design Type (VR-DTY-0002)",
+   "Sub-system > Design Type (VR-DTY-0002, VR-DTY-0003)"
+  ],
+  "author": "user:r.okafor",
+  "links": [
+   {
+    "link_type": "Reviews line item",
+    "target": "TSM-D-0000063"
+   }
+  ],
+  "state": "Kept"
+ },
+ {
+  "id": "LIR-D-0000018",
+  "type": "Line-item Review",
+  "schema_version": "7.6",
+  "title": "D2822001-801: TSM-MET 4.2.3 Superseded (auto)",
+  "status": "Current",
+  "owner": "user:r.okafor",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-08T09:00:00Z",
+  "created_by": "user:r.okafor",
+  "modified_at": "2026-05-08T09:00:00Z",
+  "modified_by": "user:r.okafor",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:r.okafor",
+  "verified_at": "2026-05-08T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "fdps": "FD-D-0000017",
+  "line_item": {
+   "tsm": "TSM-D-0000063",
+   "clause": "4.2.3"
+  },
+  "line_item_revision": 1,
+  "bases": [
+   "Inherited via Design Type",
+   "Sub-system > Design Type (VR-DTY-0002)",
+   "Sub-system > Design Type (VR-DTY-0002, VR-DTY-0003)"
+  ],
+  "author": "user:r.okafor",
+  "links": [
+   {
+    "link_type": "Reviews line item",
+    "target": "TSM-D-0000063"
+   }
+  ],
+  "state": "Superseded (auto)",
+  "superseded_by": [
+   "CS-D-0001209"
+  ],
+  "bulk_confirmation": "TSC-D-0000004"
+ },
+ {
+  "id": "LIR-D-0000019",
+  "type": "Line-item Review",
+  "schema_version": "7.6",
+  "title": "D2822001-801: TSM-BIE 1.2 Kept",
+  "status": "Current",
+  "owner": "user:r.okafor",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-08T09:00:00Z",
+  "created_by": "user:r.okafor",
+  "modified_at": "2026-05-08T09:00:00Z",
+  "modified_by": "user:r.okafor",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:r.okafor",
+  "verified_at": "2026-05-08T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "fdps": "FD-D-0000017",
+  "line_item": {
+   "tsm": "TSM-D-0000064",
+   "clause": "1.2"
+  },
+  "line_item_revision": 1,
+  "bases": [
+   "Inherited via Design Type",
+   "Sub-system > Design Type (VR-DTY-0011)"
+  ],
+  "author": "user:r.okafor",
+  "links": [
+   {
+    "link_type": "Reviews line item",
+    "target": "TSM-D-0000064"
+   }
+  ],
+  "state": "Kept"
+ },
+ {
+  "id": "LIR-D-0000020",
+  "type": "Line-item Review",
+  "schema_version": "7.6",
+  "title": "D2822001-801: TSM-BIE 3.1 Superseded (auto)",
+  "status": "Current",
+  "owner": "user:r.okafor",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-08T09:00:00Z",
+  "created_by": "user:r.okafor",
+  "modified_at": "2026-05-08T09:00:00Z",
+  "modified_by": "user:r.okafor",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:r.okafor",
+  "verified_at": "2026-05-08T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "fdps": "FD-D-0000017",
+  "line_item": {
+   "tsm": "TSM-D-0000064",
+   "clause": "3.1"
+  },
+  "line_item_revision": 1,
+  "bases": [
+   "Inherited via Design Type",
+   "Sub-system > Design Type (VR-DTY-0011)"
+  ],
+  "author": "user:r.okafor",
+  "links": [
+   {
+    "link_type": "Reviews line item",
+    "target": "TSM-D-0000064"
+   }
+  ],
+  "state": "Superseded (auto)",
+  "superseded_by": [
+   "CS-D-0001210"
+  ],
+  "bulk_confirmation": "TSC-D-0000005"
+ },
+ {
+  "id": "LIR-D-0000021",
+  "type": "Line-item Review",
+  "schema_version": "7.6",
+  "title": "D2822001-801: TSM-FLU 5.1 Kept",
+  "status": "Current",
+  "owner": "user:r.okafor",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-08T09:00:00Z",
+  "created_by": "user:r.okafor",
+  "modified_at": "2026-05-08T09:00:00Z",
+  "modified_by": "user:r.okafor",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:r.okafor",
+  "verified_at": "2026-05-08T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "fdps": "FD-D-0000017",
+  "line_item": {
+   "tsm": "TSM-D-0000065",
+   "clause": "5.1"
+  },
+  "line_item_revision": 1,
+  "bases": [
+   "Inherited via Design Type",
+   "Inherited via Discipline",
+   "Inherited via System",
+   "Sub-system > Design Type (VR-DTY-0009)"
+  ],
+  "author": "user:r.okafor",
+  "links": [
+   {
+    "link_type": "Reviews line item",
+    "target": "TSM-D-0000065"
+   }
+  ],
+  "state": "Kept"
+ },
+ {
+  "id": "LIR-D-0000022",
+  "type": "Line-item Review",
+  "schema_version": "7.6",
+  "title": "D2822001-801: TSM-FLU 5.4 Kept",
+  "status": "Current",
+  "owner": "user:r.okafor",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-08T09:00:00Z",
+  "created_by": "user:r.okafor",
+  "modified_at": "2026-05-08T09:00:00Z",
+  "modified_by": "user:r.okafor",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:r.okafor",
+  "verified_at": "2026-05-08T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "fdps": "FD-D-0000017",
+  "line_item": {
+   "tsm": "TSM-D-0000065",
+   "clause": "5.4"
+  },
+  "line_item_revision": 1,
+  "bases": [
+   "Inherited via Design Type",
+   "Inherited via Discipline",
+   "Inherited via System",
+   "Sub-system > Design Type (VR-DTY-0009)"
+  ],
+  "author": "user:r.okafor",
+  "links": [
+   {
+    "link_type": "Reviews line item",
+    "target": "TSM-D-0000065"
+   }
+  ],
+  "state": "Kept"
+ },
+ {
+  "id": "LIR-D-0000023",
+  "type": "Line-item Review",
+  "schema_version": "7.6",
+  "title": "D2822001-801: TSM-FLU 6.2 Superseded (auto)",
+  "status": "Current",
+  "owner": "user:r.okafor",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-08T09:00:00Z",
+  "created_by": "user:r.okafor",
+  "modified_at": "2026-05-08T09:00:00Z",
+  "modified_by": "user:r.okafor",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:r.okafor",
+  "verified_at": "2026-05-08T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "fdps": "FD-D-0000017",
+  "line_item": {
+   "tsm": "TSM-D-0000065",
+   "clause": "6.2"
+  },
+  "line_item_revision": 1,
+  "bases": [
+   "Inherited via Design Type",
+   "Inherited via Discipline",
+   "Inherited via System",
+   "Sub-system > Design Type (VR-DTY-0009)"
+  ],
+  "author": "user:r.okafor",
+  "links": [
+   {
+    "link_type": "Reviews line item",
+    "target": "TSM-D-0000065"
+   }
+  ],
+  "state": "Superseded (auto)",
+  "superseded_by": [
+   "CS-D-0001211"
+  ],
+  "bulk_confirmation": "TSC-D-0000006"
+ },
+ {
+  "id": "LIR-D-0000024",
+  "type": "Line-item Review",
+  "schema_version": "7.6",
+  "title": "D2822001-801: TSM-FLU 7.4 Superseded (auto)",
+  "status": "Current",
+  "owner": "user:r.okafor",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-08T09:00:00Z",
+  "created_by": "user:r.okafor",
+  "modified_at": "2026-05-08T09:00:00Z",
+  "modified_by": "user:r.okafor",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:r.okafor",
+  "verified_at": "2026-05-08T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "fdps": "FD-D-0000017",
+  "line_item": {
+   "tsm": "TSM-D-0000065",
+   "clause": "7.4"
+  },
+  "line_item_revision": 1,
+  "bases": [
+   "Inherited via Design Type",
+   "Inherited via Discipline",
+   "Inherited via System",
+   "Sub-system > Design Type (VR-DTY-0009)"
+  ],
+  "author": "user:r.okafor",
+  "links": [
+   {
+    "link_type": "Reviews line item",
+    "target": "TSM-D-0000065"
+   }
+  ],
+  "state": "Superseded (auto)",
+  "superseded_by": [
+   "CS-D-0001211"
+  ],
+  "bulk_confirmation": "TSC-D-0000006"
+ },
+ {
+  "id": "LIR-D-0000025",
+  "type": "Line-item Review",
+  "schema_version": "7.6",
+  "title": "D2822001-801: TSM-STD 2.1 Kept",
+  "status": "Current",
+  "owner": "user:r.okafor",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-08T09:00:00Z",
+  "created_by": "user:r.okafor",
+  "modified_at": "2026-05-08T09:00:00Z",
+  "modified_by": "user:r.okafor",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:r.okafor",
+  "verified_at": "2026-05-08T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "fdps": "FD-D-0000017",
+  "line_item": {
+   "tsm": "TSM-D-0000066",
+   "clause": "2.1"
+  },
+  "line_item_revision": 1,
+  "bases": [
+   "Inherited via Design Type",
+   "Sub-system > Design Type (VR-DTY-0012)"
+  ],
+  "author": "user:r.okafor",
+  "links": [
+   {
+    "link_type": "Reviews line item",
+    "target": "TSM-D-0000066"
+   }
+  ],
+  "state": "Kept"
+ },
+ {
+  "id": "LIR-D-0000026",
+  "type": "Line-item Review",
+  "schema_version": "7.6",
+  "title": "D2822001-801: TSM-STD 3.4 Kept",
+  "status": "Current",
+  "owner": "user:r.okafor",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-08T09:00:00Z",
+  "created_by": "user:r.okafor",
+  "modified_at": "2026-05-08T09:00:00Z",
+  "modified_by": "user:r.okafor",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:r.okafor",
+  "verified_at": "2026-05-08T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "fdps": "FD-D-0000017",
+  "line_item": {
+   "tsm": "TSM-D-0000066",
+   "clause": "3.4"
+  },
+  "line_item_revision": 1,
+  "bases": [
+   "Inherited via Design Type",
+   "Sub-system > Design Type (VR-DTY-0012)"
+  ],
+  "author": "user:r.okafor",
+  "links": [
+   {
+    "link_type": "Reviews line item",
+    "target": "TSM-D-0000066"
+   }
+  ],
+  "state": "Kept"
+ },
+ {
+  "id": "LIR-D-0000027",
+  "type": "Line-item Review",
+  "schema_version": "7.6",
+  "title": "D2822001-801: TSM-STD 6.2 Superseded (auto)",
+  "status": "Current",
+  "owner": "user:r.okafor",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-08T09:00:00Z",
+  "created_by": "user:r.okafor",
+  "modified_at": "2026-05-08T09:00:00Z",
+  "modified_by": "user:r.okafor",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:r.okafor",
+  "verified_at": "2026-05-08T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "fdps": "FD-D-0000017",
+  "line_item": {
+   "tsm": "TSM-D-0000066",
+   "clause": "6.2"
+  },
+  "line_item_revision": 1,
+  "bases": [
+   "Inherited via Design Type",
+   "Sub-system > Design Type (VR-DTY-0012)"
+  ],
+  "author": "user:r.okafor",
+  "links": [
+   {
+    "link_type": "Reviews line item",
+    "target": "TSM-D-0000066"
+   }
+  ],
+  "state": "Superseded (auto)",
+  "superseded_by": [
+   "CS-D-0001212"
+  ],
+  "bulk_confirmation": "TSC-D-0000007"
+ },
+ {
+  "id": "LIR-D-0000028",
+  "type": "Line-item Review",
+  "schema_version": "7.6",
+  "title": "D2822001-801: TSM-FZ 1.1 Broken",
+  "status": "Current",
+  "owner": "user:r.okafor",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-08T09:00:00Z",
+  "created_by": "user:r.okafor",
+  "modified_at": "2026-05-08T09:00:00Z",
+  "modified_by": "user:r.okafor",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:r.okafor",
+  "verified_at": "2026-05-08T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "fdps": "FD-D-0000017",
+  "line_item": {
+   "tsm": "TSM-D-0000067",
+   "clause": "1.1"
+  },
+  "line_item_revision": 1,
+  "bases": [
+   "Inherited via System"
+  ],
+  "author": "user:r.okafor",
+  "links": [
+   {
+    "link_type": "Reviews line item",
+    "target": "TSM-D-0000067"
+   }
+  ],
+  "state": "Broken",
+  "reason": "No statement of TSM-FZ applies: no item of this FDPS is installed in a designated fire zone; the cross-join spool terminates at the firewall, outside the engine bay fire zone.",
+  "approved_by": "user:k.osei",
+  "approved_at": "2026-05-08T09:00:00Z"
+ },
+ {
+  "id": "LIR-D-0000029",
+  "type": "Line-item Review",
+  "schema_version": "7.6",
+  "title": "D2822001-801: TSM-FZ 2.3 Broken",
+  "status": "Current",
+  "owner": "user:r.okafor",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-05-08T09:00:00Z",
+  "created_by": "user:r.okafor",
+  "modified_at": "2026-05-08T09:00:00Z",
+  "modified_by": "user:r.okafor",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:r.okafor",
+  "verified_at": "2026-05-08T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "fdps": "FD-D-0000017",
+  "line_item": {
+   "tsm": "TSM-D-0000067",
+   "clause": "2.3"
+  },
+  "line_item_revision": 1,
+  "bases": [
+   "Inherited via System"
+  ],
+  "author": "user:r.okafor",
+  "links": [
+   {
+    "link_type": "Reviews line item",
+    "target": "TSM-D-0000067"
+   }
+  ],
+  "state": "Broken",
+  "reason": "No statement of TSM-FZ applies: no item of this FDPS is installed in a designated fire zone; the cross-join spool terminates at the firewall, outside the engine bay fire zone.",
+  "approved_by": "user:k.osei",
+  "approved_at": "2026-05-08T09:00:00Z"
+ }
+]

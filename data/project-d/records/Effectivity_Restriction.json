@@ -1,0 +1,30 @@
+[
+ {
+  "id": "ER-D-0000001",
+  "type": "Effectivity Restriction",
+  "schema_version": "7.6",
+  "title": "M. Castell: effectivities 1 and 2",
+  "status": "Active",
+  "owner": "user:hub.admin",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2026-09-01T09:00:00Z",
+  "created_by": "user:hub.admin",
+  "modified_at": "2026-09-01T09:00:00Z",
+  "modified_by": "user:hub.admin",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:hub.admin",
+  "verified_at": "2026-09-01T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "project_assignment": "PA-D-0000037",
+  "effectivity": [
+   "EFF-D-0000001",
+   "EFF-D-0000002"
+  ],
+  "set_by": "USR-D-0000036",
+  "set_at": "2026-09-01T09:00:00Z"
+ }
+]

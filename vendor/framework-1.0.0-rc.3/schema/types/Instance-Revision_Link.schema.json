@@ -1,0 +1,65 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "types/Instance-Revision_Link.schema.json",
+ "title": "Instance-Revision Link (schema v6 3.x)",
+ "allOf": [
+  {
+   "$ref": "../common.schema.json"
+  }
+ ],
+ "type": "object",
+ "properties": {
+  "instance": {
+   "type": "string",
+   "description": "ref(Part Instance or Assembly Instance); card. 1; "
+  },
+  "revision": {
+   "type": "string",
+   "description": "ref(Part Revision or Assembly Revision); card. 1; "
+  },
+  "effectivity": {
+   "$ref": "../common.schema.json#/$defs/eff",
+   "description": "eff; card. 1; "
+  },
+  "change_record": {
+   "type": "string",
+   "description": "ref(Change Record); card. 1*; "
+  },
+  "set_by_master": {
+   "anyOf": [
+    {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+     }
+    },
+    {
+     "type": "string",
+     "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+    }
+   ],
+   "description": "reg(MASTER); card. 1; PLM or Hub"
+  },
+  "status": {
+   "type": "string",
+   "x-stored-as": "label of a framework-fixed register entry",
+   "description": "reg; card. 1; Open-ended; Closed range",
+   "enum": [
+    "Open-ended",
+    "Closed range"
+   ]
+  },
+  "type": {
+   "const": "Instance-Revision Link"
+  }
+ },
+ "required": [
+  "instance",
+  "revision",
+  "effectivity",
+  "set_by_master",
+  "status"
+ ],
+ "x-owned-links": []
+}

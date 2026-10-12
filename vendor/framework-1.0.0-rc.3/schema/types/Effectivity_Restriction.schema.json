@@ -1,0 +1,39 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "types/Effectivity_Restriction.schema.json",
+ "title": "Effectivity Restriction (schema v7.6 3.40)",
+ "allOf": [
+  {
+   "$ref": "../common.schema.json"
+  }
+ ],
+ "type": "object",
+ "properties": {
+  "project_assignment": {
+   "type": "string",
+   "description": "ref(Project Assignment)"
+  },
+  "effectivity": {
+   "type": "array",
+   "description": "ref(Effectivity) 1..n"
+  },
+  "set_by": {
+   "type": "string",
+   "description": "ref(User), Admin"
+  },
+  "set_at": {
+   "type": "string",
+   "description": "datetime"
+  },
+  "type": {
+   "const": "Effectivity Restriction"
+  }
+ },
+ "required": [
+  "project_assignment",
+  "effectivity",
+  "set_by",
+  "set_at"
+ ],
+ "x-owned-links": []
+}

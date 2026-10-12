@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" font-family="system-ui,sans-serif">
+<defs><pattern id="g" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#46C1BE" stroke-opacity=".12"/></pattern>
+<linearGradient id="sk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0E4F6E"/><stop offset="1" stop-color="#00405E"/></linearGradient>
+<linearGradient id="pipe" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#C8F0EE"/><stop offset=".5" stop-color="#46C1BE"/><stop offset="1" stop-color="#1E7F7C"/></linearGradient></defs>
+<rect width="1200" height="600" fill="url(#sk)"/><rect width="1200" height="600" fill="url(#g)"/>
+<!-- fuselage skin isometric -->
+<path d="M120 170 Q600 60 1080 170 L1080 470 Q600 560 120 470Z" fill="#9EDEDC" fill-opacity=".06" stroke="#9EDEDC" stroke-opacity=".5" stroke-width="2"/>
+<g stroke="#9EDEDC" stroke-opacity=".55" stroke-width="3" fill="none">
+<path d="M260 140 Q250 320 260 500"/><path d="M420 118 Q410 320 420 520"/><path d="M580 110 Q570 320 580 528"/><path d="M740 112 Q730 320 740 526"/><path d="M900 128 Q890 320 900 512"/></g>
+<g fill="#9EDEDC" fill-opacity=".8" font-size="14"><text x="236" y="132">FR 13</text><text x="396" y="108">FR 14</text><text x="556" y="100">FR 15</text><text x="712" y="102">FR 15A</text><text x="876" y="118">FR 16</text></g>
+<!-- tank -->
+<rect x="150" y="300" width="200" height="140" rx="14" fill="#46C1BE" fill-opacity=".14" stroke="#46C1BE" stroke-width="2" stroke-dasharray="8 6"/><text x="170" y="330" fill="#C8F0EE" font-size="15">Main tank</text>
+<!-- pipe run -->
+<path d="M330 400 L420 400 Q470 400 480 350 L520 260 Q530 240 560 240 L860 240 Q900 240 920 280 L1040 330" fill="none" stroke="#082C3D" stroke-width="22" stroke-linecap="round"/>
+<path d="M330 400 L420 400 Q470 400 480 350 L520 260 Q530 240 560 240 L860 240 Q900 240 920 280 L1040 330" fill="none" stroke="url(#pipe)" stroke-width="14" stroke-linecap="round"/>
+<!-- strainer, valve, brackets, clamps -->
+<g id="hs-strainer"><rect x="340" y="384" width="36" height="32" rx="6" fill="#EAF7F6" stroke="#00405E" stroke-width="2"/></g>
+<g id="hs-valve"><rect x="400" y="350" width="60" height="44" rx="8" fill="#F6B26B" stroke="#00405E" stroke-width="2"/><circle cx="430" cy="372" r="10" fill="#00405E"/><rect x="398" y="394" width="64" height="30" fill="#9EDEDC" stroke="#00405E" stroke-width="2"/></g>
+<g id="hs-bracket" fill="#9EDEDC" stroke="#00405E" stroke-width="2"><path d="M560 220 h40 v60 h-40z"/><path d="M548 262 h64 v14 h-64z"/></g>
+<g fill="#EAF7F6" stroke="#00405E" stroke-width="2"><circle cx="740" cy="240" r="14"/><circle cx="660" cy="240" r="12"/></g>
+<g id="hs-spool"><rect x="1000" y="300" width="56" height="50" rx="6" transform="rotate(22 1028 325)" fill="#EAF7F6" stroke="#00405E" stroke-width="2"/></g>
+<!-- callouts -->
+<g font-size="15" fill="#fff" stroke="#46C1BE" stroke-width="1.5">
+<line x1="358" y1="384" x2="300" y2="250"/><line x1="430" y1="350" x2="430" y2="180"/><line x1="580" y1="220" x2="640" y2="150"/><line x1="740" y1="226" x2="790" y2="170"/><line x1="1030" y1="300" x2="1040" y2="220"/></g>
+<g font-size="15" fill="#fff"><text x="230" y="244">Strainer</text><text x="380" y="172">Shut-off valve</text><text x="620" y="144">Twin-pipe bracket FR15</text><text x="780" y="164">P-clamps</text><text x="960" y="212">Cross-join spool</text></g>
+<text x="1040" y="360" fill="#C8F0EE" font-size="14">→ engine feed</text>
+<!-- label -->
+<rect x="20" y="20" width="360" height="34" rx="17" fill="#00405E" stroke="#46C1BE"/><text x="40" y="43" fill="#fff" font-size="15" font-weight="600">Fuel Feed · image placeholder</text>
+<g transform="translate(1110 60)" stroke="#9EDEDC" stroke-width="2" font-size="12" fill="#9EDEDC"><line x1="0" y1="0" x2="40" y2="0"/><line x1="0" y1="0" x2="0" y2="-40"/><line x1="0" y1="0" x2="-26" y2="22"/><text x="44" y="4" stroke="none">X</text><text x="-4" y="-44" stroke="none">Z</text><text x="-40" y="34" stroke="none">Y</text></g>
+</svg>

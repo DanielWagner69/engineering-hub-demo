@@ -1,0 +1,62 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "types/Parameter.schema.json",
+ "title": "Parameter (schema v6 3.x)",
+ "allOf": [
+  {
+   "$ref": "../common.schema.json"
+  }
+ ],
+ "type": "object",
+ "properties": {
+  "name": {
+   "type": "string",
+   "description": "string; card. 1; Unique within its owner"
+  },
+  "description": {
+   "type": "string",
+   "description": "text; card. 1; "
+  },
+  "value": {
+   "$ref": "../common.schema.json#/$defs/qty",
+   "description": "qty; card. 1; "
+  },
+  "expression": {
+   "type": "string",
+   "description": "string; card. 0..1; Expression over other parameter ids"
+  },
+  "limits": {
+   "description": "json; card. 0..1; {min: qty, max: qty, inclusive flags}"
+  },
+  "constraints": {
+   "description": "json; card. 0..n; {kind: limit, ratio or relationship; expression; governing: ref(Requirement or TSM)}"
+  },
+  "owning_object": {
+   "type": "string",
+   "description": "ref(Part Definition, Assembly Definition, FDPS or Project); card. 1; "
+  },
+  "status": {
+   "type": "string",
+   "x-stored-as": "label of a framework-fixed register entry",
+   "description": "reg; card. 1; Draft; Confirmed; Released",
+   "enum": [
+    "Draft",
+    "Confirmed",
+    "Released"
+   ]
+  },
+  "type": {
+   "const": "Parameter"
+  }
+ },
+ "required": [
+  "name",
+  "description",
+  "value",
+  "owning_object",
+  "status"
+ ],
+ "x-owned-links": [
+  "Drives"
+ ]
+}

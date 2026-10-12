@@ -1,0 +1,212 @@
+[
+ {
+  "id": "EDR-D-0000001",
+  "type": "Requirement Document",
+  "schema_version": "7.6",
+  "title": "Fuel System Engineering Design Requirements",
+  "status": "Released",
+  "owner": "user:j.ward",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-20T09:00:00Z",
+  "created_by": "user:j.ward",
+  "modified_at": "2025-11-20T09:00:00Z",
+  "modified_by": "user:j.ward",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:j.ward",
+  "verified_at": "2025-11-20T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "doc_kind": "EDR",
+  "doc_code": "EDR-FUE",
+  "issue": 1,
+  "sub_system_tags": [
+   "VR-SUB-0031",
+   "VR-SUB-0032",
+   "VR-SUB-0033",
+   "VR-SUB-0034",
+   "VR-SUB-0035",
+   "VR-SUB-0036"
+  ],
+  "product_scope": [
+   "VR-SCOPE-0001"
+  ],
+  "issue_changes": [
+   {
+    "issue": 1,
+    "changed": [
+     "REQ-D-0000140",
+     "REQ-D-0000141",
+     "REQ-D-0000142",
+     "REQ-D-0000145"
+    ]
+   }
+  ],
+  "links": [
+   {
+    "link_type": "Tagged to",
+    "target": "VR-SUB-0031"
+   },
+   {
+    "link_type": "Tagged to",
+    "target": "VR-SUB-0032"
+   },
+   {
+    "link_type": "Tagged to",
+    "target": "VR-SUB-0033"
+   },
+   {
+    "link_type": "Tagged to",
+    "target": "VR-SUB-0034"
+   },
+   {
+    "link_type": "Tagged to",
+    "target": "VR-SUB-0035"
+   },
+   {
+    "link_type": "Tagged to",
+    "target": "VR-SUB-0036"
+   }
+  ]
+ },
+ {
+  "id": "EDR-D-0000002",
+  "type": "Requirement Document",
+  "schema_version": "7.6",
+  "title": "Propulsion and Power Engineering Design Requirements",
+  "status": "Released",
+  "owner": "user:s.price",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-20T09:00:00Z",
+  "created_by": "user:s.price",
+  "modified_at": "2025-11-20T09:00:00Z",
+  "modified_by": "user:s.price",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:s.price",
+  "verified_at": "2025-11-20T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "doc_kind": "EDR",
+  "doc_code": "EDR-PP",
+  "issue": 1,
+  "sub_system_tags": [
+   "VR-SUB-0032",
+   "VR-SUB-0012"
+  ],
+  "product_scope": [
+   "VR-SCOPE-0001"
+  ],
+  "issue_changes": [
+   {
+    "issue": 1,
+    "changed": [
+     "REQ-D-0000146"
+    ]
+   }
+  ],
+  "links": [
+   {
+    "link_type": "Tagged to",
+    "target": "VR-SUB-0032"
+   },
+   {
+    "link_type": "Tagged to",
+    "target": "VR-SUB-0012"
+   }
+  ]
+ },
+ {
+  "id": "EDR-D-0000003",
+  "type": "Requirement Document",
+  "schema_version": "7.6",
+  "title": "Primary Structure Engineering Design Requirements",
+  "status": "Released",
+  "owner": "user:g.burns",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-20T09:00:00Z",
+  "created_by": "user:g.burns",
+  "modified_at": "2025-11-20T09:00:00Z",
+  "modified_by": "user:g.burns",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:g.burns",
+  "verified_at": "2025-11-20T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "doc_kind": "EDR",
+  "doc_code": "EDR-STR",
+  "issue": 1,
+  "sub_system_tags": [
+   "VR-SUB-0001"
+  ],
+  "product_scope": [
+   "VR-SCOPE-0001"
+  ],
+  "issue_changes": [
+   {
+    "issue": 1,
+    "changed": [
+     "REQ-D-0000147",
+     "REQ-D-0000148"
+    ]
+   }
+  ],
+  "links": [
+   {
+    "link_type": "Tagged to",
+    "target": "VR-SUB-0001"
+   }
+  ]
+ },
+ {
+  "id": "EDR-D-0000004",
+  "type": "Requirement Document",
+  "schema_version": "7.6",
+  "title": "Secondary Structure Engineering Design Requirements",
+  "status": "Released",
+  "owner": "user:y.hart",
+  "hub": "PRJ-D-0000001",
+  "created_at": "2025-11-20T09:00:00Z",
+  "created_by": "user:y.hart",
+  "modified_at": "2025-11-20T09:00:00Z",
+  "modified_by": "user:y.hart",
+  "record_version": 1,
+  "origin": {
+   "kind": "Human"
+  },
+  "verification_status": "Verified",
+  "verified_by": "user:y.hart",
+  "verified_at": "2025-11-20T09:00:00Z",
+  "access_marking": "VR-ACCESS-0001",
+  "doc_kind": "EDR",
+  "doc_code": "EDR-SST",
+  "issue": 1,
+  "sub_system_tags": [
+   "VR-SUB-0005"
+  ],
+  "product_scope": [
+   "VR-SCOPE-0001"
+  ],
+  "issue_changes": [
+   {
+    "issue": 1,
+    "changed": [
+     "REQ-D-0000143"
+    ]
+   }
+  ],
+  "links": [
+   {
+    "link_type": "Tagged to",
+    "target": "VR-SUB-0005"
+   }
+  ]
+ }
+]

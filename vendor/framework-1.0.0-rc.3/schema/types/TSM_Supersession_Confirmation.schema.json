@@ -1,0 +1,41 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "types/TSM_Supersession_Confirmation.schema.json",
+ "title": "TSM Supersession Confirmation (schema v7.6 3.15B)",
+ "allOf": [
+  {
+   "$ref": "../common.schema.json"
+  }
+ ],
+ "type": "object",
+ "properties": {
+  "tsm": {
+   "type": "string",
+   "description": "ref(TSM)"
+  },
+  "fdps": {
+   "type": "string",
+   "description": "ref(FDPS)"
+  },
+  "reviews": {
+   "type": "array"
+  },
+  "confirmed_by": {
+   "type": "string",
+   "description": "Design Authority (User)"
+  },
+  "confirmed_at": {
+   "type": "string",
+   "description": "datetime"
+  },
+  "type": {
+   "const": "TSM Supersession Confirmation"
+  }
+ },
+ "required": [
+  "tsm",
+  "fdps",
+  "reviews"
+ ],
+ "x-owned-links": []
+}

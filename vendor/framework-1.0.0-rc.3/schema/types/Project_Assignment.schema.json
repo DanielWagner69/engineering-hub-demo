@@ -1,0 +1,63 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "types/Project_Assignment.schema.json",
+ "title": "Project Assignment (schema v7.6 3.39)",
+ "allOf": [
+  {
+   "$ref": "../common.schema.json"
+  }
+ ],
+ "type": "object",
+ "properties": {
+  "user": {
+   "type": "string",
+   "description": "ref(User)"
+  },
+  "project": {
+   "type": "string",
+   "description": "ref(Project)"
+  },
+  "access_role": {
+   "enum": [
+    "Admin",
+    "Design Lead",
+    "Design Authority",
+    "Engineer",
+    "Viewer"
+   ],
+   "description": "reg(ACCROLE)"
+  },
+  "effectivity_access": {
+   "enum": [
+    "All",
+    "Restricted"
+   ]
+  },
+  "from_date": {
+   "type": "string",
+   "pattern": "^\\d{4}-\\d{2}-\\d{2}",
+   "description": "date"
+  },
+  "to_date": {
+   "type": "string",
+   "pattern": "^\\d{4}-\\d{2}-\\d{2}",
+   "description": "date"
+  },
+  "assigned_by": {
+   "type": "string",
+   "description": "ref(User), Admin on the project"
+  },
+  "type": {
+   "const": "Project Assignment"
+  }
+ },
+ "required": [
+  "user",
+  "project",
+  "access_role",
+  "effectivity_access",
+  "from_date",
+  "assigned_by"
+ ],
+ "x-owned-links": []
+}

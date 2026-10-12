@@ -24,11 +24,13 @@
   "statements": [
    {
     "clause": "3.1.4",
-    "statement": "Rigid pipe bends shall have a centreline radius of not less than 3 times the outside diameter."
+    "statement": "Rigid pipe bends shall have a centreline radius of not less than 3 times the outside diameter.",
+    "revision": 1
    },
    {
     "clause": "3.6.1",
-    "statement": "Flexible hose assemblies shall be supported so that the minimum bend radius is not infringed at full articulation."
+    "statement": "Flexible hose assemblies shall be supported so that the minimum bend radius is not infringed at full articulation.",
+    "revision": 1
    }
   ],
   "acceptance": {
@@ -68,11 +70,13 @@
   "statements": [
    {
     "clause": "2.4.1",
-    "statement": "Machined internal corner radii shall be not less than 1.5 mm."
+    "statement": "Machined internal corner radii shall be not less than 1.5 mm.",
+    "revision": 1
    },
    {
     "clause": "4.2.3",
-    "statement": "Joggles in sheet-metal parts shall have a run-out of not less than 3 times the joggle depth."
+    "statement": "Joggles in sheet-metal parts shall have a run-out of not less than 3 times the joggle depth.",
+    "revision": 1
    }
   ],
   "acceptance": {
@@ -116,11 +120,13 @@
   "statements": [
    {
     "clause": "1.2",
-    "statement": "Bought-in equipment shall hold an equipment qualification declaration covering the installed environment."
+    "statement": "Bought-in equipment shall hold an equipment qualification declaration covering the installed environment.",
+    "revision": 1
    },
    {
     "clause": "3.1",
-    "statement": "Line-replaceable units shall be removable without disturbing adjacent equipment."
+    "statement": "Line-replaceable units shall be removable without disturbing adjacent equipment.",
+    "revision": 1
    }
   ],
   "acceptance": {
@@ -160,19 +166,23 @@
   "statements": [
    {
     "clause": "5.1",
-    "statement": "Every component installed in a fuel-wetted or fuel-vapour zone shall be electrically bonded to structure with a resistance of not more than 10 milliohm."
+    "statement": "Every component installed in a fuel-wetted or fuel-vapour zone shall be electrically bonded to structure with a resistance of not more than 10 milliohm.",
+    "revision": 1
    },
    {
     "clause": "5.4",
-    "statement": "Fuel feed line installations shall be routed with no high point between a shut-off valve and the engine interface at which vapour can collect."
+    "statement": "Fuel feed line installations shall be routed with no high point between a shut-off valve and the engine interface at which vapour can collect.",
+    "revision": 1
    },
    {
     "clause": "6.2",
-    "statement": "Hydraulic components shall be compatible with the hydraulic fluid specification of the project."
+    "statement": "Hydraulic components shall be compatible with the hydraulic fluid specification of the project.",
+    "revision": 1
    },
    {
     "clause": "7.4",
-    "statement": "Pneumatic ducts above 200 degrees Celsius shall be lagged where they pass within 50 mm of a fluid line."
+    "statement": "Pneumatic ducts above 200 degrees Celsius shall be lagged where they pass within 50 mm of a fluid line.",
+    "revision": 1
    }
   ],
   "acceptance": {
@@ -228,15 +238,18 @@
   "statements": [
    {
     "clause": "2.1",
-    "statement": "Standard Parts shall be procured to the catalogue issue recorded on the Part revision."
+    "statement": "Standard Parts shall be procured to the catalogue issue recorded on the Part revision.",
+    "revision": 1
    },
    {
     "clause": "3.4",
-    "statement": "Self-locking nuts shall show not less than 1.5 thread pitches of bolt protrusion when installed."
+    "statement": "Self-locking nuts shall show not less than 1.5 thread pitches of bolt protrusion when installed.",
+    "revision": 1
    },
    {
     "clause": "6.2",
-    "statement": "Blind rivets shall not be used in fuel-wetted zones."
+    "statement": "Blind rivets shall not be used in fuel-wetted zones.",
+    "revision": 1
    }
   ],
   "acceptance": {
@@ -276,11 +289,13 @@
   "statements": [
    {
     "clause": "1.1",
-    "statement": "Components installed in a designated fire zone shall be fire resistant or fireproof as stated in the fire zone schedule."
+    "statement": "Components installed in a designated fire zone shall be fire resistant or fireproof as stated in the fire zone schedule.",
+    "revision": 1
    },
    {
     "clause": "2.3",
-    "statement": "Designated fire zones shall drain flammable fluid overboard without pooling."
+    "statement": "Designated fire zones shall drain flammable fluid overboard without pooling.",
+    "revision": 1
    }
   ],
   "acceptance": {

@@ -1,0 +1,72 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "types/Risk.schema.json",
+ "title": "Risk (schema v6 3.x)",
+ "allOf": [
+  {
+   "$ref": "../common.schema.json"
+  }
+ ],
+ "type": "object",
+ "properties": {
+  "description": {
+   "type": "string",
+   "description": "text; card. 1; "
+  },
+  "likelihood": {
+   "type": "integer",
+   "description": "int; card. 1; 1 to 5"
+  },
+  "consequence": {
+   "type": "integer",
+   "description": "int; card. 1; 1 to 5"
+  },
+  "owner": {
+   "type": "string",
+   "description": "ref(Person); card. 1; "
+  },
+  "mitigation": {
+   "type": "string",
+   "description": "text; card. 0..1; "
+  },
+  "source": {
+   "description": "json; card. 0..1; {kind: Review or Checklist No; ref}"
+  },
+  "tagged_fdps": {
+   "anyOf": [
+    {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    {
+     "type": "string"
+    }
+   ],
+   "description": "ref(FDPS); card. 0..n; "
+  },
+  "status": {
+   "type": "string",
+   "x-stored-as": "label of a framework-fixed register entry",
+   "description": "reg; card. 1; Open; Mitigated; Closed; Accepted",
+   "enum": [
+    "Open",
+    "Mitigated",
+    "Closed",
+    "Accepted"
+   ]
+  },
+  "type": {
+   "const": "Risk"
+  }
+ },
+ "required": [
+  "description",
+  "likelihood",
+  "consequence",
+  "owner",
+  "status"
+ ],
+ "x-owned-links": []
+}

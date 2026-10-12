@@ -1,0 +1,140 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "types/Requirement.schema.json",
+ "title": "Requirement (schema v6 3.x)",
+ "allOf": [
+  {
+   "$ref": "../common.schema.json"
+  }
+ ],
+ "type": "object",
+ "properties": {
+  "req_number": {
+   "type": "string",
+   "description": "string; card. 1; Unique within the hub"
+  },
+  "statement": {
+   "type": "string",
+   "description": "text; card. 1; One \"shall\" statement"
+  },
+  "rationale": {
+   "type": "string",
+   "description": "text; card. 0..1; "
+  },
+  "level": {
+   "anyOf": [
+    {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+     }
+    },
+    {
+     "type": "string",
+     "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+    }
+   ],
+   "description": "reg(REQLVL); card. 1; "
+  },
+  "criteria": {
+   "description": "json; card. 0..n; {quantity_name, comparator, limit: qty}"
+  },
+  "verification_method": {
+   "anyOf": [
+    {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+     }
+    },
+    {
+     "type": "string",
+     "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+    }
+   ],
+   "description": "reg(VMETH); card. 0..n; "
+  },
+  "product_scope": {
+   "anyOf": [
+    {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+     }
+    },
+    {
+     "type": "string",
+     "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+    }
+   ],
+   "description": "reg(SCOPE); card. 1..n; "
+  },
+  "lifecycle_stage": {
+   "anyOf": [
+    {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+     }
+    },
+    {
+     "type": "string",
+     "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+    }
+   ],
+   "description": "reg(LCS) or ALL; card. 1..n; "
+  },
+  "discipline": {
+   "anyOf": [
+    {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+     }
+    },
+    {
+     "type": "string",
+     "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+    }
+   ],
+   "description": "reg(DISC) or ALL; card. 1..n; "
+  },
+  "acceptance": {
+   "description": "json; card. 1*; {state: Proposed, Accepted, Rejected; accepted_by: Person; accepted_at}"
+  },
+  "status": {
+   "type": "string",
+   "x-stored-as": "label of a framework-fixed register entry",
+   "description": "reg; card. 1; Draft; Accepted; Superseded; Withdrawn",
+   "enum": [
+    "Draft",
+    "Accepted",
+    "Superseded",
+    "Withdrawn"
+   ]
+  },
+  "type": {
+   "const": "Requirement"
+  }
+ },
+ "required": [
+  "req_number",
+  "statement",
+  "level",
+  "product_scope",
+  "lifecycle_stage",
+  "discipline",
+  "status"
+ ],
+ "x-owned-links": [
+  "Allocated to",
+  "Constrains",
+  "Decomposes into",
+  "Satisfied by"
+ ]
+}

@@ -1,0 +1,100 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "types/Issue.schema.json",
+ "title": "Issue (schema v6 3.x)",
+ "allOf": [
+  {
+   "$ref": "../common.schema.json"
+  }
+ ],
+ "type": "object",
+ "properties": {
+  "description": {
+   "type": "string",
+   "description": "text; card. 1; "
+  },
+  "effort_estimate": {
+   "$ref": "../common.schema.json#/$defs/qty",
+   "description": "qty (person-days); card. 1; "
+  },
+  "cost_estimate": {
+   "$ref": "../common.schema.json#/$defs/qty",
+   "description": "qty (GBP); card. 1; "
+  },
+  "schedule_delay": {
+   "$ref": "../common.schema.json#/$defs/qty",
+   "description": "qty (weeks); card. 1; 0 = none"
+  },
+  "safety_score": {
+   "type": "integer",
+   "description": "int; card. 1; 1 to 5 (option of the criterion)"
+  },
+  "scope_score": {
+   "type": "integer",
+   "description": "int; card. 1; 1 to 5"
+  },
+  "product_scope": {
+   "anyOf": [
+    {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+     }
+    },
+    {
+     "type": "string",
+     "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+    }
+   ],
+   "description": "reg(SCOPE); card. 0..n; "
+  },
+  "lifecycle_stage": {
+   "anyOf": [
+    {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+     }
+    },
+    {
+     "type": "string",
+     "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+    }
+   ],
+   "description": "reg(LCS) or ALL; card. 1..n; "
+  },
+  "resolution": {
+   "description": "json; card. 0..1; {summary, resolved_by: Person, resolved_at}"
+  },
+  "status": {
+   "type": "string",
+   "x-stored-as": "label of a framework-fixed register entry",
+   "description": "reg; card. 1; Open; In Progress; Resolved; Closed",
+   "enum": [
+    "Open",
+    "In Progress",
+    "Resolved",
+    "Closed"
+   ]
+  },
+  "type": {
+   "const": "Issue"
+  }
+ },
+ "required": [
+  "description",
+  "effort_estimate",
+  "cost_estimate",
+  "schedule_delay",
+  "safety_score",
+  "scope_score",
+  "lifecycle_stage",
+  "status"
+ ],
+ "x-owned-links": [
+  "Affects",
+  "Resolved by"
+ ]
+}

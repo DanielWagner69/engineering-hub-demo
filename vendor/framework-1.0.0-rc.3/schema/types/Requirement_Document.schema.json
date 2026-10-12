@@ -1,0 +1,53 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "types/Requirement_Document.schema.json",
+ "title": "Requirement Document (schema v7.6 3.13A)",
+ "allOf": [
+  {
+   "$ref": "../common.schema.json"
+  }
+ ],
+ "type": "object",
+ "properties": {
+  "doc_kind": {
+   "enum": [
+    "EDR"
+   ],
+   "description": "reg(DOCKIND)"
+  },
+  "doc_code": {
+   "type": "string",
+   "description": "Unique within the project, e.g. EDR-FUE"
+  },
+  "issue": {
+   "type": "integer",
+   "minimum": 1
+  },
+  "sub_system_tags": {
+   "type": "array",
+   "items": {
+    "type": "string",
+    "pattern": "^VR-SUB-\\d{4}$"
+   },
+   "description": "Many-to-many document-level Sub-system tag (6B.2)"
+  },
+  "product_scope": {
+   "type": "array"
+  },
+  "issue_changes": {
+   "type": "array",
+   "description": "[{issue, changed: [line item ids]}] (6B.10)"
+  },
+  "type": {
+   "const": "Requirement Document"
+  }
+ },
+ "required": [
+  "doc_kind",
+  "doc_code",
+  "issue",
+  "sub_system_tags",
+  "product_scope"
+ ],
+ "x-owned-links": []
+}

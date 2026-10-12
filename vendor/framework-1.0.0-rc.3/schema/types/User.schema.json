@@ -1,0 +1,66 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "types/User.schema.json",
+ "title": "User (schema v7.6 3.37)",
+ "allOf": [
+  {
+   "$ref": "../common.schema.json"
+  }
+ ],
+ "type": "object",
+ "properties": {
+  "display_name": {
+   "type": "string",
+   "description": "Name shown in the Hub"
+  },
+  "email": {
+   "type": "string",
+   "description": "Unique; directory identity"
+  },
+  "handle": {
+   "type": "string",
+   "description": "Directory handle used in references, e.g. user:p.hale"
+  },
+  "design_team": {
+   "type": "string",
+   "description": "reg(DT)"
+  },
+  "design_sub_team": {
+   "type": "string",
+   "description": "reg(DST)"
+  },
+  "user_status": {
+   "enum": [
+    "Active",
+    "Suspended",
+    "Left"
+   ],
+   "description": "reg(USTATUS)"
+  },
+  "framework_admin": {
+   "type": "boolean"
+  },
+  "theme": {
+   "enum": [
+    "Company",
+    "Dark",
+    "Light"
+   ]
+  },
+  "last_active_at": {
+   "type": "string",
+   "description": "datetime"
+  },
+  "type": {
+   "const": "User"
+  }
+ },
+ "required": [
+  "display_name",
+  "email",
+  "handle",
+  "user_status",
+  "framework_admin"
+ ],
+ "x-owned-links": []
+}

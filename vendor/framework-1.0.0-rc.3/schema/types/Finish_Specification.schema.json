@@ -1,0 +1,79 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "types/Finish_Specification.schema.json",
+ "title": "Finish Specification (schema v6 3.x)",
+ "allOf": [
+  {
+   "$ref": "../common.schema.json"
+  }
+ ],
+ "type": "object",
+ "properties": {
+  "finish_code": {
+   "type": "string",
+   "description": "string; card. 1; Unique within the hub"
+  },
+  "category": {
+   "anyOf": [
+    {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+     }
+    },
+    {
+     "type": "string",
+     "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+    }
+   ],
+   "description": "reg(FINCAT); card. 1; "
+  },
+  "discipline": {
+   "anyOf": [
+    {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+     }
+    },
+    {
+     "type": "string",
+     "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+    }
+   ],
+   "description": "reg(DISC); card. 1; "
+  },
+  "specification": {
+   "type": "string",
+   "description": "text; card. 1; Structured description"
+  },
+  "properties": {
+   "description": "json; card. 0..n; {name, qty}"
+  },
+  "status": {
+   "type": "string",
+   "x-stored-as": "label of a framework-fixed register entry",
+   "description": "reg; card. 1; Draft; Released; Superseded",
+   "enum": [
+    "Draft",
+    "Released",
+    "Superseded"
+   ]
+  },
+  "type": {
+   "const": "Finish Specification"
+  }
+ },
+ "required": [
+  "finish_code",
+  "category",
+  "discipline",
+  "specification",
+  "status"
+ ],
+ "x-owned-links": [
+  "Finish applied"
+ ]
+}

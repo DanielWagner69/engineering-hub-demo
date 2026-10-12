@@ -1,6 +1,6 @@
 # Demo Production Hub v1.0-demo rebuild: Project D (fictional) gate and site against the pinned framework bundle.
 PY ?= python3
-FWV := 1.0.0-rc.2
+FWV := 1.0.0-rc.3
 FW := vendor/framework-$(FWV)
 ARGS := --framework $(FW)/framework-$(FWV).json --schema $(FW)/schema --project data/project-d
 check:            ## schema, carried WE4 checks, per-FDPS checks, purity, example assertions; then negative tests

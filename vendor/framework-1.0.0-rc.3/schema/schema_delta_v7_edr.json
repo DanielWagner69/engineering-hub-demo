@@ -1,0 +1,375 @@
+{
+ "_meta": {
+  "source": "Data Schema - Draft v7.3 and Requirements Prompt v24.3 (12 Oct 2026), sections 6.20 to 6.23",
+  "applies_after": "schema_delta_R15_R18.json",
+  "status": "proposed, not yet applied to generated type schemas"
+ },
+ "registers": {
+  "add": {
+   "DOCKIND": [
+    "EDR"
+   ],
+   "LISTATE": [
+    "Kept",
+    "Broken",
+    "Superseded (auto)"
+   ]
+  },
+  "extend": {
+   "BASIS": [
+    "Inherited via EDR Sub-system tag",
+    "Inherited via Sub-system Design Type"
+   ],
+   "PAGETYPE": [
+    "EDR",
+    "TSM"
+   ]
+  }
+ },
+ "new_types": {
+  "Requirement Document": {
+   "required": [
+    "doc_kind",
+    "doc_code",
+    "issue",
+    "sub_system_tags",
+    "product_scope",
+    "status"
+   ],
+   "properties": {
+    "doc_kind": {
+     "type": "string",
+     "description": "reg(DOCKIND); EDR"
+    },
+    "doc_code": {
+     "type": "string",
+     "description": "Unique within the project, e.g. EDR-FUE"
+    },
+    "issue": {
+     "type": "integer",
+     "minimum": 1
+    },
+    "sub_system_tags": {
+     "type": "array",
+     "minItems": 1,
+     "items": {
+      "type": "string",
+      "description": "reg(SUB)"
+     },
+     "description": "Many-to-many document-level Sub-system tag (6B.2)"
+    },
+    "issue_changes": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "issue": {
+        "type": "integer"
+       },
+       "changed": {
+        "type": "array",
+        "items": {
+         "type": "string"
+        }
+       },
+       "added": {
+        "type": "array",
+        "items": {
+         "type": "string"
+        }
+       },
+       "removed": {
+        "type": "array",
+        "items": {
+         "type": "string"
+        }
+       }
+      }
+     },
+     "description": "Only changed line items are re-flagged (6B.10)"
+    },
+    "product_scope": {
+     "type": "array",
+     "minItems": 1,
+     "items": {
+      "type": "string"
+     }
+    },
+    "status": {
+     "enum": [
+      "Draft",
+      "Released",
+      "Superseded",
+      "Withdrawn"
+     ]
+    }
+   }
+  },
+  "Line-item Review": {
+   "required": [
+    "fdps",
+    "line_item",
+    "line_item_revision",
+    "state",
+    "bases",
+    "status"
+   ],
+   "properties": {
+    "fdps": {
+     "type": "string",
+     "description": "ref(FDPS)"
+    },
+    "line_item": {
+     "type": "object",
+     "description": "{requirement} or {tsm, clause}",
+     "properties": {
+      "requirement": {
+       "type": "string"
+      },
+      "tsm": {
+       "type": "string"
+      },
+      "clause": {
+       "type": "string"
+      }
+     }
+    },
+    "line_item_revision": {
+     "type": "integer",
+     "minimum": 1
+    },
+    "state": {
+     "enum": [
+      "Kept",
+      "Broken",
+      "Superseded (auto)"
+     ],
+     "description": "Superseded (auto) is set by the system only (6B.7A)"
+    },
+    "bases": {
+     "type": "array",
+     "minItems": 1
+    },
+    "reason": {
+     "type": "string",
+     "description": "Required when Broken"
+    },
+    "author": {
+     "type": "string",
+     "description": "ref(Person)"
+    },
+    "approved_by": {
+     "type": "string",
+     "description": "Required when Broken: EDR line item - Design Lead of the FDPS lead Sub-system (or Sub-structure); TSM statement - Design Authority (6C.13)"
+    },
+    "approved_at": {
+     "type": "string",
+     "description": "datetime"
+    },
+    "status": {
+     "enum": [
+      "Current",
+      "Flagged for re-confirmation"
+     ]
+    },
+    "superseded_by": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     },
+     "description": "Defined links causing the supersession"
+    },
+    "bulk_confirmation": {
+     "type": "string",
+     "description": "ref(TSM Supersession Confirmation); TSM statements only; empty = pending"
+    }
+   },
+   "if_broken_required": [
+    "reason",
+    "author",
+    "approved_by",
+    "approved_at"
+   ]
+  },
+  "TSM Supersession Confirmation": {
+   "required": [
+    "fdps",
+    "tsm",
+    "statements",
+    "confirmed_by",
+    "confirmed_at",
+    "status"
+   ],
+   "properties": {
+    "fdps": {
+     "type": "string"
+    },
+    "tsm": {
+     "type": "string"
+    },
+    "statements": {
+     "type": "array",
+     "minItems": 1,
+     "items": {
+      "type": "object",
+      "properties": {
+       "clause": {
+        "type": "string"
+       },
+       "revision": {
+        "type": "integer"
+       }
+      }
+     }
+    },
+    "rejected": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "clause": {
+        "type": "string"
+       },
+       "reason": {
+        "type": "string"
+       }
+      }
+     }
+    },
+    "confirmed_by": {
+     "type": "string",
+     "description": "Design Authority (6C.13)"
+    },
+    "confirmed_at": {
+     "type": "string"
+    },
+    "status": {
+     "enum": [
+      "Current",
+      "Lapsed"
+     ]
+    }
+   }
+  }
+ },
+ "type_changes": {
+  "Requirement": {
+   "add_fields": {
+    "line_item_revision": {
+     "type": "integer",
+     "minimum": 1
+    }
+   },
+   "links": {
+    "Part of": {
+     "target": "Requirement Document",
+     "cardinality": "1"
+    },
+    "Allocated to": {
+     "cardinality": "0..n",
+     "note": "optional narrowing of the EDR Sub-system tag"
+    }
+   },
+   "level_note": "level stays on each line item; an EDR may mix levels"
+  },
+  "TSM": {
+   "statement_add_fields": {
+    "revision": {
+     "type": "integer",
+     "minimum": 1
+    }
+   },
+   "governs_forbid": [
+    "SUB"
+   ]
+  },
+  "Compliance Statement": {
+   "rule": "only for Kept line items; statements_claimed must equal the Kept statements; 'no record' rule of 6B.11 removed"
+  },
+  "Lesson Learned": {
+   "add_fields": {
+    "design_type": {
+     "type": "array",
+     "minItems": 1,
+     "items": {
+      "type": "string",
+      "description": "reg(DTY) or ALL"
+     }
+    },
+    "sub_system": {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "description": "reg(SUB)"
+     }
+    }
+   },
+   "add_required": [
+    "design_type"
+   ],
+   "matching": "by tag only"
+  },
+  "Hub Page": {
+   "applicable_design_types": "also on Sub-system and Sub-structure pages (route Sub-system > Design Type > TSM)",
+   "owner_rule": "Sub-system pages show the Design Lead as owner",
+   "add_fields": {
+    "layout": {
+     "type": "string",
+     "description": "Tree page layout v2 (v7.3 / 6.23): five groups Requirement, Verification, Product (Sub-system: FDPS list only), Considerations, Working Data; no Links area; summary links; FDPS page layout TBC"
+    }
+   },
+   "page_groups": {
+    "Requirement": [
+     "EDRs",
+     "TSMs"
+    ],
+    "Verification": [
+     "Compliance",
+     "Verifications",
+     "Reviews"
+    ],
+    "Product": [
+     "FDPSs"
+    ],
+    "Considerations": [
+     "Interfacing Systems",
+     "Disciplines and Stakeholders"
+    ],
+    "Working Data": [
+     "Issues",
+     "Lessons Learned"
+    ]
+   }
+  },
+  "FDPS": {
+   "derived": [
+    "line_item_maturity {reviewed,total,broken,unreviewed}"
+   ],
+   "gates": [
+    "Stage C entry: unreviewed == 0 (Kept, Broken, Superseded (auto) count as reviewed) and pending TSM bulk confirmations == 0",
+    "Release gate: same"
+   ]
+  }
+ },
+ "link_types": {
+  "add": [
+   "Part of (Requirement -> Requirement Document)",
+   "Tagged to (Requirement Document -> Sub-system)",
+   "Reviews line item (Line-item Review -> Requirement or TSM statement)"
+  ]
+ },
+ "link_maturity": {
+  "principle": "6B.7A: high-level links flow down; defined links at lowest level flow up and supersede; unlinked flowed-down items auto-superseded once the level has defined links; TSM needs DA bulk confirmation, EDR none",
+  "settled": [
+   "P1 defined link = Satisfied by to a Part/Assembly Instance (EDR) or claimed TSM statement naming parts",
+   "P2 level has defined links = >=1 line item of the document has a defined link in the FDPS; per FDPS per document",
+   "P3 manual Kept/Broken prevail",
+   "P4 reversal when last defined link removed",
+   "P5 new/changed items auto-superseded unless linked",
+   "P6 one DA confirmation per FDPS per TSM; lapses on set change; DA may reject statements",
+   "P7 no Compliance Statement for superseded items",
+   "P8 defined links roll up to FDPS/Sub-system/System pages"
+  ],
+  "status": "P1 to P8 accepted by Daniel as written, 12 Oct 2026"
+ }
+}

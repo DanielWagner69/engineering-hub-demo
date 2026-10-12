@@ -1,0 +1,21 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "types/Saved_AI_Answer.schema.json",
+ "title": "Saved AI Answer (schema v6 3.32, brief)",
+ "allOf": [
+  {
+   "$ref": "../common.schema.json"
+  }
+ ],
+ "type": "object",
+ "properties": {
+  "query_log": {},
+  "answer": {},
+  "cited": {},
+  "verification_status": {},
+  "type": {
+   "const": "Saved AI Answer"
+  }
+ },
+ "required": []
+}

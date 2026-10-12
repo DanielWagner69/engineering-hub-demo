@@ -1,0 +1,21 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "types/Framework_Version.schema.json",
+ "title": "Framework Version (schema v6 3.32, brief)",
+ "allOf": [
+  {
+   "$ref": "../common.schema.json"
+  }
+ ],
+ "type": "object",
+ "properties": {
+  "version": {},
+  "released_at": {},
+  "change": {},
+  "content_review": {},
+  "type": {
+   "const": "Framework Version"
+  }
+ },
+ "required": []
+}

@@ -90,6 +90,9 @@
     "link_type": "Resolved by",
     "target": "CR-D-0000303"
    }
+  ],
+  "contributors": [
+   "user:a.novak"
   ]
  }
 ]

@@ -1,0 +1,202 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "common.schema.json",
+ "title": "Common fields (schema v6 1.2)",
+ "type": "object",
+ "properties": {
+  "id": {
+   "type": "string",
+   "description": "string; card. 1; 1.1 format",
+   "pattern": "^(PRJ|EFF|PD|PR|PI|IRL|AD|AV|AI|FD|FR|FS|REQ|TSM|CS|VER|ISS|DR|RS|ACT|LL|DC|PAR|PIT|PG|PL|AR|BL|CR|RF|CK|RT|CON|RA|RSK|TR|FV|AIQ|IMG|LNK|EDR|LIR|TSC|USR|PA|ER|PO)-([A-Z]|FW)-\\d{7}$"
+  },
+  "type": {
+   "type": "string",
+   "x-stored-as": "label of a framework-fixed register entry",
+   "description": "reg(DATA_TYPE); card. 1; Section 3 types"
+  },
+  "schema_version": {
+   "type": "string",
+   "description": "string; card. 1; e.g. \"1.0\""
+  },
+  "title": {
+   "type": "string",
+   "description": "string; card. 1; Max. 200 characters"
+  },
+  "status": {
+   "type": "string",
+   "x-stored-as": "label of a framework-fixed register entry",
+   "description": "reg(STATUS_type), one register per data type; card. 1; Per data type"
+  },
+  "owner": {
+   "type": "string",
+   "description": "ref(User) (handle of a User record in a Production Hub, 5A.7); card. 1; exactly one accountable Owner"
+  },
+  "hub": {
+   "type": "string",
+   "pattern": "^(FW|PRJ-[A-Z]-\\d{7})$",
+   "description": "FW or project id; production data never sits in FW (6.2)"
+  },
+  "created_at": {
+   "type": "string",
+   "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(:\\d{2})?Z$",
+   "description": "datetime; card. 1; "
+  },
+  "created_by": {
+   "type": "string",
+   "description": "ref(Person or AI agent); card. 1; "
+  },
+  "modified_at": {
+   "type": "string",
+   "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(:\\d{2})?Z$",
+   "description": "datetime; card. 1; "
+  },
+  "modified_by": {
+   "type": "string",
+   "description": "ref(Person or AI agent); card. 1; "
+  },
+  "record_version": {
+   "type": "integer",
+   "description": "int; card. 1; 1, 2, 3 ..."
+  },
+  "origin": {
+   "description": "json; card. 1; {kind: reg(ORIGIN_KIND), source_ref, source_issue_or_revision, source_link}"
+  },
+  "verification_status": {
+   "type": "string",
+   "x-stored-as": "label of a framework-fixed register entry",
+   "description": "reg(VERIFICATION_STATUS); card. 1; Unverified; Verified; Rejected",
+   "enum": [
+    "Unverified",
+    "Verified",
+    "Rejected"
+   ]
+  },
+  "verified_by": {
+   "type": "string",
+   "description": "ref(Person); card. 1*; "
+  },
+  "verified_at": {
+   "type": "string",
+   "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(:\\d{2})?Z$",
+   "description": "datetime; card. 1*; "
+  },
+  "confidence": {
+   "type": "number",
+   "description": "decimal; card. 1*; 0.00 to 1.00"
+  },
+  "access_marking": {
+   "anyOf": [
+    {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+     }
+    },
+    {
+     "type": "string",
+     "pattern": "^(VR-[A-Z]+-\\d{4}|ALL)$"
+    }
+   ],
+   "description": "reg(ACCESS_MARKING); card. 1; Project classification markings"
+  },
+  "last_reviewed_at": {
+   "type": "string",
+   "pattern": "^\\d{4}-\\d{2}-\\d{2}",
+   "description": "date; card. 0..1; "
+  },
+  "tags": {
+   "description": "list of Tag; card. per type; See 1.3"
+  },
+  "links": {
+   "type": "array",
+   "items": {
+    "$ref": "#/$defs/link"
+   }
+  },
+  "contributors": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "ref(User); card. 0..n; optional Contributors (5A.7, added in v7.4)"
+  }
+ },
+ "required": [
+  "id",
+  "type",
+  "schema_version",
+  "title",
+  "status",
+  "owner",
+  "hub",
+  "created_at",
+  "created_by",
+  "modified_at",
+  "modified_by",
+  "record_version",
+  "origin",
+  "verification_status",
+  "access_marking"
+ ],
+ "$defs": {
+  "eff": {
+   "type": "object",
+   "required": [
+    "effectivity_type",
+    "from",
+    "to"
+   ],
+   "properties": {
+    "effectivity_type": {
+     "type": "string",
+     "pattern": "^VR-EFFTYPE-\\d{4}$"
+    },
+    "from": {
+     "type": "integer",
+     "minimum": 1
+    },
+    "to": {
+     "type": "integer",
+     "maximum": 999
+    },
+    "notes": {
+     "type": "string"
+    }
+   }
+  },
+  "qty": {
+   "type": "object",
+   "required": [
+    "value",
+    "unit"
+   ],
+   "properties": {
+    "value": {
+     "type": "number"
+    },
+    "unit": {
+     "type": "string"
+    }
+   }
+  },
+  "link": {
+   "type": "object",
+   "required": [
+    "link_type",
+    "target"
+   ],
+   "properties": {
+    "link_type": {
+     "type": "string"
+    },
+    "target": {
+     "type": "string"
+    },
+    "attributes": {
+     "type": "object"
+    }
+   }
+  }
+ }
+}

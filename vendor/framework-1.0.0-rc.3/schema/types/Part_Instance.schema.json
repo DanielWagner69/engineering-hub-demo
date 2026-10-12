@@ -1,0 +1,52 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "types/Part_Instance.schema.json",
+ "title": "Part Instance (schema v6 3.x)",
+ "allOf": [
+  {
+   "$ref": "../common.schema.json"
+  }
+ ],
+ "type": "object",
+ "properties": {
+  "position_name": {
+   "type": "string",
+   "description": "string; card. 1; "
+  },
+  "existence": {
+   "$ref": "../common.schema.json#/$defs/eff",
+   "description": "eff; card. 1; Default from Project"
+  },
+  "replaces": {
+   "type": "string",
+   "description": "ref(Part Instance); card. 0..1; "
+  },
+  "status": {
+   "type": "string",
+   "x-stored-as": "label of a framework-fixed register entry",
+   "description": "reg; card. 1; Active; Cancelled",
+   "enum": [
+    "Active",
+    "Cancelled"
+   ]
+  },
+  "type": {
+   "const": "Part Instance"
+  }
+ },
+ "required": [
+  "position_name",
+  "existence",
+  "status"
+ ],
+ "x-owned-links": [
+  "Effective revision",
+  "Finish applied",
+  "Homed in",
+  "Instance of",
+  "Interface",
+  "Located at",
+  "Secures",
+  "Supports"
+ ]
+}
